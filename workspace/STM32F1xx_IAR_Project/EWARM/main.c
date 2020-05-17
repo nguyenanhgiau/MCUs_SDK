@@ -55,6 +55,9 @@ int main(void)
   SystemInit();
   SystemCoreClockUpdate();
   
+  /* Init Timer and UART */
+  
+  
   /* Infinite loop */
   while (1)
   {
