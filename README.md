@@ -7,21 +7,20 @@ micro controller
 Directory Hierarchy:
 ====================
 
-    /sdk                            software development kit
-        /chip                       chip configuration
-        /components                 
-            /dbg                    debugger
-            /libraries              libraries peripheral and other
-            /common                 queue and timer
-            /freertos               folder contain source code for FreeRTOS
-            /utilities
-        /external                   folder contain modules external
-        /board                      configure board selection
-        /toolchain                  set of tool to build projects
-    /workspace                      directory containt projects with specify application
-    /scripts                        Various build scripts
-    /test                           various unit test file
-    /doc                            document and guide line
+    /chip                       chip configuration
+    /components                 
+        /dbg                    debugger
+        /libraries              libraries peripheral and other
+        /common                 queue and timer
+        /freertos               folder contain source code for FreeRTOS
+        /utilities
+    /external                   folder contain modules external
+    /board                      configure board selection
+    /toolchain                  set of tool to build projects
+    /workspace                  directory containt projects with specify application
+    /scripts                    various build scripts
+    /test                       various unit test file
+    /doc                        document and guide line
 
 Software Configuration:
 =======================
