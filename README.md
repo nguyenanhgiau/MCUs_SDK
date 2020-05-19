@@ -26,7 +26,7 @@ Software Configuration:
 =======================
 Configuration is usually done using C preprocessor defines;
 Each project contain 1 file prj_config.h. This file will configure:
-* [MCU Controller](#MCU-Controller)
+* [MCU Controller](#Micro-Controller)
 * [Board](#Board)
 * [Application Configurating](#App-Configurating)
 
