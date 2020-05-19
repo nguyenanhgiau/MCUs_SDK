@@ -15,7 +15,7 @@ Directory Hierarchy:
         /freertos               folder contain source code for FreeRTOS
         /utilities
     /external                   folder contain modules external
-    /board                      configure board selection
+    /boards                     configure board selection
     /toolchain                  set of tool to build projects
     /workspace                  directory containt projects with specify application
     /scripts                    various build scripts
