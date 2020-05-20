@@ -38,9 +38,10 @@ typedef enum {
   E_BUTTON_STATE_SINGLE_CLICK,
   E_BUTTON_STATE_DOUBLE_CLICK,
   E_BUTTON_STATE_TRIPLE_CLICK,
-  E_BUTTON_STATE_HOLD_ON        = 0xF0,
-  E_BUTTON_STATE_DEBOUNDCE      = 0xFE
+  E_BUTTON_STATE_HOLD_ON        = 0xFE
 }Button_teState;
+
+typedef uint8 (*BUTTON_tpfGetState)(void);
 
 #define BUTTON_STATE_RELEASE            (0)
 #define BUTTON_STATE_DEBOUNDCE          (1)
@@ -57,11 +58,6 @@ typedef enum {
 #define BUTTON_DISABLE_SAMPLE           (0)
 #define BUTTON_ENABLE_SAMPLE            (1)
 
-#define BUTTON_RELEASE          (0)
-#define BUTTON_SINGLE_CLICK     (1)
-#define BUTTON_DOUBLE_CLICK     (2)
-#define BUTTON_TRIPLE_CLICK     (3)
-#define BUTTON_HOLD_ON          (0xFF)
 /* Exported Typedefs ---------------------------------------------------------*/
 typedef struct{
   uint8_t       oldState;               /* old state of button*/
@@ -74,7 +70,7 @@ typedef struct{
   uint8_t       timerSampleRS;          /* timer sample result */
   bool          flagSampleRelease;      /* flag sample release */
   uint8_t       timerSampleRL;          /* timer sample release */
-  uint8_t       (*read)(void);          /* pointer to function read button */
+  BUTTON_tpfGetState pfGetState;        /* pointer to function read button */
 }BUTTON_tsButton;
 
 typedef struct{
@@ -90,6 +86,9 @@ typedef enum
 /* Exported Structure Declarations -------------------------------------------*/
 /* Exported Functions Declarations -------------------------------------------*/
 BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *psButtons, uint8 u8NumButtons);
+BUTTON_teStatus BUTTON_eOpen(uint8 *pu8ButtonIndex, BUTTON_tpfGetState pfGetState, bool bPullUp);
+BUTTON_teStatus BUTTON_eClose(uint8 *pu8ButtonIndex);
+void BUTTON_vScanTask(void *pvParam);
 /* External Variable Declarations --------------------------------------------*/
 #ifdef __cplusplus
 }
