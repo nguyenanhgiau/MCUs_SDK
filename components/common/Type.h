@@ -1,10 +1,11 @@
-/****************************************************************************
+/*****************************************************************************
  *
- * MODULE: Queue.h
+ * MODULE:             Type
  *
- * DESCRIPTION:
+ * COMPONENT:          Type.h
+ *
+ * DESCRIPTION:        Type
  * MODIFY:             giauna
- *
  *
  ****************************************************************************
  *
@@ -32,30 +33,23 @@
  *
  ***************************************************************************/
 
-#ifndef QUEUE_H_
-#define QUEUE_H_
+#ifndef TYPE_H_
+#define TYPE_H_
 
-#include "chip_selection.h"
-#include "string.h"
+#ifndef bool_t
+#define bool_t          bool
+#endif
 
-typedef struct
-{
-    uint32 u32Length;                  /*< The length of the queue defined as the number of items it will hold, not the number of bytes. */
-    uint32 u32ItemSize;                /*< The size of each items that the queue will hold. */
-    uint32 u32MessageWaiting;
-    uint8  *pvHead;                    /*< Points to the beginning of the queue storage area. */
-    uint8  *pvWriteTo;                 /*< Points to the free next place in the storage area. */
-    uint8  *pvReadFrom;                /*< Points to the free next place in the storage area. */
-}tsQueue;
+#ifndef uint8
+#define uint8           uint8_t
+#endif
 
-void QUEUE_vCreate (tsQueue *psQueueHandle, const uint32 uiQueueLength, const uint32 uiItemSize, uint8* pu8StartQueue);
-bool_t QUEUE_bSend(void *pvQueueHandle, const void *pvItemToQueue);
-bool_t QUEUE_bReceive(void *pvQueueHandle, void *pvItemFromQueue);
-bool_t QUEUE_bIsEmpty(void *pvQueueHandle);
-uint32 QUEUE_u32GetQueueSize(void *pvQueueHandle);
-uint32 QUEUE_u32GetQueueMessageWaiting ( void*    pu8QueueHandle );
-#endif /*QUEUE_H_*/
+#ifndef uint16
+#define uint16          uint16_t
+#endif
 
-/****************************************************************************/
-/***        END OF FILE                                                   ***/
-/****************************************************************************/
+#ifndef uint32
+#define uint32          uint32_t
+#endif
+
+#endif /*TYPE_H_*/

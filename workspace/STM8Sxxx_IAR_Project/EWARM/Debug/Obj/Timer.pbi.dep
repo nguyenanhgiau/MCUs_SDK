@@ -1,10 +1,9 @@
-stm8s_tim2.pbi: \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\STM8S_StdPeriph_Driver\src\stm8s_tim2.c \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_tim2.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc/stm8s.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\stm8s_conf.h \
+Timer.pbi: C:\Users\Giau\Desktop\MCUs_SDK\components\common\Timer.c \
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\chip\chip_selection.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s.h \
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\stm8s_conf.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_adc1.h \
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc/stm8s.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_awu.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_beep.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_clk.h \
@@ -17,7 +16,19 @@ stm8s_tim2.pbi: \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_rst.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_spi.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_tim1.h \
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_tim2.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_tim4.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_uart1.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_wwdg.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h \
+  C:\Users\Giau\Desktop\MCUs_SDK\components\common\Type.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\string.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\LIB\dlstm8smf.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\xencoding_limits.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\DLib_Threads.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\ysizet.h \
+  C:\Users\Giau\Desktop\MCUs_SDK\components\common/Timer.h

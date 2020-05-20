@@ -2158,7 +2158,28 @@
         </settings>
     </configuration>
     <group>
-        <name>Driver</name>
+        <name>chip</name>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\chip\chip_selection.h</name>
+        </file>
+    </group>
+    <group>
+        <name>components</name>
+        <group>
+            <name>common</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\components\common\Queue.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\components\common\Timer.c</name>
+            </file>
+        </group>
+        <group>
+            <name>dbg</name>
+        </group>
+    </group>
+    <group>
+        <name>STM8S_StdPeriph_Driver</name>
         <file>
             <name>$PROJ_DIR$\..\STM8S_StdPeriph_Driver\src\stm8s_adc1.c</name>
         </file>
