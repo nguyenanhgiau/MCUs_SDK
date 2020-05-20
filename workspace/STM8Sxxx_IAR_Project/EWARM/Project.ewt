@@ -2174,9 +2174,15 @@
                 <name>$PROJ_DIR$\..\..\..\components\common\Timer.c</name>
             </file>
         </group>
-        <group>
-            <name>dbg</name>
-        </group>
+    </group>
+    <group>
+        <name>Project</name>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_it.c</name>
+        </file>
     </group>
     <group>
         <name>STM8S_StdPeriph_Driver</name>
@@ -2254,15 +2260,6 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\STM8S_StdPeriph_Driver\src\stm8s_wwdg.c</name>
-        </file>
-    </group>
-    <group>
-        <name>Project</name>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\stm8s_it.c</name>
         </file>
     </group>
 </project>

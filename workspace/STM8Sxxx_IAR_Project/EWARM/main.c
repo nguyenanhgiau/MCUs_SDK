@@ -32,8 +32,9 @@
 #include "Timer.h"
 
 /* Private defines -----------------------------------------------------------*/
+TIMER_tsTimer asTimers[3];
 /* Private function prototypes -----------------------------------------------*/
-static void timebase_config(void);
+static void timebase_initialize(void);
 /* Private functions ---------------------------------------------------------*/
 
 void main(void)
@@ -41,16 +42,26 @@ void main(void)
   /* Clock divider to HSI/1 */
   CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1);
   
-  /* Initialize time base */
-  timebase_config();
-  
   /* Initialize debugger module */
+  
+  /* Initialize time base */
+  TIMER_eInit(asTimers, sizeof(asTimers) / sizeof(TIMER_tsTimer));
+  timebase_initialize();
+  /* Create timer */
   
   /*Initialize modules for application */
   
   /* Infinite loop */
   while (1)
   {
+    /* call timer task handle soft timer */
+    TIMER_vTask();
+    
+    /*TODO: add watchdog restart */
+    
+    /*TODO: add main task */
+    
+    /*TODO: add task managenment power */
   }
   
 }
@@ -76,7 +87,7 @@ void assert_failed(u8* file, u32 line)
 }
 #endif
 
-static void timebase_config(void)
+static void timebase_initialize(void)
 {
   /* TIM4 configuration:
    - TIM4CLK is set to 16 MHz, the TIM4 Prescaler is equal to 128 so the TIM1 counter

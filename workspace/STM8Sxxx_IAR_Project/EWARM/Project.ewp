@@ -47,20 +47,20 @@
                 <option>
                     <name>GenRuntimeLibSelect</name>
                     <version>0</version>
-                    <state>2</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>GenRuntimeLibSelectSlave</name>
                     <version>0</version>
-                    <state>2</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>GenRTDescription</name>
-                    <state>Use the full configuration of the C/EC++ runtime library. Full locale interface, C locale, file descriptor support, multibytes in printf and scanf, and hex floats in strtod.</state>
+                    <state>Use the normal configuration of the C/EC++ runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
                 </option>
                 <option>
                     <name>GenRTConfigPath</name>
-                    <state>$TOOLKIT_DIR$\LIB\dlstm8smf.h</state>
+                    <state>$TOOLKIT_DIR$\LIB\dlstm8smn.h</state>
                 </option>
                 <option>
                     <name>GenLibInFormatter</name>
@@ -146,7 +146,7 @@
                 </option>
                 <option>
                     <name>IccOptLevel</name>
-                    <state>3</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IccOptStrategy</name>
@@ -155,12 +155,12 @@
                 </option>
                 <option>
                     <name>IccOptLevelSlave</name>
-                    <state>3</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IccOptAllowList</name>
                     <version>0</version>
-                    <state>111111</state>
+                    <state>000000</state>
                 </option>
                 <option>
                     <name>IccGenerateDebugInfo</name>
@@ -263,6 +263,7 @@
                     <state>$PROJ_DIR$\..\..\..\Utilities</state>
                     <state>$PROJ_DIR$\..\..\..\components\common</state>
                     <state>$PROJ_DIR$\..\..\..\chip</state>
+                    <state>$PROJ_DIR$\..\..\..\components\dbg</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1658,9 +1659,15 @@
                 <name>$PROJ_DIR$\..\..\..\components\common\Timer.c</name>
             </file>
         </group>
-        <group>
-            <name>dbg</name>
-        </group>
+    </group>
+    <group>
+        <name>Project</name>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_it.c</name>
+        </file>
     </group>
     <group>
         <name>STM8S_StdPeriph_Driver</name>
@@ -1762,15 +1769,6 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\STM8S_StdPeriph_Driver\src\stm8s_wwdg.c</name>
-        </file>
-    </group>
-    <group>
-        <name>Project</name>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\stm8s_it.c</name>
         </file>
     </group>
 </project>

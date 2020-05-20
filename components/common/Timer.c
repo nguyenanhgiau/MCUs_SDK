@@ -107,10 +107,6 @@ TIMER_teStatus TIMER_eInit(TIMER_tsTimer *psTimers, uint8 u8NumTimers)
     TIMER_sCommon.psTimers = psTimers;
     memset(psTimers, 0, sizeof(TIMER_tsTimer) * u8NumTimers);
 
-    /* TODO: Initialize Time base (System tick or timer)
-    *   with callback function is ISR_vTickTimer
-    */
-
 //    DBG_vPrintf(TRACE_TIMER, "Success\n");
 
     return E_TIMER_OK;

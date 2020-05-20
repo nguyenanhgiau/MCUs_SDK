@@ -52,4 +52,20 @@
 #define uint32          uint32_t
 #endif
 
+#ifndef FALSE
+#define FALSE           (bool)0
+#endif
+
+#ifndef false
+#define false           (bool)0
+#endif
+
+#ifndef TRUE
+#define TRUE            (bool)1
+#endif
+
+#ifndef true
+#define true            (bool)1
+#endif
+
 #endif /*TYPE_H_*/

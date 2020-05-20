@@ -65,10 +65,10 @@ typedef void (*TIMER_tpfCallback)(void *pvParam);
 typedef struct
 {
     uint8               u8Flags;
-    TIMER_teState      eState;
-    uint32                u32Time;
+    TIMER_teState       eState;
+    uint32              u32Time;
     void                *pvParameters;
-    TIMER_tpfCallback    pfCallback;
+    TIMER_tpfCallback   pfCallback;
 } TIMER_tsTimer;
 
 typedef enum
