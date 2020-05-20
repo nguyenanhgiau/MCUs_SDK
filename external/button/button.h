@@ -87,9 +87,10 @@ typedef enum
 /* Exported Functions Declarations -------------------------------------------*/
 BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *psButtons, uint8 u8NumButtons);
 BUTTON_teStatus BUTTON_eOpen(uint8 *pu8ButtonIndex, BUTTON_tpfGetState pfGetState, bool bPullUp);
-BUTTON_teStatus BUTTON_eClose(uint8 *pu8ButtonIndex);
-void BUTTON_vScanTask(void *pvParam);
+BUTTON_teStatus BUTTON_eClose(uint8 u8ButtonIndex);
+
 /* External Variable Declarations --------------------------------------------*/
+extern uint8 u8TimerScanButtons;
 #ifdef __cplusplus
 }
 #endif
