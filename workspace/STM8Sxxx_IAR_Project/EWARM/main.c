@@ -33,8 +33,9 @@
 #include "Button.h"
 
 /* Private defines -----------------------------------------------------------*/
-#define TX_QUEUE_SIZE                                              150
-#define RX_QUEUE_SIZE                                              150
+#define TX_QUEUE_SIZE                                               150
+#define RX_QUEUE_SIZE                                               150
+#define BT_QUEUE_SIZE                                               8
 /* Private variable ----------------------------------------------------------*/
 TIMER_tsTimer asTimers[3];
 BUTTON_tsButton asButtons[3];
@@ -42,9 +43,11 @@ uint8           u8Button_1;
 
 tsQueue           APP_msgSerialRx;
 tsQueue           APP_msgSerialTx;
+tsQueue           APP_msgButtonEvents;
 
 uint8             au8AtRxBuffer [ RX_QUEUE_SIZE ];
 uint8             au8AtTxBuffer [ TX_QUEUE_SIZE ];
+BUTTON_tsEvent    asButtonMsg [BT_QUEUE_SIZE];
 /* Private function prototypes -----------------------------------------------*/
 static void timebase_initialize(void);
 static void uart_initialize(void);
@@ -76,6 +79,7 @@ void main(void)
   /*Initialize modules for application */
   BUTTON_eInit(asButtons, sizeof(asButtons) / sizeof(BUTTON_tsButton));
   BUTTON_eOpen(&u8Button_1, BUTTON_vOpen, NULL, BUTTON_bRead, true);
+  QUEUE_vCreate( &APP_msgButtonEvents,       BT_QUEUE_SIZE,          sizeof ( BUTTON_tsEvent ),                  (uint8*)asButtonMsg );
   
   /* Infinite loop */
   while (1)
@@ -86,6 +90,21 @@ void main(void)
     /*TODO: add watchdog restart */
     
     /*TODO: add main task */
+    BUTTON_tsEvent sButtonEvent;
+    if (QUEUE_bReceive(&APP_msgButtonEvents, &sButtonEvent))
+    {
+        switch (sButtonEvent.eState)
+        {
+        case E_BUTTON_STATE_RELEASE:
+            break;
+        
+        case E_BUTTON_STATE_PRESS:
+            break;
+
+        case E_BUTTON_STATE_HOLD_ON:
+            break;
+        }
+    }
     
     /*TODO: add task managenment power */
   }

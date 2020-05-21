@@ -47928,7 +47928,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1405@macro@RX_QUEUE_SIZE",
+    "ID": "c:main.c@1406@macro@RX_QUEUE_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RX_QUEUE_SIZE",
@@ -47942,13 +47942,27 @@
     "scope": null
   },
   {
+    "ID": "c:main.c@1479@macro@BT_QUEUE_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BT_QUEUE_SIZE",
+    "location": {
+      "column": "9",
+      "line": "38",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "BT_QUEUE_SIZE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@asTimers",
     "What": "Variable",
     "defdec": "Dec",
     "display": "asTimers",
     "location": {
       "column": "15",
-      "line": "39",
+      "line": "40",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "asTimers",
@@ -47962,7 +47976,7 @@
     "display": "asButtons",
     "location": {
       "column": "17",
-      "line": "40",
+      "line": "41",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "asButtons",
@@ -47976,7 +47990,7 @@
     "display": "u8Button_1",
     "location": {
       "column": "17",
-      "line": "41",
+      "line": "42",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "u8Button_1",
@@ -47990,7 +48004,7 @@
     "display": "APP_msgSerialRx",
     "location": {
       "column": "19",
-      "line": "43",
+      "line": "44",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "APP_msgSerialRx",
@@ -48004,10 +48018,24 @@
     "display": "APP_msgSerialTx",
     "location": {
       "column": "19",
-      "line": "44",
+      "line": "45",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "APP_msgSerialTx",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@APP_msgButtonEvents",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "APP_msgButtonEvents",
+    "location": {
+      "column": "19",
+      "line": "46",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "APP_msgButtonEvents",
     "origin": "project_file",
     "scope": null
   },
@@ -48018,7 +48046,7 @@
     "display": "au8AtRxBuffer",
     "location": {
       "column": "19",
-      "line": "46",
+      "line": "48",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "au8AtRxBuffer",
@@ -48032,10 +48060,24 @@
     "display": "au8AtTxBuffer",
     "location": {
       "column": "19",
-      "line": "47",
+      "line": "49",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "au8AtTxBuffer",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@asButtonMsg",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "asButtonMsg",
+    "location": {
+      "column": "19",
+      "line": "50",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "asButtonMsg",
     "origin": "project_file",
     "scope": null
   },
@@ -48046,7 +48088,7 @@
     "display": "void timebase_initialize(void)",
     "location": {
       "column": "13",
-      "line": "49",
+      "line": "52",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "timebase_initialize",
@@ -48060,7 +48102,7 @@
     "display": "void uart_initialize(void)",
     "location": {
       "column": "13",
-      "line": "50",
+      "line": "53",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "uart_initialize",
@@ -48074,7 +48116,7 @@
     "display": "void BUTTON_vOpen(void)",
     "location": {
       "column": "17",
-      "line": "51",
+      "line": "54",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "BUTTON_vOpen",
@@ -48088,7 +48130,7 @@
     "display": "bool BUTTON_bRead(void)",
     "location": {
       "column": "17",
-      "line": "52",
+      "line": "55",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "BUTTON_bRead",
@@ -48102,7 +48144,7 @@
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "54",
+      "line": "57",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "main",
@@ -48110,13 +48152,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2248@F@main@a",
+    "ID": "c:main.c@2409@F@main@a",
     "What": "Variable",
     "defdec": "Def",
     "display": "a",
     "location": {
       "column": "10",
-      "line": "63",
+      "line": "66",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "a",
@@ -48124,16 +48166,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2273@F@main@i",
+    "ID": "c:main.c@2434@F@main@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "9",
-      "line": "64",
+      "line": "67",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3248@F@main@sButtonEvent",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sButtonEvent",
+    "location": {
+      "column": "20",
+      "line": "93",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "sButtonEvent",
     "origin": "project_file",
     "scope": null
   },
@@ -48144,7 +48200,7 @@
     "display": "void assert_failed(u8 *, u32)",
     "location": {
       "column": "6",
-      "line": "104",
+      "line": "123",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "assert_failed",
@@ -48158,7 +48214,7 @@
     "display": "void timebase_initialize(void)",
     "location": {
       "column": "13",
-      "line": "117",
+      "line": "136",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "timebase_initialize",
@@ -48172,7 +48228,7 @@
     "display": "void BUTTON_vOpen(void)",
     "location": {
       "column": "13",
-      "line": "142",
+      "line": "161",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "BUTTON_vOpen",
@@ -48186,7 +48242,7 @@
     "display": "bool BUTTON_bRead(void)",
     "location": {
       "column": "13",
-      "line": "147",
+      "line": "166",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "BUTTON_bRead",
@@ -48200,7 +48256,7 @@
     "display": "void uart_initialize(void)",
     "location": {
       "column": "13",
-      "line": "152",
+      "line": "171",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
     "name": "uart_initialize",
@@ -48214,7 +48270,7 @@
     "display": "",
     "location": {
       "column": "9",
-      "line": "29",
+      "line": "30",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "members": [
@@ -48225,12 +48281,12 @@
         "display": "u8NumButtons",
         "location": {
           "column": "17",
-          "line": "31",
+          "line": "32",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
         },
         "name": "u8NumButtons",
         "origin": "project_file",
-        "scope": "_anonymous_Button_c_29_9"
+        "scope": "_anonymous_Button_c_30_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsCommon@FI@psButtons",
@@ -48239,12 +48295,12 @@
         "display": "psButtons",
         "location": {
           "column": "20",
-          "line": "32",
+          "line": "33",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
         },
         "name": "psButtons",
         "origin": "project_file",
-        "scope": "_anonymous_Button_c_29_9"
+        "scope": "_anonymous_Button_c_30_9"
       },
       {
         "ID": "c:@T@BUTTON_tsCommon",
@@ -48253,15 +48309,29 @@
         "display": "struct BUTTON_tsCommon",
         "location": {
           "column": "2",
-          "line": "33",
+          "line": "34",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
         },
         "name": "BUTTON_tsCommon",
         "origin": "project_file",
-        "scope": "_anonymous_Button_c_29_9"
+        "scope": "_anonymous_Button_c_30_9"
       }
     ],
     "name": "",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@APP_msgButtonEvents",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "APP_msgButtonEvents",
+    "location": {
+      "column": "26",
+      "line": "38",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
+    },
+    "name": "APP_msgButtonEvents",
     "origin": "project_file",
     "scope": null
   },
@@ -48272,7 +48342,7 @@
     "display": "BUTTON_sCommon",
     "location": {
       "column": "24",
-      "line": "38",
+      "line": "40",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "BUTTON_sCommon",
@@ -48286,7 +48356,7 @@
     "display": "u8TimerScanButtons",
     "location": {
       "column": "7",
-      "line": "39",
+      "line": "41",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "u8TimerScanButtons",
@@ -48300,7 +48370,7 @@
     "display": "void BUTTON_vScanTask(void *)",
     "location": {
       "column": "13",
-      "line": "41",
+      "line": "43",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "BUTTON_vScanTask",
@@ -48314,7 +48384,7 @@
     "display": "BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *, uint8_t)",
     "location": {
       "column": "17",
-      "line": "44",
+      "line": "46",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "BUTTON_eInit",
@@ -48328,7 +48398,7 @@
     "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
     "location": {
       "column": "17",
-      "line": "62",
+      "line": "64",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "BUTTON_eOpen",
@@ -48336,13 +48406,13 @@
     "scope": null
   },
   {
-    "ID": "c:Button.c@2620@F@BUTTON_eOpen@i",
+    "ID": "c:Button.c@2687@F@BUTTON_eOpen@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "21",
-      "line": "69",
+      "line": "71",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "i",
@@ -48350,13 +48420,13 @@
     "scope": null
   },
   {
-    "ID": "c:Button.c@2637@F@BUTTON_eOpen@psButtons",
+    "ID": "c:Button.c@2704@F@BUTTON_eOpen@psButtons",
     "What": "Variable",
     "defdec": "Def",
     "display": "psButtons",
     "location": {
       "column": "27",
-      "line": "70",
+      "line": "72",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "psButtons",
@@ -48370,7 +48440,7 @@
     "display": "BUTTON_teStatus BUTTON_eClose(uint8_t)",
     "location": {
       "column": "17",
-      "line": "101",
+      "line": "103",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "BUTTON_eClose",
@@ -48384,7 +48454,7 @@
     "display": "void BUTTON_vScanTask(void *)",
     "location": {
       "column": "6",
-      "line": "118",
+      "line": "120",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "BUTTON_vScanTask",
@@ -48392,13 +48462,13 @@
     "scope": null
   },
   {
-    "ID": "c:Button.c@4690@F@BUTTON_vScanTask@i",
+    "ID": "c:Button.c@4757@F@BUTTON_vScanTask@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "13",
-      "line": "124",
+      "line": "126",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "i",
@@ -48406,16 +48476,58 @@
     "scope": null
   },
   {
-    "ID": "c:Button.c@4706@F@BUTTON_vScanTask@psButtons",
+    "ID": "c:Button.c@4773@F@BUTTON_vScanTask@psButtons",
     "What": "Variable",
     "defdec": "Def",
     "display": "psButtons",
     "location": {
       "column": "26",
-      "line": "125",
+      "line": "127",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
     },
     "name": "psButtons",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Button.c@6888@F@BUTTON_vScanTask@sButtonEvent",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sButtonEvent",
+    "location": {
+      "column": "72",
+      "line": "155",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
+    },
+    "name": "sButtonEvent",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Button.c@10868@F@BUTTON_vScanTask@sButtonEvent",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sButtonEvent",
+    "location": {
+      "column": "64",
+      "line": "205",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
+    },
+    "name": "sButtonEvent",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Button.c@14217@F@BUTTON_vScanTask@sButtonEvent",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sButtonEvent",
+    "location": {
+      "column": "64",
+      "line": "248",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.c"
+    },
+    "name": "sButtonEvent",
     "origin": "project_file",
     "scope": null
   },
@@ -48588,13 +48700,13 @@
     "scope": null
   },
   {
-    "ID": "c:@EA@Button_teState",
+    "ID": "c:@EA@BUTTON_teState",
     "What": "Enum",
     "defdec": "Def",
     "display": "",
     "fields": [
       {
-        "ID": "c:@EA@Button_teState@E_BUTTON_STATE_RELEASE",
+        "ID": "c:@EA@BUTTON_teState@E_BUTTON_STATE_RELEASE",
         "What": "Enumerator",
         "defdec": "Def",
         "display": "E_BUTTON_STATE_RELEASE",
@@ -48608,7 +48720,7 @@
         "scope": null
       },
       {
-        "ID": "c:@EA@Button_teState@E_BUTTON_STATE_DEBOUNDCE",
+        "ID": "c:@EA@BUTTON_teState@E_BUTTON_STATE_DEBOUNDCE",
         "What": "Enumerator",
         "defdec": "Def",
         "display": "E_BUTTON_STATE_DEBOUNDCE",
@@ -48622,7 +48734,7 @@
         "scope": null
       },
       {
-        "ID": "c:@EA@Button_teState@E_BUTTON_STATE_PRESS",
+        "ID": "c:@EA@BUTTON_teState@E_BUTTON_STATE_PRESS",
         "What": "Enumerator",
         "defdec": "Def",
         "display": "E_BUTTON_STATE_PRESS",
@@ -48636,7 +48748,7 @@
         "scope": null
       },
       {
-        "ID": "c:@EA@Button_teState@E_BUTTON_STATE_HOLD_ON",
+        "ID": "c:@EA@BUTTON_teState@E_BUTTON_STATE_HOLD_ON",
         "What": "Enumerator",
         "defdec": "Def",
         "display": "E_BUTTON_STATE_HOLD_ON",
@@ -48660,13 +48772,85 @@
     "scope": null
   },
   {
+    "ID": "c:@SA@BUTTON_tsEvent",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "59",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@BUTTON_tsEvent@FI@eState",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "eState",
+        "location": {
+          "column": "19",
+          "line": "61",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
+        },
+        "name": "eState",
+        "origin": "user_include",
+        "scope": "_anonymous_Button_h_59_9"
+      },
+      {
+        "ID": "c:@SA@BUTTON_tsEvent@FI@u8NumberIndex",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "u8NumberIndex",
+        "location": {
+          "column": "19",
+          "line": "62",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
+        },
+        "name": "u8NumberIndex",
+        "origin": "user_include",
+        "scope": "_anonymous_Button_h_59_9"
+      },
+      {
+        "ID": "c:@SA@BUTTON_tsEvent@FI@u8Click",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "u8Click",
+        "location": {
+          "column": "19",
+          "line": "63",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
+        },
+        "name": "u8Click",
+        "origin": "user_include",
+        "scope": "_anonymous_Button_h_59_9"
+      },
+      {
+        "ID": "c:@T@BUTTON_tsEvent",
+        "What": "TypedefDecl",
+        "defdec": "Def",
+        "display": "struct BUTTON_tsEvent",
+        "location": {
+          "column": "2",
+          "line": "64",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
+        },
+        "name": "BUTTON_tsEvent",
+        "origin": "user_include",
+        "scope": "_anonymous_Button_h_59_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@SA@BUTTON_tsButton",
     "What": "Struct",
     "defdec": "Def",
     "display": "",
     "location": {
       "column": "9",
-      "line": "58",
+      "line": "66",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
     },
     "members": [
@@ -48677,12 +48861,12 @@
         "display": "bPullUp",
         "location": {
           "column": "17",
-          "line": "59",
+          "line": "67",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "bPullUp",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@oldState",
@@ -48691,12 +48875,12 @@
         "display": "oldState",
         "location": {
           "column": "17",
-          "line": "60",
+          "line": "68",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "oldState",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@newState",
@@ -48705,12 +48889,12 @@
         "display": "newState",
         "location": {
           "column": "17",
-          "line": "61",
+          "line": "69",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "newState",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@timerNoisePress",
@@ -48719,12 +48903,12 @@
         "display": "timerNoisePress",
         "location": {
           "column": "17",
-          "line": "62",
+          "line": "70",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "timerNoisePress",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@timerNoiseRelease",
@@ -48733,12 +48917,12 @@
         "display": "timerNoiseRelease",
         "location": {
           "column": "17",
-          "line": "63",
+          "line": "71",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "timerNoiseRelease",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@countClick",
@@ -48747,12 +48931,12 @@
         "display": "countClick",
         "location": {
           "column": "17",
-          "line": "64",
+          "line": "72",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "countClick",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@timePress",
@@ -48761,12 +48945,12 @@
         "display": "timePress",
         "location": {
           "column": "17",
-          "line": "65",
+          "line": "73",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "timePress",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@flagSampleResult",
@@ -48775,12 +48959,12 @@
         "display": "flagSampleResult",
         "location": {
           "column": "17",
-          "line": "66",
+          "line": "74",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "flagSampleResult",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@timerSampleRS",
@@ -48789,12 +48973,12 @@
         "display": "timerSampleRS",
         "location": {
           "column": "17",
-          "line": "67",
+          "line": "75",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "timerSampleRS",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@flagSampleRelease",
@@ -48803,12 +48987,12 @@
         "display": "flagSampleRelease",
         "location": {
           "column": "17",
-          "line": "68",
+          "line": "76",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "flagSampleRelease",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@timerSampleRL",
@@ -48817,12 +49001,12 @@
         "display": "timerSampleRL",
         "location": {
           "column": "17",
-          "line": "69",
+          "line": "77",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "timerSampleRL",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@pfOpen",
@@ -48831,12 +49015,12 @@
         "display": "pfOpen",
         "location": {
           "column": "25",
-          "line": "70",
+          "line": "78",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "pfOpen",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@pfClose",
@@ -48845,12 +49029,12 @@
         "display": "pfClose",
         "location": {
           "column": "25",
-          "line": "71",
+          "line": "79",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "pfClose",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@SA@BUTTON_tsButton@FI@pfRead",
@@ -48859,12 +49043,12 @@
         "display": "pfRead",
         "location": {
           "column": "25",
-          "line": "72",
+          "line": "80",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "pfRead",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       },
       {
         "ID": "c:@T@BUTTON_tsButton",
@@ -48873,12 +49057,12 @@
         "display": "struct BUTTON_tsButton",
         "location": {
           "column": "2",
-          "line": "73",
+          "line": "81",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "BUTTON_tsButton",
         "origin": "user_include",
-        "scope": "_anonymous_Button_h_58_9"
+        "scope": "_anonymous_Button_h_66_9"
       }
     ],
     "name": "",
@@ -48898,7 +49082,7 @@
         "display": "E_BUTTON_OK",
         "location": {
           "column": "5",
-          "line": "77",
+          "line": "85",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "E_BUTTON_OK",
@@ -48912,7 +49096,7 @@
         "display": "E_BUTTON_FAIL",
         "location": {
           "column": "5",
-          "line": "78",
+          "line": "86",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
         },
         "name": "E_BUTTON_FAIL",
@@ -48922,7 +49106,7 @@
     ],
     "location": {
       "column": "9",
-      "line": "75",
+      "line": "83",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
     },
     "name": "",
@@ -48936,7 +49120,7 @@
     "display": "BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *, uint8_t)",
     "location": {
       "column": "17",
-      "line": "82",
+      "line": "90",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
     },
     "name": "BUTTON_eInit",
@@ -48950,7 +49134,7 @@
     "display": "BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *, uint8_t)",
     "location": {
       "column": "17",
-      "line": "82",
+      "line": "90",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
     },
     "name": "BUTTON_eInit",
@@ -48964,7 +49148,7 @@
     "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
     "location": {
       "column": "17",
-      "line": "83",
+      "line": "91",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
     },
     "name": "BUTTON_eOpen",
@@ -48978,7 +49162,7 @@
     "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
     "location": {
       "column": "17",
-      "line": "83",
+      "line": "91",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
     },
     "name": "BUTTON_eOpen",
@@ -48992,7 +49176,7 @@
     "display": "BUTTON_teStatus BUTTON_eClose(uint8_t)",
     "location": {
       "column": "17",
-      "line": "87",
+      "line": "95",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
     },
     "name": "BUTTON_eClose",
@@ -49006,7 +49190,7 @@
     "display": "BUTTON_teStatus BUTTON_eClose(uint8_t)",
     "location": {
       "column": "17",
-      "line": "87",
+      "line": "95",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
     },
     "name": "BUTTON_eClose",
@@ -49020,7 +49204,7 @@
     "display": "u8TimerScanButtons",
     "location": {
       "column": "14",
-      "line": "90",
+      "line": "98",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\Button.h"
     },
     "name": "u8TimerScanButtons",

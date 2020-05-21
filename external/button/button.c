@@ -24,6 +24,7 @@
 #include "Button.h"
 #include <string.h>
 #include "Timer.h"
+#include "Queue.h"
 
 /* Private Typedef -----------------------------------------------------------*/
 typedef struct
@@ -34,6 +35,7 @@ typedef struct
 /* Private Define ------------------------------------------------------------*/
 /* Private Structure Definition ----------------------------------------------*/
 /* Global Variables ----------------------------------------------------------*/
+extern tsQueue           APP_msgButtonEvents;
 /* Private Variables Declarations --------------------------------------------*/
 static BUTTON_tsCommon BUTTON_sCommon;
 uint8 u8TimerScanButtons;
@@ -149,7 +151,11 @@ void BUTTON_vScanTask(void *pvParam)
                                                         psButtons->flagSampleRelease = BUTTON_DISABLE_SAMPLE;   /* not sample button release more */
                                                         psButtons->timerSampleRL = 0;
                                                         psButtons->timePress = 0;                               /* reset time press */
-                                                        /* TODO: send to queue button with state release */
+                                                        /* send to queue button with state release */
+                                                        BUTTON_tsEvent sButtonEvent;
+                                                        sButtonEvent.eState = E_BUTTON_STATE_RELEASE;
+                                                        sButtonEvent.u8NumberIndex = i;
+                                                        QUEUE_bSend(&APP_msgButtonEvents, &sButtonEvent);
                                                 }
                                         }
                                         
@@ -194,8 +200,12 @@ void BUTTON_vScanTask(void *pvParam)
                                         if (psButtons->timePress >= BUTTON_TIME_HOLD_ON)                        /* check time press */
                                         {
                                                 psButtons->newState = E_BUTTON_STATE_HOLD_ON;                   /* change mode */
-                                                /* TODO: send queue button with state hold on */
                                                 psButtons->flagSampleResult = BUTTON_DISABLE_SAMPLE;            /* Disable sample result */
+                                                /* send queue button with state hold on */
+                                                BUTTON_tsEvent sButtonEvent;
+                                                sButtonEvent.eState = E_BUTTON_STATE_HOLD_ON;
+                                                sButtonEvent.u8NumberIndex = i;
+                                                QUEUE_bSend(&APP_msgButtonEvents, &sButtonEvent);
                                         }
                                 }
                                 else
@@ -234,7 +244,12 @@ void BUTTON_vScanTask(void *pvParam)
                                 {
                                         if (psButtons->timePress <= BUTTON_TIME_CLICK)                          /* just update when not hold_on */
                                         {
-                                                /* TODO send to queue button with value psButtons->countClick */
+                                                /* send to queue button with value psButtons->countClick */
+                                                BUTTON_tsEvent sButtonEvent;
+                                                sButtonEvent.eState = E_BUTTON_STATE_PRESS;
+                                                sButtonEvent.u8NumberIndex = i;
+                                                sButtonEvent.u8Click = psButtons->countClick;
+                                                QUEUE_bSend(&APP_msgButtonEvents, &sButtonEvent);
                                                 psButtons->countClick = 0;                                      /* reset count click */
                                         }
                                         

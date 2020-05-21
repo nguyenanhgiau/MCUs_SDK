@@ -53,7 +53,15 @@ typedef enum {
   E_BUTTON_STATE_DEBOUNDCE,
   E_BUTTON_STATE_PRESS,
   E_BUTTON_STATE_HOLD_ON,
-}Button_teState;
+}BUTTON_teState;
+
+/* event of button */
+typedef struct
+{
+  BUTTON_teState  eState;
+  uint8           u8NumberIndex;
+  uint8           u8Click;
+}BUTTON_tsEvent;
 
 typedef struct{
   bool          bPullUp;                /* True if pull-up and otherwise */
