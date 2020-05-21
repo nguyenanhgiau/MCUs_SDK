@@ -33,14 +33,23 @@
 #include "Button.h"
 
 /* Private defines -----------------------------------------------------------*/
+#define TX_QUEUE_SIZE                                              150
+#define RX_QUEUE_SIZE                                              150
+/* Private variable ----------------------------------------------------------*/
 TIMER_tsTimer asTimers[3];
 BUTTON_tsButton asButtons[3];
+uint8           u8Button_1;
+
+tsQueue           APP_msgSerialRx;
+tsQueue           APP_msgSerialTx;
+
+uint8             au8AtRxBuffer [ RX_QUEUE_SIZE ];
+uint8             au8AtTxBuffer [ TX_QUEUE_SIZE ];
 /* Private function prototypes -----------------------------------------------*/
 static void timebase_initialize(void);
+static void uart_initialize(void);
 static void     BUTTON_vOpen(void);
 static bool     BUTTON_bRead(void);
-uint8           u8Button_1;
-/* Private functions ---------------------------------------------------------*/
 
 void main(void)
 {
@@ -48,6 +57,16 @@ void main(void)
   CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1);
   
   /* Initialize debugger module */
+  uart_initialize();
+
+  /*test send by Queue */
+  uint8 *a = "Hello\n";
+  uint8 i;
+  for (i=0; i<6; i++)
+  {
+    QUEUE_bSend(&APP_msgSerialTx, &a[i]);
+  }
+  UART1_ITConfig(UART1_IT_TXE, ENABLE);//start send
   
   /* Initialize timer platform */
   TIMER_eInit(asTimers, sizeof(asTimers) / sizeof(TIMER_tsTimer));
@@ -94,6 +113,7 @@ void assert_failed(u8* file, u32 line)
 }
 #endif
 
+/* Private functions ---------------------------------------------------------*/
 static void timebase_initialize(void)
 {
   /* TIM4 configuration:
@@ -129,4 +149,21 @@ static bool BUTTON_bRead(void)
     return (bool)GPIO_ReadInputPin(GPIOA, GPIO_PIN_1);
 }
 
+static void uart_initialize(void)
+{
+    /* Deinit USART */
+    UART1_DeInit();
+    /* UART1 configuration ------------------------------------------------------*/
+    UART1_Init((uint32_t)115200, UART1_WORDLENGTH_8D, UART1_STOPBITS_1, UART1_PARITY_NO,
+               UART1_SYNCMODE_CLOCK_DISABLE, UART1_MODE_TXRX_ENABLE);
+    /*create buffer to storage data of UART*/
+    QUEUE_vCreate( &APP_msgSerialTx,       TX_QUEUE_SIZE,          sizeof ( uint8 ),                  (uint8*)au8AtTxBuffer );
+    QUEUE_vCreate( &APP_msgSerialRx,       RX_QUEUE_SIZE,          sizeof ( uint8 ),                  (uint8*)au8AtRxBuffer );
+    /* Start USART */
+    UART1_Cmd(ENABLE);
+    UART1_ITConfig(UART1_IT_RXNE_OR, ENABLE);
+    
+    /* Enable general interrupts */
+    enableInterrupts();
+}
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

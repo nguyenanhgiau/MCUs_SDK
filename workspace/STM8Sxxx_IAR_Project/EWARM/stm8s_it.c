@@ -30,6 +30,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm8s_it.h"
 #include "Timer.h"
+#include "Queue.h"
 
 /** @addtogroup Template_Project
   * @{
@@ -42,6 +43,8 @@
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 /* Public functions ----------------------------------------------------------*/
+extern tsQueue           APP_msgSerialRx;
+extern tsQueue           APP_msgSerialTx;
 
 #ifdef _COSMIC_
 /**
@@ -334,6 +337,17 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
     /* In order to detect unexpected events during development,
        it is recommended to set a breakpoint on the following instruction.
     */
+
+      if (QUEUE_bIsEmpty ( &APP_msgSerialTx ))
+      {
+         UART1_ITConfig(UART1_IT_TXE, DISABLE);
+      }
+      else
+      {
+         uint8 u8TxByte;
+         QUEUE_bReceive(&APP_msgSerialTx, &u8TxByte);
+         UART1_SendData8(u8TxByte);
+      }
  }
 
 /**
@@ -346,7 +360,12 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
     /* In order to detect unexpected events during development,
        it is recommended to set a breakpoint on the following instruction.
     */
-//   usart_irq_handle(_USART_IT_RX);
+
+      if (UART1_GetFlagStatus(UART1_FLAG_RXNE) != RESET)
+      {
+         uint8 u8RxByte = UART1_ReceiveData8();
+         QUEUE_bSend(&APP_msgSerialRx, &u8RxByte);
+      }
  }
 #endif /* (STM8S208) || (STM8S207) || (STM8S103) || (STM8S903) || (STM8AF62Ax) || (STM8AF52Ax) */
 

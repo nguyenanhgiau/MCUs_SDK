@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>4</fileVersion>
-    <fileChecksum>1916971404</fileChecksum>
+    <fileChecksum>4256322889</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
@@ -113,28 +113,6 @@
             <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
             <file>$PROJ_DIR$\Debug\List\Project.map</file>
-            <file>$PROJ_DIR$\Debug\Obj\Button.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_exti.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_flash.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_i2c.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\Queue.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\Timer.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_it.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_adc1.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_beep.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_clk.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_awu.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_tim2.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_tim4.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_wwdg.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_spi.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_uart1.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_tim1.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_rst.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_itc.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_iwdg.__cstat.et</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
@@ -156,10 +134,6 @@
                     <name>ICCSTM8</name>
                     <file> 72</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 129</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
@@ -178,10 +152,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 63</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 127</file>
                 </tool>
             </outputs>
             <inputs>
@@ -202,10 +172,6 @@
                     <name>ICCSTM8</name>
                     <file> 27</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 126</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
@@ -224,10 +190,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 62</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 122</file>
                 </tool>
             </outputs>
             <inputs>
@@ -248,10 +210,6 @@
                     <name>ICCSTM8</name>
                     <file> 50</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 125</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
@@ -270,10 +228,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 67</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 113</file>
                 </tool>
             </outputs>
             <inputs>
@@ -294,10 +248,6 @@
                     <name>ICCSTM8</name>
                     <file> 51</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 108</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
@@ -316,10 +266,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 70</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 112</file>
                 </tool>
             </outputs>
             <inputs>
@@ -340,15 +286,11 @@
                     <name>ICCSTM8</name>
                     <file> 85</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 116</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCSTM8</name>
-                    <file> 101 32 42 40 44 43 35 29 36 30 39 54 49 41 31 99 97 74 104 96 91 88 18 95</file>
+                    <file> 101 32 42 40 44 43 35 29 36 30 39 54 49 41 31 99 97 74 104 96 91 88 18 95 87 100 105 92 93 59 90 69 106 94</file>
                 </tool>
             </inputs>
         </file>
@@ -362,10 +304,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 56</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 121</file>
                 </tool>
             </outputs>
             <inputs>
@@ -386,10 +324,6 @@
                     <name>ICCSTM8</name>
                     <file> 58</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 118</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
@@ -408,10 +342,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 38</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 110</file>
                 </tool>
             </outputs>
             <inputs>
@@ -432,10 +362,6 @@
                     <name>ICCSTM8</name>
                     <file> 77</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 111</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
@@ -454,10 +380,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 45</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 128</file>
                 </tool>
             </outputs>
             <inputs>
@@ -478,10 +400,6 @@
                     <name>ICCSTM8</name>
                     <file> 34</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 120</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
@@ -500,10 +418,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 53</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 119</file>
                 </tool>
             </outputs>
             <inputs>
@@ -524,10 +438,6 @@
                     <name>ICCSTM8</name>
                     <file> 33</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 117</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
@@ -546,10 +456,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 64</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 109</file>
                 </tool>
             </outputs>
             <inputs>
@@ -570,10 +476,6 @@
                     <name>ICCSTM8</name>
                     <file> 86</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 124</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
@@ -592,10 +494,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 1</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 115</file>
                 </tool>
             </outputs>
             <inputs>
@@ -616,10 +514,6 @@
                     <name>ICCSTM8</name>
                     <file> 84</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 114</file>
-                </tool>
             </outputs>
             <inputs>
                 <tool>
@@ -638,10 +532,6 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 76</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 123</file>
                 </tool>
             </outputs>
             <inputs>
