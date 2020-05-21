@@ -34,7 +34,6 @@
 
 /* Private defines -----------------------------------------------------------*/
 TIMER_tsTimer asTimers[3];
-
 BUTTON_tsButton asButtons[3];
 /* Private function prototypes -----------------------------------------------*/
 static void timebase_initialize(void);

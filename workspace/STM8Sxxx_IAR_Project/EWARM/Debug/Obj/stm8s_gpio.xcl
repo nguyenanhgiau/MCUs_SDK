@@ -24,6 +24,8 @@ C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\chi
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\dbg
 -I
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\external\button
+-I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc\c
@@ -41,6 +43,8 @@ C:\Users\Giau\Desktop\MCUs_SDK\components\common
 C:\Users\Giau\Desktop\MCUs_SDK\chip
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\components\dbg
+-I
+C:\Users\Giau\Desktop\MCUs_SDK\external\button
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

@@ -264,6 +264,7 @@
                     <state>$PROJ_DIR$\..\..\..\components\common</state>
                     <state>$PROJ_DIR$\..\..\..\chip</state>
                     <state>$PROJ_DIR$\..\..\..\components\dbg</state>
+                    <state>$PROJ_DIR$\..\..\..\external\button</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1657,6 +1658,15 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\..\..\components\common\Timer.c</name>
+            </file>
+        </group>
+    </group>
+    <group>
+        <name>external</name>
+        <group>
+            <name>button</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\button\Button.c</name>
             </file>
         </group>
     </group>

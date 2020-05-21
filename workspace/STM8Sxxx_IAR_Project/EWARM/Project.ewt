@@ -2176,6 +2176,15 @@
         </group>
     </group>
     <group>
+        <name>external</name>
+        <group>
+            <name>button</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\button\Button.c</name>
+            </file>
+        </group>
+    </group>
+    <group>
         <name>Project</name>
         <file>
             <name>$PROJ_DIR$\main.c</name>
