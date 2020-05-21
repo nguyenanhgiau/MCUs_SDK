@@ -30,7 +30,7 @@
 #include "chip_selection.h"
 #include "Queue.h"
 #include "Timer.h"
-#include "button.h"
+#include "Button.h"
 
 /* Private defines -----------------------------------------------------------*/
 TIMER_tsTimer asTimers[3];

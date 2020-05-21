@@ -1,10 +1,10 @@
 "-p" 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\config\ddf\iostm8s103f3.ddf" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\config\ddf\iostm8s003f3.ddf" 
 
 "--mcuname" 
 
-"STM8S103F3P" 
+"STM8S003F3" 
 
 "--verify_download" 
 

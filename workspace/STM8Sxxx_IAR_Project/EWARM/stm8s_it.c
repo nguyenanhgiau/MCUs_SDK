@@ -491,7 +491,10 @@ INTERRUPT_HANDLER(TIM6_UPD_OVF_TRG_IRQHandler, 23)
   /* In order to detect unexpected events during development,
      it is recommended to set a breakpoint on the following instruction.
   */
-   ISR_vTickTimer();
+      /* Cleat Interrupt Pending bit */
+      TIM4_ClearITPendingBit(TIM4_IT_UPDATE);
+  
+      ISR_vTickTimer();
  }
 #endif /* (STM8S903) || (STM8AF622x)*/
 

@@ -36,7 +36,7 @@
 #ifndef CHIP_SELECTION_H_
 #define CHIP_SELECTION_H_
 
-#if (defined STM8S103)
+#if (defined STM8S103) || (defined STM8S003)
 #include "stm8s.h"
 #endif
 

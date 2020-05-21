@@ -31,24 +31,10 @@
 #include "chip_selection.h"
 #include <stdbool.h>
 /* Exported Define -----------------------------------------------------------*/
-   
-/* state of button */
-typedef enum {
-  E_BUTTON_STATE_RELEASE        = 0,
-  E_BUTTON_STATE_SINGLE_CLICK,
-  E_BUTTON_STATE_DOUBLE_CLICK,
-  E_BUTTON_STATE_TRIPLE_CLICK,
-  E_BUTTON_STATE_HOLD_ON        = 0xFE
-}Button_teState;
 
 typedef void (*BUTTON_tpfOpen)(void);
 typedef void (*BUTTON_tpfClose)(void);
 typedef bool (*BUTTON_tpfRead)(void);
-
-#define BUTTON_STATE_RELEASE            (0)
-#define BUTTON_STATE_DEBOUNDCE          (1)
-#define BUTTON_STATE_PRESS              (2)
-#define BUTTON_STATE_HOLD_ON            (3)
    
 #define BUTTON_TIME_NOISE_PRESS         (1)
 #define BUTTON_TIME_NOISE_RELEASE       (1)
@@ -61,6 +47,14 @@ typedef bool (*BUTTON_tpfRead)(void);
 #define BUTTON_ENABLE_SAMPLE            (1)
 
 /* Exported Typedefs ---------------------------------------------------------*/
+/* state of button */
+typedef enum {
+  E_BUTTON_STATE_RELEASE        = 0,
+  E_BUTTON_STATE_DEBOUNDCE,
+  E_BUTTON_STATE_PRESS,
+  E_BUTTON_STATE_HOLD_ON,
+}Button_teState;
+
 typedef struct{
   bool          bPullUp;                /* True if pull-up and otherwise */
   uint8_t       oldState;               /* old state of button*/

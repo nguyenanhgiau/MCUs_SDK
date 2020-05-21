@@ -16,7 +16,7 @@
                 <debug>1</debug>
                 <option>
                     <name>GenDeviceSelectMenu</name>
-                    <state>STM8S103F3P	STM8S103F3P</state>
+                    <state>STM8S003F3	STM8S003F3</state>
                 </option>
                 <option>
                     <name>GenCodeModel</name>
@@ -188,7 +188,7 @@
                 </option>
                 <option>
                     <name>CCDefines</name>
-                    <state>STM8S103</state>
+                    <state>STM8S003</state>
                     <state>USE_STDPERIPH_DRIVER</state>
                 </option>
                 <option>
