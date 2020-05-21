@@ -30,11 +30,17 @@
 #include "chip_selection.h"
 #include "Queue.h"
 #include "Timer.h"
+#include "button.h"
 
 /* Private defines -----------------------------------------------------------*/
 TIMER_tsTimer asTimers[3];
+
+BUTTON_tsButton asButtons[3];
 /* Private function prototypes -----------------------------------------------*/
 static void timebase_initialize(void);
+static void     BUTTON_vOpen(void);
+static bool     BUTTON_bRead(void);
+uint8           u8Button_1;
 /* Private functions ---------------------------------------------------------*/
 
 void main(void)
@@ -44,12 +50,14 @@ void main(void)
   
   /* Initialize debugger module */
   
-  /* Initialize time base */
+  /* Initialize timer platform */
   TIMER_eInit(asTimers, sizeof(asTimers) / sizeof(TIMER_tsTimer));
   timebase_initialize();
   /* Create timer */
   
   /*Initialize modules for application */
+  BUTTON_eInit(asButtons, sizeof(asButtons) / sizeof(BUTTON_tsButton));
+  BUTTON_eOpen(&u8Button_1, BUTTON_vOpen, NULL, BUTTON_bRead, true);
   
   /* Infinite loop */
   while (1)
@@ -110,6 +118,16 @@ static void timebase_initialize(void)
 
   /* Enable TIM4 */
   TIM4_Cmd(ENABLE);
+}
+
+static void BUTTON_vOpen(void)
+{
+    GPIO_Init(GPIOA, (GPIO_Pin_TypeDef)GPIO_PIN_1, GPIO_MODE_IN_PU_NO_IT);
+}
+
+static bool BUTTON_bRead(void)
+{
+    return (bool)GPIO_ReadInputPin(GPIOA, GPIO_PIN_1);
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
