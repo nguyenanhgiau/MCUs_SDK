@@ -47,11 +47,11 @@ typedef bool (*BUTTON_tpfRead)(void);
 #endif
 
 #ifndef BUTTON_TIME_HOLD_OFF
-#define BUTTON_TIME_HOLD_OFF            (200)
+#define BUTTON_TIME_HOLD_OFF            (100)
 #endif
 
 #ifndef BUTTON_TIME_HOLD_ON
-#define BUTTON_TIME_HOLD_ON             (200)
+#define BUTTON_TIME_HOLD_ON             (100)
 #endif
 
 #ifndef BUTTON_TIME_SAMPLE

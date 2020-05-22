@@ -32748,7 +32748,7 @@
     "display": "outptr",
     "location": {
       "column": "14",
-      "line": "43",
+      "line": "41",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "outptr",
@@ -32762,7 +32762,7 @@
     "display": "void xputc(char)",
     "location": {
       "column": "6",
-      "line": "55",
+      "line": "53",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "xputc",
@@ -32776,7 +32776,7 @@
     "display": "void xputs(const char *)",
     "location": {
       "column": "6",
-      "line": "79",
+      "line": "77",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "xputs",
@@ -32790,7 +32790,7 @@
     "display": "void xfputs(void (*)(unsigned char), const char *)",
     "location": {
       "column": "6",
-      "line": "98",
+      "line": "96",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "xfputs",
@@ -32798,13 +32798,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@3351@F@xfputs@pf",
+    "ID": "c:dbg.c@3276@F@xfputs@pf",
     "What": "Variable",
     "defdec": "Def",
     "display": "pf",
     "location": {
       "column": "10",
-      "line": "100",
+      "line": "98",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "pf",
@@ -32818,7 +32818,7 @@
     "display": "void xvprintf(const char *, va_list)",
     "location": {
       "column": "6",
-      "line": "132",
+      "line": "130",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "xvprintf",
@@ -32826,13 +32826,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4444@F@xvprintf@r",
+    "ID": "c:dbg.c@4369@F@xvprintf@r",
     "What": "Variable",
     "defdec": "Def",
     "display": "r",
     "location": {
       "column": "16",
-      "line": "134",
+      "line": "132",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "r",
@@ -32840,13 +32840,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4444@F@xvprintf@i",
+    "ID": "c:dbg.c@4369@F@xvprintf@i",
     "What": "Variable",
     "defdec": "Dec",
     "display": "i",
     "location": {
       "column": "19",
-      "line": "134",
+      "line": "132",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "i",
@@ -32854,13 +32854,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4444@F@xvprintf@j",
+    "ID": "c:dbg.c@4369@F@xvprintf@j",
     "What": "Variable",
     "defdec": "Dec",
     "display": "j",
     "location": {
       "column": "22",
-      "line": "134",
+      "line": "132",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "j",
@@ -32868,13 +32868,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4444@F@xvprintf@w",
+    "ID": "c:dbg.c@4369@F@xvprintf@w",
     "What": "Variable",
     "defdec": "Dec",
     "display": "w",
     "location": {
       "column": "25",
-      "line": "134",
+      "line": "132",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "w",
@@ -32882,13 +32882,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4444@F@xvprintf@f",
+    "ID": "c:dbg.c@4369@F@xvprintf@f",
     "What": "Variable",
     "defdec": "Dec",
     "display": "f",
     "location": {
       "column": "28",
-      "line": "134",
+      "line": "132",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "f",
@@ -32896,13 +32896,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4475@F@xvprintf@s",
+    "ID": "c:dbg.c@4400@F@xvprintf@s",
     "What": "Variable",
     "defdec": "Def",
     "display": "s",
     "location": {
       "column": "8",
-      "line": "135",
+      "line": "133",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "s",
@@ -32910,13 +32910,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4475@F@xvprintf@c",
+    "ID": "c:dbg.c@4400@F@xvprintf@c",
     "What": "Variable",
     "defdec": "Dec",
     "display": "c",
     "location": {
       "column": "15",
-      "line": "135",
+      "line": "133",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "c",
@@ -32924,13 +32924,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4475@F@xvprintf@d",
+    "ID": "c:dbg.c@4400@F@xvprintf@d",
     "What": "Variable",
     "defdec": "Dec",
     "display": "d",
     "location": {
       "column": "18",
-      "line": "135",
+      "line": "133",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "d",
@@ -32938,13 +32938,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4475@F@xvprintf@p",
+    "ID": "c:dbg.c@4400@F@xvprintf@p",
     "What": "Variable",
     "defdec": "Dec",
     "display": "p",
     "location": {
       "column": "22",
-      "line": "135",
+      "line": "133",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "p",
@@ -32952,13 +32952,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4519@F@xvprintf@v",
+    "ID": "c:dbg.c@4444@F@xvprintf@v",
     "What": "Variable",
     "defdec": "Def",
     "display": "v",
     "location": {
       "column": "15",
-      "line": "137",
+      "line": "135",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "v",
@@ -32966,13 +32966,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@4537@F@xvprintf@vs",
+    "ID": "c:dbg.c@4462@F@xvprintf@vs",
     "What": "Variable",
     "defdec": "Def",
     "display": "vs",
     "location": {
       "column": "24",
-      "line": "138",
+      "line": "136",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "vs",
@@ -32986,7 +32986,7 @@
     "display": "void xprintf(const char *, ...)",
     "location": {
       "column": "6",
-      "line": "244",
+      "line": "242",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "xprintf",
@@ -32994,13 +32994,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@7876@F@xprintf@arp",
+    "ID": "c:dbg.c@7801@F@xprintf@arp",
     "What": "Variable",
     "defdec": "Def",
     "display": "arp",
     "location": {
       "column": "11",
-      "line": "246",
+      "line": "244",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "arp",
@@ -33014,7 +33014,7 @@
     "display": "void xsprintf(char *, const char *, ...)",
     "location": {
       "column": "6",
-      "line": "265",
+      "line": "263",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "xsprintf",
@@ -33022,13 +33022,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@8432@F@xsprintf@arp",
+    "ID": "c:dbg.c@8357@F@xsprintf@arp",
     "What": "Variable",
     "defdec": "Def",
     "display": "arp",
     "location": {
       "column": "11",
-      "line": "267",
+      "line": "265",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "arp",
@@ -33042,7 +33042,7 @@
     "display": "void xfprintf(void (*)(unsigned char), const char *, ...)",
     "location": {
       "column": "6",
-      "line": "291",
+      "line": "289",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "xfprintf",
@@ -33050,13 +33050,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@9208@F@xfprintf@arp",
+    "ID": "c:dbg.c@9133@F@xfprintf@arp",
     "What": "Variable",
     "defdec": "Def",
     "display": "arp",
     "location": {
       "column": "11",
-      "line": "293",
+      "line": "291",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "arp",
@@ -33064,13 +33064,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@9224@F@xfprintf@pf",
+    "ID": "c:dbg.c@9149@F@xfprintf@pf",
     "What": "Variable",
     "defdec": "Def",
     "display": "pf",
     "location": {
       "column": "10",
-      "line": "294",
+      "line": "292",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "pf",
@@ -33084,7 +33084,7 @@
     "display": "void put_dump(const void *, unsigned long, int, int)",
     "location": {
       "column": "6",
-      "line": "313",
+      "line": "311",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "put_dump",
@@ -33092,13 +33092,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@10023@F@put_dump@i",
+    "ID": "c:dbg.c@9948@F@put_dump@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "7",
-      "line": "320",
+      "line": "318",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "i",
@@ -33106,13 +33106,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@10033@F@put_dump@bp",
+    "ID": "c:dbg.c@9958@F@put_dump@bp",
     "What": "Variable",
     "defdec": "Def",
     "display": "bp",
     "location": {
       "column": "24",
-      "line": "321",
+      "line": "319",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "bp",
@@ -33120,13 +33120,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@10061@F@put_dump@sp",
+    "ID": "c:dbg.c@9986@F@put_dump@sp",
     "What": "Variable",
     "defdec": "Def",
     "display": "sp",
     "location": {
       "column": "25",
-      "line": "322",
+      "line": "320",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "sp",
@@ -33134,13 +33134,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@10090@F@put_dump@lp",
+    "ID": "c:dbg.c@10015@F@put_dump@lp",
     "What": "Variable",
     "defdec": "Def",
     "display": "lp",
     "location": {
       "column": "24",
-      "line": "323",
+      "line": "321",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "lp",
@@ -33154,7 +33154,7 @@
     "display": "int xgets(char *, int)",
     "location": {
       "column": "5",
-      "line": "370",
+      "line": "367",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "xgets",
@@ -33162,13 +33162,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@11342@F@xgets@c",
+    "ID": "c:dbg.c@11196@F@xgets@c",
     "What": "Variable",
     "defdec": "Def",
     "display": "c",
     "location": {
       "column": "7",
-      "line": "372",
+      "line": "369",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "c",
@@ -33176,13 +33176,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@11342@F@xgets@i",
+    "ID": "c:dbg.c@11196@F@xgets@i",
     "What": "Variable",
     "defdec": "Dec",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "372",
+      "line": "369",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "i",
@@ -33196,7 +33196,7 @@
     "display": "int xfgets(unsigned char (*)(void), char *, int)",
     "location": {
       "column": "5",
-      "line": "409",
+      "line": "406",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "xfgets",
@@ -33204,13 +33204,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@12589@F@xfgets@pf",
+    "ID": "c:dbg.c@12443@F@xfgets@pf",
     "What": "Variable",
     "defdec": "Def",
     "display": "pf",
     "location": {
       "column": "19",
-      "line": "411",
+      "line": "408",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "pf",
@@ -33218,13 +33218,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@12619@F@xfgets@n",
+    "ID": "c:dbg.c@12473@F@xfgets@n",
     "What": "Variable",
     "defdec": "Def",
     "display": "n",
     "location": {
       "column": "7",
-      "line": "412",
+      "line": "409",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "n",
@@ -33238,7 +33238,7 @@
     "display": "int xatoi(char **, long *)",
     "location": {
       "column": "5",
-      "line": "435",
+      "line": "432",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "xatoi",
@@ -33246,13 +33246,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@13726@F@xatoi@val",
+    "ID": "c:dbg.c@13580@F@xatoi@val",
     "What": "Variable",
     "defdec": "Def",
     "display": "val",
     "location": {
       "column": "17",
-      "line": "440",
+      "line": "437",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "val",
@@ -33260,13 +33260,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@13748@F@xatoi@c",
+    "ID": "c:dbg.c@13602@F@xatoi@c",
     "What": "Variable",
     "defdec": "Def",
     "display": "c",
     "location": {
       "column": "17",
-      "line": "441",
+      "line": "438",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "c",
@@ -33274,13 +33274,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@13748@F@xatoi@r",
+    "ID": "c:dbg.c@13602@F@xatoi@r",
     "What": "Variable",
     "defdec": "Dec",
     "display": "r",
     "location": {
       "column": "20",
-      "line": "441",
+      "line": "438",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "r",
@@ -33288,13 +33288,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.c@13748@F@xatoi@s",
+    "ID": "c:dbg.c@13602@F@xatoi@s",
     "What": "Variable",
     "defdec": "Dec",
     "display": "s",
     "location": {
       "column": "23",
-      "line": "441",
+      "line": "438",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "s",
@@ -33308,7 +33308,7 @@
     "display": "DBG_teStatus DBG_vInit(DBG_tpfWrite, DBG_tpfRead)",
     "location": {
       "column": "14",
-      "line": "491",
+      "line": "488",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.c"
     },
     "name": "DBG_vInit",
@@ -42100,13 +42100,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.h@2493@macro@DBG_vLog",
+    "ID": "c:dbg.h@2544@macro@DBG_vLog",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DBG_vLog",
     "location": {
       "column": "9",
-      "line": "62",
+      "line": "63",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_vLog",
@@ -42126,7 +42126,7 @@
         "display": "E_DBG_OK",
         "location": {
           "column": "5",
-          "line": "94",
+          "line": "96",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
         },
         "name": "E_DBG_OK",
@@ -42140,7 +42140,7 @@
         "display": "E_DBG_FAIL",
         "location": {
           "column": "5",
-          "line": "95",
+          "line": "97",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
         },
         "name": "E_DBG_FAIL",
@@ -42150,7 +42150,7 @@
     ],
     "location": {
       "column": "9",
-      "line": "92",
+      "line": "94",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "",
@@ -42164,7 +42164,7 @@
     "display": "void (*)(unsigned char)",
     "location": {
       "column": "16",
-      "line": "99",
+      "line": "101",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_tpfWrite",
@@ -42178,7 +42178,7 @@
     "display": "unsigned char (*)(void)",
     "location": {
       "column": "25",
-      "line": "100",
+      "line": "102",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_tpfRead",
@@ -42192,7 +42192,7 @@
     "display": "void xputc(char)",
     "location": {
       "column": "6",
-      "line": "106",
+      "line": "108",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xputc",
@@ -42206,7 +42206,7 @@
     "display": "void xputc(char)",
     "location": {
       "column": "6",
-      "line": "106",
+      "line": "108",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xputc",
@@ -42220,7 +42220,7 @@
     "display": "void xputs(const char *)",
     "location": {
       "column": "6",
-      "line": "107",
+      "line": "109",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xputs",
@@ -42234,7 +42234,7 @@
     "display": "void xputs(const char *)",
     "location": {
       "column": "6",
-      "line": "107",
+      "line": "109",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xputs",
@@ -42248,7 +42248,7 @@
     "display": "void xfputs(void (*)(unsigned char), const char *)",
     "location": {
       "column": "6",
-      "line": "108",
+      "line": "110",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfputs",
@@ -42262,7 +42262,7 @@
     "display": "void xfputs(void (*)(unsigned char), const char *)",
     "location": {
       "column": "6",
-      "line": "108",
+      "line": "110",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfputs",
@@ -42276,7 +42276,7 @@
     "display": "void xprintf(const char *, ...)",
     "location": {
       "column": "6",
-      "line": "109",
+      "line": "111",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xprintf",
@@ -42290,7 +42290,7 @@
     "display": "void xprintf(const char *, ...)",
     "location": {
       "column": "6",
-      "line": "109",
+      "line": "111",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xprintf",
@@ -42304,7 +42304,7 @@
     "display": "void xsprintf(char *, const char *, ...)",
     "location": {
       "column": "6",
-      "line": "110",
+      "line": "112",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xsprintf",
@@ -42318,7 +42318,7 @@
     "display": "void xsprintf(char *, const char *, ...)",
     "location": {
       "column": "6",
-      "line": "110",
+      "line": "112",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xsprintf",
@@ -42332,7 +42332,7 @@
     "display": "void xfprintf(void (*)(unsigned char), const char *, ...)",
     "location": {
       "column": "6",
-      "line": "111",
+      "line": "113",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfprintf",
@@ -42346,7 +42346,7 @@
     "display": "void xfprintf(void (*)(unsigned char), const char *, ...)",
     "location": {
       "column": "6",
-      "line": "111",
+      "line": "113",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfprintf",
@@ -42360,7 +42360,7 @@
     "display": "void put_dump(const void *, unsigned long, int, int)",
     "location": {
       "column": "6",
-      "line": "112",
+      "line": "114",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "put_dump",
@@ -42374,7 +42374,7 @@
     "display": "void put_dump(const void *, unsigned long, int, int)",
     "location": {
       "column": "6",
-      "line": "112",
+      "line": "114",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "put_dump",
@@ -42382,13 +42382,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.h@4707@macro@DW_CHAR",
+    "ID": "c:dbg.h@4809@macro@DW_CHAR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DW_CHAR",
     "location": {
       "column": "9",
-      "line": "113",
+      "line": "115",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DW_CHAR",
@@ -42396,13 +42396,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.h@4738@macro@DW_SHORT",
+    "ID": "c:dbg.h@4840@macro@DW_SHORT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DW_SHORT",
     "location": {
       "column": "9",
-      "line": "114",
+      "line": "116",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DW_SHORT",
@@ -42410,13 +42410,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.h@4770@macro@DW_LONG",
+    "ID": "c:dbg.h@4872@macro@DW_LONG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DW_LONG",
     "location": {
       "column": "9",
-      "line": "115",
+      "line": "117",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DW_LONG",
@@ -42430,7 +42430,7 @@
     "display": "int xgets(char *, int)",
     "location": {
       "column": "5",
-      "line": "119",
+      "line": "121",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xgets",
@@ -42444,7 +42444,7 @@
     "display": "int xgets(char *, int)",
     "location": {
       "column": "5",
-      "line": "119",
+      "line": "121",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xgets",
@@ -42458,7 +42458,7 @@
     "display": "int xfgets(unsigned char (*)(void), char *, int)",
     "location": {
       "column": "5",
-      "line": "120",
+      "line": "122",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfgets",
@@ -42472,7 +42472,7 @@
     "display": "int xfgets(unsigned char (*)(void), char *, int)",
     "location": {
       "column": "5",
-      "line": "120",
+      "line": "122",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfgets",
@@ -42486,7 +42486,7 @@
     "display": "int xatoi(char **, long *)",
     "location": {
       "column": "5",
-      "line": "121",
+      "line": "123",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xatoi",
@@ -42500,7 +42500,7 @@
     "display": "int xatoi(char **, long *)",
     "location": {
       "column": "5",
-      "line": "121",
+      "line": "123",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xatoi",
@@ -42514,7 +42514,7 @@
     "display": "DBG_teStatus DBG_vInit(DBG_tpfWrite, DBG_tpfRead)",
     "location": {
       "column": "14",
-      "line": "124",
+      "line": "126",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_vInit",
@@ -42528,7 +42528,7 @@
     "display": "DBG_teStatus DBG_vInit(DBG_tpfWrite, DBG_tpfRead)",
     "location": {
       "column": "14",
-      "line": "124",
+      "line": "126",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_vInit",
@@ -50518,13 +50518,13 @@
     "scope": null
   },
   {
-    "ID": "c:app_main.c@2417@macro@APP_TIMER_BUTTON",
+    "ID": "c:app_main.c@2435@macro@APP_TIMER_BUTTON",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "APP_TIMER_BUTTON",
     "location": {
       "column": "9",
-      "line": "54",
+      "line": "55",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
     },
     "name": "APP_TIMER_BUTTON",
@@ -50532,13 +50532,13 @@
     "scope": null
   },
   {
-    "ID": "c:app_main.c@2568@macro@APP_TIMER_LED",
+    "ID": "c:app_main.c@2586@macro@APP_TIMER_LED",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "APP_TIMER_LED",
     "location": {
       "column": "9",
-      "line": "62",
+      "line": "63",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
     },
     "name": "APP_TIMER_LED",
@@ -50546,13 +50546,13 @@
     "scope": null
   },
   {
-    "ID": "c:app_main.c@2610@macro@APP_TOTAL_TIMER",
+    "ID": "c:app_main.c@2628@macro@APP_TOTAL_TIMER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "APP_TOTAL_TIMER",
     "location": {
       "column": "9",
-      "line": "65",
+      "line": "66",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
     },
     "name": "APP_TOTAL_TIMER",
@@ -50566,7 +50566,7 @@
     "display": "APP_msgSerialTx",
     "location": {
       "column": "26",
-      "line": "78",
+      "line": "79",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
     },
     "name": "APP_msgSerialTx",
@@ -50580,7 +50580,7 @@
     "display": "asTimers",
     "location": {
       "column": "15",
-      "line": "83",
+      "line": "84",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
     },
     "name": "asTimers",
@@ -50594,7 +50594,7 @@
     "display": "asButtons",
     "location": {
       "column": "17",
-      "line": "87",
+      "line": "88",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
     },
     "name": "asButtons",
@@ -50608,10 +50608,24 @@
     "display": "void APP_vMainLoop(void)",
     "location": {
       "column": "6",
-      "line": "105",
+      "line": "106",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
     },
     "name": "APP_vMainLoop",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:app_main.c@4629@F@APP_vMainLoop@sButtonEvent",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sButtonEvent",
+    "location": {
+      "column": "24",
+      "line": "118",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "sButtonEvent",
     "origin": "project_file",
     "scope": null
   },
@@ -50622,7 +50636,7 @@
     "display": "void APP_vSetUpHardware(void)",
     "location": {
       "column": "6",
-      "line": "133",
+      "line": "154",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
     },
     "name": "APP_vSetUpHardware",
@@ -50636,7 +50650,7 @@
     "display": "void APP_vInitResources(void)",
     "location": {
       "column": "6",
-      "line": "150",
+      "line": "171",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
     },
     "name": "APP_vInitResources",
