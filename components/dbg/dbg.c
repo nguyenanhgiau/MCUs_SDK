@@ -38,8 +38,6 @@ typedef struct
 }DBG_tsCommon;
 
 static DBG_tsCommon    DBG_sCommon;
-
-// void (*xfunc_out)(unsigned char);	/* Pointer to the output stream */
 static char *outptr;
 
 /*
@@ -354,7 +352,6 @@ void put_dump (
 #endif /* _USE_XFUNC_OUT */
 
 #if _USE_XFUNC_IN
-// unsigned char (*xfunc_in)(void);	/* Pointer to the input stream */
 
 /*
 ********************************************************************************

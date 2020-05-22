@@ -54,7 +54,7 @@ extern "C" {
 #define DBG_vPrintf(STREAM, FOMART, ARGS...)    \
         do {                                    \
             if (STREAM)                         \
-                xprintf((FOMART, ## ARGS));     \
+                xprintf((FOMART), ## ARGS);     \
         } while (0);
 #endif
 
@@ -81,7 +81,7 @@ extern "C" {
                 break;                          \
             }                                   \
             if (LEVEL != 0)                     \
-                xprintf((FOMART, ## ARGS));     \
+                xprintf((FOMART), ## ARGS);     \
         } while (0);
 #endif
 
