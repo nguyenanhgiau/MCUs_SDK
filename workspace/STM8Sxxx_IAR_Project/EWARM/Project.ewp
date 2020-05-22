@@ -259,8 +259,6 @@
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$</state>
                     <state>$PROJ_DIR$\..\STM8S_StdPeriph_Driver\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\Include</state>
-                    <state>$PROJ_DIR$\..\..\..\Utilities</state>
                     <state>$PROJ_DIR$\..\..\..\components\common</state>
                     <state>$PROJ_DIR$\..\..\..\chip</state>
                     <state>$PROJ_DIR$\..\..\..\components\dbg</state>
@@ -1658,6 +1656,12 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\..\..\components\common\Timer.c</name>
+            </file>
+        </group>
+        <group>
+            <name>dbg</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\components\dbg\dbg.c</name>
             </file>
         </group>
     </group>

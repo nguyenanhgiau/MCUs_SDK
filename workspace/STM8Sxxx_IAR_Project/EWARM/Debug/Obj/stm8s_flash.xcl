@@ -14,10 +14,6 @@ C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\Include
--I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\Utilities
--I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\common
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\chip
@@ -33,10 +29,6 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc\c
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\STM8S_StdPeriph_Driver\inc
--I
-C:\Users\Giau\Desktop\MCUs_SDK\Include
--I
-C:\Users\Giau\Desktop\MCUs_SDK\Utilities
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\components\common
 -I

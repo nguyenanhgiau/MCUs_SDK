@@ -62,7 +62,7 @@
 #define APP_TIMER_LED        0
 #endif
 
-#define APP_TOTAL_TIMER   (1+ APP_TIMER_BUTTON + APP_TIMER_LED)
+#define APP_TOTAL_TIMER   (APP_TIMER_BUTTON + APP_TIMER_LED)
 
 /****************************************************************************/
 /***        Type Definitions                                              ***/
@@ -79,7 +79,9 @@ extern tsQueue           APP_msgSerialTx;
 /****************************************************************************/
 /***        Local Variables                                               ***/
 /****************************************************************************/
+#if (APP_TOTAL_TIMER != 0)
 TIMER_tsTimer asTimers[APP_TOTAL_TIMER];
+#endif
 
 #ifdef BUTTON_TOTAL_NUMBER
 BUTTON_tsButton asButtons[BUTTON_TOTAL_NUMBER];
@@ -147,7 +149,9 @@ void APP_vSetUpHardware(void)
  ****************************************************************************/
 void APP_vInitResources(void)
 {
+    #if (APP_TOTAL_TIMER != 0)
     TIMER_eInit(asTimers, sizeof(asTimers) / sizeof(TIMER_tsTimer));
+    #endif
 
     #ifdef BUTTON_TOTAL_NUMBER
     BUTTON_eInit(asButtons, sizeof(asButtons) / sizeof(BUTTON_tsButton));

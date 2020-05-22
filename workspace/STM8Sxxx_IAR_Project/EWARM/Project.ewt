@@ -2174,6 +2174,12 @@
                 <name>$PROJ_DIR$\..\..\..\components\common\Timer.c</name>
             </file>
         </group>
+        <group>
+            <name>dbg</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\components\dbg\dbg.c</name>
+            </file>
+        </group>
     </group>
     <group>
         <name>external</name>

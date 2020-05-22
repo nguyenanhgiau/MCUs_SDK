@@ -32,28 +32,20 @@
 #include "Button.h"
 #include "prj_options.h"
 #include "app_main.h"
+#include "dbg.h"
 
 /* Private defines -----------------------------------------------------------*/
-#define TX_QUEUE_SIZE                                               150
-#define RX_QUEUE_SIZE                                               150
 /* Private variable ----------------------------------------------------------*/
-
-tsQueue           APP_msgSerialRx;
-tsQueue           APP_msgSerialTx;
-
-uint8             au8AtRxBuffer [ RX_QUEUE_SIZE ];
-uint8             au8AtTxBuffer [ TX_QUEUE_SIZE ];
-
 uint8 u8ButtonTest;
 
-/*test send by Queue */
-uint8 *a = "Hello\n";
 /* Private function prototypes -----------------------------------------------*/
 static void timebase_initialize(void);
 static void uart_initialize(void);
 static void     BUTTON_vOpen(void);
 static bool     BUTTON_bRead(void);
 static void APP_vInitialise(void);
+static void uart_drv_send(uint8_t u8TxByte);
+static uint8_t uart_drv_receive(void);
 
 void main(void)
 {
@@ -70,6 +62,9 @@ void main(void)
   timebase_initialize();
   /* Initialize debugger module */
   uart_initialize();
+  DBG_vInit(uart_drv_send, uart_drv_receive);
+  
+  DBG_vLog(DEBUG, "%5s", "abc");
 
   /* common initialize */
   APP_vSetUpHardware();
@@ -139,6 +134,18 @@ static bool BUTTON_bRead(void)
     return (bool)GPIO_ReadInputPin(GPIOA, GPIO_PIN_1);
 }
 
+static void uart_drv_send(uint8_t u8TxByte)
+{
+    UART1_SendData8(u8TxByte);
+    while (UART1_GetFlagStatus(UART1_FLAG_TXE) == RESET);
+}
+
+static uint8_t uart_drv_receive(void)
+{
+    while (UART1_GetFlagStatus(UART1_FLAG_RXNE) == RESET);
+    return UART1_ReceiveData8();
+}
+
 static void uart_initialize(void)
 {
     /* Deinit USART */
@@ -146,20 +153,13 @@ static void uart_initialize(void)
     /* UART1 configuration ------------------------------------------------------*/
     UART1_Init((uint32_t)115200, UART1_WORDLENGTH_8D, UART1_STOPBITS_1, UART1_PARITY_NO,
                UART1_SYNCMODE_CLOCK_DISABLE, UART1_MODE_TXRX_ENABLE);
-    /*create buffer to storage data of UART*/
-    QUEUE_vCreate( &APP_msgSerialTx,       TX_QUEUE_SIZE,          sizeof ( uint8 ),                  (uint8*)au8AtTxBuffer );
-    QUEUE_vCreate( &APP_msgSerialRx,       RX_QUEUE_SIZE,          sizeof ( uint8 ),                  (uint8*)au8AtRxBuffer );
     /* Start USART */
     UART1_Cmd(ENABLE);
-    UART1_ITConfig(UART1_IT_RXNE_OR, ENABLE);
-    
-    /* Enable general interrupts */
-    enableInterrupts();
 }
 
 static void APP_vInitialise(void)
 {
-  BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead, true);
+    BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead, true);
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
