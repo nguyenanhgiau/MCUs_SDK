@@ -64,7 +64,7 @@ void main(void)
   uart_initialize();
   DBG_vInit(uart_drv_send, uart_drv_receive);
   
-  DBG_vLog(DEBUG, "%5s", "abc");
+  DBG_vPrintf(TRUE, "%-5s=%d", "Nhiet", 1234);
 
   /* common initialize */
   APP_vSetUpHardware();

@@ -55,6 +55,7 @@ extern "C" {
         do {                                    \
             if (STREAM)                         \
                 xprintf((FOMART), ## ARGS);     \
+                xprintf("\n");                  \
         } while (0);
 #endif
 
@@ -82,6 +83,7 @@ extern "C" {
             }                                   \
             if (LEVEL != 0)                     \
                 xprintf((FOMART), ## ARGS);     \
+                xprintf("\n");                  \
         } while (0);
 #endif
 
