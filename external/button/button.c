@@ -209,6 +209,7 @@ void BUTTON_vScanTask(void *pvParam)
                                         {
                                                 psButtons->newState = E_BUTTON_STATE_HOLD_ON;                   /* change mode */
                                                 psButtons->flagSampleResult = BUTTON_DISABLE_SAMPLE;            /* Disable sample result */
+                                                psButtons->countClick = 0;                                      /* reset count click */
                                                 /* send queue button with state hold on */
                                                 BUTTON_tsEvent sButtonEvent;
                                                 sButtonEvent.eState = E_BUTTON_STATE_HOLD_ON;
