@@ -146,7 +146,7 @@
                 </option>
                 <option>
                     <name>IccOptLevel</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>IccOptStrategy</name>
@@ -155,7 +155,7 @@
                 </option>
                 <option>
                     <name>IccOptLevelSlave</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>IccOptAllowList</name>
@@ -263,6 +263,7 @@
                     <state>$PROJ_DIR$\..\..\..\chip</state>
                     <state>$PROJ_DIR$\..\..\..\components\dbg</state>
                     <state>$PROJ_DIR$\..\..\..\external\button</state>
+                    <state>$PROJ_DIR$\..\..\..\external\led</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1671,6 +1672,12 @@
             <name>button</name>
             <file>
                 <name>$PROJ_DIR$\..\..\..\external\button\Button.c</name>
+            </file>
+        </group>
+        <group>
+            <name>led</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\led\led.c</name>
             </file>
         </group>
     </group>

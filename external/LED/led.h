@@ -31,9 +31,52 @@
 #include "chip_selection.h"
 #include <stdbool.h>
 /* Exported Define -----------------------------------------------------------*/
+
 /* Exported Typedefs ---------------------------------------------------------*/
+
+/* state of led */
+typedef enum {
+  E_LED_STATE_OFF   = 0,
+  E_LED_STATE_ON,
+  E_LED_STATE_TOGGLE,
+  E_LED_STATE_EFFECT_STOP,
+  E_LED_STATE_EFFECT_BLINK,
+  E_LED_STATE_EFFECT_FLASH,
+  E_LED_STATE_EFFECT_BREATH,
+  E_LED_STATE_EFFECT_UNKNOWN = 0xFF
+}LED_teState;
+
+/* error code */
+typedef enum
+{
+  E_LED_OK,
+  E_LED_FAIL
+}LED_teStatus;
+
+typedef void (*LED_tpfOpen)(void);
+typedef void (*LED_tpfClose)(void);
+typedef void (*LED_tpfSet)(LED_teState);
+
+typedef struct
+{
+  bool            bActiveHight;
+  LED_teState     eState;
+  LED_tpfOpen     pfOpen;
+  LED_tpfClose    pfClose;
+  LED_tpfSet      pfSet;
+}LED_tsLed;
+
 /* Exported Structure Declarations -------------------------------------------*/
+
 /* Exported Functions Declarations -------------------------------------------*/
+LED_teStatus LED_eInit(LED_tsLed *psLeds, uint8 u8NumLeds);
+LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
+                        LED_tpfOpen   pfOpen,
+                        LED_tpfClose  pfClose,
+                        LED_tpfSet    pfSet,
+                        bool          bActiveHight);
+LED_teStatus LED_eClose(uint8 u8LedIndex);
+LED_teStatus LED_eSet(uint8 u8LedIndex, LED_teState eState);
 /* External Variable Declarations --------------------------------------------*/
 #ifdef __cplusplus
 }

@@ -2189,6 +2189,12 @@
                 <name>$PROJ_DIR$\..\..\..\external\button\Button.c</name>
             </file>
         </group>
+        <group>
+            <name>led</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\led\led.c</name>
+            </file>
+        </group>
     </group>
     <group>
         <name>Project</name>
