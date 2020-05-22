@@ -31,23 +31,43 @@
 #include "chip_selection.h"
 #include <stdbool.h>
 #include "Queue.h"
+#include "prj_options.h"
 /* Exported Define -----------------------------------------------------------*/
 
 typedef void (*BUTTON_tpfOpen)(void);
 typedef void (*BUTTON_tpfClose)(void);
 typedef bool (*BUTTON_tpfRead)(void);
    
+#ifndef BUTTON_TIME_NOISE_PRESS
 #define BUTTON_TIME_NOISE_PRESS         (1)
+#endif
+
+#ifndef BUTTON_TIME_NOISE_RELEASE
 #define BUTTON_TIME_NOISE_RELEASE       (1)
+#endif
+
+#ifndef BUTTON_TIME_HOLD_OFF
 #define BUTTON_TIME_HOLD_OFF            (200)
+#endif
+
+#ifndef BUTTON_TIME_HOLD_ON
 #define BUTTON_TIME_HOLD_ON             (200)
-#define BUTTON_TIME_SAMPLE              (80)
+#endif
+
+#ifndef BUTTON_TIME_SAMPLE
+#define BUTTON_TIME_SAMPLE              (50)
+#endif
+
+#ifndef BUTTON_TIME_CLICK
 #define BUTTON_TIME_CLICK               (20)
+#endif
+
+#ifndef BUTTON_QUEUE_SIZE
+#define BUTTON_QUEUE_SIZE               (8)
+#endif
    
 #define BUTTON_DISABLE_SAMPLE           (0)
 #define BUTTON_ENABLE_SAMPLE            (1)
-
-#define BT_QUEUE_SIZE                     (8)
 
 /* Exported Typedefs ---------------------------------------------------------*/
 /* state of button */
@@ -98,8 +118,10 @@ BUTTON_teStatus BUTTON_eOpen(uint8 *pu8ButtonIndex,
 BUTTON_teStatus BUTTON_eClose(uint8 u8ButtonIndex);
 
 /* External Variable Declarations --------------------------------------------*/
+#ifdef BUTTON_TOTAL_NUMBER
 extern tsQueue           APP_msgButtonEvents;
 extern uint8 u8TimerScanButtons;
+#endif
 #ifdef __cplusplus
 }
 #endif

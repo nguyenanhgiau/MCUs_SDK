@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>4</fileVersion>
-    <fileChecksum>4256322889</fileChecksum>
+    <fileChecksum>2577393083</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
@@ -113,6 +113,11 @@
             <file>$PROJ_DIR$\Debug\Obj\stm8s_tim2.xcl</file>
             <file>$PROJ_DIR$\Debug\Obj\stm8s_exti.o</file>
             <file>$PROJ_DIR$\Debug\Obj\stm8s_tim2.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\app_main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\app_main.xcl</file>
+            <file>$PROJ_DIR$\app_main.h</file>
+            <file>$PROJ_DIR$\app_main.c</file>
+            <file>$PROJ_DIR$\prj_options.h</file>
         </outputs>
         <file>
             <name>$PROJ_DIR$\..\STM8S_StdPeriph_Driver\src\stm8s_gpio.c</name>
@@ -243,7 +248,7 @@
             <inputs>
                 <tool>
                     <name>ICCSTM8</name>
-                    <file> 29 3 69 78 70 99 84 67 63 54 51 66 102 96 98 52 37 36 32 16 35 48 34 25 28 20 15 30 49 104 46 91 18 24 33</file>
+                    <file> 29 3 69 78 70 99 84 67 63 54 51 66 102 96 98 52 37 36 32 16 35 48 34 25 28 20 15 30 49 104 46 91 18 24 112 33</file>
                 </tool>
             </inputs>
         </file>
@@ -357,7 +362,7 @@
             <inputs>
                 <tool>
                     <name>ICCSTM8</name>
-                    <file> 3 69 78 70 99 84 67 63 54 51 66 102 96 98 52 37 36 32 16 35 48 34 28 20 15 30 49 104 46 91 18 24 33 29 25</file>
+                    <file> 3 69 78 70 99 84 67 63 54 51 66 102 96 98 52 37 36 32 16 35 48 34 28 20 15 30 49 104 46 91 18 24 33 29 25 112 110</file>
                 </tool>
             </inputs>
         </file>
@@ -419,7 +424,7 @@
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 62 100 44 82 71 58 88 97 106 56 23 93 43 77 40 90 45 53 107 81 92 38 74 50 17</file>
+                    <file> 62 108 100 44 82 71 58 88 97 106 56 23 93 43 77 40 90 45 53 107 81 92 38 74 50 17</file>
                 </tool>
             </inputs>
         </file>
@@ -553,6 +558,25 @@
                 <tool>
                     <name>ICCSTM8</name>
                     <file> 32 69 78 70 99 84 67 63 54 51 66 102 96 98 52 37 36 16 35 48</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app_main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 108</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 109</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 3 69 78 70 99 84 67 63 54 51 66 102 96 98 52 37 36 32 16 35 48 34 112 110 28 20 15 30 49 104 46 91 18 24 33 29 25</file>
                 </tool>
             </inputs>
         </file>

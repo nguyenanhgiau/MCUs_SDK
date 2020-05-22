@@ -1673,7 +1673,13 @@
     <group>
         <name>Project</name>
         <file>
+            <name>$PROJ_DIR$\app_main.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\main.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\prj_options.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\stm8s_it.c</name>

@@ -29,16 +29,14 @@
 /* Includes ------------------------------------------------------------------*/
 #include "chip_selection.h"
 #include "Queue.h"
-#include "Timer.h"
 #include "Button.h"
+#include "prj_options.h"
+#include "app_main.h"
 
 /* Private defines -----------------------------------------------------------*/
 #define TX_QUEUE_SIZE                                               150
 #define RX_QUEUE_SIZE                                               150
 /* Private variable ----------------------------------------------------------*/
-TIMER_tsTimer asTimers[3];
-BUTTON_tsButton asButtons[3];
-uint8           u8Button_1;
 
 tsQueue           APP_msgSerialRx;
 tsQueue           APP_msgSerialTx;
@@ -46,124 +44,42 @@ tsQueue           APP_msgSerialTx;
 uint8             au8AtRxBuffer [ RX_QUEUE_SIZE ];
 uint8             au8AtTxBuffer [ TX_QUEUE_SIZE ];
 
+uint8 u8ButtonTest;
+
+/*test send by Queue */
+uint8 *a = "Hello\n";
 /* Private function prototypes -----------------------------------------------*/
 static void timebase_initialize(void);
 static void uart_initialize(void);
 static void     BUTTON_vOpen(void);
 static bool     BUTTON_bRead(void);
+static void APP_vInitialise(void);
 
 void main(void)
 {
+  /* configure private for unique mcu
+  * such as:
+  * - system clock 
+  * - uart for debug module 
+  * - time base 
+  * - watchdog timer
+  * */
   /* Clock divider to HSI/1 */
   CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1);
-  
+  /* Initialize timer platform */
+  timebase_initialize();
   /* Initialize debugger module */
   uart_initialize();
 
-  /*test send by Queue */
-  uint8 *a = "Hello\n";
-  uint8 *r = "Button Release\n";
-  uint8 *p = "Button Press: ";
-  uint8 *h = "Button Hold On\n";
-  uint8 i;
-  for (i=0; i<6; i++)
-  {
-    QUEUE_bSend(&APP_msgSerialTx, &a[i]);
-  }
-  UART1_ITConfig(UART1_IT_TXE, ENABLE);//start send
-  
-  /* Initialize timer platform */
-  TIMER_eInit(asTimers, sizeof(asTimers) / sizeof(TIMER_tsTimer));
-  timebase_initialize();
-  /* Create timer */
-  
-  /*Initialize modules for application */
-  BUTTON_eInit(asButtons, sizeof(asButtons) / sizeof(BUTTON_tsButton));
-  BUTTON_eOpen(&u8Button_1, BUTTON_vOpen, NULL, BUTTON_bRead, true);
+  /* common initialize */
+  APP_vSetUpHardware();
+
+  APP_vInitResources();
+
+  APP_vInitialise();
   
   /* Infinite loop */
-  while (1)
-  {
-    /* call timer task handle soft timer */
-    TIMER_vTask();
-    
-    /*TODO: add watchdog restart */
-    
-    /*TODO: add main task */
-    BUTTON_tsEvent sButtonEvent;
-    if (QUEUE_bReceive(&APP_msgButtonEvents, &sButtonEvent))
-    {
-        switch (sButtonEvent.eState)
-        {
-        case E_BUTTON_STATE_RELEASE:
-            for (i=0; i<15; i++)
-            {
-              QUEUE_bSend(&APP_msgSerialTx, &r[i]);
-            }
-            break;
-        
-        case E_BUTTON_STATE_PRESS:
-            for (i=0; i<14; i++)
-            {
-              QUEUE_bSend(&APP_msgSerialTx, &p[i]);
-            }
-            if (sButtonEvent.u8Click == 1)
-            {
-              uint8 *c = "1\n";
-              uint8 i;
-              for (i=0; i<2; i++)
-              {
-                QUEUE_bSend(&APP_msgSerialTx, &c[i]);
-              }
-            }
-            else if (sButtonEvent.u8Click == 2)
-            {
-              uint8 *c = "2\n";
-              for (i=0; i<2; i++)
-              {
-                QUEUE_bSend(&APP_msgSerialTx, &c[i]);
-              }
-            }
-            else if (sButtonEvent.u8Click == 3)
-            {
-              uint8 *c = "3\n";
-              for (i=0; i<2; i++)
-              {
-                QUEUE_bSend(&APP_msgSerialTx, &c[i]);
-              }
-            }
-            else if (sButtonEvent.u8Click == 4)
-            {
-              uint8 *c = "4\n";
-              for (i=0; i<2; i++)
-              {
-                QUEUE_bSend(&APP_msgSerialTx, &c[i]);
-              }
-            }
-            else if (sButtonEvent.u8Click == 5)
-            {
-              uint8 *c = "5\n";
-              for (i=0; i<2; i++)
-              {
-                QUEUE_bSend(&APP_msgSerialTx, &c[i]);
-              }
-            }
-            break;
-
-        case E_BUTTON_STATE_HOLD_ON:
-            for (i=0; i<15; i++)
-            {
-              QUEUE_bSend(&APP_msgSerialTx, &h[i]);
-            }
-            break;
-        }
-        
-        UART1_ITConfig(UART1_IT_TXE, ENABLE);//start send
-    }
-    
-    /*TODO: add task managenment power */
-  }
-  
+  APP_vMainLoop();  
 }
 
 #ifdef USE_FULL_ASSERT
@@ -240,4 +156,10 @@ static void uart_initialize(void)
     /* Enable general interrupts */
     enableInterrupts();
 }
+
+static void APP_vInitialise(void)
+{
+  BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead, true);
+}
+
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
