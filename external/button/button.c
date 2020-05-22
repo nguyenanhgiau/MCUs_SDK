@@ -107,17 +107,20 @@ BUTTON_teStatus BUTTON_eOpen(uint8 *pu8ButtonIndex,
 
 BUTTON_teStatus BUTTON_eClose(uint8 u8ButtonIndex)
 {
-	if (u8ButtonIndex > BUTTON_sCommon.u8NumButtons)
+        BUTTON_tsButton *psButtons;
+        psButtons = &BUTTON_sCommon.psButtons[u8ButtonIndex];
+
+	if (u8ButtonIndex > BUTTON_sCommon.u8NumButtons || psButtons->pfClose == NULL)
 	{
 		return E_BUTTON_FAIL;
 	}
 	
         /* release hardware button */
-        BUTTON_sCommon.psButtons[u8ButtonIndex].pfClose();
+        psButtons->pfClose();
         /* reset all method of button */
-        BUTTON_sCommon.psButtons[u8ButtonIndex].pfOpen = NULL;
-        BUTTON_sCommon.psButtons[u8ButtonIndex].pfClose = NULL;
-	BUTTON_sCommon.psButtons[u8ButtonIndex].pfRead = NULL;
+        psButtons->pfOpen = NULL;
+        psButtons->pfClose = NULL;
+	psButtons->pfRead = NULL;
 	
 	return E_BUTTON_OK;
 }
