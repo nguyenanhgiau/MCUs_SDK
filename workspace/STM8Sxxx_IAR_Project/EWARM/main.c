@@ -63,8 +63,8 @@ void main(void)
   /* Initialize debugger module */
   uart_initialize();
   DBG_vInit(uart_drv_send, uart_drv_receive);
-  
-  DBG_vPrintf(TRUE, "%-5s=%d", "Nhiet", 1234);
+
+  DBG_vPrintf(TRUE, "*%s DEVICE RESET %s*", "***********", "***********");
 
   /* common initialize */
   APP_vSetUpHardware();
