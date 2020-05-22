@@ -30,6 +30,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "chip_selection.h"
 #include <stdbool.h>
+#include "Queue.h"
 /* Exported Define -----------------------------------------------------------*/
 
 typedef void (*BUTTON_tpfOpen)(void);
@@ -45,6 +46,8 @@ typedef bool (*BUTTON_tpfRead)(void);
    
 #define BUTTON_DISABLE_SAMPLE           (0)
 #define BUTTON_ENABLE_SAMPLE            (1)
+
+#define BT_QUEUE_SIZE                     (8)
 
 /* Exported Typedefs ---------------------------------------------------------*/
 /* state of button */
@@ -95,6 +98,7 @@ BUTTON_teStatus BUTTON_eOpen(uint8 *pu8ButtonIndex,
 BUTTON_teStatus BUTTON_eClose(uint8 u8ButtonIndex);
 
 /* External Variable Declarations --------------------------------------------*/
+extern tsQueue           APP_msgButtonEvents;
 extern uint8 u8TimerScanButtons;
 #ifdef __cplusplus
 }

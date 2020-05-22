@@ -35,10 +35,11 @@ typedef struct
 /* Private Define ------------------------------------------------------------*/
 /* Private Structure Definition ----------------------------------------------*/
 /* Global Variables ----------------------------------------------------------*/
-extern tsQueue           APP_msgButtonEvents;
+tsQueue           APP_msgButtonEvents;
+uint8 u8TimerScanButtons;
 /* Private Variables Declarations --------------------------------------------*/
 static BUTTON_tsCommon BUTTON_sCommon;
-uint8 u8TimerScanButtons;
+static BUTTON_tsEvent    asButtonMsg [BT_QUEUE_SIZE];
 
 static void BUTTON_vScanTask(void *pvParam);
 
@@ -53,6 +54,9 @@ BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *psButtons, uint8 u8NumButtons)
 	BUTTON_sCommon.u8NumButtons = u8NumButtons;
 	BUTTON_sCommon.psButtons = psButtons;
 	memset(psButtons, 0, sizeof(BUTTON_tsButton) * u8NumButtons);
+
+        /* Create queue for result of button */
+        QUEUE_vCreate( &APP_msgButtonEvents,       BT_QUEUE_SIZE,          sizeof ( BUTTON_tsEvent ),                  (uint8*)asButtonMsg );
 	
 	/* Create timer for scan button */
 	TIMER_eOpen(&u8TimerScanButtons, BUTTON_vScanTask, NULL, TIMER_FLAG_PREVENT_SLEEP);

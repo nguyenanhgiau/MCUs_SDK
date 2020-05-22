@@ -1,7 +1,6 @@
 Button.pbi: \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\string.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\common\Queue.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\common\Timer.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\string.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\ycheck.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\ysizet.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\DLib_Threads.h \
@@ -9,6 +8,7 @@ Button.pbi: \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\xencoding_limits.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\DLib_Product.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\DLib_Defaults.h \
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\common\Queue.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\stdbool.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\common\Type.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h \

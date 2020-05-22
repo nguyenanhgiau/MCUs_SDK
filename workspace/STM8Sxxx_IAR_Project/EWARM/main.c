@@ -35,7 +35,6 @@
 /* Private defines -----------------------------------------------------------*/
 #define TX_QUEUE_SIZE                                               150
 #define RX_QUEUE_SIZE                                               150
-#define BT_QUEUE_SIZE                                               8
 /* Private variable ----------------------------------------------------------*/
 TIMER_tsTimer asTimers[3];
 BUTTON_tsButton asButtons[3];
@@ -43,11 +42,10 @@ uint8           u8Button_1;
 
 tsQueue           APP_msgSerialRx;
 tsQueue           APP_msgSerialTx;
-tsQueue           APP_msgButtonEvents;
 
 uint8             au8AtRxBuffer [ RX_QUEUE_SIZE ];
 uint8             au8AtTxBuffer [ TX_QUEUE_SIZE ];
-BUTTON_tsEvent    asButtonMsg [BT_QUEUE_SIZE];
+
 /* Private function prototypes -----------------------------------------------*/
 static void timebase_initialize(void);
 static void uart_initialize(void);
@@ -64,6 +62,9 @@ void main(void)
 
   /*test send by Queue */
   uint8 *a = "Hello\n";
+  uint8 *r = "Button Release\n";
+  uint8 *p = "Button Press: ";
+  uint8 *h = "Button Hold On\n";
   uint8 i;
   for (i=0; i<6; i++)
   {
@@ -79,7 +80,6 @@ void main(void)
   /*Initialize modules for application */
   BUTTON_eInit(asButtons, sizeof(asButtons) / sizeof(BUTTON_tsButton));
   BUTTON_eOpen(&u8Button_1, BUTTON_vOpen, NULL, BUTTON_bRead, true);
-  QUEUE_vCreate( &APP_msgButtonEvents,       BT_QUEUE_SIZE,          sizeof ( BUTTON_tsEvent ),                  (uint8*)asButtonMsg );
   
   /* Infinite loop */
   while (1)
@@ -96,14 +96,69 @@ void main(void)
         switch (sButtonEvent.eState)
         {
         case E_BUTTON_STATE_RELEASE:
+            for (i=0; i<15; i++)
+            {
+              QUEUE_bSend(&APP_msgSerialTx, &r[i]);
+            }
             break;
         
         case E_BUTTON_STATE_PRESS:
+            for (i=0; i<14; i++)
+            {
+              QUEUE_bSend(&APP_msgSerialTx, &p[i]);
+            }
+            if (sButtonEvent.u8Click == 1)
+            {
+              uint8 *c = "1\n";
+              uint8 i;
+              for (i=0; i<2; i++)
+              {
+                QUEUE_bSend(&APP_msgSerialTx, &c[i]);
+              }
+            }
+            else if (sButtonEvent.u8Click == 2)
+            {
+              uint8 *c = "2\n";
+              for (i=0; i<2; i++)
+              {
+                QUEUE_bSend(&APP_msgSerialTx, &c[i]);
+              }
+            }
+            else if (sButtonEvent.u8Click == 3)
+            {
+              uint8 *c = "3\n";
+              for (i=0; i<2; i++)
+              {
+                QUEUE_bSend(&APP_msgSerialTx, &c[i]);
+              }
+            }
+            else if (sButtonEvent.u8Click == 4)
+            {
+              uint8 *c = "4\n";
+              for (i=0; i<2; i++)
+              {
+                QUEUE_bSend(&APP_msgSerialTx, &c[i]);
+              }
+            }
+            else if (sButtonEvent.u8Click == 5)
+            {
+              uint8 *c = "5\n";
+              for (i=0; i<2; i++)
+              {
+                QUEUE_bSend(&APP_msgSerialTx, &c[i]);
+              }
+            }
             break;
 
         case E_BUTTON_STATE_HOLD_ON:
+            for (i=0; i<15; i++)
+            {
+              QUEUE_bSend(&APP_msgSerialTx, &h[i]);
+            }
             break;
         }
+        
+        UART1_ITConfig(UART1_IT_TXE, ENABLE);//start send
     }
     
     /*TODO: add task managenment power */
