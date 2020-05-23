@@ -38,6 +38,10 @@ typedef void (*BUTTON_tpfOpen)(void);
 typedef void (*BUTTON_tpfClose)(void);
 typedef bool (*BUTTON_tpfRead)(void);
    
+#ifndef BUTTON_TIME_SCAN
+#define BUTTON_TIME_SCAN                (TIMER_TIME_MSEC(10))
+#endif
+
 #ifndef BUTTON_TIME_NOISE_PRESS
 #define BUTTON_TIME_NOISE_PRESS         (1)
 #endif
