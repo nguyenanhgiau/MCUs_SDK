@@ -59,31 +59,37 @@ extern "C" {
         } while (0);
 #endif
 
+#ifndef DBG_LEVEL_LOG
+#define DBG_LEVEL_LOG       (INFO)
+#endif
+
 #ifndef DBG_vLog
-#define DBG_vLog(LEVEL, FOMART, ARGS...)        \
-        do {                                    \
-            switch (LEVEL) {                    \
-            case 10:                            \
-                xprintf("[DEBUG] ");            \
-                break;                          \
-            case 20:                            \
-                xprintf("[INFO] ");             \
-                break;                          \
-            case 30:                            \
-                xprintf("[WARN] ");             \
-                break;                          \
-            case 40:                            \
-                xprintf("[ERROR] ");            \
-                break;                          \
-            case 50:                            \
-                xprintf("[CRIT] ");             \
-                break;                          \
-            default:                            \
-                break;                          \
-            }                                   \
-            if (LEVEL != 0)                     \
-                xprintf((FOMART), ## ARGS);     \
-                xprintf("\n");                  \
+#define DBG_vLog(LEVEL, FOMART, ARGS...)            \
+        do {                                        \
+            if (LEVEL <= DBG_LEVEL_LOG) {           \
+                switch (LEVEL) {                    \
+                case 10:                            \
+                    xprintf("[DEBUG] ");            \
+                    break;                          \
+                case 20:                            \
+                    xprintf("[INFO] ");             \
+                    break;                          \
+                case 30:                            \
+                    xprintf("[WARN] ");             \
+                    break;                          \
+                case 40:                            \
+                    xprintf("[ERROR] ");            \
+                    break;                          \
+                case 50:                            \
+                    xprintf("[CRIT] ");             \
+                    break;                          \
+                default:                            \
+                    break;                          \
+                }                                   \
+                if (LEVEL != 0)                     \
+                    xprintf((FOMART), ## ARGS);     \
+                    xprintf("\n");                  \
+            }                                       \
         } while (0);
 #endif
 

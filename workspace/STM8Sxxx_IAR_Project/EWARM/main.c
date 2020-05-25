@@ -30,6 +30,7 @@
 #include "chip_selection.h"
 #include "Queue.h"
 #include "Button.h"
+#include "led.h"
 #include "prj_options.h"
 #include "app_main.h"
 #include "dbg.h"

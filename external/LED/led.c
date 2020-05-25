@@ -30,6 +30,7 @@
 /* SDK includes */
 #include "led.h"
 #include <string.h>
+#include "Timer.h"
 
 #ifdef LED_TOTAL_NUMBER
 /****************************************************************************/
@@ -75,18 +76,15 @@ LED_teStatus LED_eInit(LED_tsLed *psLeds, uint8 u8NumLeds)
     LED_sCommon.psLeds = psLeds;
     memset(psLeds, 0, sizeof(LED_tsCommon) * u8NumLeds);
 
-    /* TODO: create timer update state of led */
+    /* TODO: create timer update state of led. if use effect */
 
     return E_LED_OK;
 }
 
 LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
-                        LED_tpfOpen   pfOpen,
-                        LED_tpfClose  pfClose,
-                        LED_tpfSet    pfSet,
-                        bool          bActiveHight)
+                        LED_tsLed     *psLed)
 {
-    if (pfOpen != NULL || pfSet != NULL)
+    if (psLed->pfOpen != NULL || psLed->pfSetOnOff != NULL)
     {
         int i;
         LED_tsLed *psLeds;
@@ -97,12 +95,8 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
 
             if (psLeds->pfOpen == NULL)
             {
-                /* set default value */
-                psLeds->bActiveHight = bActiveHight;
-                psLeds->eState = E_LED_STATE_OFF;
-                psLeds->pfOpen = pfOpen;
-                psLeds->pfClose = pfClose;
-                psLeds->pfSet = pfSet;
+                /* copy value */
+                memcpy(psLeds, psLed, sizeof(LED_tsLed));
 
                 /* call function initialize hardware led */
                 psLeds->pfOpen();
@@ -130,29 +124,79 @@ LED_teStatus LED_eClose(uint8 u8LedIndex)
     /* release hardware led */
     psLeds->pfClose();
     /* reset all method of led */
-    psLeds->pfOpen = NULL;
-    psLeds->pfClose = NULL;
-    psLeds->pfSet = NULL;
+    memset(psLeds, 0, sizeof(LED_tsLed));
 
     return E_LED_OK;
 }
 
-LED_teStatus LED_eSet(uint8 u8LedIndex, LED_teState eState)
+LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState)
 {
     LED_tsLed *psLeds;
     psLeds = &LED_sCommon.psLeds[u8LedIndex];
 
-    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSet == NULL)
+    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetOnOff == NULL)
     {
         return E_LED_FAIL;
     }
 
     /* call function set hardware led */
-    psLeds->eState = eState;
-    psLeds->pfSet(eState);
+    psLeds->bState = bState;
+    if (psLeds->bActiveHight)
+    {
+        psLeds->pfSetOnOff(bState);
+    }
+    else
+    {
+        psLeds->pfSetOnOff(!bState);
+    }
 
     return E_LED_OK;
 }
+
+#ifdef LED_SUPPORT_LEVEL
+LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level)
+{
+    LED_tsLed *psLeds;
+    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+
+    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetLevel == NULL)
+    {
+        return E_LED_FAIL;
+    }
+
+    /* call function set level led */
+    psLeds->u8Level = u8Level;
+    psLeds->pfSetLevel(u8Level);
+
+    return E_LED_OK;
+}
+#endif
+
+#ifdef LED_SUPPORT_COLOR
+LED_teStatus pfSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue)
+{
+    LED_tsLed *psLeds;
+    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+
+    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetColor == NULL)
+    {
+        return E_LED_FAIL;
+    }
+
+    /* call function set color led */
+    psLeds->u8Red = u8Red;
+    psLeds->u8Green = u8Green;
+    psLeds->u8Blue = u8Blue;
+    psLeds->pfSetColor(u8Red, u8Green, u8Blue);
+
+    return E_LED_OK;
+}
+#endif
+
+/****************************************************************************/
+/***        Local Function                                                ***/
+/****************************************************************************/
+
 #endif /*LED_TOTAL_NUMBER*/
 /****************************************************************************/
 /***        END OF FILE                                                   ***/

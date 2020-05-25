@@ -29,6 +29,7 @@
 #endif
 /* Includes ------------------------------------------------------------------*/
 #include "chip_selection.h"
+#include "prj_options.h"
 #include <stdbool.h>
 /* Exported Define -----------------------------------------------------------*/
 
@@ -55,15 +56,34 @@ typedef enum
 
 typedef void (*LED_tpfOpen)(void);
 typedef void (*LED_tpfClose)(void);
-typedef void (*LED_tpfSet)(LED_teState);
+typedef void (*LED_tpfSetOnOff)(bool);
+
+#ifdef LED_SUPPORT_LEVEL
+typedef void (*LED_tpfSetLevel)(uint8);
+#endif
+
+#ifdef LED_SUPPORT_COLOR
+typedef void (*LED_tpfSetRGBColor)(uint8, uint8, uint8);
+#endif
 
 typedef struct
 {
   bool            bActiveHight;
-  LED_teState     eState;
+  bool            bState;
   LED_tpfOpen     pfOpen;
   LED_tpfClose    pfClose;
-  LED_tpfSet      pfSet;
+  LED_tpfSetOnOff pfSetOnOff;
+  #ifdef LED_SUPPORT_LEVEL
+  uint8           u8Level;
+  LED_tpfSetLevel pfSetLevel;
+  #endif
+  
+  #ifdef LED_SUPPORT_COLOR
+  uint8           u8Red;
+  uint8           u8Green;
+  uint8           u8Blue;
+  LED_tpfSetRGBColor pfSetRGBColor;
+  #endif
 }LED_tsLed;
 
 /* Exported Structure Declarations -------------------------------------------*/
@@ -71,13 +91,20 @@ typedef struct
 /* Exported Functions Declarations -------------------------------------------*/
 LED_teStatus LED_eInit(LED_tsLed *psLeds, uint8 u8NumLeds);
 LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
-                        LED_tpfOpen   pfOpen,
-                        LED_tpfClose  pfClose,
-                        LED_tpfSet    pfSet,
-                        bool          bActiveHight);
+                        LED_tsLed     *psLed);
 LED_teStatus LED_eClose(uint8 u8LedIndex);
-LED_teStatus LED_eSet(uint8 u8LedIndex, LED_teState eState);
+LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState);
+
+#ifdef LED_SUPPORT_LEVEL
+LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level);
+#endif
+
+#ifdef LED_SUPPORT_COLOR
+LED_teStatus pfSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue);
+#endif
+
 /* External Variable Declarations --------------------------------------------*/
+
 #ifdef __cplusplus
 }
 #endif
