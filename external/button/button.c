@@ -118,9 +118,7 @@ BUTTON_teStatus BUTTON_eClose(uint8 u8ButtonIndex)
         /* release hardware button */
         psButtons->pfClose();
         /* reset all method of button */
-        psButtons->pfOpen = NULL;
-        psButtons->pfClose = NULL;
-	psButtons->pfRead = NULL;
+        memset(psButtons, 0, sizeof(BUTTON_tsButton));
 	
 	return E_BUTTON_OK;
 }
