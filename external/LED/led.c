@@ -88,10 +88,10 @@ LED_teStatus LED_eInit(LED_tsLed *psLeds, uint8 u8NumLeds)
 LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
                         LED_tpfOpen   pfOpen,
                         LED_tpfClose  pfClose,
-                        LED_tpfSet    pfSet,
+                        LED_tpfSetOnOff pfSetOnOff,
                         bool          bActiveHight)
 {
-    if (pfOpen != NULL || pfSet != NULL)
+    if (pfOpen != NULL || pfSetOnOff != NULL)
     {
         int i;
         LED_tsLed *psLeds;
@@ -104,10 +104,10 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
             {
                 /* set default value */
                 psLeds->bActiveHight = bActiveHight;
-                psLeds->eState = E_LED_STATE_OFF;
+                psLeds->bState = FALSE;
                 psLeds->pfOpen = pfOpen;
                 psLeds->pfClose = pfClose;
-                psLeds->pfSet = pfSet;
+                psLeds->pfSetOnOff = pfSetOnOff;
 
                 /* call function initialize hardware led */
                 psLeds->pfOpen();
@@ -137,24 +137,31 @@ LED_teStatus LED_eClose(uint8 u8LedIndex)
     /* reset all method of led */
     psLeds->pfOpen = NULL;
     psLeds->pfClose = NULL;
-    psLeds->pfSet = NULL;
+    psLeds->pfSetOnOff = NULL;
 
     return E_LED_OK;
 }
 
-LED_teStatus LED_eSet(uint8 u8LedIndex, LED_teState eState)
+LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState)
 {
     LED_tsLed *psLeds;
     psLeds = &LED_sCommon.psLeds[u8LedIndex];
 
-    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSet == NULL)
+    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetOnOff == NULL)
     {
         return E_LED_FAIL;
     }
 
     /* call function set hardware led */
-    psLeds->eState = eState;
-    psLeds->pfSet(eState);
+    psLeds->bState = bState;
+    if (psLeds->bActiveHight)
+    {
+        psLeds->pfSetOnOff(bState);
+    }
+    else
+    {
+        psLeds->pfSetOnOff(!bState);
+    }
 
     return E_LED_OK;
 }

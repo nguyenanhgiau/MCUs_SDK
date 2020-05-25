@@ -56,15 +56,15 @@ typedef enum
 
 typedef void (*LED_tpfOpen)(void);
 typedef void (*LED_tpfClose)(void);
-typedef void (*LED_tpfSet)(LED_teState);
+typedef void (*LED_tpfSetOnOff)(bool);
 
 typedef struct
 {
   bool            bActiveHight;
-  LED_teState     eState;
+  bool            bState;
   LED_tpfOpen     pfOpen;
   LED_tpfClose    pfClose;
-  LED_tpfSet      pfSet;
+  LED_tpfSetOnOff pfSetOnOff;
 }LED_tsLed;
 
 /* Exported Structure Declarations -------------------------------------------*/
@@ -74,10 +74,15 @@ LED_teStatus LED_eInit(LED_tsLed *psLeds, uint8 u8NumLeds);
 LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
                         LED_tpfOpen   pfOpen,
                         LED_tpfClose  pfClose,
-                        LED_tpfSet    pfSet,
+                        LED_tpfSetOnOff pfSetOnOff,
                         bool          bActiveHight);
 LED_teStatus LED_eClose(uint8 u8LedIndex);
-LED_teStatus LED_eSet(uint8 u8LedIndex, LED_teState eState);
+LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState);
+
+/* advance feature */
+LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level);
+LED_teStatus LED_eSetColor(uint8 u8Red, uint8 u8Green, uint8 u8Blue);
+
 /* External Variable Declarations --------------------------------------------*/
 #ifdef LED_TOTAL_NUMBER
 extern uint8 u8TimerTaskLED;
