@@ -51762,20 +51762,6 @@
     "scope": null
   },
   {
-    "ID": "c:@APP_msgSerialTx",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "APP_msgSerialTx",
-    "location": {
-      "column": "26",
-      "line": "83",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "APP_msgSerialTx",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@asTimers",
     "What": "Variable",
     "defdec": "Dec",
@@ -51832,7 +51818,7 @@
     "scope": null
   },
   {
-    "ID": "c:app_main.c@4754@F@APP_vMainLoop@sButtonEvent",
+    "ID": "c:app_main.c@4713@F@APP_vMainLoop@sButtonEvent",
     "What": "Variable",
     "defdec": "Def",
     "display": "sButtonEvent",
