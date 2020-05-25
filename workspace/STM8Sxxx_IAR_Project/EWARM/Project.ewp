@@ -1679,6 +1679,9 @@
             <file>
                 <name>$PROJ_DIR$\..\..\..\external\led\led.c</name>
             </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\led\led_interpolation.c</name>
+            </file>
         </group>
     </group>
     <group>

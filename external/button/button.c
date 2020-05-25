@@ -125,7 +125,7 @@ BUTTON_teStatus BUTTON_eClose(uint8 u8ButtonIndex)
 	return E_BUTTON_OK;
 }
 
-void BUTTON_vScanTask(void *pvParam)
+static void BUTTON_vScanTask(void *pvParam)
 {
 	/* restart timer scan button */
 	TIMER_eStart(u8TimerScanButtons, TIMER_TIME_MSEC(10));

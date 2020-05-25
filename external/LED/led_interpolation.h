@@ -1,10 +1,10 @@
 /*****************************************************************************
  *
- * MODULE:             Project Options
+ * MODULE:             JN-AN-1218
  *
- * COMPONENT:          project_options.h
+ * COMPONENT:          app_light_interpolation.h
  *
- * DESCRIPTION:        Options Header for project
+ * DESCRIPTION:        Light Bulb application: ZCL Linear Interpolation - Implementation
  *
  ****************************************************************************
  *
@@ -32,34 +32,12 @@
  *
  ***************************************************************************/
 
-#ifndef PRJ_OPTIONS_H
-#define PRJ_OPTIONS_H
-
-#include <chip_selection.h>
+#ifndef APP_LI_H
+#define APP_LI_H
 
 /****************************************************************************/
 /***        Macro Definitions                                             ***/
 /****************************************************************************/
-
-#define PRJ_MANUF_NAME_STRING           "anhgiau"
-#define PRJ_MODEL_ID_STRING             "giau.123"
-#define PRJ_DATE_STRING                 "2020May22"
-#define PRJ_HW_VER_STRING               0x0000001
-#define PRJ_SW_VER_STRING               0x0000001
-#define PRJ_SERI_NUMBER                 "123456"
-
-
-/****************************************************************************/
-/*                             BUTTON module                                */
-/*                                                                          */
-/****************************************************************************/
-#define BUTTON_TOTAL_NUMBER             (1)
-
-/****************************************************************************/
-/*                             LED module                                   */
-/*                                                                          */
-/****************************************************************************/
-#define LED_TOTAL_NUMBER             (1)
 
 /****************************************************************************/
 /***        Type Definitions                                              ***/
@@ -69,12 +47,20 @@
 /***        Exported Functions                                            ***/
 /****************************************************************************/
 
+void vLI_SetCurrentValues(uint32 u32Level, uint32 u32Red, uint32 u32Green, uint32 u32Blue, uint32 u32ColTemp);
+void vLI_Start(uint32 u32Level,uint32 u32Red, uint32 u32Green, uint32 u32Blue, uint32 u32ColTemp);
+void vLI_Stop(void);
+void vLI_CreatePoints(void);
+void vLI_UpdateDriver(void);
+void vSaveVars(void);
+void vRestoreVars(void);
+
 /****************************************************************************/
 /***        External Variables                                            ***/
 /****************************************************************************/
 
+#endif /* APP_LI_H */
+
 /****************************************************************************/
 /***        END OF FILE                                                   ***/
 /****************************************************************************/
-
-#endif /* PRJ_OPTIONS_H */

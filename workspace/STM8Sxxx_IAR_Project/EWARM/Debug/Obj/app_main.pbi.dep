@@ -39,4 +39,5 @@ app_main.pbi: \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\dbg\dbg.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\external\button\Button.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\stdbool.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\prj_options.h
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\prj_options.h \
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\external\led\led.h

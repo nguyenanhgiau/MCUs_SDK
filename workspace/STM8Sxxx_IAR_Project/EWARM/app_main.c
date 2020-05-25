@@ -47,6 +47,10 @@
 #include "Button.h"
 #endif
 
+#ifdef LED_TOTAL_NUMBER
+#include "led.h"
+#endif
+
 /****************************************************************************/
 /***        Macro Definitions                                             ***/
 /****************************************************************************/
@@ -86,6 +90,10 @@ TIMER_tsTimer asTimers[APP_TOTAL_TIMER];
 
 #ifdef BUTTON_TOTAL_NUMBER
 BUTTON_tsButton asButtons[BUTTON_TOTAL_NUMBER];
+#endif
+
+#ifdef LED_TOTAL_NUMBER
+LED_tsLed asLeds[LED_TOTAL_NUMBER];
 #endif
 
 /****************************************************************************/
@@ -176,6 +184,10 @@ void APP_vInitResources(void)
 
     #ifdef BUTTON_TOTAL_NUMBER
     BUTTON_eInit(asButtons, sizeof(asButtons) / sizeof(BUTTON_tsButton));
+    #endif
+
+    #ifdef LED_TOTAL_NUMBER
+    LED_eInit(asLeds, sizeof(asLeds) / sizeof(LED_tsLed));
     #endif
 }
 

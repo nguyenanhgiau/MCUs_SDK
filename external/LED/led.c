@@ -30,6 +30,7 @@
 /* SDK includes */
 #include "led.h"
 #include <string.h>
+#include "Timer.h"
 
 #ifdef LED_TOTAL_NUMBER
 /****************************************************************************/
@@ -48,7 +49,7 @@ typedef struct
 /****************************************************************************/
 /***        Local Function Prototypes                                     ***/
 /****************************************************************************/
-
+static void LED_vTask(void *pvParam);
 /****************************************************************************/
 /***        Exported Variables                                            ***/
 /****************************************************************************/
@@ -56,11 +57,13 @@ typedef struct
 /****************************************************************************/
 /***        Global Variables                                              ***/
 /****************************************************************************/
-
+uint8 u8TimerTaskLED;
 /****************************************************************************/
 /***        Local Variables                                               ***/
 /****************************************************************************/
 static LED_tsCommon LED_sCommon;
+
+static uint32 u32Tick10ms = 9;
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
@@ -75,7 +78,9 @@ LED_teStatus LED_eInit(LED_tsLed *psLeds, uint8 u8NumLeds)
     LED_sCommon.psLeds = psLeds;
     memset(psLeds, 0, sizeof(LED_tsCommon) * u8NumLeds);
 
-    /* TODO: create timer update state of led */
+    /* create timer update state of led */
+    TIMER_eOpen(&u8TimerTaskLED, LED_vTask, NULL, TIMER_FLAG_PREVENT_SLEEP);
+    TIMER_eStart(u8TimerTaskLED, TIMER_TIME_MSEC(10));
 
     return E_LED_OK;
 }
@@ -152,6 +157,30 @@ LED_teStatus LED_eSet(uint8 u8LedIndex, LED_teState eState)
     psLeds->pfSet(eState);
 
     return E_LED_OK;
+}
+
+/****************************************************************************/
+/***        Local Function                                                ***/
+/****************************************************************************/
+static void LED_vTask(void *pvParam)
+{
+    /* restart timer update LED */
+	TIMER_eStart(u8TimerTaskLED, TIMER_TIME_MSEC(10));
+
+    u32Tick10ms++;
+
+    /* wrap the tick10ms counter and provide 100ms ticks to cluster */
+    if (u32Tick10ms > 9)
+    {
+        /* TODO: ZCL update 100mS */
+        u32Tick10ms = 0;
+    }
+    #if (defined LED_SUPPORT_LEVEL)
+    else
+    {
+        /* TODO: vLI_CreatePoints */
+    }
+    #endif
 }
 #endif /*LED_TOTAL_NUMBER*/
 /****************************************************************************/

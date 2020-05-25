@@ -52,6 +52,10 @@
 #define uint32          uint32_t
 #endif
 
+#ifndef int32
+#define int32           int32_t
+#endif
+
 #ifndef FALSE
 #define FALSE           (bool)0
 #endif

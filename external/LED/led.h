@@ -29,6 +29,7 @@
 #endif
 /* Includes ------------------------------------------------------------------*/
 #include "chip_selection.h"
+#include "prj_options.h"
 #include <stdbool.h>
 /* Exported Define -----------------------------------------------------------*/
 
@@ -78,6 +79,9 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
 LED_teStatus LED_eClose(uint8 u8LedIndex);
 LED_teStatus LED_eSet(uint8 u8LedIndex, LED_teState eState);
 /* External Variable Declarations --------------------------------------------*/
+#ifdef LED_TOTAL_NUMBER
+extern uint8 u8TimerTaskLED;
+#endif
 #ifdef __cplusplus
 }
 #endif
