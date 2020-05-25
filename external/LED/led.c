@@ -157,6 +157,46 @@ LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState)
     return E_LED_OK;
 }
 
+#ifdef LED_SUPPORT_LEVEL
+LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level)
+{
+    LED_tsLed *psLeds;
+    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+
+    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetLevel == NULL)
+    {
+        return E_LED_FAIL;
+    }
+
+    /* call function set level led */
+    psLeds->u8Level = u8Level;
+    psLeds->pfSetLevel(u8Level);
+
+    return E_LED_OK;
+}
+#endif
+
+#ifdef LED_SUPPORT_COLOR
+LED_teStatus pfSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue)
+{
+    LED_tsLed *psLeds;
+    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+
+    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetColor == NULL)
+    {
+        return E_LED_FAIL;
+    }
+
+    /* call function set color led */
+    psLeds->u8Red = u8Red;
+    psLeds->u8Green = u8Green;
+    psLeds->u8Blue = u8Blue;
+    psLeds->pfSetColor(u8Red, u8Green, u8Blue);
+
+    return E_LED_OK;
+}
+#endif
+
 /****************************************************************************/
 /***        Local Function                                                ***/
 /****************************************************************************/
