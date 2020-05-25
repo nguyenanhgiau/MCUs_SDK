@@ -104,9 +104,7 @@ LED_teStatus pfSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u
 #endif
 
 /* External Variable Declarations --------------------------------------------*/
-#ifdef LED_TOTAL_NUMBER
-extern uint8 u8TimerTaskLED;
-#endif
+
 #ifdef __cplusplus
 }
 #endif

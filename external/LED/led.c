@@ -49,7 +49,7 @@ typedef struct
 /****************************************************************************/
 /***        Local Function Prototypes                                     ***/
 /****************************************************************************/
-static void LED_vTask(void *pvParam);
+
 /****************************************************************************/
 /***        Exported Variables                                            ***/
 /****************************************************************************/
@@ -57,13 +57,11 @@ static void LED_vTask(void *pvParam);
 /****************************************************************************/
 /***        Global Variables                                              ***/
 /****************************************************************************/
-uint8 u8TimerTaskLED;
+
 /****************************************************************************/
 /***        Local Variables                                               ***/
 /****************************************************************************/
 static LED_tsCommon LED_sCommon;
-
-static uint32 u32Tick10ms = 9;
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
@@ -78,9 +76,7 @@ LED_teStatus LED_eInit(LED_tsLed *psLeds, uint8 u8NumLeds)
     LED_sCommon.psLeds = psLeds;
     memset(psLeds, 0, sizeof(LED_tsCommon) * u8NumLeds);
 
-    /* create timer update state of led */
-    TIMER_eOpen(&u8TimerTaskLED, LED_vTask, NULL, TIMER_FLAG_PREVENT_SLEEP);
-    TIMER_eStart(u8TimerTaskLED, TIMER_TIME_MSEC(10));
+    /* TODO: create timer update state of led. if use effect */
 
     return E_LED_OK;
 }
@@ -200,26 +196,7 @@ LED_teStatus pfSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u
 /****************************************************************************/
 /***        Local Function                                                ***/
 /****************************************************************************/
-static void LED_vTask(void *pvParam)
-{
-    /* restart timer update LED */
-	TIMER_eStart(u8TimerTaskLED, TIMER_TIME_MSEC(10));
 
-    u32Tick10ms++;
-
-    /* wrap the tick10ms counter and provide 100ms ticks to cluster */
-    if (u32Tick10ms > 9)
-    {
-        /* TODO: ZCL update 100mS */
-        u32Tick10ms = 0;
-    }
-    #if (defined LED_SUPPORT_LEVEL)
-    else
-    {
-        /* TODO: vLI_CreatePoints */
-    }
-    #endif
-}
 #endif /*LED_TOTAL_NUMBER*/
 /****************************************************************************/
 /***        END OF FILE                                                   ***/
