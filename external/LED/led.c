@@ -100,7 +100,7 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
             if (psLeds->pfOpen == NULL)
             {
                 /* copy value */
-                memset(psLeds, psLed, sizeof(LED_tsLed));
+                memcpy(psLeds, psLed, sizeof(LED_tsLed));
 
                 /* call function initialize hardware led */
                 psLeds->pfOpen();
