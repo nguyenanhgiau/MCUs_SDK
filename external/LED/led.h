@@ -72,10 +72,7 @@ typedef struct
 /* Exported Functions Declarations -------------------------------------------*/
 LED_teStatus LED_eInit(LED_tsLed *psLeds, uint8 u8NumLeds);
 LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
-                        LED_tpfOpen   pfOpen,
-                        LED_tpfClose  pfClose,
-                        LED_tpfSetOnOff pfSetOnOff,
-                        bool          bActiveHight);
+                        LED_tsLed     *psLed);
 LED_teStatus LED_eClose(uint8 u8LedIndex);
 LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState);
 

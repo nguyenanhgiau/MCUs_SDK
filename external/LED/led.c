@@ -86,12 +86,9 @@ LED_teStatus LED_eInit(LED_tsLed *psLeds, uint8 u8NumLeds)
 }
 
 LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
-                        LED_tpfOpen   pfOpen,
-                        LED_tpfClose  pfClose,
-                        LED_tpfSetOnOff pfSetOnOff,
-                        bool          bActiveHight)
+                        LED_tsLed     *psLed)
 {
-    if (pfOpen != NULL || pfSetOnOff != NULL)
+    if (psLed->pfOpen != NULL || psLed->pfSetOnOff != NULL)
     {
         int i;
         LED_tsLed *psLeds;
@@ -102,12 +99,8 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
 
             if (psLeds->pfOpen == NULL)
             {
-                /* set default value */
-                psLeds->bActiveHight = bActiveHight;
-                psLeds->bState = FALSE;
-                psLeds->pfOpen = pfOpen;
-                psLeds->pfClose = pfClose;
-                psLeds->pfSetOnOff = pfSetOnOff;
+                /* copy value */
+                memset(psLeds, psLed, sizeof(LED_tsLed));
 
                 /* call function initialize hardware led */
                 psLeds->pfOpen();
@@ -135,9 +128,7 @@ LED_teStatus LED_eClose(uint8 u8LedIndex)
     /* release hardware led */
     psLeds->pfClose();
     /* reset all method of led */
-    psLeds->pfOpen = NULL;
-    psLeds->pfClose = NULL;
-    psLeds->pfSetOnOff = NULL;
+    memset(psLeds, 0, sizeof(LED_tsLed));
 
     return E_LED_OK;
 }
