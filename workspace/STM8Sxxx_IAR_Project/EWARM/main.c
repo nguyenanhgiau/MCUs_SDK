@@ -34,36 +34,35 @@
 #include "prj_options.h"
 #include "app_main.h"
 #include "dbg.h"
+#include "portable.h"
 
 /* Private defines -----------------------------------------------------------*/
 /* Private variable ----------------------------------------------------------*/
 uint8 u8ButtonTest;
 
 /* Private function prototypes -----------------------------------------------*/
-static void timebase_initialize(void);
-static void uart_initialize(void);
 static void     BUTTON_vOpen(void);
 static bool     BUTTON_bRead(void);
+
 static void APP_vInitialise(void);
+
+static void uart_initialize(void);
 static void uart_drv_send(uint8_t u8TxByte);
 static uint8_t uart_drv_receive(void);
 
 void main(void)
 {
-  /* configure private for unique mcu
+    /* configure private for unique mcu
   * such as:
   * - system clock 
   * - uart for debug module 
   * - time base 
   * - watchdog timer
   * */
-  /* Clock divider to HSI/1 */
-  CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1);
-  /* Initialize timer platform */
-  timebase_initialize();
+  PORTABLE_vInit();
+
   /* Initialize debugger module */
   DBG_vInit(uart_initialize, uart_drv_send, uart_drv_receive);
-
   DBG_vPrintf(TRUE, "*%s DEVICE RESET %s*", "***********", "***********");
 
   /* common initialize */
@@ -99,31 +98,6 @@ void assert_failed(u8* file, u32 line)
 #endif
 
 /* Private functions ---------------------------------------------------------*/
-static void timebase_initialize(void)
-{
-  /* TIM4 configuration:
-   - TIM4CLK is set to 16 MHz, the TIM4 Prescaler is equal to 128 so the TIM1 counter
-   clock used is 16 MHz / 128 = 125 000 Hz
-  - With 125 000 Hz we can generate time base:
-      max time base is 2.048 ms if TIM4_PERIOD = 255 --> (255 + 1) / 125000 = 2.048 ms
-      min time base is 0.016 ms if TIM4_PERIOD = 1   --> (  1 + 1) / 125000 = 0.016 ms
-  - In this example we need to generate a time base equal to 1 ms
-   so TIM4_PERIOD = (0.001 * 125000 - 1) = 124 */
-
-  /* Time base configuration */
-  TIM4_TimeBaseInit(TIM4_PRESCALER_128, 124);
-  /* Clear TIM4 update flag */
-  TIM4_ClearFlag(TIM4_FLAG_UPDATE);
-  /* Enable update interrupt */
-  TIM4_ITConfig(TIM4_IT_UPDATE, ENABLE);
-  
-  /* enable interrupts */
-  enableInterrupts();
-
-  /* Enable TIM4 */
-  TIM4_Cmd(ENABLE);
-}
-
 static void BUTTON_vOpen(void)
 {
     GPIO_Init(GPIOA, (GPIO_Pin_TypeDef)GPIO_PIN_1, GPIO_MODE_IN_PU_NO_IT);

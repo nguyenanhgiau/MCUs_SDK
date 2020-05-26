@@ -1,4 +1,4 @@
-Button.pbi: C:\Users\Giau\Desktop\MCUs_SDK\external\button\Button.c \
+button.pbi: C:\Users\Giau\Desktop\MCUs_SDK\external\button\button.c \
   C:\Users\Giau\Desktop\MCUs_SDK\external\button/Button.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\chip\chip_selection.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s.h \

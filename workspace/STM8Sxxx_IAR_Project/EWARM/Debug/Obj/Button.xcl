@@ -1,12 +1,12 @@
-"C:\Users\Giau\Desktop\MCUs_SDK\external\button\Button.c"
+"C:\Users\Giau\Desktop\MCUs_SDK\external\button\button.c"
 -std=c99
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\Debug\Obj\Button.pbi.dep
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\Debug\Obj\button.pbi.dep
 -o
-Button.pbi
+button.pbi
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\external\button
 -I
@@ -23,6 +23,8 @@ C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\com
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\external\button
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\external\led
+-I
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\chip\portable
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc
 -I
@@ -41,6 +43,8 @@ C:\Users\Giau\Desktop\MCUs_SDK\components\dbg
 C:\Users\Giau\Desktop\MCUs_SDK\external\button
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\external\led
+-I
+C:\Users\Giau\Desktop\MCUs_SDK\chip\portable
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

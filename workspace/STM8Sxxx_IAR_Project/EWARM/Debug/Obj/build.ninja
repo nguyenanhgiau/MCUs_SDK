@@ -20,10 +20,11 @@ rule browsedata
 
 
 #Build steps
+build port_stm8s.pbi : index port_stm8s.xcl
 build Queue.pbi : index Queue.xcl
 build Timer.pbi : index Timer.xcl
 build dbg.pbi : index dbg.xcl
-build Button.pbi : index Button.xcl
+build button.pbi : index button.xcl
 build led.pbi : index led.xcl
 build app_main.pbi : index app_main.xcl
 build main.pbi : index main.xcl
@@ -45,12 +46,13 @@ build stm8s_tim2.pbi : index stm8s_tim2.xcl
 build stm8s_tim4.pbi : index stm8s_tim4.xcl
 build stm8s_uart1.pbi : index stm8s_uart1.xcl
 build stm8s_wwdg.pbi : index stm8s_wwdg.xcl
-build Project_part0.pbi : link Queue.pbi Timer.pbi dbg.pbi Button.pbi led.pbi
-build Project_part1.pbi : link app_main.pbi main.pbi stm8s_it.pbi stm8s_adc1.pbi stm8s_awu.pbi
-build Project_part2.pbi : link stm8s_beep.pbi stm8s_clk.pbi stm8s_exti.pbi stm8s_flash.pbi stm8s_gpio.pbi
-build Project_part3.pbi : link stm8s_i2c.pbi stm8s_itc.pbi stm8s_iwdg.pbi stm8s_rst.pbi stm8s_spi.pbi
-build Project_part4.pbi : link stm8s_tim1.pbi stm8s_tim2.pbi stm8s_tim4.pbi stm8s_uart1.pbi stm8s_wwdg.pbi
-build Project.pbd : link Project_part0.pbi Project_part1.pbi Project_part2.pbi Project_part3.pbi Project_part4.pbi
+build Project_part0.pbi : link port_stm8s.pbi Queue.pbi Timer.pbi dbg.pbi button.pbi
+build Project_part1.pbi : link led.pbi app_main.pbi main.pbi stm8s_it.pbi stm8s_adc1.pbi
+build Project_part2.pbi : link stm8s_awu.pbi stm8s_beep.pbi stm8s_clk.pbi stm8s_exti.pbi stm8s_flash.pbi
+build Project_part3.pbi : link stm8s_gpio.pbi stm8s_i2c.pbi stm8s_itc.pbi stm8s_iwdg.pbi stm8s_rst.pbi
+build Project_part4.pbi : link stm8s_spi.pbi stm8s_tim1.pbi stm8s_tim2.pbi stm8s_tim4.pbi stm8s_uart1.pbi
+build Project_part5.pbi : link stm8s_wwdg.pbi
+build Project.pbd : link Project_part0.pbi Project_part1.pbi Project_part2.pbi Project_part3.pbi Project_part4.pbi Project_part5.pbi
 build Project.pbw : browsedata Project.pbd
 
 

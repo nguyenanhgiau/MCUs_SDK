@@ -264,6 +264,7 @@
                     <state>$PROJ_DIR$\..\..\..\components\dbg</state>
                     <state>$PROJ_DIR$\..\..\..\external\button</state>
                     <state>$PROJ_DIR$\..\..\..\external\led</state>
+                    <state>$PROJ_DIR$\..\..\..\chip\portable</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1644,6 +1645,12 @@
     </configuration>
     <group>
         <name>chip</name>
+        <group>
+            <name>portable</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\chip\portable\port_stm8s.c</name>
+            </file>
+        </group>
         <file>
             <name>$PROJ_DIR$\..\..\..\chip\chip_selection.h</name>
         </file>
@@ -1671,7 +1678,7 @@
         <group>
             <name>button</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\external\button\Button.c</name>
+                <name>$PROJ_DIR$\..\..\..\external\button\button.c</name>
             </file>
         </group>
         <group>
