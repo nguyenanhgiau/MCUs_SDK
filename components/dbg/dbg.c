@@ -33,6 +33,7 @@
 #include <stdarg.h>
 typedef struct
 {
+    DBG_tpfOpen     pfOpen;
     DBG_tpfWrite    pfWrite;
     DBG_tpfRead     pfRead;
 }DBG_tsCommon;
@@ -485,15 +486,20 @@ int xatoi (			/* 0:Failed, 1:Successful */
 }
 #endif /* _USE_XFUNC_IN */
 
-DBG_teStatus DBG_vInit(DBG_tpfWrite pfWrite, DBG_tpfRead pfRead)
+DBG_teStatus DBG_vInit(DBG_tpfOpen pfOpen, DBG_tpfWrite pfWrite, DBG_tpfRead pfRead)
 {
-    if (pfWrite != NULL || pfRead != NULL)
+    if (pfOpen != NULL || pfWrite != NULL || pfRead != NULL)
     {
-        DBG_sCommon.pfWrite = pfWrite;
-        DBG_sCommon.pfRead = pfRead;
-        return E_DBG_OK;
+        return E_DBG_FAIL;
     }
 
-    return E_DBG_FAIL;
+    DBG_sCommon.pfOpen = pfOpen;
+    DBG_sCommon.pfWrite = pfWrite;
+    DBG_sCommon.pfRead = pfRead;
+
+    /* initialize hardware debugger */
+    DBG_sCommon.pfOpen();
+
+    return E_DBG_OK;
 }
 /* Function Definitions ------------------------------------------------------*/

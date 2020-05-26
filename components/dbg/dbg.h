@@ -103,7 +103,7 @@ typedef enum
     E_DBG_FAIL
 }DBG_teStatus;
 
-
+typedef void (*DBG_tpfOpen)(void);
 typedef void (*DBG_tpfWrite)(unsigned char);
 typedef unsigned char (*DBG_tpfRead)(void);
 
@@ -129,7 +129,7 @@ int xfgets (unsigned char (*func)(void), char *buff, int len);
 int xatoi (char **str, long *res);
 #endif
 
-DBG_teStatus DBG_vInit(DBG_tpfWrite pfWrite, DBG_tpfRead pfRead);
+DBG_teStatus DBG_vInit(DBG_tpfOpen pfOpen, DBG_tpfWrite pfWrite, DBG_tpfRead pfRead);
 
 /****************************************************************************/
 /***        External Variables                                            ***/

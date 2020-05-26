@@ -62,8 +62,7 @@ void main(void)
   /* Initialize timer platform */
   timebase_initialize();
   /* Initialize debugger module */
-  uart_initialize();
-  DBG_vInit(uart_drv_send, uart_drv_receive);
+  DBG_vInit(uart_initialize, uart_drv_send, uart_drv_receive);
 
   DBG_vPrintf(TRUE, "*%s DEVICE RESET %s*", "***********", "***********");
 
