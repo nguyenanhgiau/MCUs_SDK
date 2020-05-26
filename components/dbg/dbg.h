@@ -55,7 +55,6 @@ extern "C" {
         do {                                    \
             if (STREAM)                         \
                 xprintf((FOMART), ## ARGS);     \
-                xprintf("\n");                  \
         } while (0);
 #endif
 
