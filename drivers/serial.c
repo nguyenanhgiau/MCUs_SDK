@@ -107,8 +107,8 @@ SERIAL_teStatus SERIAL_eOpen(uint8 *pu8SerialIndex, SERIAL_tsSerial *psSerial)
                 *pu8SerialIndex = i;
 
                 /* create queue save buffer */
-                QUEUE_vCreate(&SERIAL_msgTx[i], SERIAL_TX_QUEUE_SIZE, sizeof(uint8), (uint8*)au8SerialBufRx[i]);
-                QUEUE_vCreate(&SERIAL_msgRx[i], SERIAL_RX_QUEUE_SIZE, sizeof(uint8), (uint8*)au8SerialBufTx[i]);
+                QUEUE_vCreate(&SERIAL_msgTx[i], SERIAL_TX_QUEUE_SIZE, sizeof(uint8), (uint8*)&au8SerialBufTx[i][0]);
+                QUEUE_vCreate(&SERIAL_msgRx[i], SERIAL_RX_QUEUE_SIZE, sizeof(uint8), (uint8*)&au8SerialBufRx[i][0]);
 
                 return E_SERIAL_OK;
             }
