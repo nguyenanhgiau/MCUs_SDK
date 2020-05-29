@@ -58,12 +58,10 @@ typedef struct
     SERIAL_ptfSend      pfSend;
     SERIAL_ptfReceive   pfReceive;
 
-    #ifdef SERIAL_SUPPORT_INTERRUPT
     SERIAL_ptfStartSend pfStartSend;
     SERIAL_ptfStopSend  pfStopSend;
     SERIAL_ptfStartReceive  pfStartReceive;
     SERIAL_ptfStopReceive   pfStopReceive;
-    #endif
 }SERIAL_tsSerial;
 
 typedef enum
