@@ -265,6 +265,7 @@
                     <state>$PROJ_DIR$\..\..\..\external\button</state>
                     <state>$PROJ_DIR$\..\..\..\external\led</state>
                     <state>$PROJ_DIR$\..\..\..\chip\portable</state>
+                    <state>$PROJ_DIR$\..\..\..\drivers</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1672,6 +1673,12 @@
                 <name>$PROJ_DIR$\..\..\..\components\dbg\dbg.c</name>
             </file>
         </group>
+    </group>
+    <group>
+        <name>drivers</name>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\drivers\serial.c</name>
+        </file>
     </group>
     <group>
         <name>external</name>

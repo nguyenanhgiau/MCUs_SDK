@@ -2188,6 +2188,12 @@
         </group>
     </group>
     <group>
+        <name>drivers</name>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\drivers\serial.c</name>
+        </file>
+    </group>
+    <group>
         <name>external</name>
         <group>
             <name>button</name>

@@ -30,7 +30,15 @@
 /* Includes ------------------------------------------------------------------*/
 #include "chip_selection.h"
 #include "prj_options.h"
+
 /* Exported Define -----------------------------------------------------------*/
+#ifndef SERIAL_TX_QUEUE_SIZE
+#define SERIAL_TX_QUEUE_SIZE    150
+#endif
+
+#ifndef SERIAL_RX_QUEUE_SIZE
+#define SERIAL_RX_QUEUE_SIZE    150
+#endif
 
 /* Exported Typedefs ---------------------------------------------------------*/
 typedef void (*SERIAL_ptfOpen)(void);
@@ -49,10 +57,30 @@ typedef struct
     SERIAL_ptfClose     pfClose;
     SERIAL_ptfSend      pfSend;
     SERIAL_ptfReceive   pfReceive;
+
+    #ifdef SERIAL_SUPPORT_INTERRUPT
+    SERIAL_ptfStartSend pfStartSend;
+    SERIAL_ptfStopSend  pfStopSend;
+    SERIAL_ptfStartReceive  pfStartReceive;
+    SERIAL_ptfStopReceive   pfStopReceive;
+    #endif
 }SERIAL_tsSerial;
 
+typedef enum
+{
+    E_SERIAL_OK,
+    E_SERIAL_FAIL,
+}SERIAL_teStatus;
 /* Exported Structure Declarations -------------------------------------------*/
 /* Exported Functions Declarations -------------------------------------------*/
+SERIAL_teStatus SERIAL_eInit(SERIAL_tsSerial *psSerials, uint8 u8NumSerials);
+SERIAL_teStatus SERIAL_eOpen(uint8 *pu8SerialIndex, SERIAL_tsSerial *psSerial);
+SERIAL_teStatus SERIAL_eClose(uint8 u8SerialIndex);
+SERIAL_teStatus SERIAL_eGet(uint8 u8SerialIndex, uint8 *pu8Byte);
+SERIAL_teStatus SERIAL_ePut(uint8 u8SerialIndex, uint8 u8Byte);
+SERIAL_teStatus SERIAL_eWrite(uint8 u8SerialIndex, uint8 *pau8Byte);
+uint32 SERIAL_u32Read(uint8 u8SerialIndex, uint8 *pau8Byte);
+SERIAL_teStatus SERIAL_eFlush(uint8 u8SerialIndex);
 /* External Variable Declarations --------------------------------------------*/
 
 #ifdef __cplusplus

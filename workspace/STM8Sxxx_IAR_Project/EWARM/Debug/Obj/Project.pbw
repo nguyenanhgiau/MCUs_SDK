@@ -46984,13 +46984,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.h@2549@macro@DBG_LEVEL_LOG",
+    "ID": "c:dbg.h@2498@macro@DBG_LEVEL_LOG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DBG_LEVEL_LOG",
     "location": {
       "column": "9",
-      "line": "63",
+      "line": "62",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_LEVEL_LOG",
@@ -46998,13 +46998,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.h@2613@macro@DBG_vLog",
+    "ID": "c:dbg.h@2562@macro@DBG_vLog",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DBG_vLog",
     "location": {
       "column": "9",
-      "line": "67",
+      "line": "66",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_vLog",
@@ -47024,7 +47024,7 @@
         "display": "E_DBG_OK",
         "location": {
           "column": "5",
-          "line": "102",
+          "line": "101",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
         },
         "name": "E_DBG_OK",
@@ -47038,7 +47038,7 @@
         "display": "E_DBG_FAIL",
         "location": {
           "column": "5",
-          "line": "103",
+          "line": "102",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
         },
         "name": "E_DBG_FAIL",
@@ -47048,7 +47048,7 @@
     ],
     "location": {
       "column": "9",
-      "line": "100",
+      "line": "99",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "",
@@ -47062,7 +47062,7 @@
     "display": "void (*)(void)",
     "location": {
       "column": "16",
-      "line": "106",
+      "line": "105",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_tpfOpen",
@@ -47076,7 +47076,7 @@
     "display": "void (*)(unsigned char)",
     "location": {
       "column": "16",
-      "line": "107",
+      "line": "106",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_tpfWrite",
@@ -47090,7 +47090,7 @@
     "display": "unsigned char (*)(void)",
     "location": {
       "column": "25",
-      "line": "108",
+      "line": "107",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_tpfRead",
@@ -47104,7 +47104,7 @@
     "display": "void xputc(char)",
     "location": {
       "column": "6",
-      "line": "114",
+      "line": "113",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xputc",
@@ -47118,7 +47118,7 @@
     "display": "void xputc(char)",
     "location": {
       "column": "6",
-      "line": "114",
+      "line": "113",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xputc",
@@ -47132,7 +47132,7 @@
     "display": "void xputs(const char *)",
     "location": {
       "column": "6",
-      "line": "115",
+      "line": "114",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xputs",
@@ -47146,7 +47146,7 @@
     "display": "void xputs(const char *)",
     "location": {
       "column": "6",
-      "line": "115",
+      "line": "114",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xputs",
@@ -47160,7 +47160,7 @@
     "display": "void xfputs(void (*)(unsigned char), const char *)",
     "location": {
       "column": "6",
-      "line": "116",
+      "line": "115",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfputs",
@@ -47174,7 +47174,7 @@
     "display": "void xfputs(void (*)(unsigned char), const char *)",
     "location": {
       "column": "6",
-      "line": "116",
+      "line": "115",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfputs",
@@ -47188,7 +47188,7 @@
     "display": "void xprintf(const char *, ...)",
     "location": {
       "column": "6",
-      "line": "117",
+      "line": "116",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xprintf",
@@ -47202,7 +47202,7 @@
     "display": "void xprintf(const char *, ...)",
     "location": {
       "column": "6",
-      "line": "117",
+      "line": "116",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xprintf",
@@ -47216,7 +47216,7 @@
     "display": "void xsprintf(char *, const char *, ...)",
     "location": {
       "column": "6",
-      "line": "118",
+      "line": "117",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xsprintf",
@@ -47230,7 +47230,7 @@
     "display": "void xsprintf(char *, const char *, ...)",
     "location": {
       "column": "6",
-      "line": "118",
+      "line": "117",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xsprintf",
@@ -47244,7 +47244,7 @@
     "display": "void xfprintf(void (*)(unsigned char), const char *, ...)",
     "location": {
       "column": "6",
-      "line": "119",
+      "line": "118",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfprintf",
@@ -47258,7 +47258,7 @@
     "display": "void xfprintf(void (*)(unsigned char), const char *, ...)",
     "location": {
       "column": "6",
-      "line": "119",
+      "line": "118",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfprintf",
@@ -47272,7 +47272,7 @@
     "display": "void put_dump(const void *, unsigned long, int, int)",
     "location": {
       "column": "6",
-      "line": "120",
+      "line": "119",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "put_dump",
@@ -47286,7 +47286,7 @@
     "display": "void put_dump(const void *, unsigned long, int, int)",
     "location": {
       "column": "6",
-      "line": "120",
+      "line": "119",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "put_dump",
@@ -47294,13 +47294,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.h@5118@macro@DW_CHAR",
+    "ID": "c:dbg.h@5067@macro@DW_CHAR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DW_CHAR",
     "location": {
       "column": "9",
-      "line": "121",
+      "line": "120",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DW_CHAR",
@@ -47308,13 +47308,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.h@5149@macro@DW_SHORT",
+    "ID": "c:dbg.h@5098@macro@DW_SHORT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DW_SHORT",
     "location": {
       "column": "9",
-      "line": "122",
+      "line": "121",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DW_SHORT",
@@ -47322,13 +47322,13 @@
     "scope": null
   },
   {
-    "ID": "c:dbg.h@5181@macro@DW_LONG",
+    "ID": "c:dbg.h@5130@macro@DW_LONG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DW_LONG",
     "location": {
       "column": "9",
-      "line": "123",
+      "line": "122",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DW_LONG",
@@ -47342,7 +47342,7 @@
     "display": "int xgets(char *, int)",
     "location": {
       "column": "5",
-      "line": "127",
+      "line": "126",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xgets",
@@ -47356,7 +47356,7 @@
     "display": "int xgets(char *, int)",
     "location": {
       "column": "5",
-      "line": "127",
+      "line": "126",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xgets",
@@ -47370,7 +47370,7 @@
     "display": "int xfgets(unsigned char (*)(void), char *, int)",
     "location": {
       "column": "5",
-      "line": "128",
+      "line": "127",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfgets",
@@ -47384,7 +47384,7 @@
     "display": "int xfgets(unsigned char (*)(void), char *, int)",
     "location": {
       "column": "5",
-      "line": "128",
+      "line": "127",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xfgets",
@@ -47398,7 +47398,7 @@
     "display": "int xatoi(char **, long *)",
     "location": {
       "column": "5",
-      "line": "129",
+      "line": "128",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xatoi",
@@ -47412,7 +47412,7 @@
     "display": "int xatoi(char **, long *)",
     "location": {
       "column": "5",
-      "line": "129",
+      "line": "128",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "xatoi",
@@ -47426,7 +47426,7 @@
     "display": "DBG_teStatus DBG_vInit(DBG_tpfOpen, DBG_tpfWrite, DBG_tpfRead)",
     "location": {
       "column": "14",
-      "line": "132",
+      "line": "131",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_vInit",
@@ -47440,7 +47440,7 @@
     "display": "DBG_teStatus DBG_vInit(DBG_tpfOpen, DBG_tpfWrite, DBG_tpfRead)",
     "location": {
       "column": "14",
-      "line": "132",
+      "line": "131",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\dbg\\dbg.h"
     },
     "name": "DBG_vInit",
@@ -49458,6 +49458,1218 @@
     "scope": null
   },
   {
+    "ID": "c:@SA@SERIAL_tsCommon",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "43",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@SERIAL_tsCommon@FI@u8NumSerials",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "u8NumSerials",
+        "location": {
+          "column": "21",
+          "line": "45",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+        },
+        "name": "u8NumSerials",
+        "origin": "project_file",
+        "scope": "_anonymous_serial_c_43_9"
+      },
+      {
+        "ID": "c:@SA@SERIAL_tsCommon@FI@psSerials",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "psSerials",
+        "location": {
+          "column": "22",
+          "line": "46",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+        },
+        "name": "psSerials",
+        "origin": "project_file",
+        "scope": "_anonymous_serial_c_43_9"
+      },
+      {
+        "ID": "c:@T@SERIAL_tsCommon",
+        "What": "TypedefDecl",
+        "defdec": "Def",
+        "display": "struct SERIAL_tsCommon",
+        "location": {
+          "column": "2",
+          "line": "47",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+        },
+        "name": "SERIAL_tsCommon",
+        "origin": "project_file",
+        "scope": "_anonymous_serial_c_43_9"
+      }
+    ],
+    "name": "",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.c@SERIAL_sCommon",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "SERIAL_sCommon",
+    "location": {
+      "column": "24",
+      "line": "64",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "SERIAL_sCommon",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@SERIAL_msgTx",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "SERIAL_msgTx",
+    "location": {
+      "column": "9",
+      "line": "66",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "SERIAL_msgTx",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@SERIAL_msgRx",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "SERIAL_msgRx",
+    "location": {
+      "column": "9",
+      "line": "67",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "SERIAL_msgRx",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@au8SerialBufTx",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "au8SerialBufTx",
+    "location": {
+      "column": "7",
+      "line": "69",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "au8SerialBufTx",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@au8SerialBufRx",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "au8SerialBufRx",
+    "location": {
+      "column": "7",
+      "line": "70",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "au8SerialBufRx",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "SERIAL_teStatus SERIAL_eInit(SERIAL_tsSerial *, uint8_t)",
+    "location": {
+      "column": "17",
+      "line": "74",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "SERIAL_eInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eOpen",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "SERIAL_teStatus SERIAL_eOpen(uint8_t *, SERIAL_tsSerial *)",
+    "location": {
+      "column": "17",
+      "line": "88",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "SERIAL_eOpen",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.c@4400@F@SERIAL_eOpen@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "13",
+      "line": "92",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.c@4416@F@SERIAL_eOpen@psSerials",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psSerials",
+    "location": {
+      "column": "26",
+      "line": "93",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "psSerials",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eClose",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "SERIAL_teStatus SERIAL_eClose(uint8_t)",
+    "location": {
+      "column": "17",
+      "line": "121",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "SERIAL_eClose",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.c@5378@F@SERIAL_eClose@psSerials",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psSerials",
+    "location": {
+      "column": "22",
+      "line": "123",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "psSerials",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eGet",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "SERIAL_teStatus SERIAL_eGet(uint8_t, uint8_t *)",
+    "location": {
+      "column": "17",
+      "line": "139",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "SERIAL_eGet",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_ePut",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "SERIAL_teStatus SERIAL_ePut(uint8_t, uint8_t)",
+    "location": {
+      "column": "17",
+      "line": "153",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "SERIAL_ePut",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eWrite",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "SERIAL_teStatus SERIAL_eWrite(uint8_t, uint8_t *)",
+    "location": {
+      "column": "17",
+      "line": "164",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "SERIAL_eWrite",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.c@6593@F@SERIAL_eWrite@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "11",
+      "line": "171",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_u32Read",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint32_t SERIAL_u32Read(uint8_t, uint8_t *)",
+    "location": {
+      "column": "8",
+      "line": "186",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "SERIAL_u32Read",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.c@6999@F@SERIAL_u32Read@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "9",
+      "line": "188",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@1107@macro@SERIAL_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SERIAL_H_",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@1423@macro@SERIAL_TX_QUEUE_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SERIAL_TX_QUEUE_SIZE",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_TX_QUEUE_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@1500@macro@SERIAL_RX_QUEUE_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SERIAL_RX_QUEUE_SIZE",
+    "location": {
+      "column": "9",
+      "line": "40",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_RX_QUEUE_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@T@SERIAL_ptfOpen",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "44",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_ptfOpen",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@T@SERIAL_ptfClose",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "45",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_ptfClose",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@T@SERIAL_ptfSend",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "46",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_ptfSend",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@T@SERIAL_ptfReceive",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "bool (*)(uint8_t *)",
+    "location": {
+      "column": "16",
+      "line": "47",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_ptfReceive",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@T@SERIAL_ptfStartSend",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "48",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_ptfStartSend",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@T@SERIAL_ptfStopSend",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "49",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_ptfStopSend",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@T@SERIAL_ptfStartReceive",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "50",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_ptfStartReceive",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:serial.h@T@SERIAL_ptfStopReceive",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "51",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_ptfStopReceive",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@SERIAL_tsSerial",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@SERIAL_tsSerial@FI@u32Baud",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "u32Baud",
+        "location": {
+          "column": "25",
+          "line": "55",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "u32Baud",
+        "origin": "user_include",
+        "scope": "_anonymous_serial_h_53_9"
+      },
+      {
+        "ID": "c:@SA@SERIAL_tsSerial@FI@pfOpen",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfOpen",
+        "location": {
+          "column": "25",
+          "line": "56",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "pfOpen",
+        "origin": "user_include",
+        "scope": "_anonymous_serial_h_53_9"
+      },
+      {
+        "ID": "c:@SA@SERIAL_tsSerial@FI@pfClose",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfClose",
+        "location": {
+          "column": "25",
+          "line": "57",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "pfClose",
+        "origin": "user_include",
+        "scope": "_anonymous_serial_h_53_9"
+      },
+      {
+        "ID": "c:@SA@SERIAL_tsSerial@FI@pfSend",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfSend",
+        "location": {
+          "column": "25",
+          "line": "58",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "pfSend",
+        "origin": "user_include",
+        "scope": "_anonymous_serial_h_53_9"
+      },
+      {
+        "ID": "c:@SA@SERIAL_tsSerial@FI@pfReceive",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfReceive",
+        "location": {
+          "column": "25",
+          "line": "59",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "pfReceive",
+        "origin": "user_include",
+        "scope": "_anonymous_serial_h_53_9"
+      },
+      {
+        "ID": "c:@SA@SERIAL_tsSerial@FI@pfStartSend",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfStartSend",
+        "location": {
+          "column": "25",
+          "line": "62",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "pfStartSend",
+        "origin": "user_include",
+        "scope": "_anonymous_serial_h_53_9"
+      },
+      {
+        "ID": "c:@SA@SERIAL_tsSerial@FI@pfStopSend",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfStopSend",
+        "location": {
+          "column": "25",
+          "line": "63",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "pfStopSend",
+        "origin": "user_include",
+        "scope": "_anonymous_serial_h_53_9"
+      },
+      {
+        "ID": "c:@SA@SERIAL_tsSerial@FI@pfStartReceive",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfStartReceive",
+        "location": {
+          "column": "29",
+          "line": "64",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "pfStartReceive",
+        "origin": "user_include",
+        "scope": "_anonymous_serial_h_53_9"
+      },
+      {
+        "ID": "c:@SA@SERIAL_tsSerial@FI@pfStopReceive",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfStopReceive",
+        "location": {
+          "column": "29",
+          "line": "65",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "pfStopReceive",
+        "origin": "user_include",
+        "scope": "_anonymous_serial_h_53_9"
+      },
+      {
+        "ID": "c:@T@SERIAL_tsSerial",
+        "What": "TypedefDecl",
+        "defdec": "Def",
+        "display": "struct SERIAL_tsSerial",
+        "location": {
+          "column": "2",
+          "line": "67",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "SERIAL_tsSerial",
+        "origin": "user_include",
+        "scope": "_anonymous_serial_h_53_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@SERIAL_teStatus",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@SERIAL_teStatus@E_SERIAL_OK",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_SERIAL_OK",
+        "location": {
+          "column": "5",
+          "line": "71",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "E_SERIAL_OK",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@SERIAL_teStatus@E_SERIAL_FAIL",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_SERIAL_FAIL",
+        "location": {
+          "column": "5",
+          "line": "72",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+        },
+        "name": "E_SERIAL_FAIL",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eInit",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "SERIAL_teStatus SERIAL_eInit(SERIAL_tsSerial *, uint8_t)",
+    "location": {
+      "column": "17",
+      "line": "76",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_eInit",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eOpen",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "SERIAL_teStatus SERIAL_eOpen(uint8_t *, SERIAL_tsSerial *)",
+    "location": {
+      "column": "17",
+      "line": "77",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_eOpen",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eClose",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "SERIAL_teStatus SERIAL_eClose(uint8_t)",
+    "location": {
+      "column": "17",
+      "line": "78",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_eClose",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eGet",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "SERIAL_teStatus SERIAL_eGet(uint8_t, uint8_t *)",
+    "location": {
+      "column": "17",
+      "line": "79",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_eGet",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_ePut",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "SERIAL_teStatus SERIAL_ePut(uint8_t, uint8_t)",
+    "location": {
+      "column": "17",
+      "line": "80",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_ePut",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eWrite",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "SERIAL_teStatus SERIAL_eWrite(uint8_t, uint8_t *)",
+    "location": {
+      "column": "17",
+      "line": "81",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_eWrite",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_u32Read",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint32_t SERIAL_u32Read(uint8_t, uint8_t *)",
+    "location": {
+      "column": "8",
+      "line": "82",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_u32Read",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SERIAL_eFlush",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "SERIAL_teStatus SERIAL_eFlush(uint8_t)",
+    "location": {
+      "column": "17",
+      "line": "83",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\drivers\\serial.h"
+    },
+    "name": "SERIAL_eFlush",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@1753@macro@PRJ_OPTIONS_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PRJ_OPTIONS_H",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "PRJ_OPTIONS_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@2051@macro@PRJ_MANUF_NAME_STRING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PRJ_MANUF_NAME_STRING",
+    "location": {
+      "column": "9",
+      "line": "44",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "PRJ_MANUF_NAME_STRING",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@2102@macro@PRJ_MODEL_ID_STRING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PRJ_MODEL_ID_STRING",
+    "location": {
+      "column": "9",
+      "line": "45",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "PRJ_MODEL_ID_STRING",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@2154@macro@PRJ_DATE_STRING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PRJ_DATE_STRING",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "PRJ_DATE_STRING",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@2207@macro@PRJ_HW_VER_STRING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PRJ_HW_VER_STRING",
+    "location": {
+      "column": "9",
+      "line": "47",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "PRJ_HW_VER_STRING",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@2258@macro@PRJ_SW_VER_STRING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PRJ_SW_VER_STRING",
+    "location": {
+      "column": "9",
+      "line": "48",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "PRJ_SW_VER_STRING",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@2309@macro@PRJ_SERI_NUMBER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PRJ_SERI_NUMBER",
+    "location": {
+      "column": "9",
+      "line": "49",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "PRJ_SERI_NUMBER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@2601@macro@SERIAL_TOTAL_NUMBER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SERIAL_TOTAL_NUMBER",
+    "location": {
+      "column": "9",
+      "line": "54",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "SERIAL_TOTAL_NUMBER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@2643@macro@SERIAL_SUPPORT_INTERRUPT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SERIAL_SUPPORT_INTERRUPT",
+    "location": {
+      "column": "9",
+      "line": "55",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "SERIAL_SUPPORT_INTERRUPT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@2999@macro@BUTTON_TOTAL_NUMBER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BUTTON_TOTAL_NUMBER",
+    "location": {
+      "column": "9",
+      "line": "61",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "BUTTON_TOTAL_NUMBER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:prj_options.h@3366@macro@LED_TOTAL_NUMBER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LED_TOTAL_NUMBER",
+    "location": {
+      "column": "9",
+      "line": "67",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+    },
+    "name": "LED_TOTAL_NUMBER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@BUTTON_tsCommon",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "31",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@BUTTON_tsCommon@FI@u8NumButtons",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "u8NumButtons",
+        "location": {
+          "column": "17",
+          "line": "33",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+        },
+        "name": "u8NumButtons",
+        "origin": "project_file",
+        "scope": "_anonymous_button_c_31_9"
+      },
+      {
+        "ID": "c:@SA@BUTTON_tsCommon@FI@psButtons",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "psButtons",
+        "location": {
+          "column": "20",
+          "line": "34",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+        },
+        "name": "psButtons",
+        "origin": "project_file",
+        "scope": "_anonymous_button_c_31_9"
+      },
+      {
+        "ID": "c:@T@BUTTON_tsCommon",
+        "What": "TypedefDecl",
+        "defdec": "Def",
+        "display": "struct BUTTON_tsCommon",
+        "location": {
+          "column": "2",
+          "line": "35",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+        },
+        "name": "BUTTON_tsCommon",
+        "origin": "project_file",
+        "scope": "_anonymous_button_c_31_9"
+      }
+    ],
+    "name": "",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@APP_msgButtonEvents",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "APP_msgButtonEvents",
+    "location": {
+      "column": "19",
+      "line": "39",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "APP_msgButtonEvents",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@u8TimerScanButtons",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "u8TimerScanButtons",
+    "location": {
+      "column": "7",
+      "line": "40",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "u8TimerScanButtons",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@BUTTON_sCommon",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "BUTTON_sCommon",
+    "location": {
+      "column": "24",
+      "line": "42",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "BUTTON_sCommon",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@asButtonMsg",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "asButtonMsg",
+    "location": {
+      "column": "26",
+      "line": "43",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "asButtonMsg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@F@BUTTON_vScanTask",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void BUTTON_vScanTask(void *)",
+    "location": {
+      "column": "13",
+      "line": "45",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "BUTTON_vScanTask",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BUTTON_eInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *, uint8_t)",
+    "location": {
+      "column": "17",
+      "line": "48",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "BUTTON_eInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BUTTON_eOpen",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
+    "location": {
+      "column": "17",
+      "line": "69",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "BUTTON_eOpen",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@2929@F@BUTTON_eOpen@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "76",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@2946@F@BUTTON_eOpen@psButtons",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psButtons",
+    "location": {
+      "column": "27",
+      "line": "77",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "psButtons",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BUTTON_eClose",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "BUTTON_teStatus BUTTON_eClose(uint8_t)",
+    "location": {
+      "column": "17",
+      "line": "108",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "BUTTON_eClose",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@4400@F@BUTTON_eClose@psButtons",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psButtons",
+    "location": {
+      "column": "26",
+      "line": "110",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "psButtons",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@F@BUTTON_vScanTask",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void BUTTON_vScanTask(void *)",
+    "location": {
+      "column": "13",
+      "line": "126",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "BUTTON_vScanTask",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@4979@F@BUTTON_vScanTask@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "13",
+      "line": "132",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@4995@F@BUTTON_vScanTask@psButtons",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psButtons",
+    "location": {
+      "column": "26",
+      "line": "133",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "psButtons",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@7110@F@BUTTON_vScanTask@sButtonEvent",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sButtonEvent",
+    "location": {
+      "column": "72",
+      "line": "161",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "sButtonEvent",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@11227@F@BUTTON_vScanTask@sButtonEvent",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sButtonEvent",
+    "location": {
+      "column": "64",
+      "line": "212",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "sButtonEvent",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:button.c@14576@F@BUTTON_vScanTask@sButtonEvent",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sButtonEvent",
+    "location": {
+      "column": "64",
+      "line": "255",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
+    },
+    "name": "sButtonEvent",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:Button.h@1116@macro@BUTTON_H_",
     "What": "MacroDef",
     "defdec": "Def",
@@ -50113,7 +51325,7 @@
     "ID": "c:@F@BUTTON_eOpen",
     "What": "Function",
     "defdec": "Dec",
-    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, _Bool)",
+    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
     "location": {
       "column": "17",
       "line": "118",
@@ -50127,7 +51339,7 @@
     "ID": "c:@F@BUTTON_eOpen",
     "What": "Function",
     "defdec": "Dec",
-    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
+    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, _Bool)",
     "location": {
       "column": "17",
       "line": "118",
@@ -50208,6 +51420,798 @@
     "scope": null
   },
   {
+    "ID": "c:@SA@LED_tsCommon",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "43",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@LED_tsCommon@FI@u8NumLeds",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "u8NumLeds",
+        "location": {
+          "column": "17",
+          "line": "45",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+        },
+        "name": "u8NumLeds",
+        "origin": "project_file",
+        "scope": "_anonymous_led_c_43_9"
+      },
+      {
+        "ID": "c:@SA@LED_tsCommon@FI@psLeds",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "psLeds",
+        "location": {
+          "column": "18",
+          "line": "46",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+        },
+        "name": "psLeds",
+        "origin": "project_file",
+        "scope": "_anonymous_led_c_43_9"
+      },
+      {
+        "ID": "c:@T@LED_tsCommon",
+        "What": "TypedefDecl",
+        "defdec": "Def",
+        "display": "struct LED_tsCommon",
+        "location": {
+          "column": "2",
+          "line": "47",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+        },
+        "name": "LED_tsCommon",
+        "origin": "project_file",
+        "scope": "_anonymous_led_c_43_9"
+      }
+    ],
+    "name": "",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@LED_sCommon",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "LED_sCommon",
+    "location": {
+      "column": "21",
+      "line": "64",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_sCommon",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "LED_teStatus LED_eInit(LED_tsLed *, uint8_t)",
+    "location": {
+      "column": "14",
+      "line": "68",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_eInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eOpen",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
+    "location": {
+      "column": "14",
+      "line": "84",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_eOpen",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@4208@F@LED_eOpen@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "13",
+      "line": "89",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@4224@F@LED_eOpen@psLeds",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psLeds",
+    "location": {
+      "column": "20",
+      "line": "90",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "psLeds",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eClose",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "LED_teStatus LED_eClose(uint8_t)",
+    "location": {
+      "column": "14",
+      "line": "114",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_eClose",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@4842@F@LED_eClose@psLeds",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psLeds",
+    "location": {
+      "column": "16",
+      "line": "116",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "psLeds",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eSetOnOff",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
+    "location": {
+      "column": "14",
+      "line": "132",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_eSetOnOff",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@5256@F@LED_eSetOnOff@psLeds",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psLeds",
+    "location": {
+      "column": "16",
+      "line": "134",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "psLeds",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.h@1107@macro@LED_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LED_H_",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@LED_teState",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@LED_teState@E_LED_STATE_OFF",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_LED_STATE_OFF",
+        "location": {
+          "column": "3",
+          "line": "40",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "E_LED_STATE_OFF",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@LED_teState@E_LED_STATE_ON",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_LED_STATE_ON",
+        "location": {
+          "column": "3",
+          "line": "41",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "E_LED_STATE_ON",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@LED_teState@E_LED_STATE_TOGGLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_LED_STATE_TOGGLE",
+        "location": {
+          "column": "3",
+          "line": "42",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "E_LED_STATE_TOGGLE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@LED_teState@E_LED_STATE_EFFECT_STOP",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_LED_STATE_EFFECT_STOP",
+        "location": {
+          "column": "3",
+          "line": "43",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "E_LED_STATE_EFFECT_STOP",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@LED_teState@E_LED_STATE_EFFECT_BLINK",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_LED_STATE_EFFECT_BLINK",
+        "location": {
+          "column": "3",
+          "line": "44",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "E_LED_STATE_EFFECT_BLINK",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@LED_teState@E_LED_STATE_EFFECT_FLASH",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_LED_STATE_EFFECT_FLASH",
+        "location": {
+          "column": "3",
+          "line": "45",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "E_LED_STATE_EFFECT_FLASH",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@LED_teState@E_LED_STATE_EFFECT_BREATH",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_LED_STATE_EFFECT_BREATH",
+        "location": {
+          "column": "3",
+          "line": "46",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "E_LED_STATE_EFFECT_BREATH",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@LED_teState@E_LED_STATE_EFFECT_UNKNOWN",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_LED_STATE_EFFECT_UNKNOWN",
+        "location": {
+          "column": "3",
+          "line": "47",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "E_LED_STATE_EFFECT_UNKNOWN",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "39",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@LED_teStatus",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@LED_teStatus@E_LED_OK",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_LED_OK",
+        "location": {
+          "column": "3",
+          "line": "53",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "E_LED_OK",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@LED_teStatus@E_LED_FAIL",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "E_LED_FAIL",
+        "location": {
+          "column": "3",
+          "line": "54",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "E_LED_FAIL",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "51",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:led.h@T@LED_tpfOpen",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "57",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_tpfOpen",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:led.h@T@LED_tpfClose",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "58",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_tpfClose",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:led.h@T@LED_tpfSetOnOff",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(bool)",
+    "location": {
+      "column": "16",
+      "line": "59",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_tpfSetOnOff",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:led.h@T@LED_tpfSetOnOff",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(_Bool)",
+    "location": {
+      "column": "16",
+      "line": "59",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_tpfSetOnOff",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@LED_tsLed",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@LED_tsLed@FI@bActiveHight",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "bActiveHight",
+        "location": {
+          "column": "19",
+          "line": "71",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "bActiveHight",
+        "origin": "user_include",
+        "scope": "_anonymous_led_h_69_9"
+      },
+      {
+        "ID": "c:@SA@LED_tsLed@FI@bState",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "bState",
+        "location": {
+          "column": "19",
+          "line": "72",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "bState",
+        "origin": "user_include",
+        "scope": "_anonymous_led_h_69_9"
+      },
+      {
+        "ID": "c:@SA@LED_tsLed@FI@pfOpen",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfOpen",
+        "location": {
+          "column": "19",
+          "line": "73",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "pfOpen",
+        "origin": "user_include",
+        "scope": "_anonymous_led_h_69_9"
+      },
+      {
+        "ID": "c:@SA@LED_tsLed@FI@pfClose",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfClose",
+        "location": {
+          "column": "19",
+          "line": "74",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "pfClose",
+        "origin": "user_include",
+        "scope": "_anonymous_led_h_69_9"
+      },
+      {
+        "ID": "c:@SA@LED_tsLed@FI@pfSetOnOff",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pfSetOnOff",
+        "location": {
+          "column": "19",
+          "line": "75",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "pfSetOnOff",
+        "origin": "user_include",
+        "scope": "_anonymous_led_h_69_9"
+      },
+      {
+        "ID": "c:@T@LED_tsLed",
+        "What": "TypedefDecl",
+        "defdec": "Def",
+        "display": "struct LED_tsLed",
+        "location": {
+          "column": "2",
+          "line": "87",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+        },
+        "name": "LED_tsLed",
+        "origin": "user_include",
+        "scope": "_anonymous_led_h_69_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eInit",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "LED_teStatus LED_eInit(LED_tsLed *, uint8_t)",
+    "location": {
+      "column": "14",
+      "line": "92",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_eInit",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eInit",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "LED_teStatus LED_eInit(LED_tsLed *, uint8_t)",
+    "location": {
+      "column": "14",
+      "line": "92",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_eInit",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eOpen",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
+    "location": {
+      "column": "14",
+      "line": "93",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_eOpen",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eOpen",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
+    "location": {
+      "column": "14",
+      "line": "93",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_eOpen",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eClose",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "LED_teStatus LED_eClose(uint8_t)",
+    "location": {
+      "column": "14",
+      "line": "95",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_eClose",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eClose",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "LED_teStatus LED_eClose(uint8_t)",
+    "location": {
+      "column": "14",
+      "line": "95",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_eClose",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eSetOnOff",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
+    "location": {
+      "column": "14",
+      "line": "96",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_eSetOnOff",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eSetOnOff",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "LED_teStatus LED_eSetOnOff(uint8_t, _Bool)",
+    "location": {
+      "column": "14",
+      "line": "96",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_eSetOnOff",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eSetOnOff",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
+    "location": {
+      "column": "14",
+      "line": "96",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_eSetOnOff",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:app_main.c@2488@macro@APP_TIMER_BUTTON",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "APP_TIMER_BUTTON",
+    "location": {
+      "column": "9",
+      "line": "59",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "APP_TIMER_BUTTON",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:app_main.c@2600@macro@APP_TIMER_LED",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "APP_TIMER_LED",
+    "location": {
+      "column": "9",
+      "line": "65",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "APP_TIMER_LED",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:app_main.c@2681@macro@APP_TOTAL_TIMER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "APP_TOTAL_TIMER",
+    "location": {
+      "column": "9",
+      "line": "70",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "APP_TOTAL_TIMER",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@asTimers",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "asTimers",
+    "location": {
+      "column": "15",
+      "line": "88",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "asTimers",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@asButtons",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "asButtons",
+    "location": {
+      "column": "17",
+      "line": "92",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "asButtons",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@asLeds",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "asLeds",
+    "location": {
+      "column": "11",
+      "line": "96",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "asLeds",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@APP_vMainLoop",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void APP_vMainLoop(void)",
+    "location": {
+      "column": "6",
+      "line": "114",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "APP_vMainLoop",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:app_main.c@4713@F@APP_vMainLoop@sButtonEvent",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sButtonEvent",
+    "location": {
+      "column": "24",
+      "line": "126",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "sButtonEvent",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@APP_vSetUpHardware",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void APP_vSetUpHardware(void)",
+    "location": {
+      "column": "6",
+      "line": "162",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "APP_vSetUpHardware",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@APP_vInitResources",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void APP_vInitResources(void)",
+    "location": {
+      "column": "6",
+      "line": "179",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
+    },
+    "name": "APP_vInitResources",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:stdbool.h@173@macro@_STDBOOL",
     "What": "MacroDef",
     "defdec": "Def",
@@ -50278,425 +52282,311 @@
     "scope": null
   },
   {
-    "ID": "c:@SA@BUTTON_tsCommon",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "31",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@BUTTON_tsCommon@FI@u8NumButtons",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "u8NumButtons",
-        "location": {
-          "column": "17",
-          "line": "33",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-        },
-        "name": "u8NumButtons",
-        "origin": "project_file",
-        "scope": "_anonymous_button_c_31_9"
-      },
-      {
-        "ID": "c:@SA@BUTTON_tsCommon@FI@psButtons",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "psButtons",
-        "location": {
-          "column": "20",
-          "line": "34",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-        },
-        "name": "psButtons",
-        "origin": "project_file",
-        "scope": "_anonymous_button_c_31_9"
-      },
-      {
-        "ID": "c:@T@BUTTON_tsCommon",
-        "What": "TypedefDecl",
-        "defdec": "Def",
-        "display": "struct BUTTON_tsCommon",
-        "location": {
-          "column": "2",
-          "line": "35",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-        },
-        "name": "BUTTON_tsCommon",
-        "origin": "project_file",
-        "scope": "_anonymous_button_c_31_9"
-      }
-    ],
-    "name": "",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@APP_msgButtonEvents",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "APP_msgButtonEvents",
-    "location": {
-      "column": "19",
-      "line": "39",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "APP_msgButtonEvents",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@u8TimerScanButtons",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "u8TimerScanButtons",
-    "location": {
-      "column": "7",
-      "line": "40",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "u8TimerScanButtons",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@BUTTON_sCommon",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "BUTTON_sCommon",
-    "location": {
-      "column": "24",
-      "line": "42",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "BUTTON_sCommon",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@asButtonMsg",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "asButtonMsg",
-    "location": {
-      "column": "26",
-      "line": "43",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "asButtonMsg",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@F@BUTTON_vScanTask",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void BUTTON_vScanTask(void *)",
-    "location": {
-      "column": "13",
-      "line": "45",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "BUTTON_vScanTask",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@BUTTON_eInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *, uint8_t)",
-    "location": {
-      "column": "17",
-      "line": "48",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "BUTTON_eInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@BUTTON_eOpen",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
-    "location": {
-      "column": "17",
-      "line": "69",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "BUTTON_eOpen",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@2929@F@BUTTON_eOpen@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "21",
-      "line": "76",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@2946@F@BUTTON_eOpen@psButtons",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psButtons",
-    "location": {
-      "column": "27",
-      "line": "77",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "psButtons",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@BUTTON_eClose",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "BUTTON_teStatus BUTTON_eClose(uint8_t)",
-    "location": {
-      "column": "17",
-      "line": "108",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "BUTTON_eClose",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@4400@F@BUTTON_eClose@psButtons",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psButtons",
-    "location": {
-      "column": "26",
-      "line": "110",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "psButtons",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@F@BUTTON_vScanTask",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void BUTTON_vScanTask(void *)",
-    "location": {
-      "column": "13",
-      "line": "126",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "BUTTON_vScanTask",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@4979@F@BUTTON_vScanTask@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "13",
-      "line": "132",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@4995@F@BUTTON_vScanTask@psButtons",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psButtons",
-    "location": {
-      "column": "26",
-      "line": "133",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "psButtons",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@7110@F@BUTTON_vScanTask@sButtonEvent",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "sButtonEvent",
-    "location": {
-      "column": "72",
-      "line": "161",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "sButtonEvent",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@11227@F@BUTTON_vScanTask@sButtonEvent",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "sButtonEvent",
-    "location": {
-      "column": "64",
-      "line": "212",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "sButtonEvent",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:button.c@14576@F@BUTTON_vScanTask@sButtonEvent",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "sButtonEvent",
-    "location": {
-      "column": "64",
-      "line": "255",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\button\\button.c"
-    },
-    "name": "sButtonEvent",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:prj_options.h@1753@macro@PRJ_OPTIONS_H",
+    "ID": "c:app_main.h@1744@macro@APP_MAIN_H",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "PRJ_OPTIONS_H",
+    "display": "APP_MAIN_H",
     "location": {
       "column": "9",
       "line": "36",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
     },
-    "name": "PRJ_OPTIONS_H",
+    "name": "APP_MAIN_H",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:prj_options.h@2051@macro@PRJ_MANUF_NAME_STRING",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PRJ_MANUF_NAME_STRING",
+    "ID": "c:@F@APP_vInitResources",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void APP_vInitResources(void)",
     "location": {
-      "column": "9",
+      "column": "6",
+      "line": "50",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
+    },
+    "name": "APP_vInitResources",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@APP_vInitResources",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void APP_vInitResources(void)",
+    "location": {
+      "column": "6",
+      "line": "50",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
+    },
+    "name": "APP_vInitResources",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@APP_vSetUpHardware",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void APP_vSetUpHardware(void)",
+    "location": {
+      "column": "6",
+      "line": "51",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
+    },
+    "name": "APP_vSetUpHardware",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@APP_vSetUpHardware",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void APP_vSetUpHardware(void)",
+    "location": {
+      "column": "6",
+      "line": "51",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
+    },
+    "name": "APP_vSetUpHardware",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@APP_vMainLoop",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void APP_vMainLoop(void)",
+    "location": {
+      "column": "6",
+      "line": "52",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
+    },
+    "name": "APP_vMainLoop",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@APP_vMainLoop",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void APP_vMainLoop(void)",
+    "location": {
+      "column": "6",
+      "line": "52",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
+    },
+    "name": "APP_vMainLoop",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@u8ButtonTest",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "u8ButtonTest",
+    "location": {
+      "column": "7",
+      "line": "41",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "u8ButtonTest",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@BUTTON_vOpen",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void BUTTON_vOpen(void)",
+    "location": {
+      "column": "17",
       "line": "44",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
-    "name": "PRJ_MANUF_NAME_STRING",
-    "origin": "user_include",
+    "name": "BUTTON_vOpen",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:prj_options.h@2102@macro@PRJ_MODEL_ID_STRING",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PRJ_MODEL_ID_STRING",
+    "ID": "c:main.c@F@BUTTON_bRead",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "bool BUTTON_bRead(void)",
     "location": {
-      "column": "9",
+      "column": "17",
       "line": "45",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
-    "name": "PRJ_MODEL_ID_STRING",
-    "origin": "user_include",
+    "name": "BUTTON_bRead",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:prj_options.h@2154@macro@PRJ_DATE_STRING",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PRJ_DATE_STRING",
+    "ID": "c:main.c@F@APP_vInitialise",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void APP_vInitialise(void)",
     "location": {
-      "column": "9",
-      "line": "46",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
-    },
-    "name": "PRJ_DATE_STRING",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:prj_options.h@2207@macro@PRJ_HW_VER_STRING",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PRJ_HW_VER_STRING",
-    "location": {
-      "column": "9",
+      "column": "13",
       "line": "47",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
-    "name": "PRJ_HW_VER_STRING",
-    "origin": "user_include",
+    "name": "APP_vInitialise",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:prj_options.h@2258@macro@PRJ_SW_VER_STRING",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PRJ_SW_VER_STRING",
+    "ID": "c:main.c@F@uart_initialize",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void uart_initialize(void)",
     "location": {
-      "column": "9",
-      "line": "48",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
-    },
-    "name": "PRJ_SW_VER_STRING",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:prj_options.h@2309@macro@PRJ_SERI_NUMBER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PRJ_SERI_NUMBER",
-    "location": {
-      "column": "9",
+      "column": "13",
       "line": "49",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
-    "name": "PRJ_SERI_NUMBER",
-    "origin": "user_include",
+    "name": "uart_initialize",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:prj_options.h@2683@macro@BUTTON_TOTAL_NUMBER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BUTTON_TOTAL_NUMBER",
+    "ID": "c:main.c@F@uart_drv_send",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void uart_drv_send(uint8_t)",
     "location": {
-      "column": "9",
-      "line": "56",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+      "column": "13",
+      "line": "50",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
-    "name": "BUTTON_TOTAL_NUMBER",
-    "origin": "user_include",
+    "name": "uart_drv_send",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:prj_options.h@3050@macro@LED_TOTAL_NUMBER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LED_TOTAL_NUMBER",
+    "ID": "c:main.c@F@uart_drv_receive",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t uart_drv_receive(void)",
     "location": {
-      "column": "9",
-      "line": "62",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\prj_options.h"
+      "column": "16",
+      "line": "51",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
     },
-    "name": "LED_TOTAL_NUMBER",
-    "origin": "user_include",
+    "name": "uart_drv_receive",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void main(void)",
+    "location": {
+      "column": "6",
+      "line": "53",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@assert_failed",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void assert_failed(u8 *, u32)",
+    "location": {
+      "column": "6",
+      "line": "88",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "assert_failed",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@BUTTON_vOpen",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void BUTTON_vOpen(void)",
+    "location": {
+      "column": "13",
+      "line": "101",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "BUTTON_vOpen",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@BUTTON_bRead",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "bool BUTTON_bRead(void)",
+    "location": {
+      "column": "13",
+      "line": "106",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "BUTTON_bRead",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@uart_drv_send",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void uart_drv_send(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "111",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "uart_drv_send",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@uart_drv_receive",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t uart_drv_receive(void)",
+    "location": {
+      "column": "16",
+      "line": "117",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "uart_drv_receive",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@uart_initialize",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void uart_initialize(void)",
+    "location": {
+      "column": "13",
+      "line": "123",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "uart_initialize",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@APP_vInitialise",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void APP_vInitialise(void)",
+    "location": {
+      "column": "13",
+      "line": "134",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "APP_vInitialise",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -50991,6 +52881,286 @@
     },
     "name": "EEPROM_EEC_IRQHandler",
     "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TRAP_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TRAP_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "68",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "TRAP_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TLI_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TLI_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "80",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "TLI_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@AWU_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void AWU_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "93",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "AWU_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@CLK_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void CLK_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "105",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "CLK_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI_PORTA_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI_PORTA_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "117",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "EXTI_PORTA_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI_PORTB_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI_PORTB_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "129",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "EXTI_PORTB_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI_PORTC_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI_PORTC_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "141",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "EXTI_PORTC_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI_PORTD_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI_PORTD_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "153",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "EXTI_PORTD_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI_PORTE_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI_PORTE_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "165",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "EXTI_PORTE_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "217",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "SPI_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM1_UPD_OVF_TRG_BRK_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM1_UPD_OVF_TRG_BRK_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "229",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "TIM1_UPD_OVF_TRG_BRK_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM1_CAP_COM_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM1_CAP_COM_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "241",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "TIM1_CAP_COM_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM2_UPD_OVF_BRK_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM2_UPD_OVF_BRK_IRQHandler(void)",
+    "location": {
+      "column": "2",
+      "line": "279",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "TIM2_UPD_OVF_BRK_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM2_CAP_COM_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM2_CAP_COM_IRQHandler(void)",
+    "location": {
+      "column": "2",
+      "line": "291",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "TIM2_CAP_COM_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART1_TX_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void UART1_TX_IRQHandler(void)",
+    "location": {
+      "column": "2",
+      "line": "333",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "UART1_TX_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART1_RX_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void UART1_RX_IRQHandler(void)",
+    "location": {
+      "column": "2",
+      "line": "346",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "UART1_RX_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2C_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void I2C_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "386",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "I2C_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC1_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void ADC1_IRQHandler(void)",
+    "location": {
+      "column": "2",
+      "line": "465",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "ADC1_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM4_UPD_OVF_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM4_UPD_OVF_IRQHandler(void)",
+    "location": {
+      "column": "2",
+      "line": "491",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "TIM4_UPD_OVF_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EEPROM_EEC_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EEPROM_EEC_IRQHandler(void)",
+    "location": {
+      "column": "1",
+      "line": "508",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+    },
+    "name": "EEPROM_EEC_IRQHandler",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -51442,1383 +53612,143 @@
     "scope": null
   },
   {
-    "ID": "c:led.h@1107@macro@LED_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LED_H_",
-    "location": {
-      "column": "9",
-      "line": "25",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@LED_teState",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@LED_teState@E_LED_STATE_OFF",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "E_LED_STATE_OFF",
-        "location": {
-          "column": "3",
-          "line": "40",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "E_LED_STATE_OFF",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@LED_teState@E_LED_STATE_ON",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "E_LED_STATE_ON",
-        "location": {
-          "column": "3",
-          "line": "41",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "E_LED_STATE_ON",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@LED_teState@E_LED_STATE_TOGGLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "E_LED_STATE_TOGGLE",
-        "location": {
-          "column": "3",
-          "line": "42",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "E_LED_STATE_TOGGLE",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@LED_teState@E_LED_STATE_EFFECT_STOP",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "E_LED_STATE_EFFECT_STOP",
-        "location": {
-          "column": "3",
-          "line": "43",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "E_LED_STATE_EFFECT_STOP",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@LED_teState@E_LED_STATE_EFFECT_BLINK",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "E_LED_STATE_EFFECT_BLINK",
-        "location": {
-          "column": "3",
-          "line": "44",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "E_LED_STATE_EFFECT_BLINK",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@LED_teState@E_LED_STATE_EFFECT_FLASH",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "E_LED_STATE_EFFECT_FLASH",
-        "location": {
-          "column": "3",
-          "line": "45",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "E_LED_STATE_EFFECT_FLASH",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@LED_teState@E_LED_STATE_EFFECT_BREATH",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "E_LED_STATE_EFFECT_BREATH",
-        "location": {
-          "column": "3",
-          "line": "46",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "E_LED_STATE_EFFECT_BREATH",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@LED_teState@E_LED_STATE_EFFECT_UNKNOWN",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "E_LED_STATE_EFFECT_UNKNOWN",
-        "location": {
-          "column": "3",
-          "line": "47",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "E_LED_STATE_EFFECT_UNKNOWN",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "39",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@LED_teStatus",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@LED_teStatus@E_LED_OK",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "E_LED_OK",
-        "location": {
-          "column": "3",
-          "line": "53",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "E_LED_OK",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@LED_teStatus@E_LED_FAIL",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "E_LED_FAIL",
-        "location": {
-          "column": "3",
-          "line": "54",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "E_LED_FAIL",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "51",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:led.h@T@LED_tpfOpen",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "void (*)(void)",
-    "location": {
-      "column": "16",
-      "line": "57",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_tpfOpen",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:led.h@T@LED_tpfClose",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "void (*)(void)",
-    "location": {
-      "column": "16",
-      "line": "58",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_tpfClose",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:led.h@T@LED_tpfSetOnOff",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "void (*)(_Bool)",
-    "location": {
-      "column": "16",
-      "line": "59",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_tpfSetOnOff",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:led.h@T@LED_tpfSetOnOff",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "void (*)(bool)",
-    "location": {
-      "column": "16",
-      "line": "59",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_tpfSetOnOff",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@LED_tsLed",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "69",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@LED_tsLed@FI@bActiveHight",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "bActiveHight",
-        "location": {
-          "column": "19",
-          "line": "71",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "bActiveHight",
-        "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
-      },
-      {
-        "ID": "c:@SA@LED_tsLed@FI@bState",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "bState",
-        "location": {
-          "column": "19",
-          "line": "72",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "bState",
-        "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
-      },
-      {
-        "ID": "c:@SA@LED_tsLed@FI@pfOpen",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pfOpen",
-        "location": {
-          "column": "19",
-          "line": "73",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "pfOpen",
-        "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
-      },
-      {
-        "ID": "c:@SA@LED_tsLed@FI@pfClose",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pfClose",
-        "location": {
-          "column": "19",
-          "line": "74",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "pfClose",
-        "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
-      },
-      {
-        "ID": "c:@SA@LED_tsLed@FI@pfSetOnOff",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pfSetOnOff",
-        "location": {
-          "column": "19",
-          "line": "75",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "pfSetOnOff",
-        "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
-      },
-      {
-        "ID": "c:@T@LED_tsLed",
-        "What": "TypedefDecl",
-        "defdec": "Def",
-        "display": "struct LED_tsLed",
-        "location": {
-          "column": "2",
-          "line": "87",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-        },
-        "name": "LED_tsLed",
-        "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
-      }
-    ],
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eInit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "LED_teStatus LED_eInit(LED_tsLed *, uint8_t)",
-    "location": {
-      "column": "14",
-      "line": "92",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_eInit",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eInit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "LED_teStatus LED_eInit(LED_tsLed *, uint8_t)",
-    "location": {
-      "column": "14",
-      "line": "92",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_eInit",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eOpen",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
-    "location": {
-      "column": "14",
-      "line": "93",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_eOpen",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eOpen",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
-    "location": {
-      "column": "14",
-      "line": "93",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_eOpen",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eClose",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "LED_teStatus LED_eClose(uint8_t)",
-    "location": {
-      "column": "14",
-      "line": "95",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_eClose",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eClose",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "LED_teStatus LED_eClose(uint8_t)",
-    "location": {
-      "column": "14",
-      "line": "95",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_eClose",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eSetOnOff",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
-    "location": {
-      "column": "14",
-      "line": "96",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_eSetOnOff",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eSetOnOff",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "LED_teStatus LED_eSetOnOff(uint8_t, _Bool)",
-    "location": {
-      "column": "14",
-      "line": "96",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_eSetOnOff",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eSetOnOff",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
-    "location": {
-      "column": "14",
-      "line": "96",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
-    },
-    "name": "LED_eSetOnOff",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@LED_tsCommon",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "43",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@LED_tsCommon@FI@u8NumLeds",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "u8NumLeds",
-        "location": {
-          "column": "17",
-          "line": "45",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-        },
-        "name": "u8NumLeds",
-        "origin": "project_file",
-        "scope": "_anonymous_led_c_43_9"
-      },
-      {
-        "ID": "c:@SA@LED_tsCommon@FI@psLeds",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "psLeds",
-        "location": {
-          "column": "18",
-          "line": "46",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-        },
-        "name": "psLeds",
-        "origin": "project_file",
-        "scope": "_anonymous_led_c_43_9"
-      },
-      {
-        "ID": "c:@T@LED_tsCommon",
-        "What": "TypedefDecl",
-        "defdec": "Def",
-        "display": "struct LED_tsCommon",
-        "location": {
-          "column": "2",
-          "line": "47",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-        },
-        "name": "LED_tsCommon",
-        "origin": "project_file",
-        "scope": "_anonymous_led_c_43_9"
-      }
-    ],
-    "name": "",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@LED_sCommon",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "LED_sCommon",
-    "location": {
-      "column": "21",
-      "line": "64",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_sCommon",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "LED_teStatus LED_eInit(LED_tsLed *, uint8_t)",
-    "location": {
-      "column": "14",
-      "line": "68",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_eInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eOpen",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
-    "location": {
-      "column": "14",
-      "line": "84",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_eOpen",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@4208@F@LED_eOpen@i",
+    "ID": "c:@APR_Array",
     "What": "Variable",
     "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "13",
-      "line": "89",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@4224@F@LED_eOpen@psLeds",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psLeds",
-    "location": {
-      "column": "20",
-      "line": "90",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "psLeds",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eClose",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "LED_teStatus LED_eClose(uint8_t)",
-    "location": {
-      "column": "14",
-      "line": "114",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_eClose",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@4842@F@LED_eClose@psLeds",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psLeds",
-    "location": {
-      "column": "16",
-      "line": "116",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "psLeds",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eSetOnOff",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
-    "location": {
-      "column": "14",
-      "line": "132",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_eSetOnOff",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@5256@F@LED_eSetOnOff@psLeds",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psLeds",
-    "location": {
-      "column": "16",
-      "line": "134",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "psLeds",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:app_main.c@2488@macro@APP_TIMER_BUTTON",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "APP_TIMER_BUTTON",
-    "location": {
-      "column": "9",
-      "line": "59",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "APP_TIMER_BUTTON",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:app_main.c@2600@macro@APP_TIMER_LED",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "APP_TIMER_LED",
-    "location": {
-      "column": "9",
-      "line": "65",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "APP_TIMER_LED",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:app_main.c@2681@macro@APP_TOTAL_TIMER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "APP_TOTAL_TIMER",
-    "location": {
-      "column": "9",
-      "line": "70",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "APP_TOTAL_TIMER",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@asTimers",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "asTimers",
+    "display": "APR_Array",
     "location": {
       "column": "15",
-      "line": "88",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "asTimers",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@asButtons",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "asButtons",
-    "location": {
-      "column": "17",
-      "line": "92",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "asButtons",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@asLeds",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "asLeds",
-    "location": {
-      "column": "11",
-      "line": "96",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "asLeds",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@APP_vMainLoop",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void APP_vMainLoop(void)",
-    "location": {
-      "column": "6",
-      "line": "114",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "APP_vMainLoop",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:app_main.c@4713@F@APP_vMainLoop@sButtonEvent",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "sButtonEvent",
-    "location": {
-      "column": "24",
-      "line": "126",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "sButtonEvent",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@APP_vSetUpHardware",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void APP_vSetUpHardware(void)",
-    "location": {
-      "column": "6",
-      "line": "162",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "APP_vSetUpHardware",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@APP_vInitResources",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void APP_vInitResources(void)",
-    "location": {
-      "column": "6",
-      "line": "179",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.c"
-    },
-    "name": "APP_vInitResources",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@u8ButtonTest",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "u8ButtonTest",
-    "location": {
-      "column": "7",
-      "line": "41",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "u8ButtonTest",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@BUTTON_vOpen",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void BUTTON_vOpen(void)",
-    "location": {
-      "column": "17",
-      "line": "44",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "BUTTON_vOpen",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@BUTTON_bRead",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "bool BUTTON_bRead(void)",
-    "location": {
-      "column": "17",
-      "line": "45",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "BUTTON_bRead",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@APP_vInitialise",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void APP_vInitialise(void)",
-    "location": {
-      "column": "13",
-      "line": "47",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "APP_vInitialise",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@uart_initialize",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void uart_initialize(void)",
-    "location": {
-      "column": "13",
       "line": "49",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
     },
-    "name": "uart_initialize",
+    "name": "APR_Array",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@F@uart_drv_send",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void uart_drv_send(uint8_t)",
+    "ID": "c:@TBR_Array",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "TBR_Array",
     "location": {
-      "column": "13",
-      "line": "50",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+      "column": "15",
+      "line": "55",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
     },
-    "name": "uart_drv_send",
+    "name": "TBR_Array",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@F@uart_drv_receive",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8_t uart_drv_receive(void)",
-    "location": {
-      "column": "16",
-      "line": "51",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "uart_drv_receive",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@main",
+    "ID": "c:@F@AWU_DeInit",
     "What": "Function",
     "defdec": "Def",
-    "display": "void main(void)",
+    "display": "void AWU_DeInit(void)",
     "location": {
       "column": "6",
-      "line": "53",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+      "line": "73",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
     },
-    "name": "main",
+    "name": "AWU_DeInit",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@assert_failed",
+    "ID": "c:@F@AWU_Init",
     "What": "Function",
     "defdec": "Def",
-    "display": "void assert_failed(u8 *, u32)",
+    "display": "void AWU_Init(AWU_Timebase_TypeDef)",
     "location": {
       "column": "6",
       "line": "88",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
     },
-    "name": "assert_failed",
+    "name": "AWU_Init",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@F@BUTTON_vOpen",
+    "ID": "c:@F@AWU_Cmd",
     "What": "Function",
     "defdec": "Def",
-    "display": "void BUTTON_vOpen(void)",
+    "display": "void AWU_Cmd(FunctionalState)",
     "location": {
-      "column": "13",
-      "line": "101",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+      "column": "6",
+      "line": "112",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
     },
-    "name": "BUTTON_vOpen",
+    "name": "AWU_Cmd",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@F@BUTTON_bRead",
+    "ID": "c:@F@AWU_LSICalibrationConfig",
     "What": "Function",
     "defdec": "Def",
-    "display": "bool BUTTON_bRead(void)",
+    "display": "void AWU_LSICalibrationConfig(uint32_t)",
     "location": {
-      "column": "13",
-      "line": "106",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+      "column": "6",
+      "line": "139",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
     },
-    "name": "BUTTON_bRead",
+    "name": "AWU_LSICalibrationConfig",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@F@uart_drv_send",
-    "What": "Function",
+    "ID": "c:stm8s_awu.c@5124@F@AWU_LSICalibrationConfig@lsifreqkhz",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "void uart_drv_send(uint8_t)",
+    "display": "lsifreqkhz",
     "location": {
-      "column": "13",
-      "line": "111",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "uart_drv_send",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@uart_drv_receive",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint8_t uart_drv_receive(void)",
-    "location": {
-      "column": "16",
-      "line": "117",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "uart_drv_receive",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@uart_initialize",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void uart_initialize(void)",
-    "location": {
-      "column": "13",
-      "line": "123",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "uart_initialize",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@APP_vInitialise",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void APP_vInitialise(void)",
-    "location": {
-      "column": "13",
-      "line": "134",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "APP_vInitialise",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TRAP_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TRAP_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "68",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "TRAP_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TLI_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TLI_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "80",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "TLI_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@AWU_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void AWU_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "93",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "AWU_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@CLK_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void CLK_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "105",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "CLK_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI_PORTA_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI_PORTA_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "117",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "EXTI_PORTA_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI_PORTB_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI_PORTB_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "129",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "EXTI_PORTB_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI_PORTC_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI_PORTC_IRQHandler(void)",
-    "location": {
-      "column": "1",
+      "column": "12",
       "line": "141",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
     },
-    "name": "EXTI_PORTC_IRQHandler",
+    "name": "lsifreqkhz",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@EXTI_PORTD_IRQHandler",
-    "What": "Function",
+    "ID": "c:stm8s_awu.c@5154@F@AWU_LSICalibrationConfig@A",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "void EXTI_PORTD_IRQHandler(void)",
+    "display": "A",
     "location": {
-      "column": "1",
-      "line": "153",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
+      "column": "12",
+      "line": "142",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
     },
-    "name": "EXTI_PORTD_IRQHandler",
+    "name": "A",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@EXTI_PORTE_IRQHandler",
+    "ID": "c:@F@AWU_IdleModeEnable",
     "What": "Function",
     "defdec": "Def",
-    "display": "void EXTI_PORTE_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "165",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "EXTI_PORTE_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "217",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "SPI_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM1_UPD_OVF_TRG_BRK_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM1_UPD_OVF_TRG_BRK_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "229",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "TIM1_UPD_OVF_TRG_BRK_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM1_CAP_COM_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM1_CAP_COM_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "241",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "TIM1_CAP_COM_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM2_UPD_OVF_BRK_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM2_UPD_OVF_BRK_IRQHandler(void)",
-    "location": {
-      "column": "2",
-      "line": "279",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "TIM2_UPD_OVF_BRK_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM2_CAP_COM_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM2_CAP_COM_IRQHandler(void)",
-    "location": {
-      "column": "2",
-      "line": "291",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "TIM2_CAP_COM_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART1_TX_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void UART1_TX_IRQHandler(void)",
-    "location": {
-      "column": "2",
-      "line": "333",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "UART1_TX_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART1_RX_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void UART1_RX_IRQHandler(void)",
-    "location": {
-      "column": "2",
-      "line": "346",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "UART1_RX_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@I2C_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void I2C_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "386",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "I2C_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC1_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void ADC1_IRQHandler(void)",
-    "location": {
-      "column": "2",
-      "line": "465",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "ADC1_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM4_UPD_OVF_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM4_UPD_OVF_IRQHandler(void)",
-    "location": {
-      "column": "2",
-      "line": "491",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "TIM4_UPD_OVF_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EEPROM_EEC_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EEPROM_EEC_IRQHandler(void)",
-    "location": {
-      "column": "1",
-      "line": "508",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\stm8s_it.c"
-    },
-    "name": "EEPROM_EEC_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:app_main.h@1744@macro@APP_MAIN_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "APP_MAIN_H",
-    "location": {
-      "column": "9",
-      "line": "36",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
-    },
-    "name": "APP_MAIN_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@APP_vInitResources",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void APP_vInitResources(void)",
+    "display": "void AWU_IdleModeEnable(void)",
     "location": {
       "column": "6",
-      "line": "50",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
+      "line": "168",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
     },
-    "name": "APP_vInitResources",
-    "origin": "user_include",
+    "name": "AWU_IdleModeEnable",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@APP_vInitResources",
+    "ID": "c:@F@AWU_GetFlagStatus",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "void APP_vInitResources(void)",
+    "defdec": "Def",
+    "display": "FlagStatus AWU_GetFlagStatus(void)",
     "location": {
-      "column": "6",
-      "line": "50",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
+      "column": "12",
+      "line": "183",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
     },
-    "name": "APP_vInitResources",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@APP_vSetUpHardware",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void APP_vSetUpHardware(void)",
-    "location": {
-      "column": "6",
-      "line": "51",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
-    },
-    "name": "APP_vSetUpHardware",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@APP_vSetUpHardware",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void APP_vSetUpHardware(void)",
-    "location": {
-      "column": "6",
-      "line": "51",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
-    },
-    "name": "APP_vSetUpHardware",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@APP_vMainLoop",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void APP_vMainLoop(void)",
-    "location": {
-      "column": "6",
-      "line": "52",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
-    },
-    "name": "APP_vMainLoop",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@APP_vMainLoop",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void APP_vMainLoop(void)",
-    "location": {
-      "column": "6",
-      "line": "52",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\app_main.h"
-    },
-    "name": "APP_vMainLoop",
-    "origin": "user_include",
+    "name": "AWU_GetFlagStatus",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -53326,6 +54256,188 @@
     "scope": null
   },
   {
+    "ID": "c:@F@BEEP_DeInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void BEEP_DeInit(void)",
+    "location": {
+      "column": "6",
+      "line": "54",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
+    },
+    "name": "BEEP_DeInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BEEP_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void BEEP_Init(BEEP_Frequency_TypeDef)",
+    "location": {
+      "column": "6",
+      "line": "67",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
+    },
+    "name": "BEEP_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BEEP_Cmd",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void BEEP_Cmd(FunctionalState)",
+    "location": {
+      "column": "6",
+      "line": "91",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
+    },
+    "name": "BEEP_Cmd",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BEEP_LSICalibrationConfig",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void BEEP_LSICalibrationConfig(uint32_t)",
+    "location": {
+      "column": "6",
+      "line": "118",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
+    },
+    "name": "BEEP_LSICalibrationConfig",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_beep.c@4174@F@BEEP_LSICalibrationConfig@lsifreqkhz",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "lsifreqkhz",
+    "location": {
+      "column": "12",
+      "line": "120",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
+    },
+    "name": "lsifreqkhz",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_beep.c@4198@F@BEEP_LSICalibrationConfig@A",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "A",
+    "location": {
+      "column": "12",
+      "line": "121",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
+    },
+    "name": "A",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI_DeInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI_DeInit(void)",
+    "location": {
+      "column": "6",
+      "line": "53",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
+    },
+    "name": "EXTI_DeInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI_SetExtIntSensitivity",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI_SetExtIntSensitivity(EXTI_Port_TypeDef, EXTI_Sensitivity_TypeDef)",
+    "location": {
+      "column": "6",
+      "line": "70",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
+    },
+    "name": "EXTI_SetExtIntSensitivity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI_SetTLISensitivity",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI_SetTLISensitivity(EXTI_TLISensitivity_TypeDef)",
+    "location": {
+      "column": "6",
+      "line": "111",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
+    },
+    "name": "EXTI_SetTLISensitivity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI_GetExtIntSensitivity",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "EXTI_Sensitivity_TypeDef EXTI_GetExtIntSensitivity(EXTI_Port_TypeDef)",
+    "location": {
+      "column": "26",
+      "line": "126",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
+    },
+    "name": "EXTI_GetExtIntSensitivity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_exti.c@4678@F@EXTI_GetExtIntSensitivity@value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "value",
+    "location": {
+      "column": "11",
+      "line": "128",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
+    },
+    "name": "value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI_GetTLISensitivity",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "EXTI_TLISensitivity_TypeDef EXTI_GetTLISensitivity(void)",
+    "location": {
+      "column": "29",
+      "line": "162",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
+    },
+    "name": "EXTI_GetTLISensitivity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_exti.c@5590@F@EXTI_GetTLISensitivity@value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "value",
+    "location": {
+      "column": "11",
+      "line": "164",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
+    },
+    "name": "value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:stm8s_flash.c@3165@macro@FLASH_CLEAR_BYTE",
     "What": "MacroDef",
     "defdec": "Def",
@@ -53798,328 +54910,6 @@
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_flash.c"
     },
     "name": "startaddress",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@BEEP_DeInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void BEEP_DeInit(void)",
-    "location": {
-      "column": "6",
-      "line": "54",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
-    },
-    "name": "BEEP_DeInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@BEEP_Init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void BEEP_Init(BEEP_Frequency_TypeDef)",
-    "location": {
-      "column": "6",
-      "line": "67",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
-    },
-    "name": "BEEP_Init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@BEEP_Cmd",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void BEEP_Cmd(FunctionalState)",
-    "location": {
-      "column": "6",
-      "line": "91",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
-    },
-    "name": "BEEP_Cmd",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@BEEP_LSICalibrationConfig",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void BEEP_LSICalibrationConfig(uint32_t)",
-    "location": {
-      "column": "6",
-      "line": "118",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
-    },
-    "name": "BEEP_LSICalibrationConfig",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_beep.c@4174@F@BEEP_LSICalibrationConfig@lsifreqkhz",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "lsifreqkhz",
-    "location": {
-      "column": "12",
-      "line": "120",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
-    },
-    "name": "lsifreqkhz",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_beep.c@4198@F@BEEP_LSICalibrationConfig@A",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "A",
-    "location": {
-      "column": "12",
-      "line": "121",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_beep.c"
-    },
-    "name": "A",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI_DeInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI_DeInit(void)",
-    "location": {
-      "column": "6",
-      "line": "53",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
-    },
-    "name": "EXTI_DeInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI_SetExtIntSensitivity",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI_SetExtIntSensitivity(EXTI_Port_TypeDef, EXTI_Sensitivity_TypeDef)",
-    "location": {
-      "column": "6",
-      "line": "70",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
-    },
-    "name": "EXTI_SetExtIntSensitivity",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI_SetTLISensitivity",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI_SetTLISensitivity(EXTI_TLISensitivity_TypeDef)",
-    "location": {
-      "column": "6",
-      "line": "111",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
-    },
-    "name": "EXTI_SetTLISensitivity",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI_GetExtIntSensitivity",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "EXTI_Sensitivity_TypeDef EXTI_GetExtIntSensitivity(EXTI_Port_TypeDef)",
-    "location": {
-      "column": "26",
-      "line": "126",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
-    },
-    "name": "EXTI_GetExtIntSensitivity",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_exti.c@4678@F@EXTI_GetExtIntSensitivity@value",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "value",
-    "location": {
-      "column": "11",
-      "line": "128",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
-    },
-    "name": "value",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI_GetTLISensitivity",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "EXTI_TLISensitivity_TypeDef EXTI_GetTLISensitivity(void)",
-    "location": {
-      "column": "29",
-      "line": "162",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
-    },
-    "name": "EXTI_GetTLISensitivity",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_exti.c@5590@F@EXTI_GetTLISensitivity@value",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "value",
-    "location": {
-      "column": "11",
-      "line": "164",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_exti.c"
-    },
-    "name": "value",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@APR_Array",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "APR_Array",
-    "location": {
-      "column": "15",
-      "line": "49",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
-    },
-    "name": "APR_Array",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@TBR_Array",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "TBR_Array",
-    "location": {
-      "column": "15",
-      "line": "55",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
-    },
-    "name": "TBR_Array",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@AWU_DeInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void AWU_DeInit(void)",
-    "location": {
-      "column": "6",
-      "line": "73",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
-    },
-    "name": "AWU_DeInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@AWU_Init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void AWU_Init(AWU_Timebase_TypeDef)",
-    "location": {
-      "column": "6",
-      "line": "88",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
-    },
-    "name": "AWU_Init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@AWU_Cmd",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void AWU_Cmd(FunctionalState)",
-    "location": {
-      "column": "6",
-      "line": "112",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
-    },
-    "name": "AWU_Cmd",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@AWU_LSICalibrationConfig",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void AWU_LSICalibrationConfig(uint32_t)",
-    "location": {
-      "column": "6",
-      "line": "139",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
-    },
-    "name": "AWU_LSICalibrationConfig",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_awu.c@5124@F@AWU_LSICalibrationConfig@lsifreqkhz",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "lsifreqkhz",
-    "location": {
-      "column": "12",
-      "line": "141",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
-    },
-    "name": "lsifreqkhz",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_awu.c@5154@F@AWU_LSICalibrationConfig@A",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "A",
-    "location": {
-      "column": "12",
-      "line": "142",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
-    },
-    "name": "A",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@AWU_IdleModeEnable",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void AWU_IdleModeEnable(void)",
-    "location": {
-      "column": "6",
-      "line": "168",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
-    },
-    "name": "AWU_IdleModeEnable",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@AWU_GetFlagStatus",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "FlagStatus AWU_GetFlagStatus(void)",
-    "location": {
-      "column": "12",
-      "line": "183",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_awu.c"
-    },
-    "name": "AWU_GetFlagStatus",
     "origin": "project_file",
     "scope": null
   },
@@ -55086,6 +55876,370 @@
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_rst.c"
     },
     "name": "RST_ClearFlag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_DeInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_DeInit(void)",
+    "location": {
+      "column": "6",
+      "line": "50",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_DeInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_Init(SPI_FirstBit_TypeDef, SPI_BaudRatePrescaler_TypeDef, SPI_Mode_TypeDef, SPI_ClockPolarity_TypeDef, SPI_ClockPhase_TypeDef, SPI_DataDirection_TypeDef, SPI_NSS_TypeDef, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "78",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_Cmd",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_Cmd(FunctionalState)",
+    "location": {
+      "column": "6",
+      "line": "119",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_Cmd",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_ITConfig",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_ITConfig(SPI_IT_TypeDef, FunctionalState)",
+    "location": {
+      "column": "6",
+      "line": "141",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_ITConfig",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_spi.c@5435@F@SPI_ITConfig@itpos",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "itpos",
+    "location": {
+      "column": "11",
+      "line": "143",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "itpos",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_SendData",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_SendData(uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "166",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_SendData",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_ReceiveData",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t SPI_ReceiveData(void)",
+    "location": {
+      "column": "9",
+      "line": "176",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_ReceiveData",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_NSSInternalSoftwareCmd",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_NSSInternalSoftwareCmd(FunctionalState)",
+    "location": {
+      "column": "6",
+      "line": "187",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_NSSInternalSoftwareCmd",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_TransmitCRC",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_TransmitCRC(void)",
+    "location": {
+      "column": "6",
+      "line": "207",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_TransmitCRC",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_CalculateCRCCmd",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_CalculateCRCCmd(FunctionalState)",
+    "location": {
+      "column": "6",
+      "line": "218",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_CalculateCRCCmd",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_GetCRC",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t SPI_GetCRC(SPI_CRC_TypeDef)",
+    "location": {
+      "column": "9",
+      "line": "238",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_GetCRC",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_spi.c@7993@F@SPI_GetCRC@crcreg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "crcreg",
+    "location": {
+      "column": "11",
+      "line": "240",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "crcreg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_ResetCRC",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_ResetCRC(void)",
+    "location": {
+      "column": "6",
+      "line": "263",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_ResetCRC",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_GetCRCPolynomial",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t SPI_GetCRCPolynomial(void)",
+    "location": {
+      "column": "9",
+      "line": "278",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_GetCRCPolynomial",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_BiDirectionalLineConfig",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_BiDirectionalLineConfig(SPI_Direction_TypeDef)",
+    "location": {
+      "column": "6",
+      "line": "288",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_BiDirectionalLineConfig",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_GetFlagStatus",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "FlagStatus SPI_GetFlagStatus(SPI_Flag_TypeDef)",
+    "location": {
+      "column": "12",
+      "line": "311",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_GetFlagStatus",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_spi.c@9908@F@SPI_GetFlagStatus@status",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "status",
+    "location": {
+      "column": "14",
+      "line": "313",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "status",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_ClearFlag",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_ClearFlag(SPI_Flag_TypeDef)",
+    "location": {
+      "column": "6",
+      "line": "346",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_ClearFlag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_GetITStatus",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "ITStatus SPI_GetITStatus(SPI_IT_TypeDef)",
+    "location": {
+      "column": "10",
+      "line": "366",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_GetITStatus",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_spi.c@11785@F@SPI_GetITStatus@pendingbitstatus",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "pendingbitstatus",
+    "location": {
+      "column": "12",
+      "line": "368",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "pendingbitstatus",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_spi.c@11823@F@SPI_GetITStatus@itpos",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "itpos",
+    "location": {
+      "column": "11",
+      "line": "369",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "itpos",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_spi.c@11845@F@SPI_GetITStatus@itmask1",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "itmask1",
+    "location": {
+      "column": "11",
+      "line": "370",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "itmask1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_spi.c@11869@F@SPI_GetITStatus@itmask2",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "itmask2",
+    "location": {
+      "column": "11",
+      "line": "371",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "itmask2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_spi.c@11893@F@SPI_GetITStatus@enablestatus",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "enablestatus",
+    "location": {
+      "column": "11",
+      "line": "372",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "enablestatus",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_ClearITPendingBit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_ClearITPendingBit(SPI_IT_TypeDef)",
+    "location": {
+      "column": "6",
+      "line": "412",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "SPI_ClearITPendingBit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_spi.c@13500@F@SPI_ClearITPendingBit@itpos",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "itpos",
+    "location": {
+      "column": "11",
+      "line": "414",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
+    },
+    "name": "itpos",
     "origin": "project_file",
     "scope": null
   },
@@ -57480,370 +58634,6 @@
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_tim2.c"
     },
     "name": "TI3_Config",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_DeInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_DeInit(void)",
-    "location": {
-      "column": "6",
-      "line": "50",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_DeInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_Init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_Init(SPI_FirstBit_TypeDef, SPI_BaudRatePrescaler_TypeDef, SPI_Mode_TypeDef, SPI_ClockPolarity_TypeDef, SPI_ClockPhase_TypeDef, SPI_DataDirection_TypeDef, SPI_NSS_TypeDef, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "78",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_Init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_Cmd",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_Cmd(FunctionalState)",
-    "location": {
-      "column": "6",
-      "line": "119",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_Cmd",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_ITConfig",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_ITConfig(SPI_IT_TypeDef, FunctionalState)",
-    "location": {
-      "column": "6",
-      "line": "141",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_ITConfig",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_spi.c@5435@F@SPI_ITConfig@itpos",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "itpos",
-    "location": {
-      "column": "11",
-      "line": "143",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "itpos",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_SendData",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_SendData(uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "166",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_SendData",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_ReceiveData",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint8_t SPI_ReceiveData(void)",
-    "location": {
-      "column": "9",
-      "line": "176",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_ReceiveData",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_NSSInternalSoftwareCmd",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_NSSInternalSoftwareCmd(FunctionalState)",
-    "location": {
-      "column": "6",
-      "line": "187",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_NSSInternalSoftwareCmd",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_TransmitCRC",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_TransmitCRC(void)",
-    "location": {
-      "column": "6",
-      "line": "207",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_TransmitCRC",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_CalculateCRCCmd",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_CalculateCRCCmd(FunctionalState)",
-    "location": {
-      "column": "6",
-      "line": "218",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_CalculateCRCCmd",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_GetCRC",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint8_t SPI_GetCRC(SPI_CRC_TypeDef)",
-    "location": {
-      "column": "9",
-      "line": "238",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_GetCRC",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_spi.c@7993@F@SPI_GetCRC@crcreg",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "crcreg",
-    "location": {
-      "column": "11",
-      "line": "240",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "crcreg",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_ResetCRC",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_ResetCRC(void)",
-    "location": {
-      "column": "6",
-      "line": "263",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_ResetCRC",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_GetCRCPolynomial",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint8_t SPI_GetCRCPolynomial(void)",
-    "location": {
-      "column": "9",
-      "line": "278",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_GetCRCPolynomial",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_BiDirectionalLineConfig",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_BiDirectionalLineConfig(SPI_Direction_TypeDef)",
-    "location": {
-      "column": "6",
-      "line": "288",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_BiDirectionalLineConfig",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_GetFlagStatus",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "FlagStatus SPI_GetFlagStatus(SPI_Flag_TypeDef)",
-    "location": {
-      "column": "12",
-      "line": "311",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_GetFlagStatus",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_spi.c@9908@F@SPI_GetFlagStatus@status",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "status",
-    "location": {
-      "column": "14",
-      "line": "313",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "status",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_ClearFlag",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_ClearFlag(SPI_Flag_TypeDef)",
-    "location": {
-      "column": "6",
-      "line": "346",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_ClearFlag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_GetITStatus",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "ITStatus SPI_GetITStatus(SPI_IT_TypeDef)",
-    "location": {
-      "column": "10",
-      "line": "366",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_GetITStatus",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_spi.c@11785@F@SPI_GetITStatus@pendingbitstatus",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pendingbitstatus",
-    "location": {
-      "column": "12",
-      "line": "368",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "pendingbitstatus",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_spi.c@11823@F@SPI_GetITStatus@itpos",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "itpos",
-    "location": {
-      "column": "11",
-      "line": "369",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "itpos",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_spi.c@11845@F@SPI_GetITStatus@itmask1",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "itmask1",
-    "location": {
-      "column": "11",
-      "line": "370",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "itmask1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_spi.c@11869@F@SPI_GetITStatus@itmask2",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "itmask2",
-    "location": {
-      "column": "11",
-      "line": "371",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "itmask2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_spi.c@11893@F@SPI_GetITStatus@enablestatus",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "enablestatus",
-    "location": {
-      "column": "11",
-      "line": "372",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "enablestatus",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_ClearITPendingBit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_ClearITPendingBit(SPI_IT_TypeDef)",
-    "location": {
-      "column": "6",
-      "line": "412",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "SPI_ClearITPendingBit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_spi.c@13500@F@SPI_ClearITPendingBit@itpos",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "itpos",
-    "location": {
-      "column": "11",
-      "line": "414",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\STM8S_StdPeriph_Driver\\src\\stm8s_spi.c"
-    },
-    "name": "itpos",
     "origin": "project_file",
     "scope": null
   },
