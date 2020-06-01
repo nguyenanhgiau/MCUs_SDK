@@ -265,7 +265,7 @@
                     <state>$PROJ_DIR$\..\..\..\external\button</state>
                     <state>$PROJ_DIR$\..\..\..\external\led</state>
                     <state>$PROJ_DIR$\..\..\..\chip\portable</state>
-                    <state>$PROJ_DIR$\..\..\..\drivers</state>
+                    <state>$PROJ_DIR$\..\..\..\drivers\serial</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1676,9 +1676,12 @@
     </group>
     <group>
         <name>drivers</name>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\drivers\serial.c</name>
-        </file>
+        <group>
+            <name>serial</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\drivers\serial\serial.c</name>
+            </file>
+        </group>
     </group>
     <group>
         <name>external</name>
@@ -1691,7 +1694,7 @@
         <group>
             <name>led</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\external\led\led.c</name>
+                <name>$PROJ_DIR$\..\..\..\external\LED\led.c</name>
             </file>
         </group>
     </group>

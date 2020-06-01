@@ -1,29 +1,29 @@
-led.pbi: C:\Users\Giau\Desktop\MCUs_SDK\external\led\led.c \
-  C:\Users\Giau\Desktop\MCUs_SDK\external\led/led.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\chip\chip_selection.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\stm8s_conf.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_adc1.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc/stm8s.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_awu.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_beep.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_clk.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_exti.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_flash.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_i2c.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_itc.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_iwdg.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_rst.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_spi.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_tim1.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_tim2.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_tim4.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_uart1.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_wwdg.h \
+led.pbi: C:\Users\nguye\Desktop\MCUs_SDK\external\LED\led.c \
+  C:\Users\nguye\Desktop\MCUs_SDK\external\LED/led.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\chip\chip_selection.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\stm8s_conf.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_adc1.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc/stm8s.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_awu.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_beep.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_clk.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_exti.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_flash.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_i2c.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_itc.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_iwdg.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_rst.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_spi.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_tim1.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_tim2.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_tim4.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_uart1.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\STM8S_StdPeriph_Driver\inc\stm8s_wwdg.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\common\Type.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\prj_options.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\common\Type.h \
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\prj_options.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\stdbool.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\string.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\ycheck.h \
@@ -34,4 +34,4 @@ led.pbi: C:\Users\Giau\Desktop\MCUs_SDK\external\led\led.c \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\xencoding_limits.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\DLib_Threads.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\ysizet.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\common\Timer.h
+  C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWARM\..\..\..\components\common\Timer.h
