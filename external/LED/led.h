@@ -100,7 +100,7 @@ LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level);
 #endif
 
 #ifdef LED_SUPPORT_COLOR
-LED_teStatus pfSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue);
+LED_teStatus LED_eSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue);
 #endif
 
 /* External Variable Declarations --------------------------------------------*/
