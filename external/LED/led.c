@@ -50,6 +50,10 @@ typedef struct
 /***        Local Function Prototypes                                     ***/
 /****************************************************************************/
 static void LED_vOutput(uint8 u8LedIndex);
+
+#ifdef LED_SUPPORT_EFFECT
+static void LED_vIdEffectTick(void *pvParam);
+#endif
 /****************************************************************************/
 /***        Exported Variables                                            ***/
 /****************************************************************************/
@@ -62,6 +66,11 @@ static void LED_vOutput(uint8 u8LedIndex);
 /***        Local Variables                                               ***/
 /****************************************************************************/
 static LED_tsCommon LED_sCommon;
+
+#ifdef LED_SUPPORT_EFFECT
+static LED_tsEffect LED_sEffect[LED_TOTAL_NUMBER];
+uint8 u8TimerTickLED;
+#endif
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
@@ -76,7 +85,10 @@ LED_teStatus LED_eInit(LED_tsLed *psLeds, const uint8 u8NumLeds)
     LED_sCommon.psLeds = psLeds;
     memset(psLeds, 0, sizeof(LED_tsCommon) * u8NumLeds);
 
-    /* TODO: create timer update state of led. if defined LED_SUPPORT_EFFECT */
+    #ifdef LED_SUPPORT_EFFECT
+    TIMER_eOpen(&u8TimerTickLED, LED_vIdEffectTick, NULL, TIMER_FLAG_PREVENT_SLEEP);
+    TIMER_eStart(u8TimerTickLED, LED_TIME_TICK);
+    #endif
 
     return E_LED_OK;
 }
@@ -258,6 +270,50 @@ static void LED_vOutput(uint8 u8LedIndex)
     psLeds->pfSetOnOff(psLeds->bState);
     #endif
 }
+
+#ifdef LED_SUPPORT_EFFECT
+LED_teStatus LED_eStartEffect(uint8 u8LedIndex, LED_teEffect eEffect, void *pEffectConfig)
+{
+    /* check valid */
+    if (u8LedIndex > LED_sCommon.u8NumLeds)
+    {
+        return E_LED_FAIL;
+    }
+
+    LED_tsEffect *psLedEffect;
+    psLedEffect = &LED_sEffect[u8LedIndex];
+    psLedEffect->u8Effect = eEffect;
+
+    switch (eEffect)
+    {
+    case E_LED_EFFECT_BLINK:
+        break;
+
+    case E_LED_EFFECT_FLASH:
+        break;
+
+    case E_LED_EFFECT_BREATHE:
+        break;
+
+    case E_LED_EFFECT_COLOR_LOOP:
+        break;
+    
+    default:
+        break;
+    }
+
+    return E_LED_OK;
+}
+
+static void LED_vIdEffectTick(void *pvParam)
+{
+    /* restart timer */
+	TIMER_eStart(u8TimerTickLED, LED_TIME_TICK);
+
+    /* TODO: handle tick LED */
+
+}
+#endif
 
 #endif /*LED_TOTAL_NUMBER*/
 /****************************************************************************/

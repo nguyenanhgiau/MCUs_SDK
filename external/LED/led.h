@@ -33,27 +33,11 @@
 #include <stdbool.h>
 /* Exported Define -----------------------------------------------------------*/
 
+#ifndef LED_TIME_TICK
+#define LED_TIME_TICK   (TIMER_TIME_MSEC(10))
+#endif
+
 /* Exported Typedefs ---------------------------------------------------------*/
-
-/* state of led */
-typedef enum {
-  E_LED_STATE_OFF   = 0,
-  E_LED_STATE_ON,
-  E_LED_STATE_TOGGLE,
-  E_LED_STATE_EFFECT_STOP,
-  E_LED_STATE_EFFECT_BLINK,
-  E_LED_STATE_EFFECT_FLASH,
-  E_LED_STATE_EFFECT_BREATH,
-  E_LED_STATE_EFFECT_UNKNOWN = 0xFF
-}LED_teState;
-
-/* error code */
-typedef enum
-{
-  E_LED_OK,
-  E_LED_FAIL
-}LED_teStatus;
-
 typedef void (*LED_tpfOpen)(void);
 typedef void (*LED_tpfClose)(void);
 typedef void (*LED_tpfSetOnOff)(bool);
@@ -62,6 +46,44 @@ typedef void (*LED_tpfSetOnOff)(bool);
 typedef void (*LED_tpfSetColor)(uint8, uint8, uint8);
 #endif
 
+/* Exported Structure Declarations -------------------------------------------*/
+/* error code */
+typedef enum
+{
+  E_LED_OK,
+  E_LED_FAIL
+}LED_teStatus;
+
+#ifdef LED_SUPPORT_EFFECT
+/* struce effect LED */
+typedef struct
+{
+  uint8   u8Effect;
+  uint8   u8Tick;
+  uint8   u8Count;
+  bool    bDirection;
+  bool    bFinish;
+
+  #ifdef LED_SUPPORT_COLOR
+  uint8   u8Red;
+  uint8   u8Green;
+  uint8   u8Blue;
+  uint8   u8Level;
+  #endif
+}LED_tsEffect;
+
+/* list effect supported */
+typedef enum
+{
+  E_LED_EFFECT_STOP = 0x00,
+  E_LED_EFFECT_BLINK,
+  E_LED_EFFECT_FLASH,
+  E_LED_EFFECT_BREATHE,
+  E_LED_EFFECT_COLOR_LOOP  
+}LED_teEffect;
+#endif
+
+/* main struct of LED */
 typedef struct
 {
   bool            bState;
@@ -78,9 +100,6 @@ typedef struct
   LED_tpfSetOnOff pfSetOnOff;
   #endif
 }LED_tsLed;
-
-/* Exported Structure Declarations -------------------------------------------*/
-
 /* Exported Functions Declarations -------------------------------------------*/
 LED_teStatus LED_eInit(LED_tsLed *psLeds, const uint8 u8NumLeds);
 LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
@@ -93,6 +112,9 @@ LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level);
 LED_teStatus LED_eSetColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue);
 #endif
 
+#ifdef LED_SUPPORT_EFFECT
+LED_teStatus LED_eStartEffect(uint8 u8LedIndex, LED_teEffect eEffect, void *pEffectConfig);
+#endif
 /* External Variable Declarations --------------------------------------------*/
 
 #ifdef __cplusplus

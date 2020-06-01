@@ -61,7 +61,7 @@
 #define APP_TIMER_BUTTON        0
 #endif
 
-#ifdef LED_TOTAL_NUMBER
+#ifdef LED_SUPPORT_EFFECT
 #define APP_TIMER_LED        1
 #else
 #define APP_TIMER_LED        0
