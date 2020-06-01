@@ -51,10 +51,10 @@ extern "C" {
 #define CRITICAL            (50)
 
 #ifndef DBG_vPrintf
-#define DBG_vPrintf(STREAM, FOMART, ARGS...)    \
+#define DBG_vPrintf(STREAM, FORMAT, ARGS...)    \
         do {                                    \
             if (STREAM)                         \
-                xprintf((FOMART), ## ARGS);     \
+                xprintf((FORMAT), ## ARGS);     \
         } while (0);
 #endif
 
@@ -63,7 +63,7 @@ extern "C" {
 #endif
 
 #ifndef DBG_vLog
-#define DBG_vLog(LEVEL, FOMART, ARGS...)            \
+#define DBG_vLog(LEVEL, FORMAT, ARGS...)            \
         do {                                        \
             if (LEVEL <= DBG_LEVEL_LOG) {           \
                 switch (LEVEL) {                    \
@@ -86,7 +86,7 @@ extern "C" {
                     break;                          \
                 }                                   \
                 if (LEVEL != 0)                     \
-                    xprintf((FOMART), ## ARGS);     \
+                    xprintf((FORMAT), ## ARGS);     \
                     xprintf("\n");                  \
             }                                       \
         } while (0);
