@@ -61,7 +61,7 @@ BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *psButtons, const uint8 u8NumButton
 	
 	/* Create timer for scan button */
 	TIMER_eOpen(&u8TimerScanButtons, BUTTON_vScanTask, NULL, TIMER_FLAG_PREVENT_SLEEP);
-	TIMER_eStart(u8TimerScanButtons, TIMER_TIME_MSEC(10));
+	TIMER_eStart(u8TimerScanButtons, BUTTON_TIME_SCAN);
 	
 	return E_BUTTON_OK;
 }
