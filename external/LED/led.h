@@ -58,31 +58,24 @@ typedef void (*LED_tpfOpen)(void);
 typedef void (*LED_tpfClose)(void);
 typedef void (*LED_tpfSetOnOff)(bool);
 
-#ifdef LED_SUPPORT_LEVEL
-typedef void (*LED_tpfSetLevel)(uint8);
-#endif
-
 #ifdef LED_SUPPORT_COLOR
-typedef void (*LED_tpfSetRGBColor)(uint8, uint8, uint8);
+typedef void (*LED_tpfSetColor)(uint8, uint8, uint8);
 #endif
 
 typedef struct
 {
-  bool            bActiveHight;
   bool            bState;
   LED_tpfOpen     pfOpen;
   LED_tpfClose    pfClose;
-  LED_tpfSetOnOff pfSetOnOff;
-  #ifdef LED_SUPPORT_LEVEL
-  uint8           u8Level;
-  LED_tpfSetLevel pfSetLevel;
-  #endif
   
   #ifdef LED_SUPPORT_COLOR
   uint8           u8Red;
   uint8           u8Green;
   uint8           u8Blue;
-  LED_tpfSetRGBColor pfSetRGBColor;
+  uint8           u8Level;
+  LED_tpfSetColor pfSetColor;
+  #else
+  LED_tpfSetOnOff pfSetOnOff;
   #endif
 }LED_tsLed;
 
@@ -95,12 +88,9 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
 LED_teStatus LED_eClose(uint8 u8LedIndex);
 LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState);
 
-#ifdef LED_SUPPORT_LEVEL
-LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level);
-#endif
-
 #ifdef LED_SUPPORT_COLOR
-LED_teStatus LED_eSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue);
+LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level);
+LED_teStatus LED_eSetColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue);
 #endif
 
 /* External Variable Declarations --------------------------------------------*/

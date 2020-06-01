@@ -49,7 +49,7 @@ typedef struct
 /****************************************************************************/
 /***        Local Function Prototypes                                     ***/
 /****************************************************************************/
-
+static void LED_vOutput(uint8 u8LedIndex);
 /****************************************************************************/
 /***        Exported Variables                                            ***/
 /****************************************************************************/
@@ -76,7 +76,7 @@ LED_teStatus LED_eInit(LED_tsLed *psLeds, const uint8 u8NumLeds)
     LED_sCommon.psLeds = psLeds;
     memset(psLeds, 0, sizeof(LED_tsCommon) * u8NumLeds);
 
-    /* TODO: create timer update state of led. if use effect */
+    /* TODO: create timer update state of led. if defined LED_SUPPORT_EFFECT */
 
     return E_LED_OK;
 }
@@ -84,7 +84,13 @@ LED_teStatus LED_eInit(LED_tsLed *psLeds, const uint8 u8NumLeds)
 LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
                         LED_tsLed     *psLed)
 {
-    if (psLed->pfOpen != NULL || psLed->pfSetOnOff != NULL)
+    if (psLed->pfOpen != NULL 
+    #ifdef LED_SUPPORT_COLOR
+        || psLed->pfSetColor == NULL
+    #else 
+        || psLed->pfSetOnOff == NULL
+    #endif
+    )
     {
         int i;
         LED_tsLed *psLeds;
@@ -134,46 +140,57 @@ LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState)
     LED_tsLed *psLeds;
     psLeds = &LED_sCommon.psLeds[u8LedIndex];
 
-    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetOnOff == NULL)
+    if (u8LedIndex > LED_sCommon.u8NumLeds
+    #ifdef LED_SUPPORT_COLOR
+        || psLeds->pfSetColor == NULL
+    #else 
+        || psLeds->pfSetOnOff == NULL
+    #endif
+    )
     {
         return E_LED_FAIL;
     }
 
-    /* call function set hardware led */
-    psLeds->bState = bState;
-    if (psLeds->bActiveHight)
+    /* Different value? */
+    if (psLeds->bState != bState)
     {
-        psLeds->pfSetOnOff(bState);
-    }
-    else
-    {
-        psLeds->pfSetOnOff(!bState);
+        /* Note the new state */
+        psLeds->bState = bState;
+        /* Set outputs */
+        LED_vOutput(u8LedIndex);
     }
 
     return E_LED_OK;
 }
 
-#ifdef LED_SUPPORT_LEVEL
+#ifdef LED_SUPPORT_COLOR
 LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level)
 {
     LED_tsLed *psLeds;
     psLeds = &LED_sCommon.psLeds[u8LedIndex];
 
-    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetLevel == NULL)
+    if (u8LedIndex > LED_sCommon.u8NumLeds)
     {
         return E_LED_FAIL;
     }
 
-    /* call function set level led */
-    psLeds->u8Level = u8Level;
-    psLeds->pfSetLevel(u8Level);
+    /* Different value? */
+    if (psLeds->u8Level != u8Level)
+    {
+        /* Note the new level */
+        psLeds->u8Level = (u8Level == 0)? 1 : u8Level;
+        /* Is the LED on */
+        if (psLeds->bState)
+        {
+            /* Set outputs */
+            LED_vOutput(u8LedIndex);
+        }
+    }
 
     return E_LED_OK;
 }
-#endif
 
-#ifdef LED_SUPPORT_COLOR
-LED_teStatus pfSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue)
+LED_teStatus LED_eSetColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue)
 {
     LED_tsLed *psLeds;
     psLeds = &LED_sCommon.psLeds[u8LedIndex];
@@ -183,11 +200,20 @@ LED_teStatus pfSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u
         return E_LED_FAIL;
     }
 
-    /* call function set color led */
-    psLeds->u8Red = u8Red;
-    psLeds->u8Green = u8Green;
-    psLeds->u8Blue = u8Blue;
-    psLeds->pfSetColor(u8Red, u8Green, u8Blue);
+    /* Different value? */
+    if (psLeds->u8Red != u8Red || psLeds->u8Green != u8Green || psLeds->u8Blue != u8Blue)
+    {
+        /* Note the new values */
+        psLeds->u8Red = u8Red;
+        psLeds->u8Green = u8Green;
+        psLeds->u8Blue = u8Blue;
+        /* Is the LED on? */
+        if (psLeds->bState)
+        {
+            /* Set outputs */
+            LED_vOutput(u8LedIndex);
+        }
+    }
 
     return E_LED_OK;
 }
@@ -196,6 +222,42 @@ LED_teStatus pfSetRGBColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u
 /****************************************************************************/
 /***        Local Function                                                ***/
 /****************************************************************************/
+static void LED_vOutput(uint8 u8LedIndex)
+{
+    LED_tsLed *psLeds;
+    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+
+    #ifdef LED_SUPPORT_COLOR
+    uint8 u8Red;
+    uint8 u8Green;
+    uint8 u8Blue;
+
+    /* Is LED on? */
+    if (psLeds->bState)
+    {
+        /* Scale color for brightness level */
+        u8Red = (uint8)(((uint32)psLeds->u8Red * (uint32)psLeds->u8Level) / (uint32)255);
+        u8Green = (uint8)(((uint32)psLeds->u8Green * (uint32)psLeds->u8Level) / (uint32)255);
+        u8Blue = (uint8)(((uint32)psLeds->u8Blue * (uint32)psLeds->u8Level) / (uint32)255);
+
+        /* Don't allow fully off */
+        if (u8Red == 0) u8Red = 1;
+        if (u8Green == 0) u8Green = 1;
+        if (u8Blue == 0) u8Blue = 1;
+    }
+    else
+    {
+        u8Red = 0;
+        u8Green = 0;
+        u8Blue = 0;
+    }
+
+    /* Set RGB channel levels */
+    psLeds->pfSetColor(u8Red, u8Green, u8Blue);
+    #else
+    psLeds->pfSetOnOff(psLeds->bState);
+    #endif
+}
 
 #endif /*LED_TOTAL_NUMBER*/
 /****************************************************************************/
