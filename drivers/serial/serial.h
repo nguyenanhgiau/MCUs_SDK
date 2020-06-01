@@ -71,7 +71,7 @@ typedef enum
 }SERIAL_teStatus;
 /* Exported Structure Declarations -------------------------------------------*/
 /* Exported Functions Declarations -------------------------------------------*/
-SERIAL_teStatus SERIAL_eInit(SERIAL_tsSerial *psSerials, uint8 u8NumSerials);
+SERIAL_teStatus SERIAL_eInit(SERIAL_tsSerial *psSerials, const uint8 u8NumSerials);
 SERIAL_teStatus SERIAL_eOpen(uint8 *pu8SerialIndex, SERIAL_tsSerial *psSerial);
 SERIAL_teStatus SERIAL_eClose(uint8 u8SerialIndex);
 SERIAL_teStatus SERIAL_eGet(uint8 u8SerialIndex, uint8 *pu8Byte);

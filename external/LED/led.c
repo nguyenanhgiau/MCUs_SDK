@@ -65,7 +65,7 @@ static LED_tsCommon LED_sCommon;
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
-LED_teStatus LED_eInit(LED_tsLed *psLeds, uint8 u8NumLeds)
+LED_teStatus LED_eInit(LED_tsLed *psLeds, const uint8 u8NumLeds)
 {
     if (psLeds == NULL || u8NumLeds == 0)
     {

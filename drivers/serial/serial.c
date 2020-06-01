@@ -71,7 +71,7 @@ uint8 au8SerialBufRx[SERIAL_TOTAL_NUMBER][SERIAL_RX_QUEUE_SIZE];
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
-SERIAL_teStatus SERIAL_eInit(SERIAL_tsSerial *psSerials, uint8 u8NumSerials)
+SERIAL_teStatus SERIAL_eInit(SERIAL_tsSerial *psSerials, const uint8 u8NumSerials)
 {
     if (psSerials == NULL || u8NumSerials == NULL)
     {

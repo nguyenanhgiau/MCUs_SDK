@@ -45,7 +45,7 @@ static BUTTON_tsEvent    asButtonMsg [BUTTON_QUEUE_SIZE];
 static void BUTTON_vScanTask(void *pvParam);
 
 
-BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *psButtons, uint8 u8NumButtons)
+BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *psButtons, const uint8 u8NumButtons)
 {
 	if (psButtons == NULL || u8NumButtons == 0)
 	{

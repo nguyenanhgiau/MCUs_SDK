@@ -114,7 +114,7 @@ typedef enum
 } BUTTON_teStatus;
 /* Exported Structure Declarations -------------------------------------------*/
 /* Exported Functions Declarations -------------------------------------------*/
-BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *psButtons, uint8 u8NumButtons);
+BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *psButtons, const uint8 u8NumButtons);
 BUTTON_teStatus BUTTON_eOpen(uint8 *pu8ButtonIndex, 
                              BUTTON_tpfOpen     pfOpen,
                              BUTTON_tpfClose    pfClose,
