@@ -129,21 +129,21 @@ void APP_vMainLoop(void)
             switch (sButtonEvent.eState)
             {
             case E_BUTTON_STATE_RELEASE:
-                DBG_vPrintf(TRUE, "Button %d Release", sButtonEvent.u8NumberIndex);
+                DBG_vPrintf(TRUE, "Button %d Release\n", sButtonEvent.u8NumberIndex);
                 break;
             
             case E_BUTTON_STATE_PRESS:
-                DBG_vPrintf(TRUE, "Button %d Click %d Times", sButtonEvent.u8NumberIndex, sButtonEvent.u8Click);
+                DBG_vPrintf(TRUE, "Button %d Click %d Times\n", sButtonEvent.u8NumberIndex, sButtonEvent.u8Click);
                 break;
 
             case E_BUTTON_STATE_HOLD_ON:
-                DBG_vPrintf(TRUE, "Button %d Hold on", sButtonEvent.u8NumberIndex);
+                DBG_vPrintf(TRUE, "Button %d Hold on\n", sButtonEvent.u8NumberIndex);
                 break;
             }
         }
         #endif
         
-        /*TODO: add task managenment power */
+        /*TODO: add task management power */
     }
 }
 
