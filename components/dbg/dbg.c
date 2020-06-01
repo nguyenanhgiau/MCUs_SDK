@@ -488,7 +488,7 @@ int xatoi (			/* 0:Failed, 1:Successful */
 
 DBG_teStatus DBG_vInit(DBG_tpfOpen pfOpen, DBG_tpfWrite pfWrite, DBG_tpfRead pfRead)
 {
-    if (pfOpen != NULL || pfWrite != NULL || pfRead != NULL)
+    if (pfOpen == NULL || pfWrite == NULL || pfRead == NULL)
     {
         return E_DBG_FAIL;
     }
