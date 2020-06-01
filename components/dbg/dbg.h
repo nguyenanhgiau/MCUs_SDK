@@ -67,20 +67,20 @@ extern "C" {
         do {                                        \
             if (LEVEL <= DBG_LEVEL_LOG) {           \
                 switch (LEVEL) {                    \
-                case 10:                            \
-                    xprintf("[DEBUG] ");            \
+                case DEBUG:                         \
+                    xprintf("-8%s", "[DEBUG]");     \
                     break;                          \
-                case 20:                            \
-                    xprintf("[INFO] ");             \
+                case INFO:                          \
+                    xprintf("-8%s", "[INFO]");      \
                     break;                          \
-                case 30:                            \
-                    xprintf("[WARN] ");             \
+                case WARN:                          \
+                    xprintf("-8%s", "[WARN]");      \
                     break;                          \
-                case 40:                            \
-                    xprintf("[ERROR] ");            \
+                case ERROR:                         \
+                    xprintf("-8%s", "[ERROR]");     \
                     break;                          \
-                case 50:                            \
-                    xprintf("[CRIT] ");             \
+                case CRITICAL:                      \
+                    xprintf("-8%s", "[CRIT]");      \
                     break;                          \
                 default:                            \
                     break;                          \
