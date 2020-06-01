@@ -68,24 +68,24 @@ extern "C" {
             if (LEVEL <= DBG_LEVEL_LOG) {           \
                 switch (LEVEL) {                    \
                 case DEBUG:                         \
-                    xprintf("-8%s", "[DEBUG]");     \
+                    xprintf("[DEBUG] ");            \
                     break;                          \
                 case INFO:                          \
-                    xprintf("-8%s", "[INFO]");      \
+                    xprintf("[INFO] ");             \
                     break;                          \
                 case WARN:                          \
-                    xprintf("-8%s", "[WARN]");      \
+                    xprintf("[WARN] ");             \
                     break;                          \
                 case ERROR:                         \
-                    xprintf("-8%s", "[ERROR]");     \
+                    xprintf("[ERROR] ");            \
                     break;                          \
                 case CRITICAL:                      \
-                    xprintf("-8%s", "[CRIT]");      \
+                    xprintf("[CRIT] ");             \
                     break;                          \
                 default:                            \
                     break;                          \
                 }                                   \
-                if (LEVEL != 0)                     \
+                if (LEVEL != NOTSET)                \
                     xprintf((FORMAT), ## ARGS);     \
                     xprintf("\n");                  \
             }                                       \
