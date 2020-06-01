@@ -77,7 +77,7 @@ typedef bool (*BUTTON_tpfRead)(void);
 /* state of button */
 typedef enum {
   E_BUTTON_STATE_RELEASE        = 0,
-  E_BUTTON_STATE_DEBOUNDCE,
+  E_BUTTON_STATE_DEBOUNCE,
   E_BUTTON_STATE_PRESS,
   E_BUTTON_STATE_HOLD_ON,
 }BUTTON_teState;

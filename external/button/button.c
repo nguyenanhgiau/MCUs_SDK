@@ -143,7 +143,7 @@ static void BUTTON_vScanTask(void *pvParam)
                         case E_BUTTON_STATE_RELEASE:                                            /* button state release */
                                 if (psButtons->pfRead() != psButtons->bPullUp)                  /* if button down */
                                 {
-                                        psButtons->newState = E_BUTTON_STATE_DEBOUNDCE;         /* change mode */
+                                        psButtons->newState = E_BUTTON_STATE_DEBOUNCE;         /* change mode */
                                         psButtons->timerNoisePress = 0;                         /* reset timer sample press */
                                         psButtons->timerNoiseRelease = 0;                       /* reset timer sample release */
                                         psButtons->timePress = 0;                               /* reset time press */
@@ -170,7 +170,7 @@ static void BUTTON_vScanTask(void *pvParam)
                                 psButtons->oldState = E_BUTTON_STATE_RELEASE;                                   /* save old state */
                                 break;
                         
-                        case E_BUTTON_STATE_DEBOUNDCE:                                                          /* process deboundce */
+                        case E_BUTTON_STATE_DEBOUNCE:                                                          /* process debounce */
                                 if (psButtons->pfRead() != psButtons->bPullUp)
                                 {
                                         psButtons->timerNoisePress++;                                           /* increment sample press */
@@ -189,14 +189,14 @@ static void BUTTON_vScanTask(void *pvParam)
                                         }
                                 }
                                 
-                                psButtons->oldState = E_BUTTON_STATE_DEBOUNDCE;                                 /* update old state */
+                                psButtons->oldState = E_BUTTON_STATE_DEBOUNCE;                                 /* update old state */
                                 break;
 
                         case E_BUTTON_STATE_PRESS:
                                 if (psButtons->pfRead() != psButtons->bPullUp)
                                 {
                                         psButtons->timePress++;                                                 /* increment time press */
-                                        if (psButtons->oldState == E_BUTTON_STATE_DEBOUNDCE)
+                                        if (psButtons->oldState == E_BUTTON_STATE_DEBOUNCE)
                                         {
                                                 psButtons->flagSampleResult = BUTTON_ENABLE_SAMPLE;             /* Enable sample result */
                                                 psButtons->flagSampleRelease = BUTTON_DISABLE_SAMPLE;           /* Disable sample release */
@@ -217,7 +217,7 @@ static void BUTTON_vScanTask(void *pvParam)
                                 }
                                 else
                                 {
-                                        psButtons->newState = E_BUTTON_STATE_DEBOUNDCE;                         /* button is up */
+                                        psButtons->newState = E_BUTTON_STATE_DEBOUNCE;                         /* button is up */
                                         psButtons->timerNoisePress = 0;                                         /* reset timer sample press */
                                         psButtons->timerNoiseRelease = 0;                                       /* reset timer sample release */
                                         psButtons->timePress = 0;                                               /* reset time press */
@@ -235,7 +235,7 @@ static void BUTTON_vScanTask(void *pvParam)
                                 else                                                                            /* button is up */
                                 {
                                         psButtons->flagSampleRelease = BUTTON_ENABLE_SAMPLE;
-                                        psButtons->newState = E_BUTTON_STATE_DEBOUNDCE;
+                                        psButtons->newState = E_BUTTON_STATE_DEBOUNCE;
                                         psButtons->timerNoisePress = 0;                                         /* reset timer sample press */
                                         psButtons->timerNoiseRelease = 0;                                       /* reset timer sample release */
                                         psButtons->timePress = 0;
