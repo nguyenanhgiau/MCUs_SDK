@@ -68,7 +68,7 @@ static void LED_vIdEffectTick(void *pvParam);
 static LED_tsCommon LED_sCommon;
 
 #ifdef LED_SUPPORT_EFFECT
-static LED_tsEffect LED_sEffect[LED_TOTAL_NUMBER];
+static LED_tsEffect LED_asEffect[LED_TOTAL_NUMBER];
 uint8 u8TimerTickLED;
 #endif
 /****************************************************************************/
@@ -272,7 +272,7 @@ static void LED_vOutput(uint8 u8LedIndex)
 }
 
 #ifdef LED_SUPPORT_EFFECT
-LED_teStatus LED_eStartEffect(uint8 u8LedIndex, LED_teEffect eEffect, void *pEffectConfig)
+LED_teStatus LED_eStartEffect(uint8 u8LedIndex, LED_tsEffect *psEffect)
 {
     /* check valid */
     if (u8LedIndex > LED_sCommon.u8NumLeds)
@@ -281,26 +281,12 @@ LED_teStatus LED_eStartEffect(uint8 u8LedIndex, LED_teEffect eEffect, void *pEff
     }
 
     LED_tsEffect *psLedEffect;
-    psLedEffect = &LED_sEffect[u8LedIndex];
-    psLedEffect->u8Effect = eEffect;
-
-    switch (eEffect)
-    {
-    case E_LED_EFFECT_BLINK:
-        break;
-
-    case E_LED_EFFECT_FLASH:
-        break;
-
-    case E_LED_EFFECT_BREATHE:
-        break;
-
-    case E_LED_EFFECT_COLOR_LOOP:
-        break;
+    psLedEffect = &LED_asEffect[u8LedIndex];
     
-    default:
-        break;
-    }
+    /* Check valid data */
+    
+    /* copy value to array */
+    memcpy(psLedEffect, psEffect, sizeof(LED_tsEffect));
 
     return E_LED_OK;
 }
@@ -308,10 +294,96 @@ LED_teStatus LED_eStartEffect(uint8 u8LedIndex, LED_teEffect eEffect, void *pEff
 static void LED_vIdEffectTick(void *pvParam)
 {
     /* restart timer */
-	TIMER_eStart(u8TimerTickLED, LED_TIME_TICK);
+    TIMER_eStart(u8TimerTickLED, LED_TIME_TICK);
 
     /* TODO: handle tick LED */
+    int i;
+    LED_tsEffect    *psEffect;
 
+    for ( i = 0; i < LED_sCommon.u8NumLeds; i++)
+    {
+        psEffect = &LED_asEffect[i];
+
+        switch (psEffect->eEffect)
+        {
+        case E_LED_EFFECT_BLINK:
+            if (psEffect->u16Tick < psEffect->u16Period)
+            {
+                psEffect->u16Tick++;
+
+                if (psEffect->u16Tick < psEffect->u16TimeOn)
+                {
+                    LED_eSetOnOff(i, TRUE);     /* Turn on LED */
+                }
+                else
+                {
+                    LED_eSetOnOff(i, FALSE);    /* Turn off LED */
+                }
+            }
+            else
+            {
+                psEffect->u16Tick = 0;       /* Reset tick */
+                psEffect->u8Count++;        /* Increase counter period */
+
+                /* check times of effect */
+                if (psEffect->u8Loop != 0 && psEffect->u8Count >= psEffect->u8Loop)
+                {
+                    psEffect->eEffect = E_LED_EFFECT_STOP;
+                }
+            }
+            break;
+
+        case E_LED_EFFECT_FLASH:
+            if (psEffect->u16Tick < psEffect->u16Period)
+            {
+                psEffect->u16Tick++;
+
+                if (psEffect->u8Toggle < psEffect->u8Flash)
+                {
+                    if (!psEffect->bOn)
+                    {
+                        if (psEffect->u16Tick < (psEffect->u16TimeOn + ((psEffect->u16TimeOn + psEffect->u16TimeOff) * psEffect->u8Toggle)))
+                        {
+                            LED_eSetOnOff(i, TRUE);     /* Turn on LED */
+                        }
+                        else
+                        {
+                            psEffect->bOn = !psEffect->bOn;
+                        }
+                    }
+                    else
+                    {
+                        if (psEffect->u16Tick < ((psEffect->u16TimeOn + psEffect->u16TimeOff) * (1 + psEffect->u8Toggle)))
+                        {
+                            LED_eSetOnOff(i, FALSE);     /* Turn off LED */
+                        }
+                        else
+                        {
+                            psEffect->bOn = !psEffect->bOn; /* Toggle state of LED */
+                            psEffect->u8Toggle++;       /* Increase counter flash */
+                        }
+                    }
+                }
+            }
+            else
+            {
+                psEffect->u16Tick = 0;      /* Reset tick */
+                psEffect->u8Toggle = 0;
+                psEffect->u8Count++;        /* Increase counter period */
+
+                /* check times of effect */
+                if (psEffect->u8Loop != 0 && psEffect->u8Count >= psEffect->u8Loop)
+                {
+                    psEffect->eEffect = E_LED_EFFECT_STOP;
+                }
+            }
+            break;
+        
+        default:
+            break;
+        }
+    }
+    
 }
 #endif
 

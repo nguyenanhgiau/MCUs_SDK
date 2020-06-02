@@ -55,23 +55,6 @@ typedef enum
 }LED_teStatus;
 
 #ifdef LED_SUPPORT_EFFECT
-/* struce effect LED */
-typedef struct
-{
-  uint8   u8Effect;
-  uint8   u8Tick;
-  uint8   u8Count;
-  bool    bDirection;
-  bool    bFinish;
-
-  #ifdef LED_SUPPORT_COLOR
-  uint8   u8Red;
-  uint8   u8Green;
-  uint8   u8Blue;
-  uint8   u8Level;
-  #endif
-}LED_tsEffect;
-
 /* list effect supported */
 typedef enum
 {
@@ -81,6 +64,32 @@ typedef enum
   E_LED_EFFECT_BREATHE,
   E_LED_EFFECT_COLOR_LOOP  
 }LED_teEffect;
+
+/* struce effect LED */
+typedef struct
+{
+  LED_teEffect   eEffect;
+  uint16  u16Tick;
+  uint16  u16TimeOn;     /* unit 10ms */
+  uint16  u16TimeOff;
+  uint16  u16Period;     /* uint 10ms */
+
+  bool    bOn;
+  uint8   u8Flash;
+  uint8   u8Toggle;
+
+  uint8   u8Count;
+  uint8   u8Loop;
+
+  #ifdef LED_SUPPORT_COLOR
+  bool    bDirection;
+  bool    bFinish;
+  uint8   u8Red;
+  uint8   u8Green;
+  uint8   u8Blue;
+  uint8   u8Level;
+  #endif
+}LED_tsEffect;
 #endif
 
 /* main struct of LED */
@@ -113,7 +122,7 @@ LED_teStatus LED_eSetColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u
 #endif
 
 #ifdef LED_SUPPORT_EFFECT
-LED_teStatus LED_eStartEffect(uint8 u8LedIndex, LED_teEffect eEffect, void *pEffectConfig);
+LED_teStatus LED_eStartEffect(uint8 u8LedIndex, LED_tsEffect *psEffect);
 #endif
 /* External Variable Declarations --------------------------------------------*/
 

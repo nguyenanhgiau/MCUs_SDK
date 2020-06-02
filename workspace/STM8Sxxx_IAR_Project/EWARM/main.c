@@ -41,6 +41,7 @@
 /* Private variable ----------------------------------------------------------*/
 uint8 u8ButtonTest;
 uint8 u8SerialTest;
+uint8 u8LedTest;
 /* Private function prototypes -----------------------------------------------*/
 static void     BUTTON_vOpen(void);
 static bool     BUTTON_bRead(void);
@@ -54,6 +55,9 @@ static void uart_start_send(void);
 static void uart_stop_send(void);
 static void uart_start_receive(void);
 static void uart_stop_receive(void);
+
+static void led_initialize(void);
+static void led_set_state(bool bState);
 
 void main(void)
 {
@@ -78,6 +82,16 @@ void main(void)
   APP_vInitialise();
   
   SERIAL_eWrite(u8SerialTest, "Hello\n");
+
+  LED_tsEffect sEffect = {
+      .eEffect = E_LED_EFFECT_FLASH,
+      .u16TimeOn = 15,
+      .u16TimeOff = 15,
+      .u8Flash = 3,
+      .u8Loop = 10,
+      .u16Period = 200,
+  };
+  LED_eStartEffect(u8LedTest, &sEffect);
 
   /* Infinite loop */
   APP_vMainLoop();  
@@ -158,9 +172,26 @@ static void uart_stop_receive(void)
     UART1_ITConfig(UART1_IT_RXNE_OR, DISABLE);
 }
 
+static void led_initialize(void)
+{
+    GPIO_Init(GPIOB, (GPIO_Pin_TypeDef)GPIO_PIN_5, GPIO_MODE_OUT_PP_HIGH_FAST);
+}
+
+static void led_set_state(bool bState)
+{
+    if (!bState)
+    {
+        GPIO_WriteHigh(GPIOB, (GPIO_Pin_TypeDef)GPIO_PIN_5);
+    }
+    else
+    {
+        GPIO_WriteLow(GPIOB, (GPIO_Pin_TypeDef)GPIO_PIN_5);
+    }
+}
+
 static void APP_vInitialise(void)
 {
-    BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead, true);
+    // BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead, true);
 
     SERIAL_tsSerial sSerial = {
         .pfOpen = &uart_initialize,
@@ -173,6 +204,13 @@ static void APP_vInitialise(void)
     };
     SERIAL_eOpen(&u8SerialTest, &sSerial);
     SERIAL_vStartReceive(u8SerialTest);
+
+    LED_tsLed sLed = {
+        .bState = FALSE,
+        .pfOpen = &led_initialize,
+        .pfSetOnOff = &led_set_state
+    };
+    LED_eOpen(&u8LedTest, &sLed);
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
