@@ -51,6 +51,10 @@
 #include "led.h"
 #endif
 
+#ifdef SERIAL_TOTAL_NUMBER
+#include "serial.h"
+#endif
+
 /****************************************************************************/
 /***        Macro Definitions                                             ***/
 /****************************************************************************/
@@ -94,6 +98,10 @@ BUTTON_tsButton asButtons[BUTTON_TOTAL_NUMBER];
 
 #ifdef LED_TOTAL_NUMBER
 LED_tsLed asLeds[LED_TOTAL_NUMBER];
+#endif
+
+#ifdef SERIAL_TOTAL_NUMBER
+SERIAL_tsSerial asSerial[SERIAL_TOTAL_NUMBER];
 #endif
 
 /****************************************************************************/
@@ -188,6 +196,10 @@ void APP_vInitResources(void)
 
     #ifdef LED_TOTAL_NUMBER
     LED_eInit(asLeds, sizeof(asLeds) / sizeof(LED_tsLed));
+    #endif
+
+    #ifdef SERIAL_TOTAL_NUMBER
+    SERIAL_eInit(asSerial, sizeof(asSerial) / sizeof(SERIAL_tsSerial));
     #endif
 }
 

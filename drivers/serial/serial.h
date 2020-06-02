@@ -43,8 +43,8 @@
 /* Exported Typedefs ---------------------------------------------------------*/
 typedef void (*SERIAL_ptfOpen)(void);
 typedef void (*SERIAL_ptfClose)(void);
-typedef void (*SERIAL_ptfSend)(void);
-typedef bool (*SERIAL_ptfReceive)(uint8*);
+typedef void (*SERIAL_ptfSend)(uint8);
+typedef uint8 (*SERIAL_ptfReceive)(void);
 typedef void (*SERIAL_ptfStartSend)(void);
 typedef void (*SERIAL_ptfStopSend)(void);
 typedef void (*SERIAL_ptfStartReceive)(void);
@@ -74,6 +74,10 @@ typedef enum
 SERIAL_teStatus SERIAL_eInit(SERIAL_tsSerial *psSerials, const uint8 u8NumSerials);
 SERIAL_teStatus SERIAL_eOpen(uint8 *pu8SerialIndex, SERIAL_tsSerial *psSerial);
 SERIAL_teStatus SERIAL_eClose(uint8 u8SerialIndex);
+void SERIAL_vSend(uint8 u8SerialIndex, uint8 u8Byte);
+uint8 SERIAL_u8Receive(uint8 u8SerialIndex);
+void SERIAL_vStopSend(uint8 u8SerialIndex);
+void SERIAL_vStartReceive(uint8 u8SerialIndex);
 SERIAL_teStatus SERIAL_eGet(uint8 u8SerialIndex, uint8 *pu8Byte);
 SERIAL_teStatus SERIAL_ePut(uint8 u8SerialIndex, uint8 u8Byte);
 SERIAL_teStatus SERIAL_eWrite(uint8 u8SerialIndex, uint8 *pau8Byte);

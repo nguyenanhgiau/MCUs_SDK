@@ -30,7 +30,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm8s_it.h"
 #include "Timer.h"
-#include "Queue.h"
+#include "serial.h"
 
 /** @addtogroup Template_Project
   * @{
@@ -43,6 +43,7 @@
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 /* Public functions ----------------------------------------------------------*/
+extern uint8 u8SerialTest;
 
 #ifdef _COSMIC_
 /**
@@ -335,7 +336,15 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
     /* In order to detect unexpected events during development,
        it is recommended to set a breakpoint on the following instruction.
     */
-
+   uint8 u8Byte;
+   if (!SERIAL_eGet(u8SerialTest, &u8Byte))
+   {
+      SERIAL_vSend(u8SerialTest, u8Byte);
+   }
+   else
+   {
+      SERIAL_vStopSend(u8SerialTest);
+   }
  }
 
 /**
@@ -348,7 +357,8 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
     /* In order to detect unexpected events during development,
        it is recommended to set a breakpoint on the following instruction.
     */
-
+   uint8 u8Byte = SERIAL_u8Receive(u8SerialTest);
+   SERIAL_ePut(u8SerialTest, u8Byte);
  }
 #endif /* (STM8S208) || (STM8S207) || (STM8S103) || (STM8S903) || (STM8AF62Ax) || (STM8AF52Ax) */
 

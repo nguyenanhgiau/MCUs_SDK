@@ -136,6 +136,62 @@ SERIAL_teStatus SERIAL_eClose(uint8 u8SerialIndex)
     return E_SERIAL_OK;
 }
 
+void SERIAL_vSend(uint8 u8SerialIndex, uint8 u8Byte)
+{
+    SERIAL_tsSerial *psSerials;
+    psSerials = &SERIAL_sCommon.psSerials[u8SerialIndex];
+
+    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials || psSerials->pfSend == NULL)
+    {
+        return;
+    }
+
+    /* call function hardware send */
+    psSerials->pfSend(u8Byte);
+}
+
+uint8 SERIAL_u8Receive(uint8 u8SerialIndex)
+{
+    SERIAL_tsSerial *psSerials;
+    psSerials = &SERIAL_sCommon.psSerials[u8SerialIndex];
+
+    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials || psSerials->pfReceive == NULL)
+    {
+        return 0xFF;
+    }
+
+    /* call function hardware receive */
+    return psSerials->pfReceive();
+}
+
+void SERIAL_vStopSend(uint8 u8SerialIndex)
+{
+    SERIAL_tsSerial *psSerials;
+    psSerials = &SERIAL_sCommon.psSerials[u8SerialIndex];
+
+    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials || psSerials->pfStopSend == NULL)
+    {
+        return;
+    }
+
+    /* call function hardware stop send */
+    psSerials->pfStopSend();
+}
+
+void SERIAL_vStartReceive(uint8 u8SerialIndex)
+{
+    SERIAL_tsSerial *psSerials;
+    psSerials = &SERIAL_sCommon.psSerials[u8SerialIndex];
+
+    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials || psSerials->pfStartReceive == NULL)
+    {
+        return;
+    }
+
+    /* call function hardware stop send */
+    psSerials->pfStartReceive();
+}
+
 SERIAL_teStatus SERIAL_eGet(uint8 u8SerialIndex, uint8 *pu8Byte)
 {
     if (u8SerialIndex > SERIAL_sCommon.u8NumSerials ||
