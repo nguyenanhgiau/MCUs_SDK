@@ -84,7 +84,7 @@
 /****************************************************************************/
 /***        Exported Variables                                            ***/
 /****************************************************************************/
-
+extern uint8 u8LedTest;
 /****************************************************************************/
 /***        Local Variables                                               ***/
 /****************************************************************************/
@@ -132,6 +132,13 @@ void APP_vMainLoop(void)
         /*TODO: add main task */
         #ifdef BUTTON_TOTAL_NUMBER
         BUTTON_tsEvent sButtonEvent;
+        LED_tsEffect sEffect = {
+            .eEffect = E_LED_EFFECT_FLASH,
+            .u16TimeOn = 10,
+            .u16TimeOff = 10,
+            .u8Flash = 3,
+            .u16Period = 200,
+        };
         if (QUEUE_bReceive(&APP_msgButtonEvents, &sButtonEvent))
         {
             switch (sButtonEvent.eState)
@@ -141,6 +148,8 @@ void APP_vMainLoop(void)
                 break;
             
             case E_BUTTON_STATE_PRESS:
+                sEffect.u8Flash = sButtonEvent.u8Click;
+                LED_eStartEffect(u8LedTest, &sEffect);
                 DBG_vPrintf(TRUE, "Button %d Click %d Times\n", sButtonEvent.u8NumberIndex, sButtonEvent.u8Click);
                 break;
 
