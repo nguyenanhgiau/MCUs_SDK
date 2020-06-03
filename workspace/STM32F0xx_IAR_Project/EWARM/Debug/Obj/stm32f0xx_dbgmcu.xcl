@@ -1,4 +1,4 @@
-"C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\Driver\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dbgmcu.c"
+"C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\StdPeriph_Lib\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dbgmcu.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
@@ -8,7 +8,7 @@ C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\Debug\Obj\s
 -o
 stm32f0xx_dbgmcu.pbi
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\Driver\STM32F0xx_StdPeriph_Driver\src
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\StdPeriph_Lib\STM32F0xx_StdPeriph_Driver\src
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM
 -I
@@ -16,13 +16,13 @@ C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\..\..\..\In
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\..\..\..\Utilities
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\..\Driver\STM32F0xx_StdPeriph_Driver\inc
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\..\StdPeriph_Lib\STM32F0xx_StdPeriph_Driver\inc
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\..\Driver\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\..\StdPeriph_Lib\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\..\Driver\CMSIS\Include
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\..\StdPeriph_Lib\CMSIS\Include
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\..\Driver\CMSIS\Device\ST\STM32F0xx\Include
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\..\StdPeriph_Lib\CMSIS\Device\ST\STM32F0xx\Include
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc
 -I
@@ -34,13 +34,13 @@ C:\Users\Giau\Desktop\MCUs_SDK\Include
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\Utilities
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\Driver\STM32F0xx_StdPeriph_Driver\inc
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\StdPeriph_Lib\STM32F0xx_StdPeriph_Driver\inc
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\Driver\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\StdPeriph_Lib\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\Driver\CMSIS\Include
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\StdPeriph_Lib\CMSIS\Include
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\Driver\CMSIS\Device\ST\STM32F0xx\Include
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\StdPeriph_Lib\CMSIS\Device\ST\STM32F0xx\Include
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

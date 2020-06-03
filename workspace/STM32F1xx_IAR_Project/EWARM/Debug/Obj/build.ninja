@@ -20,6 +20,8 @@ rule browsedata
 
 
 #Build steps
+build main.pbi : index main.xcl
+build stm32f10x_it.pbi : index stm32f10x_it.xcl
 build system_stm32f10x.pbi : index system_stm32f10x.xcl
 build misc.pbi : index misc.xcl
 build stm32f10x_adc.pbi : index stm32f10x_adc.xcl
@@ -44,14 +46,12 @@ build stm32f10x_spi.pbi : index stm32f10x_spi.xcl
 build stm32f10x_tim.pbi : index stm32f10x_tim.xcl
 build stm32f10x_usart.pbi : index stm32f10x_usart.xcl
 build stm32f10x_wwdg.pbi : index stm32f10x_wwdg.xcl
-build main.pbi : index main.xcl
-build stm32f10x_it.pbi : index stm32f10x_it.xcl
-build Project_part0.pbi : link system_stm32f10x.pbi misc.pbi stm32f10x_adc.pbi stm32f10x_bkp.pbi stm32f10x_can.pbi
-build Project_part1.pbi : link stm32f10x_cec.pbi stm32f10x_crc.pbi stm32f10x_dac.pbi stm32f10x_dbgmcu.pbi stm32f10x_dma.pbi
-build Project_part2.pbi : link stm32f10x_exti.pbi stm32f10x_flash.pbi stm32f10x_fsmc.pbi stm32f10x_gpio.pbi stm32f10x_i2c.pbi
-build Project_part3.pbi : link stm32f10x_iwdg.pbi stm32f10x_pwr.pbi stm32f10x_rcc.pbi stm32f10x_rtc.pbi stm32f10x_sdio.pbi
-build Project_part4.pbi : link stm32f10x_spi.pbi stm32f10x_tim.pbi stm32f10x_usart.pbi stm32f10x_wwdg.pbi main.pbi
-build Project_part5.pbi : link stm32f10x_it.pbi
+build Project_part0.pbi : link main.pbi stm32f10x_it.pbi system_stm32f10x.pbi misc.pbi stm32f10x_adc.pbi
+build Project_part1.pbi : link stm32f10x_bkp.pbi stm32f10x_can.pbi stm32f10x_cec.pbi stm32f10x_crc.pbi stm32f10x_dac.pbi
+build Project_part2.pbi : link stm32f10x_dbgmcu.pbi stm32f10x_dma.pbi stm32f10x_exti.pbi stm32f10x_flash.pbi stm32f10x_fsmc.pbi
+build Project_part3.pbi : link stm32f10x_gpio.pbi stm32f10x_i2c.pbi stm32f10x_iwdg.pbi stm32f10x_pwr.pbi stm32f10x_rcc.pbi
+build Project_part4.pbi : link stm32f10x_rtc.pbi stm32f10x_sdio.pbi stm32f10x_spi.pbi stm32f10x_tim.pbi stm32f10x_usart.pbi
+build Project_part5.pbi : link stm32f10x_wwdg.pbi
 build Project.pbd : link Project_part0.pbi Project_part1.pbi Project_part2.pbi Project_part3.pbi Project_part4.pbi Project_part5.pbi
 build Project.pbw : browsedata Project.pbd
 

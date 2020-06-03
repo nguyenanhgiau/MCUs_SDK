@@ -2370,11 +2370,20 @@
         </settings>
     </configuration>
     <group>
+        <name>Project</name>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm32f10x_it.c</name>
+        </file>
+    </group>
+    <group>
         <name>StdPeriph_Lib</name>
         <group>
             <name>CMSIS</name>
             <file>
-                <name>$PROJ_DIR$\..\StdPeriph_Lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c</name>
+                <name>$PROJ_DIR$\system_stm32f10x.c</name>
             </file>
         </group>
         <group>
@@ -2455,14 +2464,5 @@
                 <name>$PROJ_DIR$\..\StdPeriph_Lib\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c</name>
             </file>
         </group>
-    </group>
-    <group>
-        <name>Project</name>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\stm32f10x_it.c</name>
-        </file>
     </group>
 </project>
