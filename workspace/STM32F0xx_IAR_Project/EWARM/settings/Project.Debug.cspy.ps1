@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\settings\Project.Debug.general.xcl" --backend -f "C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\settings\Project.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\settings\Project.Debug.general.xcl" --backend -f "C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\settings\Project.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\settings\Project.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\nguye\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\settings\Project.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\settings\Project.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F0xx_IAR_Project\EWARM\settings\Project.Debug.driver.xcl" 
 }

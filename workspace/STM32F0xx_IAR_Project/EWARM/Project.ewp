@@ -349,13 +349,10 @@
                     <state>$PROJ_DIR$</state>
                     <state>$PROJ_DIR$\..\..\..\Include</state>
                     <state>$PROJ_DIR$\..\..\..\Utilities</state>
-                    <state>$PROJ_DIR$\..\..\..\Application\BME280_driver-master</state>
-                    <state>$PROJ_DIR$\..\..\..\Application\VL53L0X_API</state>
                     <state>$PROJ_DIR$\..\Driver\STM32F0xx_StdPeriph_Driver\inc</state>
                     <state>$PROJ_DIR$\..\Driver\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar</state>
                     <state>$PROJ_DIR$\..\Driver\CMSIS\Include</state>
                     <state>$PROJ_DIR$\..\Driver\CMSIS\Device\ST\STM32F0xx\Include</state>
-                    <state>$PROJ_DIR$\..\..\..\Application\LED7_SEGMENTS</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
