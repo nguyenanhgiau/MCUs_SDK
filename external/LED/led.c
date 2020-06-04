@@ -53,6 +53,7 @@ static void LED_vOutput(uint8 u8LedIndex);
 
 #ifdef LED_SUPPORT_EFFECT
 static void LED_vIdEffectTick(void *pvParam);
+static LED_teStatus LED_bCheckValidEffect(LED_tsEffect *psEffect);
 #endif
 /****************************************************************************/
 /***        Exported Variables                                            ***/
@@ -284,10 +285,14 @@ LED_teStatus LED_eStartEffect(uint8 u8LedIndex, LED_tsEffect *psEffect)
         return E_LED_FAIL;
     }
 
+    /* Check valid data */
+    if (LED_bCheckValidEffect(psEffect) != E_LED_OK)
+    {
+        return E_LED_FAIL;
+    }
+
     LED_tsEffect *psLedEffect;
     psLedEffect = &LED_asEffect[u8LedIndex];
-    
-    /* Check valid data */
     
     /* copy value to array */
     memcpy(psLedEffect, psEffect, sizeof(LED_tsEffect));
@@ -454,6 +459,31 @@ static void LED_vIdEffectTick(void *pvParam)
             break;
         }
     }
+}
+
+static LED_teStatus LED_bCheckValidEffect(LED_tsEffect *psEffect)
+{
+    switch (psEffect->eEffect)
+    {
+    case E_LED_EFFECT_BLINK:
+        if (psEffect->u16TimeOn >= psEffect->u16Period)
+        {
+            return E_LED_FAIL;
+        }
+        break;
+    
+    case E_LED_EFFECT_FLASH:
+        if ((psEffect->u16TimeOn + psEffect->u16TimeOff >= psEffect->u16Period)
+            || ((psEffect->u16TimeOn + psEffect->u16TimeOff) * psEffect->u8Flash) >= psEffect->u16Period)
+        {
+            return E_LED_FAIL;
+        }
+        break;
+
+    default:
+        break;
+    }
+    return E_LED_OK;
 }
 #endif
 
