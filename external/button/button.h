@@ -91,7 +91,6 @@ typedef struct
 }BUTTON_tsEvent;
 
 typedef struct{
-  bool          bPullUp;                /* True if pull-up and otherwise */
   uint8_t       oldState;               /* old state of button*/
   uint8_t       newState;               /* new state of button */
   uint8_t       timerNoisePress;        /* timer process noise press */
@@ -118,7 +117,7 @@ BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *psButtons, const uint8 u8NumButton
 BUTTON_teStatus BUTTON_eOpen(uint8 *pu8ButtonIndex, 
                              BUTTON_tpfOpen     pfOpen,
                              BUTTON_tpfClose    pfClose,
-                             BUTTON_tpfRead     pfRead, bool bPullUp);
+                             BUTTON_tpfRead     pfRead);
 BUTTON_teStatus BUTTON_eClose(uint8 u8ButtonIndex);
 
 /* External Variable Declarations --------------------------------------------*/

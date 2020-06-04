@@ -208,7 +208,7 @@ static void led_set_state(bool bState)
 
 static void APP_vInitialise(void)
 {
-    BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead, true);
+    BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead);
 
     LED_tsLed sLed = {
         .bState = FALSE,

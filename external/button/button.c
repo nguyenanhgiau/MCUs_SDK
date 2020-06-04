@@ -69,7 +69,7 @@ BUTTON_teStatus BUTTON_eInit(BUTTON_tsButton *psButtons, const uint8 u8NumButton
 BUTTON_teStatus BUTTON_eOpen(uint8 *pu8ButtonIndex, 
                              BUTTON_tpfOpen     pfOpen,
                              BUTTON_tpfClose    pfClose,
-                             BUTTON_tpfRead     pfRead, bool bPullUp)
+                             BUTTON_tpfRead     pfRead)
 {
         if (pfOpen != NULL && pfRead != NULL) 
         {
@@ -83,7 +83,6 @@ BUTTON_teStatus BUTTON_eOpen(uint8 *pu8ButtonIndex,
                         if (psButtons->pfOpen == NULL)
                         {
                                 /* set default value */
-                                psButtons->bPullUp = bPullUp;
                                 psButtons->oldState = E_BUTTON_STATE_RELEASE;
                                 psButtons->newState = E_BUTTON_STATE_RELEASE;
                                 psButtons->flagSampleResult = BUTTON_DISABLE_SAMPLE;
@@ -141,7 +140,7 @@ static void BUTTON_vScanTask(void *pvParam)
                         switch (psButtons->newState)
                         {
                         case E_BUTTON_STATE_RELEASE:                                            /* button state release */
-                                if (psButtons->pfRead() != psButtons->bPullUp)                  /* if button down */
+                                if (psButtons->pfRead() != TRUE)                                /* if button down */
                                 {
                                         psButtons->newState = E_BUTTON_STATE_DEBOUNCE;         /* change mode */
                                         psButtons->timerNoisePress = 0;                         /* reset timer sample press */
@@ -171,7 +170,7 @@ static void BUTTON_vScanTask(void *pvParam)
                                 break;
                         
                         case E_BUTTON_STATE_DEBOUNCE:                                                          /* process debounce */
-                                if (psButtons->pfRead() != psButtons->bPullUp)
+                                if (psButtons->pfRead() != TRUE)
                                 {
                                         psButtons->timerNoisePress++;                                           /* increment sample press */
                                         if (psButtons->timerNoisePress >= BUTTON_TIME_NOISE_PRESS)              /* check noise press */
@@ -193,7 +192,7 @@ static void BUTTON_vScanTask(void *pvParam)
                                 break;
 
                         case E_BUTTON_STATE_PRESS:
-                                if (psButtons->pfRead() != psButtons->bPullUp)
+                                if (psButtons->pfRead() != TRUE)
                                 {
                                         psButtons->timePress++;                                                 /* increment time press */
                                         if (psButtons->oldState == E_BUTTON_STATE_DEBOUNCE)
@@ -227,7 +226,7 @@ static void BUTTON_vScanTask(void *pvParam)
                                 break;
 
                         case E_BUTTON_STATE_HOLD_ON:
-                                if (psButtons->pfRead() != psButtons->bPullUp)
+                                if (psButtons->pfRead() != TRUE)
                                 {
                                         psButtons->timePress++;
                                         psButtons->timePress += psButtons->timePress;                           /* update time press */
