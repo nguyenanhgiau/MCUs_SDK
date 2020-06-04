@@ -48898,13 +48898,13 @@
     "scope": null
   },
   {
-    "ID": "c:Type.h@1769@macro@bool_t",
+    "ID": "c:Type.h@1850@macro@bool_t",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "bool_t",
     "location": {
       "column": "9",
-      "line": "40",
+      "line": "45",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\common\\Type.h"
     },
     "name": "bool_t",
@@ -48912,13 +48912,13 @@
     "scope": null
   },
   {
-    "ID": "c:Type.h@1824@macro@uint8",
+    "ID": "c:Type.h@1905@macro@uint8",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "uint8",
     "location": {
       "column": "9",
-      "line": "44",
+      "line": "49",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\common\\Type.h"
     },
     "name": "uint8",
@@ -48926,13 +48926,13 @@
     "scope": null
   },
   {
-    "ID": "c:Type.h@1883@macro@uint16",
+    "ID": "c:Type.h@1964@macro@uint16",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "uint16",
     "location": {
       "column": "9",
-      "line": "48",
+      "line": "53",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\common\\Type.h"
     },
     "name": "uint16",
@@ -48940,13 +48940,13 @@
     "scope": null
   },
   {
-    "ID": "c:Type.h@1943@macro@uint32",
+    "ID": "c:Type.h@2024@macro@uint32",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "uint32",
     "location": {
       "column": "9",
-      "line": "52",
+      "line": "57",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\common\\Type.h"
     },
     "name": "uint32",
@@ -48954,13 +48954,13 @@
     "scope": null
   },
   {
-    "ID": "c:Type.h@2002@macro@int32",
+    "ID": "c:Type.h@2083@macro@int32",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "int32",
     "location": {
       "column": "9",
-      "line": "56",
+      "line": "61",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\common\\Type.h"
     },
     "name": "int32",
@@ -48968,13 +48968,13 @@
     "scope": null
   },
   {
-    "ID": "c:Type.h@2060@macro@FALSE",
+    "ID": "c:Type.h@2141@macro@FALSE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FALSE",
     "location": {
       "column": "9",
-      "line": "60",
+      "line": "65",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\common\\Type.h"
     },
     "name": "FALSE",
@@ -48982,13 +48982,13 @@
     "scope": null
   },
   {
-    "ID": "c:Type.h@2118@macro@false",
+    "ID": "c:Type.h@2199@macro@false",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "false",
     "location": {
       "column": "9",
-      "line": "64",
+      "line": "69",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\common\\Type.h"
     },
     "name": "false",
@@ -48996,13 +48996,13 @@
     "scope": null
   },
   {
-    "ID": "c:Type.h@2175@macro@TRUE",
+    "ID": "c:Type.h@2256@macro@TRUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "TRUE",
     "location": {
       "column": "9",
-      "line": "68",
+      "line": "73",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\common\\Type.h"
     },
     "name": "TRUE",
@@ -49010,13 +49010,13 @@
     "scope": null
   },
   {
-    "ID": "c:Type.h@2232@macro@true",
+    "ID": "c:Type.h@2313@macro@true",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "true",
     "location": {
       "column": "9",
-      "line": "72",
+      "line": "77",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\components\\common\\Type.h"
     },
     "name": "true",
@@ -50489,7 +50489,7 @@
     "ID": "c:led.h@T@LED_tpfSetOnOff",
     "What": "Typedef",
     "defdec": "Def",
-    "display": "void (*)(bool)",
+    "display": "void (*)(_Bool)",
     "location": {
       "column": "16",
       "line": "46",
@@ -50503,7 +50503,7 @@
     "ID": "c:led.h@T@LED_tpfSetOnOff",
     "What": "Typedef",
     "defdec": "Def",
-    "display": "void (*)(_Bool)",
+    "display": "void (*)(bool)",
     "location": {
       "column": "16",
       "line": "46",
@@ -51140,27 +51140,13 @@
     "scope": null
   },
   {
-    "ID": "c:led.c@F@LED_vEffectOutput",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void LED_vEffectOutput(uint8_t)",
-    "location": {
-      "column": "13",
-      "line": "56",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_vEffectOutput",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:led.c@LED_sCommon",
     "What": "Variable",
     "defdec": "Dec",
     "display": "LED_sCommon",
     "location": {
       "column": "21",
-      "line": "69",
+      "line": "68",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_sCommon",
@@ -51174,7 +51160,7 @@
     "display": "LED_asEffect",
     "location": {
       "column": "21",
-      "line": "72",
+      "line": "71",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_asEffect",
@@ -51188,7 +51174,7 @@
     "display": "u8TimerTickLED",
     "location": {
       "column": "7",
-      "line": "73",
+      "line": "72",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "u8TimerTickLED",
@@ -51202,7 +51188,7 @@
     "display": "LED_teStatus LED_eInit(LED_tsLed *, const uint8_t)",
     "location": {
       "column": "14",
-      "line": "78",
+      "line": "77",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_eInit",
@@ -51216,7 +51202,7 @@
     "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
     "location": {
       "column": "14",
-      "line": "97",
+      "line": "96",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_eOpen",
@@ -51224,13 +51210,13 @@
     "scope": null
   },
   {
-    "ID": "c:led.c@4725@F@LED_eOpen@i",
+    "ID": "c:led.c@4675@F@LED_eOpen@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "13",
-      "line": "108",
+      "line": "107",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "i",
@@ -51238,13 +51224,13 @@
     "scope": null
   },
   {
-    "ID": "c:led.c@4741@F@LED_eOpen@psLeds",
+    "ID": "c:led.c@4691@F@LED_eOpen@psLeds",
     "What": "Variable",
     "defdec": "Def",
     "display": "psLeds",
     "location": {
       "column": "20",
-      "line": "109",
+      "line": "108",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLeds",
@@ -51258,7 +51244,7 @@
     "display": "LED_teStatus LED_eClose(uint8_t)",
     "location": {
       "column": "14",
-      "line": "133",
+      "line": "132",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_eClose",
@@ -51266,13 +51252,13 @@
     "scope": null
   },
   {
-    "ID": "c:led.c@5359@F@LED_eClose@psLeds",
+    "ID": "c:led.c@5309@F@LED_eClose@psLeds",
     "What": "Variable",
     "defdec": "Def",
     "display": "psLeds",
     "location": {
       "column": "16",
-      "line": "135",
+      "line": "134",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLeds",
@@ -51286,7 +51272,7 @@
     "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
     "location": {
       "column": "14",
-      "line": "151",
+      "line": "150",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_eSetOnOff",
@@ -51294,13 +51280,13 @@
     "scope": null
   },
   {
-    "ID": "c:led.c@5773@F@LED_eSetOnOff@psLeds",
+    "ID": "c:led.c@5723@F@LED_eSetOnOff@psLeds",
     "What": "Variable",
     "defdec": "Def",
     "display": "psLeds",
     "location": {
       "column": "16",
-      "line": "153",
+      "line": "152",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLeds",
@@ -51314,7 +51300,7 @@
     "display": "void LED_vOutput(uint8_t)",
     "location": {
       "column": "13",
-      "line": "238",
+      "line": "237",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_vOutput",
@@ -51322,13 +51308,13 @@
     "scope": null
   },
   {
-    "ID": "c:led.c@7933@F@LED_vOutput@psLeds",
+    "ID": "c:led.c@7883@F@LED_vOutput@psLeds",
     "What": "Variable",
     "defdec": "Def",
     "display": "psLeds",
     "location": {
       "column": "16",
-      "line": "240",
+      "line": "239",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLeds",
@@ -51342,7 +51328,7 @@
     "display": "LED_teStatus LED_eStartEffect(uint8_t, LED_tsEffect *)",
     "location": {
       "column": "14",
-      "line": "276",
+      "line": "275",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_eStartEffect",
@@ -51350,13 +51336,13 @@
     "scope": null
   },
   {
-    "ID": "c:led.c@9092@F@LED_eStartEffect@psLedEffect",
+    "ID": "c:led.c@9042@F@LED_eStartEffect@psLedEffect",
     "What": "Variable",
     "defdec": "Def",
     "display": "psLedEffect",
     "location": {
       "column": "19",
-      "line": "284",
+      "line": "283",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLedEffect",
@@ -51370,7 +51356,7 @@
     "display": "void LED_vIdEffectTick(void *)",
     "location": {
       "column": "13",
-      "line": "295",
+      "line": "294",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_vIdEffectTick",
@@ -51378,13 +51364,13 @@
     "scope": null
   },
   {
-    "ID": "c:led.c@9487@F@LED_vIdEffectTick@i",
+    "ID": "c:led.c@9437@F@LED_vIdEffectTick@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "9",
-      "line": "301",
+      "line": "300",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "i",
@@ -51392,30 +51378,16 @@
     "scope": null
   },
   {
-    "ID": "c:led.c@9499@F@LED_vIdEffectTick@psEffect",
+    "ID": "c:led.c@9449@F@LED_vIdEffectTick@psEffect",
     "What": "Variable",
     "defdec": "Def",
     "display": "psEffect",
     "location": {
       "column": "22",
-      "line": "302",
+      "line": "301",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psEffect",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@F@LED_vEffectOutput",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LED_vEffectOutput(uint8_t)",
-    "location": {
-      "column": "13",
-      "line": "456",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_vEffectOutput",
     "origin": "project_file",
     "scope": null
   },
@@ -51773,7 +51745,7 @@
     "ID": "c:Button.h@T@BUTTON_tpfRead",
     "What": "Typedef",
     "defdec": "Def",
-    "display": "_Bool (*)(void)",
+    "display": "bool (*)(void)",
     "location": {
       "column": "16",
       "line": "39",
@@ -51787,7 +51759,7 @@
     "ID": "c:Button.h@T@BUTTON_tpfRead",
     "What": "Typedef",
     "defdec": "Def",
-    "display": "bool (*)(void)",
+    "display": "_Bool (*)(void)",
     "location": {
       "column": "16",
       "line": "39",
@@ -52397,7 +52369,7 @@
     "ID": "c:@F@BUTTON_eOpen",
     "What": "Function",
     "defdec": "Dec",
-    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, _Bool)",
+    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
     "location": {
       "column": "17",
       "line": "118",
@@ -52411,7 +52383,7 @@
     "ID": "c:@F@BUTTON_eOpen",
     "What": "Function",
     "defdec": "Dec",
-    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
+    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, _Bool)",
     "location": {
       "column": "17",
       "line": "118",
@@ -52475,6 +52447,76 @@
     },
     "name": "u8TimerScanButtons",
     "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdbool.h@173@macro@_STDBOOL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_STDBOOL",
+    "location": {
+      "column": "9",
+      "line": "7",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\c\\stdbool.h"
+    },
+    "name": "_STDBOOL",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdbool.h@277@macro@bool",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "bool",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\c\\stdbool.h"
+    },
+    "name": "bool",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdbool.h@297@macro@true",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "true",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\c\\stdbool.h"
+    },
+    "name": "true",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdbool.h@313@macro@false",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "false",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\c\\stdbool.h"
+    },
+    "name": "false",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdbool.h@361@macro@__bool_true_false_are_defined",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__bool_true_false_are_defined",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\c\\stdbool.h"
+    },
+    "name": "__bool_true_false_are_defined",
+    "origin": "system_include",
     "scope": null
   },
   {
@@ -52643,76 +52685,6 @@
     },
     "name": "APP_vInitResources",
     "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stdbool.h@173@macro@_STDBOOL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_STDBOOL",
-    "location": {
-      "column": "9",
-      "line": "7",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\c\\stdbool.h"
-    },
-    "name": "_STDBOOL",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdbool.h@277@macro@bool",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "bool",
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\c\\stdbool.h"
-    },
-    "name": "bool",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdbool.h@297@macro@true",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "true",
-    "location": {
-      "column": "9",
-      "line": "17",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\c\\stdbool.h"
-    },
-    "name": "true",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdbool.h@313@macro@false",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "false",
-    "location": {
-      "column": "9",
-      "line": "18",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\c\\stdbool.h"
-    },
-    "name": "false",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdbool.h@361@macro@__bool_true_false_are_defined",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__bool_true_false_are_defined",
-    "location": {
-      "column": "9",
-      "line": "22",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\c\\stdbool.h"
-    },
-    "name": "__bool_true_false_are_defined",
-    "origin": "system_include",
     "scope": null
   },
   {

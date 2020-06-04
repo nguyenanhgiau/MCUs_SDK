@@ -40,6 +40,10 @@
 #include "stm8s.h"
 #endif
 
+#if (defined STM32F10X_MD)
+#include "stm32f10x.h"
+#endif
+
 #include "Type.h"
 
 #endif /*CHIP_SELECTION_H_*/

@@ -36,6 +36,11 @@
 #ifndef TYPE_H_
 #define TYPE_H_
 
+#if (defined STM32F10X_MD)
+#include <stdint.h>
+#include <stdbool.h>
+#endif
+
 #ifndef bool_t
 #define bool_t          bool
 #endif

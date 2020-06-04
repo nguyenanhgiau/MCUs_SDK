@@ -2370,9 +2370,63 @@
         </settings>
     </configuration>
     <group>
+        <name>chip</name>
+        <group>
+            <name>port_mcu</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\chip\portable\port_stm32f10x.c</name>
+            </file>
+        </group>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\chip\chip_selection.h</name>
+        </file>
+    </group>
+    <group>
+        <name>components</name>
+        <group>
+            <name>common</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\components\common\Queue.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\components\common\Timer.c</name>
+            </file>
+        </group>
+        <group>
+            <name>dbg</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\components\dbg\dbg.c</name>
+            </file>
+        </group>
+    </group>
+    <group>
+        <name>drivers</name>
+    </group>
+    <group>
+        <name>external</name>
+        <group>
+            <name>button</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\button\button.c</name>
+            </file>
+        </group>
+        <group>
+            <name>led</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\led\led.c</name>
+            </file>
+        </group>
+    </group>
+    <group>
         <name>Project</name>
         <file>
+            <name>$PROJ_DIR$\app_main.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\main.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\prj_options.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\stm32f10x_it.c</name>

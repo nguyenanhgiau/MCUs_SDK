@@ -2160,7 +2160,7 @@
     <group>
         <name>chip</name>
         <group>
-            <name>portable</name>
+            <name>port_mcu</name>
             <file>
                 <name>$PROJ_DIR$\..\..\..\chip\portable\port_stm8s.c</name>
             </file>
@@ -2207,7 +2207,7 @@
         <group>
             <name>led</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\external\LED\led.c</name>
+                <name>$PROJ_DIR$\..\..\..\external\led\led.c</name>
             </file>
         </group>
     </group>

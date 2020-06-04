@@ -37,4 +37,8 @@ stm32f10x_it.pbi: \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F1xx_IAR_Project\EWARM\..\StdPeriph_Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F1xx_IAR_Project\EWARM\..\StdPeriph_Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h \
   C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F1xx_IAR_Project\EWARM\..\StdPeriph_Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h \
-  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F1xx_IAR_Project\EWARM\..\StdPeriph_Lib\STM32F10x_StdPeriph_Driver\inc\misc.h
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F1xx_IAR_Project\EWARM\..\StdPeriph_Lib\STM32F10x_StdPeriph_Driver\inc\misc.h \
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F1xx_IAR_Project\EWARM\..\..\..\components\common\Timer.h \
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F1xx_IAR_Project\EWARM\..\..\..\chip\chip_selection.h \
+  C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM32F1xx_IAR_Project\EWARM\..\..\..\components\common\Type.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h

@@ -53,7 +53,6 @@ static void LED_vOutput(uint8 u8LedIndex);
 
 #ifdef LED_SUPPORT_EFFECT
 static void LED_vIdEffectTick(void *pvParam);
-static void LED_vEffectOutput(uint8 u8LedIndex);
 #endif
 /****************************************************************************/
 /***        Exported Variables                                            ***/
@@ -451,11 +450,6 @@ static void LED_vIdEffectTick(void *pvParam)
             break;
         }
     }
-}
-
-static void LED_vEffectOutput(uint8 u8LedIndex)
-{
-
 }
 #endif
 
