@@ -780,7 +780,7 @@
                     <item>au8SerialBufTx</item>
                     <item>au8SerialBufRx</item>
                     <item>LED_asEffect</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

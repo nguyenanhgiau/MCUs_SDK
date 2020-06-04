@@ -49402,16 +49402,16 @@
     "scope": null
   },
   {
-    "ID": "c:portable.h@1750@macro@PORTABLE_H_",
+    "ID": "c:port_mcu.h@1750@macro@PORT_MCU_H_",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "PORTABLE_H_",
+    "display": "PORT_MCU_H_",
     "location": {
       "column": "9",
       "line": "37",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\chip\\portable\\portable.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\chip\\portable\\port_mcu.h"
     },
-    "name": "PORTABLE_H_",
+    "name": "PORT_MCU_H_",
     "origin": "user_include",
     "scope": null
   },
@@ -49423,7 +49423,7 @@
     "location": {
       "column": "6",
       "line": "47",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\chip\\portable\\portable.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\chip\\portable\\port_mcu.h"
     },
     "name": "PORTABLE_vInit",
     "origin": "user_include",
@@ -49437,7 +49437,7 @@
     "location": {
       "column": "6",
       "line": "47",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\chip\\portable\\portable.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\chip\\portable\\port_mcu.h"
     },
     "name": "PORTABLE_vInit",
     "origin": "user_include",
@@ -50444,13 +50444,27 @@
     "scope": null
   },
   {
+    "ID": "c:led.h@1518@macro@LED_BREATHE_STEP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LED_BREATHE_STEP",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
+    },
+    "name": "LED_BREATHE_STEP",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:led.h@T@LED_tpfOpen",
     "What": "Typedef",
     "defdec": "Def",
     "display": "void (*)(void)",
     "location": {
       "column": "16",
-      "line": "41",
+      "line": "44",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_tpfOpen",
@@ -50464,7 +50478,7 @@
     "display": "void (*)(void)",
     "location": {
       "column": "16",
-      "line": "42",
+      "line": "45",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_tpfClose",
@@ -50475,10 +50489,10 @@
     "ID": "c:led.h@T@LED_tpfSetOnOff",
     "What": "Typedef",
     "defdec": "Def",
-    "display": "void (*)(_Bool)",
+    "display": "void (*)(bool)",
     "location": {
       "column": "16",
-      "line": "43",
+      "line": "46",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_tpfSetOnOff",
@@ -50489,10 +50503,10 @@
     "ID": "c:led.h@T@LED_tpfSetOnOff",
     "What": "Typedef",
     "defdec": "Def",
-    "display": "void (*)(bool)",
+    "display": "void (*)(_Bool)",
     "location": {
       "column": "16",
-      "line": "43",
+      "line": "46",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_tpfSetOnOff",
@@ -50512,7 +50526,7 @@
         "display": "E_LED_OK",
         "location": {
           "column": "3",
-          "line": "53",
+          "line": "56",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_OK",
@@ -50526,7 +50540,7 @@
         "display": "E_LED_FAIL",
         "location": {
           "column": "3",
-          "line": "54",
+          "line": "57",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_FAIL",
@@ -50536,7 +50550,7 @@
     ],
     "location": {
       "column": "9",
-      "line": "51",
+      "line": "54",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "",
@@ -50556,7 +50570,7 @@
         "display": "E_LED_EFFECT_STOP",
         "location": {
           "column": "3",
-          "line": "61",
+          "line": "64",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_EFFECT_STOP",
@@ -50570,7 +50584,7 @@
         "display": "E_LED_EFFECT_BLINK",
         "location": {
           "column": "3",
-          "line": "62",
+          "line": "65",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_EFFECT_BLINK",
@@ -50584,7 +50598,7 @@
         "display": "E_LED_EFFECT_FLASH",
         "location": {
           "column": "3",
-          "line": "63",
+          "line": "66",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_EFFECT_FLASH",
@@ -50598,7 +50612,7 @@
         "display": "E_LED_EFFECT_BREATHE",
         "location": {
           "column": "3",
-          "line": "64",
+          "line": "67",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_EFFECT_BREATHE",
@@ -50612,7 +50626,7 @@
         "display": "E_LED_EFFECT_COLOR_LOOP",
         "location": {
           "column": "3",
-          "line": "65",
+          "line": "68",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_EFFECT_COLOR_LOOP",
@@ -50622,7 +50636,7 @@
     ],
     "location": {
       "column": "9",
-      "line": "59",
+      "line": "62",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "",
@@ -50636,7 +50650,7 @@
     "display": "",
     "location": {
       "column": "9",
-      "line": "69",
+      "line": "72",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "members": [
@@ -50647,12 +50661,12 @@
         "display": "eEffect",
         "location": {
           "column": "18",
-          "line": "71",
+          "line": "74",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "eEffect",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       },
       {
         "ID": "c:@SA@LED_tsEffect@FI@u16Tick",
@@ -50661,12 +50675,12 @@
         "display": "u16Tick",
         "location": {
           "column": "11",
-          "line": "72",
+          "line": "75",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u16Tick",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       },
       {
         "ID": "c:@SA@LED_tsEffect@FI@u16TimeOn",
@@ -50675,12 +50689,12 @@
         "display": "u16TimeOn",
         "location": {
           "column": "11",
-          "line": "73",
+          "line": "76",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u16TimeOn",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       },
       {
         "ID": "c:@SA@LED_tsEffect@FI@u16TimeOff",
@@ -50689,12 +50703,12 @@
         "display": "u16TimeOff",
         "location": {
           "column": "11",
-          "line": "74",
+          "line": "77",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u16TimeOff",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       },
       {
         "ID": "c:@SA@LED_tsEffect@FI@u16Period",
@@ -50703,12 +50717,12 @@
         "display": "u16Period",
         "location": {
           "column": "11",
-          "line": "75",
+          "line": "78",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u16Period",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       },
       {
         "ID": "c:@SA@LED_tsEffect@FI@bOn",
@@ -50717,12 +50731,12 @@
         "display": "bOn",
         "location": {
           "column": "11",
-          "line": "77",
+          "line": "80",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "bOn",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       },
       {
         "ID": "c:@SA@LED_tsEffect@FI@u8Flash",
@@ -50731,12 +50745,12 @@
         "display": "u8Flash",
         "location": {
           "column": "11",
-          "line": "78",
+          "line": "81",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Flash",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       },
       {
         "ID": "c:@SA@LED_tsEffect@FI@u8Toggle",
@@ -50745,12 +50759,12 @@
         "display": "u8Toggle",
         "location": {
           "column": "11",
-          "line": "79",
+          "line": "82",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Toggle",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       },
       {
         "ID": "c:@SA@LED_tsEffect@FI@u8Count",
@@ -50759,12 +50773,12 @@
         "display": "u8Count",
         "location": {
           "column": "11",
-          "line": "81",
+          "line": "84",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Count",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       },
       {
         "ID": "c:@SA@LED_tsEffect@FI@u8Loop",
@@ -50773,12 +50787,12 @@
         "display": "u8Loop",
         "location": {
           "column": "11",
-          "line": "82",
+          "line": "85",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Loop",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       },
       {
         "ID": "c:@T@LED_tsEffect",
@@ -50787,12 +50801,12 @@
         "display": "struct LED_tsEffect",
         "location": {
           "column": "2",
-          "line": "92",
+          "line": "94",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "LED_tsEffect",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_69_9"
+        "scope": "_anonymous_led_h_72_9"
       }
     ],
     "name": "",
@@ -50806,7 +50820,7 @@
     "display": "",
     "location": {
       "column": "9",
-      "line": "96",
+      "line": "98",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "members": [
@@ -50817,12 +50831,12 @@
         "display": "bState",
         "location": {
           "column": "19",
-          "line": "98",
+          "line": "100",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "bState",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_96_9"
+        "scope": "_anonymous_led_h_98_9"
       },
       {
         "ID": "c:@SA@LED_tsLed@FI@pfOpen",
@@ -50831,12 +50845,12 @@
         "display": "pfOpen",
         "location": {
           "column": "19",
-          "line": "99",
+          "line": "101",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "pfOpen",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_96_9"
+        "scope": "_anonymous_led_h_98_9"
       },
       {
         "ID": "c:@SA@LED_tsLed@FI@pfClose",
@@ -50845,12 +50859,12 @@
         "display": "pfClose",
         "location": {
           "column": "19",
-          "line": "100",
+          "line": "102",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "pfClose",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_96_9"
+        "scope": "_anonymous_led_h_98_9"
       },
       {
         "ID": "c:@SA@LED_tsLed@FI@pfSetOnOff",
@@ -50859,12 +50873,12 @@
         "display": "pfSetOnOff",
         "location": {
           "column": "19",
-          "line": "109",
+          "line": "111",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "pfSetOnOff",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_96_9"
+        "scope": "_anonymous_led_h_98_9"
       },
       {
         "ID": "c:@T@LED_tsLed",
@@ -50873,12 +50887,12 @@
         "display": "struct LED_tsLed",
         "location": {
           "column": "2",
-          "line": "111",
+          "line": "113",
           "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "LED_tsLed",
         "origin": "user_include",
-        "scope": "_anonymous_led_h_96_9"
+        "scope": "_anonymous_led_h_98_9"
       }
     ],
     "name": "",
@@ -50892,7 +50906,7 @@
     "display": "LED_teStatus LED_eInit(LED_tsLed *, const uint8_t)",
     "location": {
       "column": "14",
-      "line": "113",
+      "line": "115",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eInit",
@@ -50906,7 +50920,7 @@
     "display": "LED_teStatus LED_eInit(LED_tsLed *, const uint8_t)",
     "location": {
       "column": "14",
-      "line": "113",
+      "line": "115",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eInit",
@@ -50920,7 +50934,7 @@
     "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
     "location": {
       "column": "14",
-      "line": "114",
+      "line": "116",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eOpen",
@@ -50934,7 +50948,7 @@
     "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
     "location": {
       "column": "14",
-      "line": "114",
+      "line": "116",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eOpen",
@@ -50948,7 +50962,7 @@
     "display": "LED_teStatus LED_eClose(uint8_t)",
     "location": {
       "column": "14",
-      "line": "116",
+      "line": "118",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eClose",
@@ -50962,7 +50976,7 @@
     "display": "LED_teStatus LED_eClose(uint8_t)",
     "location": {
       "column": "14",
-      "line": "116",
+      "line": "118",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eClose",
@@ -50976,7 +50990,7 @@
     "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
     "location": {
       "column": "14",
-      "line": "117",
+      "line": "119",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eSetOnOff",
@@ -50990,7 +51004,7 @@
     "display": "LED_teStatus LED_eSetOnOff(uint8_t, _Bool)",
     "location": {
       "column": "14",
-      "line": "117",
+      "line": "119",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eSetOnOff",
@@ -51004,7 +51018,7 @@
     "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
     "location": {
       "column": "14",
-      "line": "117",
+      "line": "119",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eSetOnOff",
@@ -51018,7 +51032,7 @@
     "display": "LED_teStatus LED_eStartEffect(uint8_t, LED_tsEffect *)",
     "location": {
       "column": "14",
-      "line": "125",
+      "line": "127",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eStartEffect",
@@ -51032,11 +51046,685 @@
     "display": "LED_teStatus LED_eStartEffect(uint8_t, LED_tsEffect *)",
     "location": {
       "column": "14",
-      "line": "125",
+      "line": "127",
       "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eStartEffect",
     "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@LED_tsCommon",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "43",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@LED_tsCommon@FI@u8NumLeds",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "u8NumLeds",
+        "location": {
+          "column": "17",
+          "line": "45",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+        },
+        "name": "u8NumLeds",
+        "origin": "project_file",
+        "scope": "_anonymous_led_c_43_9"
+      },
+      {
+        "ID": "c:@SA@LED_tsCommon@FI@psLeds",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "psLeds",
+        "location": {
+          "column": "18",
+          "line": "46",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+        },
+        "name": "psLeds",
+        "origin": "project_file",
+        "scope": "_anonymous_led_c_43_9"
+      },
+      {
+        "ID": "c:@T@LED_tsCommon",
+        "What": "TypedefDecl",
+        "defdec": "Def",
+        "display": "struct LED_tsCommon",
+        "location": {
+          "column": "2",
+          "line": "47",
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+        },
+        "name": "LED_tsCommon",
+        "origin": "project_file",
+        "scope": "_anonymous_led_c_43_9"
+      }
+    ],
+    "name": "",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@F@LED_vOutput",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LED_vOutput(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "52",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_vOutput",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@F@LED_vIdEffectTick",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LED_vIdEffectTick(void *)",
+    "location": {
+      "column": "13",
+      "line": "55",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_vIdEffectTick",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@F@LED_vEffectOutput",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LED_vEffectOutput(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "56",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_vEffectOutput",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@LED_sCommon",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "LED_sCommon",
+    "location": {
+      "column": "21",
+      "line": "69",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_sCommon",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@LED_asEffect",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "LED_asEffect",
+    "location": {
+      "column": "21",
+      "line": "72",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_asEffect",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@u8TimerTickLED",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "u8TimerTickLED",
+    "location": {
+      "column": "7",
+      "line": "73",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "u8TimerTickLED",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "LED_teStatus LED_eInit(LED_tsLed *, const uint8_t)",
+    "location": {
+      "column": "14",
+      "line": "78",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_eInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eOpen",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
+    "location": {
+      "column": "14",
+      "line": "97",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_eOpen",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@4725@F@LED_eOpen@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "13",
+      "line": "108",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@4741@F@LED_eOpen@psLeds",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psLeds",
+    "location": {
+      "column": "20",
+      "line": "109",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "psLeds",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eClose",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "LED_teStatus LED_eClose(uint8_t)",
+    "location": {
+      "column": "14",
+      "line": "133",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_eClose",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@5359@F@LED_eClose@psLeds",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psLeds",
+    "location": {
+      "column": "16",
+      "line": "135",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "psLeds",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eSetOnOff",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
+    "location": {
+      "column": "14",
+      "line": "151",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_eSetOnOff",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@5773@F@LED_eSetOnOff@psLeds",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psLeds",
+    "location": {
+      "column": "16",
+      "line": "153",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "psLeds",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@F@LED_vOutput",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LED_vOutput(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "238",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_vOutput",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@7933@F@LED_vOutput@psLeds",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psLeds",
+    "location": {
+      "column": "16",
+      "line": "240",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "psLeds",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_eStartEffect",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "LED_teStatus LED_eStartEffect(uint8_t, LED_tsEffect *)",
+    "location": {
+      "column": "14",
+      "line": "276",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_eStartEffect",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@9092@F@LED_eStartEffect@psLedEffect",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psLedEffect",
+    "location": {
+      "column": "19",
+      "line": "284",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "psLedEffect",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@F@LED_vIdEffectTick",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LED_vIdEffectTick(void *)",
+    "location": {
+      "column": "13",
+      "line": "295",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_vIdEffectTick",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@9487@F@LED_vIdEffectTick@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "9",
+      "line": "301",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@9499@F@LED_vIdEffectTick@psEffect",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "psEffect",
+    "location": {
+      "column": "22",
+      "line": "302",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "psEffect",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:led.c@F@LED_vEffectOutput",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LED_vEffectOutput(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "456",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
+    },
+    "name": "LED_vEffectOutput",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@u8ButtonTest",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "u8ButtonTest",
+    "location": {
+      "column": "7",
+      "line": "42",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "u8ButtonTest",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@u8SerialTest",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "u8SerialTest",
+    "location": {
+      "column": "7",
+      "line": "43",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "u8SerialTest",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@u8LedTest",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "u8LedTest",
+    "location": {
+      "column": "7",
+      "line": "44",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "u8LedTest",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@BUTTON_vOpen",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void BUTTON_vOpen(void)",
+    "location": {
+      "column": "17",
+      "line": "46",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "BUTTON_vOpen",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@BUTTON_bRead",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "bool BUTTON_bRead(void)",
+    "location": {
+      "column": "17",
+      "line": "47",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "BUTTON_bRead",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@APP_vInitialise",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void APP_vInitialise(void)",
+    "location": {
+      "column": "13",
+      "line": "49",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "APP_vInitialise",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@uart_initialize",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void uart_initialize(void)",
+    "location": {
+      "column": "13",
+      "line": "51",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "uart_initialize",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@uart_drv_send",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void uart_drv_send(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "52",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "uart_drv_send",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@uart_drv_receive",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t uart_drv_receive(void)",
+    "location": {
+      "column": "16",
+      "line": "53",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "uart_drv_receive",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@led_initialize",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void led_initialize(void)",
+    "location": {
+      "column": "13",
+      "line": "59",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "led_initialize",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@led_set_state",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void led_set_state(bool)",
+    "location": {
+      "column": "13",
+      "line": "60",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "led_set_state",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void main(void)",
+    "location": {
+      "column": "6",
+      "line": "62",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@assert_failed",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void assert_failed(u8 *, u32)",
+    "location": {
+      "column": "6",
+      "line": "97",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "assert_failed",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@BUTTON_vOpen",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void BUTTON_vOpen(void)",
+    "location": {
+      "column": "13",
+      "line": "110",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "BUTTON_vOpen",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@BUTTON_bRead",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "bool BUTTON_bRead(void)",
+    "location": {
+      "column": "13",
+      "line": "115",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "BUTTON_bRead",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@uart_drv_send",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void uart_drv_send(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "120",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "uart_drv_send",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@uart_drv_receive",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t uart_drv_receive(void)",
+    "location": {
+      "column": "16",
+      "line": "126",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "uart_drv_receive",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@uart_initialize",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void uart_initialize(void)",
+    "location": {
+      "column": "13",
+      "line": "132",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "uart_initialize",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@led_initialize",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void led_initialize(void)",
+    "location": {
+      "column": "13",
+      "line": "163",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "led_initialize",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@led_set_state",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void led_set_state(bool)",
+    "location": {
+      "column": "13",
+      "line": "168",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "led_set_state",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@APP_vInitialise",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void APP_vInitialise(void)",
+    "location": {
+      "column": "13",
+      "line": "180",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "APP_vInitialise",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@5495@F@APP_vInitialise@sLed",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sLed",
+    "location": {
+      "column": "15",
+      "line": "196",
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
+    },
+    "name": "sLed",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -51085,7 +51773,7 @@
     "ID": "c:Button.h@T@BUTTON_tpfRead",
     "What": "Typedef",
     "defdec": "Def",
-    "display": "bool (*)(void)",
+    "display": "_Bool (*)(void)",
     "location": {
       "column": "16",
       "line": "39",
@@ -51099,7 +51787,7 @@
     "ID": "c:Button.h@T@BUTTON_tpfRead",
     "What": "Typedef",
     "defdec": "Def",
-    "display": "_Bool (*)(void)",
+    "display": "bool (*)(void)",
     "location": {
       "column": "16",
       "line": "39",
@@ -51709,7 +52397,7 @@
     "ID": "c:@F@BUTTON_eOpen",
     "What": "Function",
     "defdec": "Dec",
-    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
+    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, _Bool)",
     "location": {
       "column": "17",
       "line": "118",
@@ -51723,7 +52411,7 @@
     "ID": "c:@F@BUTTON_eOpen",
     "What": "Function",
     "defdec": "Dec",
-    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, _Bool)",
+    "display": "BUTTON_teStatus BUTTON_eOpen(uint8_t *, BUTTON_tpfOpen, BUTTON_tpfClose, BUTTON_tpfRead, bool)",
     "location": {
       "column": "17",
       "line": "118",
@@ -51787,652 +52475,6 @@
     },
     "name": "u8TimerScanButtons",
     "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@LED_tsCommon",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "43",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@LED_tsCommon@FI@u8NumLeds",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "u8NumLeds",
-        "location": {
-          "column": "17",
-          "line": "45",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-        },
-        "name": "u8NumLeds",
-        "origin": "project_file",
-        "scope": "_anonymous_led_c_43_9"
-      },
-      {
-        "ID": "c:@SA@LED_tsCommon@FI@psLeds",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "psLeds",
-        "location": {
-          "column": "18",
-          "line": "46",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-        },
-        "name": "psLeds",
-        "origin": "project_file",
-        "scope": "_anonymous_led_c_43_9"
-      },
-      {
-        "ID": "c:@T@LED_tsCommon",
-        "What": "TypedefDecl",
-        "defdec": "Def",
-        "display": "struct LED_tsCommon",
-        "location": {
-          "column": "2",
-          "line": "47",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-        },
-        "name": "LED_tsCommon",
-        "origin": "project_file",
-        "scope": "_anonymous_led_c_43_9"
-      }
-    ],
-    "name": "",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@F@LED_vOutput",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void LED_vOutput(uint8_t)",
-    "location": {
-      "column": "13",
-      "line": "52",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_vOutput",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@F@LED_vIdEffectTick",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void LED_vIdEffectTick(void *)",
-    "location": {
-      "column": "13",
-      "line": "55",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_vIdEffectTick",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@LED_sCommon",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "LED_sCommon",
-    "location": {
-      "column": "21",
-      "line": "68",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_sCommon",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@LED_asEffect",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "LED_asEffect",
-    "location": {
-      "column": "21",
-      "line": "71",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_asEffect",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@u8TimerTickLED",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "u8TimerTickLED",
-    "location": {
-      "column": "7",
-      "line": "72",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "u8TimerTickLED",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "LED_teStatus LED_eInit(LED_tsLed *, const uint8_t)",
-    "location": {
-      "column": "14",
-      "line": "77",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_eInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eOpen",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "LED_teStatus LED_eOpen(uint8_t *, LED_tsLed *)",
-    "location": {
-      "column": "14",
-      "line": "96",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_eOpen",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@4675@F@LED_eOpen@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "13",
-      "line": "107",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@4691@F@LED_eOpen@psLeds",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psLeds",
-    "location": {
-      "column": "20",
-      "line": "108",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "psLeds",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eClose",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "LED_teStatus LED_eClose(uint8_t)",
-    "location": {
-      "column": "14",
-      "line": "132",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_eClose",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@5309@F@LED_eClose@psLeds",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psLeds",
-    "location": {
-      "column": "16",
-      "line": "134",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "psLeds",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eSetOnOff",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "LED_teStatus LED_eSetOnOff(uint8_t, bool)",
-    "location": {
-      "column": "14",
-      "line": "150",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_eSetOnOff",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@5723@F@LED_eSetOnOff@psLeds",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psLeds",
-    "location": {
-      "column": "16",
-      "line": "152",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "psLeds",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@F@LED_vOutput",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LED_vOutput(uint8_t)",
-    "location": {
-      "column": "13",
-      "line": "237",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_vOutput",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@7883@F@LED_vOutput@psLeds",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psLeds",
-    "location": {
-      "column": "16",
-      "line": "239",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "psLeds",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LED_eStartEffect",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "LED_teStatus LED_eStartEffect(uint8_t, LED_tsEffect *)",
-    "location": {
-      "column": "14",
-      "line": "275",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_eStartEffect",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@9042@F@LED_eStartEffect@psLedEffect",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psLedEffect",
-    "location": {
-      "column": "19",
-      "line": "283",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "psLedEffect",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@F@LED_vIdEffectTick",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LED_vIdEffectTick(void *)",
-    "location": {
-      "column": "13",
-      "line": "294",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "LED_vIdEffectTick",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@9437@F@LED_vIdEffectTick@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "9",
-      "line": "300",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:led.c@9449@F@LED_vIdEffectTick@psEffect",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "psEffect",
-    "location": {
-      "column": "22",
-      "line": "301",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
-    },
-    "name": "psEffect",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@u8ButtonTest",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "u8ButtonTest",
-    "location": {
-      "column": "7",
-      "line": "42",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "u8ButtonTest",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@u8SerialTest",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "u8SerialTest",
-    "location": {
-      "column": "7",
-      "line": "43",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "u8SerialTest",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@u8LedTest",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "u8LedTest",
-    "location": {
-      "column": "7",
-      "line": "44",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "u8LedTest",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@BUTTON_vOpen",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void BUTTON_vOpen(void)",
-    "location": {
-      "column": "17",
-      "line": "46",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "BUTTON_vOpen",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@BUTTON_bRead",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "bool BUTTON_bRead(void)",
-    "location": {
-      "column": "17",
-      "line": "47",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "BUTTON_bRead",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@APP_vInitialise",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void APP_vInitialise(void)",
-    "location": {
-      "column": "13",
-      "line": "49",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "APP_vInitialise",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@uart_initialize",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void uart_initialize(void)",
-    "location": {
-      "column": "13",
-      "line": "51",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "uart_initialize",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@uart_drv_send",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void uart_drv_send(uint8_t)",
-    "location": {
-      "column": "13",
-      "line": "52",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "uart_drv_send",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@uart_drv_receive",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8_t uart_drv_receive(void)",
-    "location": {
-      "column": "16",
-      "line": "53",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "uart_drv_receive",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@led_initialize",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void led_initialize(void)",
-    "location": {
-      "column": "13",
-      "line": "59",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "led_initialize",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@led_set_state",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void led_set_state(bool)",
-    "location": {
-      "column": "13",
-      "line": "60",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "led_set_state",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@main",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void main(void)",
-    "location": {
-      "column": "6",
-      "line": "62",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@assert_failed",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void assert_failed(u8 *, u32)",
-    "location": {
-      "column": "6",
-      "line": "97",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "assert_failed",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@BUTTON_vOpen",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void BUTTON_vOpen(void)",
-    "location": {
-      "column": "13",
-      "line": "110",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "BUTTON_vOpen",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@BUTTON_bRead",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "bool BUTTON_bRead(void)",
-    "location": {
-      "column": "13",
-      "line": "115",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "BUTTON_bRead",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@uart_drv_send",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void uart_drv_send(uint8_t)",
-    "location": {
-      "column": "13",
-      "line": "120",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "uart_drv_send",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@uart_drv_receive",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint8_t uart_drv_receive(void)",
-    "location": {
-      "column": "16",
-      "line": "126",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "uart_drv_receive",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@uart_initialize",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void uart_initialize(void)",
-    "location": {
-      "column": "13",
-      "line": "132",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "uart_initialize",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@led_initialize",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void led_initialize(void)",
-    "location": {
-      "column": "13",
-      "line": "163",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "led_initialize",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@led_set_state",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void led_set_state(bool)",
-    "location": {
-      "column": "13",
-      "line": "168",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "led_set_state",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@F@APP_vInitialise",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void APP_vInitialise(void)",
-    "location": {
-      "column": "13",
-      "line": "180",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "APP_vInitialise",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@5495@F@APP_vInitialise@sLed",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "sLed",
-    "location": {
-      "column": "15",
-      "line": "196",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\workspace\\STM8Sxxx_IAR_Project\\EWARM\\main.c"
-    },
-    "name": "sLed",
-    "origin": "project_file",
     "scope": null
   },
   {

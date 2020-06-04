@@ -34,7 +34,7 @@
 #include "prj_options.h"
 #include "app_main.h"
 #include "dbg.h"
-#include "portable.h"
+#include "port_mcu.h"
 #include "serial.h"
 
 /* Private defines -----------------------------------------------------------*/

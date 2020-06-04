@@ -1,10 +1,10 @@
 /*****************************************************************************
  *
- * MODULE:             portable
+ * MODULE:             port_mcu
  *
- * COMPONENT:          portable.h
+ * COMPONENT:          port_mcu.h
  *
- * DESCRIPTION:        portable
+ * DESCRIPTION:        port_mcu
  * MODIFY:             giauna
  *
  ****************************************************************************
@@ -33,8 +33,8 @@
  *
  ***************************************************************************/
 
-#ifndef PORTABLE_H_
-#define PORTABLE_H_
+#ifndef PORT_MCU_H_
+#define PORT_MCU_H_
 
 #ifdef __cplusplus
  extern "C" {
@@ -50,4 +50,4 @@ void PORTABLE_vInit(void);
 #ifdef __cplusplus
 }
 #endif
-#endif /*PORTABLE_H_*/
+#endif /*PORT_MCU_H_*/
