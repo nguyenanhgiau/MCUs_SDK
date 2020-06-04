@@ -118,6 +118,10 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
 
                 /* call function initialize hardware led */
                 psLeds->pfOpen();
+
+                /* turn off led */
+                psLed->pfSetOnOff(psLed->bState);
+
                 /* return the index of the led */
                 *pu8LedIndex = i;
 
