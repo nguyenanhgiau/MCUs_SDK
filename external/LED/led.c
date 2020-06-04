@@ -447,7 +447,11 @@ static void LED_vIdEffectTick(void *pvParam)
                     psEffect->u8Level -= LED_BREATHE_STEP;
                 }
             }
-            LED_eSetLevel(i, psEffect->u8Level);    /* set level for LED*/
+
+            if (psEffect->eEffect == E_LED_EFFECT_BREATHE)
+            {
+                LED_eSetLevel(i, psEffect->u8Level);    /* set level for LED*/
+            }
             break;
 
         case E_LED_EFFECT_COLOR_LOOP:
