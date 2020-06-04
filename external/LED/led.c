@@ -53,6 +53,7 @@ static void LED_vOutput(uint8 u8LedIndex);
 
 #ifdef LED_SUPPORT_EFFECT
 static void LED_vIdEffectTick(void *pvParam);
+static void LED_vEffectOutput(uint8 u8LedIndex);
 #endif
 /****************************************************************************/
 /***        Exported Variables                                            ***/
@@ -398,6 +399,7 @@ static void LED_vIdEffectTick(void *pvParam)
             }
             break;
 
+        #ifdef LED_SUPPORT_COLOR
         case E_LED_EFFECT_BREATHE:
             /**
              *         /\      /\
@@ -407,29 +409,53 @@ static void LED_vIdEffectTick(void *pvParam)
              *            
              *      |u16Per |
              */
-            if (psEffect->u16Tick < psEffect->u16Period)
+            if (psEffect->bDirection)   /* phrase increase */
             {
-                
-            }
-            else
-            {
-                psEffect->u16Tick = 0;      /* Reset tick */
-                psEffect->u8Count++;        /* Increase counter period */
-
-                /* check times of effect */
-                if (psEffect->u8Loop != 0 && psEffect->u8Count >= psEffect->u8Loop)
+                if (psEffect->u8Level >= (LED_BREATHE_STEP * 5))
                 {
-                    /* TODO: recover old state if required */
-                    psEffect->eEffect = E_LED_EFFECT_STOP;
+                    psEffect->u8Level -= LED_BREATHE_STEP;
+                    psEffect->bDirection = FALSE;
+                }
+                else
+                {
+                    psEffect->u8Level += LED_BREATHE_STEP;
                 }
             }
+            else    /* phrase decrease */
+            {
+                if (psEffect->u8Level == 0)
+                {
+                    psEffect->bDirection = TRUE;
+                    psEffect->u8Count++;        /* Increase counter period */
+                    /* check counter of breathe, break if expired */
+                    if (psEffect->u8Loop != 0 && psEffect->u8Count >= psEffect->u8Loop)
+                    {
+                        /* TODO: recover old state if required */
+                        psEffect->eEffect = E_LED_EFFECT_STOP;
+                    }
+                }
+                else
+                {
+                    psEffect->u8Level -= LED_BREATHE_STEP;
+                }
+            }
+            LED_eSetLevel(i, psEffect->u8Level);    /* set level for LED*/
             break;
+
+        case E_LED_EFFECT_COLOR_LOOP:
+            /* TODO: loop color follow HSV or RGB */
+            break;
+        #endif
         
         default:
             break;
         }
     }
-    
+}
+
+static void LED_vEffectOutput(uint8 u8LedIndex)
+{
+
 }
 #endif
 

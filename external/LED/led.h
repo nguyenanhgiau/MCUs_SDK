@@ -37,6 +37,9 @@
 #define LED_TIME_TICK   (TIMER_TIME_MSEC(10))
 #endif
 
+#ifndef LED_BREATHE_STEP
+#define LED_BREATHE_STEP    (50)
+#endif
 /* Exported Typedefs ---------------------------------------------------------*/
 typedef void (*LED_tpfOpen)(void);
 typedef void (*LED_tpfClose)(void);
@@ -83,7 +86,6 @@ typedef struct
 
   #ifdef LED_SUPPORT_COLOR
   bool    bDirection;
-  bool    bFinish;
   uint8   u8Red;
   uint8   u8Green;
   uint8   u8Blue;
