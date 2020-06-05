@@ -57,7 +57,7 @@ static uint8_t uart_drv_receive(void);
 // static void uart_stop_receive(void);
 
 static void led_initialize(void);
-static void led_set_state(bool bState);
+static void led_set_state(void *pvParam);
 
 void main(void)
 {
@@ -165,8 +165,9 @@ static void led_initialize(void)
     GPIO_Init(GPIOB, (GPIO_Pin_TypeDef)GPIO_PIN_5, GPIO_MODE_OUT_PP_HIGH_FAST);
 }
 
-static void led_set_state(bool bState)
+static void led_set_state(void *pvParam)
 {
+    bool bState = (bool*)pvParam;
     if (!bState)
     {
         GPIO_WriteHigh(GPIOB, (GPIO_Pin_TypeDef)GPIO_PIN_5);
@@ -196,7 +197,7 @@ static void APP_vInitialise(void)
     LED_tsLed sLed = {
         .bState = FALSE,
         .pfOpen = &led_initialize,
-        .pfSetOnOff = &led_set_state
+        .pfSetState = &led_set_state
     };
     LED_eOpen(&u8LedTest, &sLed);
 }

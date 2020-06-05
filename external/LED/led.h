@@ -43,7 +43,7 @@
 /* Exported Typedefs ---------------------------------------------------------*/
 typedef void (*LED_tpfOpen)(void);
 typedef void (*LED_tpfClose)(void);
-typedef void (*LED_tpfSetOnOff)(bool);
+typedef void (*LED_tpfSetState)(void*);
 
 #ifdef LED_SUPPORT_COLOR
 typedef void (*LED_tpfSetColor)(uint8, uint8, uint8);
@@ -67,6 +67,14 @@ typedef enum
   E_LED_EFFECT_BREATHE,
   E_LED_EFFECT_COLOR_LOOP  
 }LED_teEffect;
+
+typedef struct
+{
+  uint8           u8Red;
+  uint8           u8Green;
+  uint8           u8Blue;
+  uint8           u8Level;
+}LED_tsColor;
 
 /* struce effect LED */
 typedef struct
@@ -102,14 +110,9 @@ typedef struct
   LED_tpfClose    pfClose;
   
   #ifdef LED_SUPPORT_COLOR
-  uint8           u8Red;
-  uint8           u8Green;
-  uint8           u8Blue;
-  uint8           u8Level;
-  LED_tpfSetColor pfSetColor;
-  #else
-  LED_tpfSetOnOff pfSetOnOff;
+  LED_tsColor     sColor;
   #endif
+  LED_tpfSetState pfSetState;
 }LED_tsLed;
 /* Exported Functions Declarations -------------------------------------------*/
 LED_teStatus LED_eInit(LED_tsLed *psLeds, const uint8 u8NumLeds);

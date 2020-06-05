@@ -57,7 +57,7 @@ static void uart_drv_send(uint8_t u8TxByte);
 static uint8_t uart_drv_receive(void);
 
 static void led_initialize(void);
-static void led_set_state(bool bState);
+static void led_set_state(void *pvParam);
 /* Private functions ---------------------------------------------------------*/
 
 /**
@@ -201,8 +201,9 @@ static void led_initialize(void)
   GPIO_Init(GPIOC, &GPIO_InitStructure);  
 }
 
-static void led_set_state(bool bState)
+static void led_set_state(void *pvParam)
 {
+  bool bState = (bool*)pvParam;
   GPIO_WriteBit(GPIOC, GPIO_Pin_13, (BitAction)!bState);
 }
 
@@ -213,7 +214,7 @@ static void APP_vInitialise(void)
     LED_tsLed sLed = {
         .bState = FALSE,
         .pfOpen = &led_initialize,
-        .pfSetOnOff = &led_set_state
+        .pfSetState = &led_set_state
     };
     LED_eOpen(&u8LedTest, &sLed);
 }

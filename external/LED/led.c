@@ -98,11 +98,7 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
                         LED_tsLed     *psLed)
 {
     if (psLed->pfOpen != NULL 
-    #ifdef LED_SUPPORT_COLOR
-        || psLed->pfSetColor == NULL
-    #else 
-        || psLed->pfSetOnOff == NULL
-    #endif
+        || psLed->pfSetState == NULL
     )
     {
         int i;
@@ -121,7 +117,7 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
                 psLeds->pfOpen();
 
                 /* turn off led */
-                psLed->pfSetOnOff(psLed->bState);
+                psLed->pfSetState(&psLed->bState);
 
                 /* return the index of the led */
                 *pu8LedIndex = i;
@@ -158,11 +154,7 @@ LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState)
     psLeds = &LED_sCommon.psLeds[u8LedIndex];
 
     if (u8LedIndex > LED_sCommon.u8NumLeds
-    #ifdef LED_SUPPORT_COLOR
-        || psLeds->pfSetColor == NULL
-    #else 
-        || psLeds->pfSetOnOff == NULL
-    #endif
+        || psLeds->pfSetState == NULL
     )
     {
         return E_LED_FAIL;
@@ -192,10 +184,10 @@ LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level)
     }
 
     /* Different value? */
-    if (psLeds->u8Level != u8Level)
+    if (psLeds->sColor.u8Level != u8Level)
     {
         /* Note the new level */
-        psLeds->u8Level = (u8Level == 0)? 1 : u8Level;
+        psLeds->sColor.u8Level = (u8Level == 0)? 1 : u8Level;
         /* Is the LED on */
         if (psLeds->bState)
         {
@@ -212,18 +204,18 @@ LED_teStatus LED_eSetColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u
     LED_tsLed *psLeds;
     psLeds = &LED_sCommon.psLeds[u8LedIndex];
 
-    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetColor == NULL)
+    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetState == NULL)
     {
         return E_LED_FAIL;
     }
 
     /* Different value? */
-    if (psLeds->u8Red != u8Red || psLeds->u8Green != u8Green || psLeds->u8Blue != u8Blue)
+    if (psLeds->sColor.u8Red != u8Red || psLeds->sColor.u8Green != u8Green || psLeds->sColor.u8Blue != u8Blue)
     {
         /* Note the new values */
-        psLeds->u8Red = u8Red;
-        psLeds->u8Green = u8Green;
-        psLeds->u8Blue = u8Blue;
+        psLeds->sColor.u8Red = u8Red;
+        psLeds->sColor.u8Green = u8Green;
+        psLeds->sColor.u8Blue = u8Blue;
         /* Is the LED on? */
         if (psLeds->bState)
         {
@@ -245,34 +237,31 @@ static void LED_vOutput(uint8 u8LedIndex)
     psLeds = &LED_sCommon.psLeds[u8LedIndex];
 
     #ifdef LED_SUPPORT_COLOR
-    uint8 u8Red;
-    uint8 u8Green;
-    uint8 u8Blue;
+    LED_tsColor sColor;
 
     /* Is LED on? */
     if (psLeds->bState)
     {
         /* Scale color for brightness level */
-        u8Red = (uint8)(((uint32)psLeds->u8Red * (uint32)psLeds->u8Level) / (uint32)255);
-        u8Green = (uint8)(((uint32)psLeds->u8Green * (uint32)psLeds->u8Level) / (uint32)255);
-        u8Blue = (uint8)(((uint32)psLeds->u8Blue * (uint32)psLeds->u8Level) / (uint32)255);
+        sColor.u8Red = (uint8)(((uint32)psLeds->sColor.u8Red * (uint32)psLeds->sColor.u8Level) / (uint32)255);
+        sColor.u8Green = (uint8)(((uint32)psLeds->sColor.u8Green * (uint32)psLeds->sColor.u8Level) / (uint32)255);
+        sColor.u8Blue = (uint8)(((uint32)psLeds->sColor.u8Blue * (uint32)psLeds->sColor.u8Level) / (uint32)255);
 
         /* Don't allow fully off */
-        if (u8Red == 0) u8Red = 1;
-        if (u8Green == 0) u8Green = 1;
-        if (u8Blue == 0) u8Blue = 1;
+        if (sColor.u8Red == 0) sColor.u8Red = 1;
+        if (sColor.u8Green == 0) sColor.u8Green = 1;
+        if (sColor.u8Blue == 0) sColor.u8Blue = 1;
     }
     else
     {
-        u8Red = 0;
-        u8Green = 0;
-        u8Blue = 0;
+        sColor.u8Red = 0;
+        sColor.u8Green = 0;
+        sColor.u8Blue = 0;
     }
-
-    /* Set RGB channel levels */
-    psLeds->pfSetColor(u8Red, u8Green, u8Blue);
+    /* Set output RGB channels */
+    psLeds->pfSetState(&sColor);
     #else
-    psLeds->pfSetOnOff(psLeds->bState);
+    psLeds->pfSetState(&psLeds->bState);
     #endif
 }
 
@@ -305,7 +294,7 @@ static void LED_vIdEffectTick(void *pvParam)
     /* restart timer */
     TIMER_eStart(u8TimerTickLED, LED_TIME_TICK);
 
-    /* TODO: handle tick LED */
+    /* handle tick LED */
     int i;
     LED_tsEffect    *psEffect;
 
