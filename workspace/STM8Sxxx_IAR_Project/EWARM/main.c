@@ -167,8 +167,8 @@ static void led_initialize(void)
 
 static void led_set_state(void *pvParam)
 {
-    bool bState = (bool*)pvParam;
-    if (!bState)
+    bool *pbState = (bool*)pvParam;
+    if (!(*pbState))
     {
         GPIO_WriteHigh(GPIOB, (GPIO_Pin_TypeDef)GPIO_PIN_5);
     }

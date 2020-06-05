@@ -80,24 +80,22 @@ typedef struct
 typedef struct
 {
   LED_teEffect   eEffect;
-  uint16  u16Tick;
-  uint16  u16TimeOn;     /* unit 10ms */
-  uint16  u16TimeOff;
-  uint16  u16Period;     /* uint 10ms */
+  uint16  u16Tick;      /* counter tick led */
+  uint16  u16TimeOn;    /* time LED is on, unit 10ms */
+  uint16  u16TimeOff;   /* time LED is off, unit 10ms */
+  uint16  u16Period;    /* time in a period, uint 10ms */
 
-  bool    bOn;
-  uint8   u8Flash;
-  uint8   u8Toggle;
+  bool    bOn;          /* current state of flash effect */
+  uint8   u8Flash;      /* total flash in a period */
+  uint8   u8Toggle;     /* counter flash in a period */
 
-  uint8   u8Count;
-  uint8   u8Loop;
+  uint8   u8Count;      /* counter periods */
+  uint8   u8Loop;       /* total of periods */
 
+  bool    bState;       /* current state on/off */
   #ifdef LED_SUPPORT_COLOR
-  bool    bDirection;
-  uint8   u8Red;
-  uint8   u8Green;
-  uint8   u8Blue;
-  uint8   u8Level;
+  bool    bDirection;   /* direction of effect: increase or decrease */
+  LED_tsColor     sColor;
   #endif
 }LED_tsEffect;
 #endif

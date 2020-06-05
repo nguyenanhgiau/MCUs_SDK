@@ -203,8 +203,9 @@ static void led_initialize(void)
 
 static void led_set_state(void *pvParam)
 {
-  bool bState = (bool*)pvParam;
-  GPIO_WriteBit(GPIOC, GPIO_Pin_13, (BitAction)!bState);
+  bool *pbState = (bool*)pvParam;
+  LED_tsColor *psColor = (LED_tsColor*)pvParam;
+  GPIO_WriteBit(GPIOC, GPIO_Pin_13, (BitAction)!(*pbState));
 }
 
 static void APP_vInitialise(void)

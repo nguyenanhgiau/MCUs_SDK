@@ -54,6 +54,7 @@ static void LED_vOutput(uint8 u8LedIndex);
 #ifdef LED_SUPPORT_EFFECT
 static void LED_vIdEffectTick(void *pvParam);
 static LED_teStatus LED_bCheckValidEffect(LED_tsEffect *psEffect);
+static void LED_vEffectOutput(uint8 u8LedIndex);
 #endif
 /****************************************************************************/
 /***        Exported Variables                                            ***/
@@ -117,7 +118,7 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
                 psLeds->pfOpen();
 
                 /* turn off led */
-                psLed->pfSetState(&psLed->bState);
+                LED_vOutput(i);
 
                 /* return the index of the led */
                 *pu8LedIndex = i;
@@ -314,29 +315,32 @@ static void LED_vIdEffectTick(void *pvParam)
              *            
              *      |<-----u16Period---->
              */
-            if (psEffect->u16Tick < psEffect->u16Period)
+            /* check times of effect */
+            if (psEffect->u8Loop != 0 && psEffect->u8Count >= psEffect->u8Loop)
             {
-                psEffect->u16Tick++;
-
-                if (psEffect->u16Tick < psEffect->u16TimeOn)
-                {
-                    LED_eSetOnOff(i, TRUE);     /* Turn on LED */
-                }
-                else
-                {
-                    LED_eSetOnOff(i, FALSE);    /* Turn off LED */
-                }
+                LED_vOutput(i);     /* recover old state if required */
+                psEffect->eEffect = E_LED_EFFECT_STOP;
             }
             else
             {
-                psEffect->u16Tick = 0;       /* Reset tick */
-                psEffect->u8Count++;        /* Increase counter period */
-
-                /* check times of effect */
-                if (psEffect->u8Loop != 0 && psEffect->u8Count >= psEffect->u8Loop)
+                if (psEffect->u16Tick < psEffect->u16Period)
                 {
-                    /* TODO: recover old state if required */
-                    psEffect->eEffect = E_LED_EFFECT_STOP;
+                    psEffect->u16Tick++;
+
+                    if (psEffect->u16Tick < psEffect->u16TimeOn)
+                    {
+                        psEffect->bState = TRUE;     /* Turn on LED */
+                    }
+                    else
+                    {
+                        psEffect->bState = FALSE;    /* Turn off LED */
+                    }
+                    LED_vEffectOutput(i);   /* Set out for effect */
+                }
+                else
+                {
+                    psEffect->u16Tick = 0;       /* Reset tick */
+                    psEffect->u8Count++;        /* Increase counter period */
                 }
             }
             break;
@@ -350,48 +354,51 @@ static void LED_vIdEffectTick(void *pvParam)
              *            
              *      |<-----u16Period--->|
              */
-            if (psEffect->u16Tick < psEffect->u16Period)
+            /* check times of effect */
+            if (psEffect->u8Loop != 0 && psEffect->u8Count >= psEffect->u8Loop)
             {
-                psEffect->u16Tick++;
-
-                if (psEffect->u8Toggle < psEffect->u8Flash)
-                {
-                    if (!psEffect->bOn)
-                    {
-                        if (psEffect->u16Tick < (psEffect->u16TimeOn + ((psEffect->u16TimeOn + psEffect->u16TimeOff) * psEffect->u8Toggle)))
-                        {
-                            LED_eSetOnOff(i, TRUE);         /* Turn on LED */
-                        }
-                        else
-                        {
-                            psEffect->bOn = !psEffect->bOn; /* Toggle state of LED */
-                        }
-                    }
-                    else
-                    {
-                        if (psEffect->u16Tick < ((psEffect->u16TimeOn + psEffect->u16TimeOff) * (1 + psEffect->u8Toggle)))
-                        {
-                            LED_eSetOnOff(i, FALSE);        /* Turn off LED */
-                        }
-                        else
-                        {
-                            psEffect->bOn = !psEffect->bOn; /* Toggle state of LED */
-                            psEffect->u8Toggle++;           /* Increase counter flash */
-                        }
-                    }
-                }
+                LED_vOutput(i); /* recover old state if required */
+                psEffect->eEffect = E_LED_EFFECT_STOP;
             }
             else
             {
-                psEffect->u16Tick = 0;      /* Reset tick */
-                psEffect->u8Toggle = 0;     /* Reset toggle counter */
-                psEffect->u8Count++;        /* Increase counter period */
-
-                /* check times of effect */
-                if (psEffect->u8Loop != 0 && psEffect->u8Count >= psEffect->u8Loop)
+                if (psEffect->u16Tick < psEffect->u16Period)
                 {
-                    /* TODO: recover old state if required */
-                    psEffect->eEffect = E_LED_EFFECT_STOP;
+                    psEffect->u16Tick++;
+
+                    if (psEffect->u8Toggle < psEffect->u8Flash)
+                    {
+                        if (!psEffect->bOn)
+                        {
+                            if (psEffect->u16Tick < (psEffect->u16TimeOn + ((psEffect->u16TimeOn + psEffect->u16TimeOff) * psEffect->u8Toggle)))
+                            {
+                                psEffect->bState = TRUE;         /* Turn on LED */
+                            }
+                            else
+                            {
+                                psEffect->bOn = !psEffect->bOn; /* Toggle state of LED */
+                            }
+                        }
+                        else
+                        {
+                            if (psEffect->u16Tick < ((psEffect->u16TimeOn + psEffect->u16TimeOff) * (1 + psEffect->u8Toggle)))
+                            {
+                                psEffect->bState = FALSE;        /* Turn off LED */
+                            }
+                            else
+                            {
+                                psEffect->bOn = !psEffect->bOn; /* Toggle state of LED */
+                                psEffect->u8Toggle++;           /* Increase counter flash */
+                            }
+                        }
+                        LED_vEffectOutput(i);   /* Set out for effect */
+                    }
+                }
+                else
+                {
+                    psEffect->u16Tick = 0;      /* Reset tick */
+                    psEffect->u8Toggle = 0;     /* Reset toggle counter */
+                    psEffect->u8Count++;        /* Increase counter period */
                 }
             }
             break;
@@ -406,40 +413,39 @@ static void LED_vIdEffectTick(void *pvParam)
              *            
              *      |u16Per |
              */
-            if (psEffect->bDirection)   /* phrase increase */
+            /* check counter of breathe, break if expired */
+            if (psEffect->u8Loop != 0 && psEffect->u8Count >= psEffect->u8Loop)
             {
-                if (psEffect->u8Level >= (LED_BREATHE_STEP * 5))
-                {
-                    psEffect->u8Level -= LED_BREATHE_STEP;
-                    psEffect->bDirection = FALSE;
-                }
-                else
-                {
-                    psEffect->u8Level += LED_BREATHE_STEP;
-                }
+                LED_vOutput(i);     /* recover old state if required */
+                psEffect->eEffect = E_LED_EFFECT_STOP;
             }
-            else    /* phrase decrease */
+            else
             {
-                if (psEffect->u8Level == 0)
+                if (psEffect->bDirection)   /* phrase increase */
                 {
-                    psEffect->bDirection = TRUE;
-                    psEffect->u8Count++;        /* Increase counter period */
-                    /* check counter of breathe, break if expired */
-                    if (psEffect->u8Loop != 0 && psEffect->u8Count >= psEffect->u8Loop)
+                    if (psEffect->sColor.u8Level >= (LED_BREATHE_STEP * 5))
                     {
-                        /* TODO: recover old state if required */
-                        psEffect->eEffect = E_LED_EFFECT_STOP;
+                        psEffect->sColor.u8Level -= LED_BREATHE_STEP;
+                        psEffect->bDirection = FALSE;
+                    }
+                    else
+                    {
+                        psEffect->sColor.u8Level += LED_BREATHE_STEP;
                     }
                 }
-                else
+                else    /* phrase decrease */
                 {
-                    psEffect->u8Level -= LED_BREATHE_STEP;
+                    if (psEffect->sColor.u8Level == 0)
+                    {
+                        psEffect->bDirection = TRUE;
+                        psEffect->u8Count++;        /* Increase counter period */
+                    }
+                    else
+                    {
+                        psEffect->sColor.u8Level -= LED_BREATHE_STEP;
+                    }
                 }
-            }
-
-            if (psEffect->eEffect == E_LED_EFFECT_BREATHE)
-            {
-                LED_eSetLevel(i, psEffect->u8Level);    /* set level for LED*/
+                LED_vEffectOutput(i);   /* Set out for effect */
             }
             break;
 
@@ -477,6 +483,43 @@ static LED_teStatus LED_bCheckValidEffect(LED_tsEffect *psEffect)
         break;
     }
     return E_LED_OK;
+}
+
+static void LED_vEffectOutput(uint8 u8LedIndex)
+{
+    LED_tsLed *psLeds;
+    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+
+    LED_tsEffect *psEffect;
+    psEffect = &LED_asEffect[u8LedIndex];
+
+    #ifdef LED_SUPPORT_COLOR
+    LED_tsColor sColor;
+
+    /* Is LED on? */
+    if (psEffect->bState)
+    {
+        /* Scale color for brightness level */
+        sColor.u8Red = (uint8)(((uint32)psEffect->sColor.u8Red * (uint32)psEffect->sColor.u8Level) / (uint32)255);
+        sColor.u8Green = (uint8)(((uint32)psEffect->sColor.u8Green * (uint32)psEffect->sColor.u8Level) / (uint32)255);
+        sColor.u8Blue = (uint8)(((uint32)psEffect->sColor.u8Blue * (uint32)psEffect->sColor.u8Level) / (uint32)255);
+
+        /* Don't allow fully off */
+        if (sColor.u8Red == 0) sColor.u8Red = 1;
+        if (sColor.u8Green == 0) sColor.u8Green = 1;
+        if (sColor.u8Blue == 0) sColor.u8Blue = 1;
+    }
+    else
+    {
+        sColor.u8Red = 0;
+        sColor.u8Green = 0;
+        sColor.u8Blue = 0;
+    }
+    /* Set output RGB channels */
+    psLeds->pfSetState(&sColor);
+    #else
+    psLeds->pfSetState(&psEffect->bState);
+    #endif
 }
 #endif
 
