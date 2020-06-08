@@ -212,14 +212,16 @@ static void APP_vInitialise(void)
     BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead);
 
     LED_tsLed sLed = {
-        .bState = TRUE,
+        .bState = FALSE,
         .pfOpen = &led_initialize,
         .pfSetState = &led_set_state,
+        #ifdef LED_SUPPORT_COLOR
         .sColor = {
           .u8Level = 200,
           .u8Red = 100,
           .u8Green = 255,
           .u8Blue = 50}
+        #endif
     };
     LED_eOpen(&u8LedTest, &sLed);
 }
