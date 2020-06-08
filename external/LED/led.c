@@ -114,6 +114,17 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
                 /* copy value */
                 memcpy(psLeds, psLed, sizeof(LED_tsLed));
 
+                #ifdef LED_SUPPORT_COLOR
+                if ((psLeds->sColor.u8Level == 0) && (psLeds->sColor.u8Red == 0)
+                    && (psLeds->sColor.u8Green == 0) && (psLeds->sColor.u8Blue == 0))
+                {
+                    psLeds->sColor.u8Level = 255;
+                    psLeds->sColor.u8Red = 255;
+                    psLeds->sColor.u8Green = 255;
+                    psLeds->sColor.u8Blue = 255;
+                }
+                #endif
+
                 /* call function initialize hardware led */
                 psLeds->pfOpen();
 

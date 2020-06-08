@@ -204,7 +204,6 @@ static void led_initialize(void)
 static void led_set_state(void *pvParam)
 {
   bool *pbState = (bool*)pvParam;
-  LED_tsColor *psColor = (LED_tsColor*)pvParam;
   GPIO_WriteBit(GPIOC, GPIO_Pin_13, (BitAction)!(*pbState));
 }
 
@@ -213,9 +212,14 @@ static void APP_vInitialise(void)
     BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead);
 
     LED_tsLed sLed = {
-        .bState = FALSE,
+        .bState = TRUE,
         .pfOpen = &led_initialize,
-        .pfSetState = &led_set_state
+        .pfSetState = &led_set_state,
+        .sColor = {
+          .u8Level = 200,
+          .u8Red = 100,
+          .u8Green = 255,
+          .u8Blue = 50}
     };
     LED_eOpen(&u8LedTest, &sLed);
 }
