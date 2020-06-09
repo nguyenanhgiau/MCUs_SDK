@@ -1,4 +1,4 @@
-"C:\Users\Giau\Desktop\MCUs_SDK\external\LED\led.c"
+"C:\Users\Giau\Desktop\MCUs_SDK\external\led\led.c"
 -std=c99
 -ferror-limit=0
 -fbracket-depth=512
@@ -8,7 +8,7 @@ C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWSTM8\Debug\Obj\l
 -o
 led.pbi
 -I
-C:\Users\Giau\Desktop\MCUs_SDK\external\LED
+C:\Users\Giau\Desktop\MCUs_SDK\external\led
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Sxxx_IAR_Project\EWSTM8
 -I

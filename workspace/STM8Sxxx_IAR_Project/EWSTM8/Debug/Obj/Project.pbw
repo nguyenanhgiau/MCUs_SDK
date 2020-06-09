@@ -50423,7 +50423,7 @@
     "location": {
       "column": "9",
       "line": "25",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_H_",
     "origin": "user_include",
@@ -50437,7 +50437,7 @@
     "location": {
       "column": "9",
       "line": "37",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_TIME_TICK",
     "origin": "user_include",
@@ -50451,7 +50451,7 @@
     "location": {
       "column": "9",
       "line": "41",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_BREATHE_STEP",
     "origin": "user_include",
@@ -50465,7 +50465,7 @@
     "location": {
       "column": "16",
       "line": "44",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_tpfOpen",
     "origin": "user_include",
@@ -50479,7 +50479,7 @@
     "location": {
       "column": "16",
       "line": "45",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_tpfClose",
     "origin": "user_include",
@@ -50493,7 +50493,7 @@
     "location": {
       "column": "16",
       "line": "46",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_tpfSetState",
     "origin": "user_include",
@@ -50513,7 +50513,7 @@
         "location": {
           "column": "3",
           "line": "56",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_OK",
         "origin": "user_include",
@@ -50527,7 +50527,7 @@
         "location": {
           "column": "3",
           "line": "57",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_FAIL",
         "origin": "user_include",
@@ -50537,7 +50537,7 @@
     "location": {
       "column": "9",
       "line": "54",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "",
     "origin": "user_include",
@@ -50557,7 +50557,7 @@
         "location": {
           "column": "3",
           "line": "64",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_EFFECT_STOP",
         "origin": "user_include",
@@ -50571,7 +50571,7 @@
         "location": {
           "column": "3",
           "line": "65",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_EFFECT_BLINK",
         "origin": "user_include",
@@ -50585,7 +50585,7 @@
         "location": {
           "column": "3",
           "line": "66",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_EFFECT_FLASH",
         "origin": "user_include",
@@ -50599,7 +50599,7 @@
         "location": {
           "column": "3",
           "line": "67",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_EFFECT_BREATHE",
         "origin": "user_include",
@@ -50613,7 +50613,7 @@
         "location": {
           "column": "3",
           "line": "68",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "E_LED_EFFECT_COLOR_LOOP",
         "origin": "user_include",
@@ -50623,7 +50623,7 @@
     "location": {
       "column": "9",
       "line": "62",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "",
     "origin": "user_include",
@@ -50637,7 +50637,7 @@
     "location": {
       "column": "9",
       "line": "71",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "members": [
       {
@@ -50648,7 +50648,7 @@
         "location": {
           "column": "19",
           "line": "73",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Red",
         "origin": "user_include",
@@ -50662,7 +50662,7 @@
         "location": {
           "column": "19",
           "line": "74",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Green",
         "origin": "user_include",
@@ -50676,7 +50676,7 @@
         "location": {
           "column": "19",
           "line": "75",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Blue",
         "origin": "user_include",
@@ -50690,7 +50690,7 @@
         "location": {
           "column": "19",
           "line": "76",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Level",
         "origin": "user_include",
@@ -50704,7 +50704,7 @@
         "location": {
           "column": "2",
           "line": "77",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "LED_tsColor",
         "origin": "user_include",
@@ -50723,7 +50723,7 @@
     "location": {
       "column": "9",
       "line": "80",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "members": [
       {
@@ -50734,7 +50734,7 @@
         "location": {
           "column": "18",
           "line": "82",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "eEffect",
         "origin": "user_include",
@@ -50748,7 +50748,7 @@
         "location": {
           "column": "11",
           "line": "83",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u16Tick",
         "origin": "user_include",
@@ -50762,7 +50762,7 @@
         "location": {
           "column": "11",
           "line": "84",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u16TimeOn",
         "origin": "user_include",
@@ -50776,7 +50776,7 @@
         "location": {
           "column": "11",
           "line": "85",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u16TimeOff",
         "origin": "user_include",
@@ -50790,7 +50790,7 @@
         "location": {
           "column": "11",
           "line": "86",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u16Period",
         "origin": "user_include",
@@ -50804,7 +50804,7 @@
         "location": {
           "column": "11",
           "line": "88",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "bOn",
         "origin": "user_include",
@@ -50818,7 +50818,7 @@
         "location": {
           "column": "11",
           "line": "89",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Flash",
         "origin": "user_include",
@@ -50832,7 +50832,7 @@
         "location": {
           "column": "11",
           "line": "90",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Toggle",
         "origin": "user_include",
@@ -50846,7 +50846,7 @@
         "location": {
           "column": "11",
           "line": "92",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Count",
         "origin": "user_include",
@@ -50860,7 +50860,7 @@
         "location": {
           "column": "11",
           "line": "93",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "u8Loop",
         "origin": "user_include",
@@ -50874,7 +50874,7 @@
         "location": {
           "column": "11",
           "line": "95",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "bState",
         "origin": "user_include",
@@ -50888,7 +50888,7 @@
         "location": {
           "column": "2",
           "line": "100",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "LED_tsEffect",
         "origin": "user_include",
@@ -50907,7 +50907,7 @@
     "location": {
       "column": "9",
       "line": "104",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "members": [
       {
@@ -50918,7 +50918,7 @@
         "location": {
           "column": "19",
           "line": "106",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "bState",
         "origin": "user_include",
@@ -50932,7 +50932,7 @@
         "location": {
           "column": "19",
           "line": "107",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "pfOpen",
         "origin": "user_include",
@@ -50946,7 +50946,7 @@
         "location": {
           "column": "19",
           "line": "108",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "pfClose",
         "origin": "user_include",
@@ -50960,7 +50960,7 @@
         "location": {
           "column": "19",
           "line": "113",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "pfSetState",
         "origin": "user_include",
@@ -50974,7 +50974,7 @@
         "location": {
           "column": "2",
           "line": "114",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
         },
         "name": "LED_tsLed",
         "origin": "user_include",
@@ -50993,7 +50993,7 @@
     "location": {
       "column": "14",
       "line": "116",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eInit",
     "origin": "user_include",
@@ -51007,7 +51007,7 @@
     "location": {
       "column": "14",
       "line": "116",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eInit",
     "origin": "user_include",
@@ -51021,7 +51021,7 @@
     "location": {
       "column": "14",
       "line": "117",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eOpen",
     "origin": "user_include",
@@ -51035,7 +51035,7 @@
     "location": {
       "column": "14",
       "line": "117",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eOpen",
     "origin": "user_include",
@@ -51049,7 +51049,7 @@
     "location": {
       "column": "14",
       "line": "119",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eClose",
     "origin": "user_include",
@@ -51063,7 +51063,7 @@
     "location": {
       "column": "14",
       "line": "119",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eClose",
     "origin": "user_include",
@@ -51077,7 +51077,7 @@
     "location": {
       "column": "14",
       "line": "120",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eSetOnOff",
     "origin": "user_include",
@@ -51091,7 +51091,7 @@
     "location": {
       "column": "14",
       "line": "120",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eSetOnOff",
     "origin": "user_include",
@@ -51105,7 +51105,7 @@
     "location": {
       "column": "14",
       "line": "120",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eSetOnOff",
     "origin": "user_include",
@@ -51119,7 +51119,7 @@
     "location": {
       "column": "14",
       "line": "128",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eStartEffect",
     "origin": "user_include",
@@ -51133,7 +51133,7 @@
     "location": {
       "column": "14",
       "line": "128",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.h"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.h"
     },
     "name": "LED_eStartEffect",
     "origin": "user_include",
@@ -51147,7 +51147,7 @@
     "location": {
       "column": "9",
       "line": "43",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "members": [
       {
@@ -51158,7 +51158,7 @@
         "location": {
           "column": "17",
           "line": "45",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
         },
         "name": "u8NumLeds",
         "origin": "project_file",
@@ -51172,7 +51172,7 @@
         "location": {
           "column": "18",
           "line": "46",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
         },
         "name": "psLeds",
         "origin": "project_file",
@@ -51186,7 +51186,7 @@
         "location": {
           "column": "2",
           "line": "47",
-          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+          "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
         },
         "name": "LED_tsCommon",
         "origin": "project_file",
@@ -51205,7 +51205,7 @@
     "location": {
       "column": "13",
       "line": "52",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_vOutput",
     "origin": "project_file",
@@ -51219,7 +51219,7 @@
     "location": {
       "column": "13",
       "line": "55",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_vIdEffectTick",
     "origin": "project_file",
@@ -51233,7 +51233,7 @@
     "location": {
       "column": "21",
       "line": "56",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_bCheckValidEffect",
     "origin": "project_file",
@@ -51247,7 +51247,7 @@
     "location": {
       "column": "13",
       "line": "57",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_vEffectOutput",
     "origin": "project_file",
@@ -51261,7 +51261,7 @@
     "location": {
       "column": "21",
       "line": "70",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_sCommon",
     "origin": "project_file",
@@ -51275,7 +51275,7 @@
     "location": {
       "column": "21",
       "line": "73",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_asEffect",
     "origin": "project_file",
@@ -51289,7 +51289,7 @@
     "location": {
       "column": "7",
       "line": "74",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "u8TimerTickLED",
     "origin": "project_file",
@@ -51303,7 +51303,7 @@
     "location": {
       "column": "14",
       "line": "79",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_eInit",
     "origin": "project_file",
@@ -51317,7 +51317,7 @@
     "location": {
       "column": "14",
       "line": "98",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_eOpen",
     "origin": "project_file",
@@ -51331,7 +51331,7 @@
     "location": {
       "column": "13",
       "line": "105",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "i",
     "origin": "project_file",
@@ -51345,7 +51345,7 @@
     "location": {
       "column": "20",
       "line": "106",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLeds",
     "origin": "project_file",
@@ -51359,7 +51359,7 @@
     "location": {
       "column": "14",
       "line": "145",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_eClose",
     "origin": "project_file",
@@ -51373,7 +51373,7 @@
     "location": {
       "column": "16",
       "line": "147",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLeds",
     "origin": "project_file",
@@ -51387,7 +51387,7 @@
     "location": {
       "column": "14",
       "line": "163",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_eSetOnOff",
     "origin": "project_file",
@@ -51401,7 +51401,7 @@
     "location": {
       "column": "16",
       "line": "165",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLeds",
     "origin": "project_file",
@@ -51415,7 +51415,7 @@
     "location": {
       "column": "13",
       "line": "246",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_vOutput",
     "origin": "project_file",
@@ -51429,7 +51429,7 @@
     "location": {
       "column": "16",
       "line": "248",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLeds",
     "origin": "project_file",
@@ -51443,7 +51443,7 @@
     "location": {
       "column": "14",
       "line": "281",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_eStartEffect",
     "origin": "project_file",
@@ -51457,7 +51457,7 @@
     "location": {
       "column": "19",
       "line": "295",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLedEffect",
     "origin": "project_file",
@@ -51471,7 +51471,7 @@
     "location": {
       "column": "13",
       "line": "304",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_vIdEffectTick",
     "origin": "project_file",
@@ -51485,7 +51485,7 @@
     "location": {
       "column": "9",
       "line": "310",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "i",
     "origin": "project_file",
@@ -51499,7 +51499,7 @@
     "location": {
       "column": "22",
       "line": "311",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psEffect",
     "origin": "project_file",
@@ -51513,7 +51513,7 @@
     "location": {
       "column": "21",
       "line": "474",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_bCheckValidEffect",
     "origin": "project_file",
@@ -51527,7 +51527,7 @@
     "location": {
       "column": "13",
       "line": "499",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "LED_vEffectOutput",
     "origin": "project_file",
@@ -51541,7 +51541,7 @@
     "location": {
       "column": "16",
       "line": "501",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psLeds",
     "origin": "project_file",
@@ -51555,7 +51555,7 @@
     "location": {
       "column": "19",
       "line": "504",
-      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\LED\\led.c"
+      "path": "C:\\Users\\Giau\\Desktop\\MCUs_SDK\\external\\led\\led.c"
     },
     "name": "psEffect",
     "origin": "project_file",

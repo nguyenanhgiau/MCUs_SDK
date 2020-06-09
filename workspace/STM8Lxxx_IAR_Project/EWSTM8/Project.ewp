@@ -188,7 +188,7 @@
                 </option>
                 <option>
                     <name>CCDefines</name>
-                    <state>STM8L15X_MD
+                    <state>STM8L15X_MD
 </state>
                 </option>
                 <option>
@@ -1676,12 +1676,6 @@
     </group>
     <group>
         <name>drivers</name>
-        <group>
-            <name>serial</name>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\drivers\serial\serial.c</name>
-            </file>
-        </group>
     </group>
     <group>
         <name>external</name>
