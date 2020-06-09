@@ -44,6 +44,10 @@
 #include "stm32f10x.h"
 #endif
 
+#if (defined STM8L15X_MD)
+#include "stm8l15x.h"
+#endif
+
 #include "Type.h"
 
 #endif /*CHIP_SELECTION_H_*/
