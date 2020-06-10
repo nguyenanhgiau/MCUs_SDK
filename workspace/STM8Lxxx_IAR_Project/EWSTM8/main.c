@@ -104,12 +104,12 @@ void assert_failed(u8* file, u32 line)
 /* Private functions ---------------------------------------------------------*/
 static void BUTTON_vOpen(void)
 {
-    
+    GPIO_Init(GPIOA, GPIO_Pin_1, GPIO_Mode_In_PU_No_IT);
 }
 
 static bool BUTTON_bRead(void)
 {
-    return TRUE;
+    return (bool)GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_1);
 }
 
 static void uart_drv_send(uint8_t u8TxByte)
@@ -156,12 +156,13 @@ static void uart_initialize(void)
 
 static void led_initialize(void)
 {
-    
+    GPIO_Init(GPIOA, GPIO_Pin_4, GPIO_Mode_Out_PP_Low_Fast);
 }
 
 static void led_set_state(void *pvParam)
 {
-    
+    bool *pbOn = (bool*)pvParam;
+    GPIO_WriteBit(GPIOA, GPIO_Pin_4, (BitAction)(*pbOn));
 }
 
 static void APP_vInitialise(void)
