@@ -63,13 +63,6 @@ void PORTABLE_vInit(void)
   /* High speed internal clock prescaler: 1 */
   CLK_SYSCLKDivConfig(CLK_SYSCLKDiv_1);
 
-  /* Select HSE as system clock source */
-  CLK_SYSCLKSourceSwitchCmd(ENABLE);
-  CLK_SYSCLKSourceConfig(CLK_SYSCLKSource_HSE);
-
-  while (CLK_GetSYSCLKSource() != CLK_SYSCLKSource_HSE)
-  {}
-
   /* Initialize timer platform */
   timebase_initialize();
 }
