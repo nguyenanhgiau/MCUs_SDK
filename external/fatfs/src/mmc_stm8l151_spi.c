@@ -45,8 +45,8 @@
 #define	MMC_CD		1	/* Card detect (yes:true, no:false, default:true) */
 #define	MMC_WP		0       /* Write protected (yes:true, no:false, default:false) */
 
-#define CS_HIGH()	GPIO_SetBits(GPIOA, GPIO_Pin_4)
-#define CS_LOW()	GPIO_ResetBits(GPIOA, GPIO_Pin_4)
+#define CS_HIGH()	GPIO_SetBits(GPIOB, GPIO_Pin_4)
+#define CS_LOW()	GPIO_ResetBits(GPIOB, GPIO_Pin_4)
 
 #define FCLK_SLOW()     spi_speed_slow()	/* Set SCLK = PCLK / 128 */
 #define FCLK_FAST()     spi_speed_fast()	/* Set SCLK = PCLK / 2 */
@@ -60,54 +60,33 @@ UINT Timer1, Timer2;	/* 1kHz decrement timer stopped at zero (disk_timerproc()) 
 static
 BYTE CardType;			/* Card type flags */
 
-static uint16_t prescaler = SPI_BaudRatePrescaler_128;
 /*-----------------------------------------------------------------------*/
 /* SPI controls (Platform dependent)                                     */
 /*-----------------------------------------------------------------------*/
 
 static void spi_speed_slow(void)
 {
-  prescaler = SPI_BaudRatePrescaler_128;
-  SPI_InitTypeDef spi;
-  /* ^ with /2 APB1 this will be 15mhz/234k at 60mhz
-  * 18/281 at 72. which is ok, 100<x<400khz, and <25mhz */
   SPI_Cmd(SPI1, DISABLE);
-  
-  spi.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
-  spi.SPI_Mode = SPI_Mode_Master;
-  spi.SPI_DataSize = SPI_DataSize_8b;
-  spi.SPI_CPOL = SPI_CPOL_Low;
-  spi.SPI_CPHA = SPI_CPHA_1Edge;
-  
-  spi.SPI_NSS = SPI_NSS_Soft;
-  spi.SPI_BaudRatePrescaler = prescaler;
-  spi.SPI_FirstBit = SPI_FirstBit_MSB;
-  spi.SPI_CRCPolynomial = 7;
-  SPI_Init(SPI1, &spi);
-  
+
+  /* SPI configuration */
+  SPI_Init(SPI1, SPI_FirstBit_MSB, SPI_BaudRatePrescaler_4, SPI_Mode_Master,
+           SPI_CPOL_Low, SPI_CPHA_1Edge, SPI_Direction_2Lines_FullDuplex,
+           SPI_NSS_Soft, 0x07);
+
+  /* Enable SPI  */
   SPI_Cmd(SPI1, ENABLE);
 }
 
 static void spi_speed_fast(void)
 {
-  prescaler = SPI_BaudRatePrescaler_4;
-  SPI_InitTypeDef spi;
-  /* ^ with /2 APB1 this will be 15mhz/234k at 60mhz
-  * 18/281 at 72. which is ok, 100<x<400khz, and <25mhz */
   SPI_Cmd(SPI1, DISABLE);
-  
-  spi.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
-  spi.SPI_Mode = SPI_Mode_Master;
-  spi.SPI_DataSize = SPI_DataSize_8b;
-  spi.SPI_CPOL = SPI_CPOL_Low;
-  spi.SPI_CPHA = SPI_CPHA_1Edge;
-  
-  spi.SPI_NSS = SPI_NSS_Soft;
-  spi.SPI_BaudRatePrescaler = prescaler;
-  spi.SPI_FirstBit = SPI_FirstBit_MSB;
-  spi.SPI_CRCPolynomial = 7;
-  SPI_Init(SPI1, &spi);
-  
+
+  /* SPI configuration */
+  SPI_Init(SPI1, SPI_FirstBit_MSB, SPI_BaudRatePrescaler_128, SPI_Mode_Master,
+           SPI_CPOL_Low, SPI_CPHA_1Edge, SPI_Direction_2Lines_FullDuplex,
+           SPI_NSS_Soft, 0x07);
+
+  /* Enable SPI  */
   SPI_Cmd(SPI1, ENABLE);
 }
 
@@ -115,34 +94,24 @@ static void spi_speed_fast(void)
 static
 void init_spi (void)
 {
-  GPIO_InitTypeDef gpio;
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE);
-  gpio.GPIO_Pin = GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7;
-  gpio.GPIO_Speed = GPIO_Speed_50MHz;
-  gpio.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_Init(GPIOA, &gpio);
-  
-  gpio.GPIO_Pin = GPIO_Pin_4;
-  gpio.GPIO_Speed = GPIO_Speed_50MHz;
-  gpio.GPIO_Mode = GPIO_Mode_Out_PP;
-  GPIO_Init(GPIOA, &gpio);
-  
-  SPI_InitTypeDef spi;
-  SPI_Cmd(SPI1, DISABLE);
-  spi.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
-  spi.SPI_Mode = SPI_Mode_Master;
-  spi.SPI_DataSize = SPI_DataSize_8b;
-  spi.SPI_CPOL = SPI_CPOL_Low;
-  spi.SPI_CPHA = SPI_CPHA_1Edge;
-  
-  spi.SPI_NSS = SPI_NSS_Soft;
-  spi.SPI_BaudRatePrescaler = prescaler;
-  spi.SPI_FirstBit = SPI_FirstBit_MSB;
-  spi.SPI_CRCPolynomial = 7;
-  SPI_Init(SPI1, &spi);
+  /* sFLASH_SPI Periph clock enable */
+  CLK_PeripheralClockConfig(CLK_Peripheral_SPI1, ENABLE);
+
+  /* Set the MOSI,MISO and SCK at high level */
+  GPIO_ExternalPullUpConfig(GPIOB, GPIO_Pin_5 | \
+                            GPIO_Pin_7 | GPIO_Pin_6, ENABLE);
+
+  /* Configure FLASH_CS as Output push-pull, used as Flash Chip select */
+  GPIO_Init(GPIOB, GPIO_Pin_4, GPIO_Mode_Out_PP_High_Slow);
+
+  /* SPI configuration */
+  SPI_Init(SPI1, SPI_FirstBit_MSB, SPI_BaudRatePrescaler_4, SPI_Mode_Master,
+           SPI_CPOL_Low, SPI_CPHA_1Edge, SPI_Direction_2Lines_FullDuplex,
+           SPI_NSS_Soft, 0x07);
+
+  /* Enable SPI  */
   SPI_Cmd(SPI1, ENABLE);
-  
+
   CS_HIGH();			/* Set CS# high */
   
   for (Timer1 = 10; Timer1; ) ;	/* 10ms */
@@ -155,7 +124,7 @@ BYTE xchg_spi ( BYTE dat	/* Data to send */ ) {
   * we don't need to check for TXE */
   SPI1->DR = dat;
   while ((SPI1->SR & 0x83) != 0x03);
-  return (SPI1->DR);
+  return (BYTE)(SPI1->DR);
 }
 
 /* Receive multiple byte */
@@ -165,51 +134,14 @@ void rcvr_spi_multi (
 	UINT btr		/* Number of bytes to receive (even number) */
           ) 
 {
-  WORD d;
-  
-  /* Put SPI into 16-bit mode */
-  SPI_InitTypeDef spi;
-  SPI_Cmd(SPI1, DISABLE);
-  spi.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
-  spi.SPI_Mode = SPI_Mode_Master;
-  spi.SPI_DataSize = SPI_DataSize_16b;
-  spi.SPI_CPOL = SPI_CPOL_Low;
-  spi.SPI_CPHA = SPI_CPHA_1Edge;
-  
-  spi.SPI_NSS = SPI_NSS_Soft;
-  spi.SPI_BaudRatePrescaler = prescaler;
-  spi.SPI_FirstBit = SPI_FirstBit_MSB;
-  spi.SPI_CRCPolynomial = 7;
-  SPI_Init(SPI1, &spi);
-  SPI_Cmd(SPI1, ENABLE);
-  
-  SPI1->DR = 0xFFFF;		/* Start the first SPI transaction */
-  btr -= 2;
-  do {                          /* Receive the data block into buffer */
-    while ((SPI1->SR & 0x83) != 0x03);  /* Wait for end of the SPI transaction */
-    d = SPI1->DR;                       /* Get received word */
-    SPI1->DR = 0xFFFF;                  /* Start next transaction */
-    buff[1] = d; buff[0] = d >> 8;      /* Store received data */
-    buff += 2;
+  do {
+    SPI1->DR = 0xFF;
+    while ((SPI1->SR & 0x83) != 0x03);
+    *buff++ = (BYTE)(SPI1->DR);
+    SPI1->DR = 0xFF;
+    while ((SPI1->SR & 0x83) != 0x03);
+    *buff++ = (BYTE)(SPI1->DR);
   } while (btr -= 2);
-  while ((SPI1->SR & 0x83) != 0x03);    /* Wait for end of the SPI transaction */
-  d = SPI1->DR;                         /* Get last word received */
-  buff[1] = d; buff[0] = d >> 8;        /* Store it */
-  
-  /* Put SPI into 8-bit mode */
-  SPI_Cmd(SPI1, DISABLE);
-  spi.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
-  spi.SPI_Mode = SPI_Mode_Master;
-  spi.SPI_DataSize = SPI_DataSize_8b;
-  spi.SPI_CPOL = SPI_CPOL_Low;
-  spi.SPI_CPHA = SPI_CPHA_1Edge;
-  
-  spi.SPI_NSS = SPI_NSS_Soft;
-  spi.SPI_BaudRatePrescaler = prescaler;
-  spi.SPI_FirstBit = SPI_FirstBit_MSB;
-  spi.SPI_CRCPolynomial = 7;
-  SPI_Init(SPI1, &spi);
-  SPI_Cmd(SPI1, ENABLE);
 }
 
 #if _USE_WRITE
@@ -220,50 +152,12 @@ void xmit_spi_multi (
 	UINT btx			/* Number of bytes to send (even number) */
 )
 {
-  WORD d;
-  
-  /* Put SPI into 16-bit mode */
-  SPI_InitTypeDef spi;
-  SPI_Cmd(SPI1, DISABLE);
-  spi.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
-  spi.SPI_Mode = SPI_Mode_Master;
-  spi.SPI_DataSize = SPI_DataSize_16b;
-  spi.SPI_CPOL = SPI_CPOL_Low;
-  spi.SPI_CPHA = SPI_CPHA_1Edge;
-  
-  spi.SPI_NSS = SPI_NSS_Soft;
-  spi.SPI_BaudRatePrescaler = prescaler;
-  spi.SPI_FirstBit = SPI_FirstBit_MSB;
-  spi.SPI_CRCPolynomial = 7;
-  SPI_Init(SPI1, &spi);
-  SPI_Cmd(SPI1, ENABLE);
-  
-  d = buff[0] << 8 | buff[1]; buff += 2;
-  SPI1->DR = d;	/* Send the first word */
-  btx -= 2;
   do {
-    d = buff[0] << 8 | buff[1]; buff += 2;      /* Word to send next */
-    while ((SPI1->SR & 0x83) != 0x03) ;         /* Wait for end of the SPI transaction */
-    SPI1->DR;					/* Discard received word */
-    SPI1->DR = d;				/* Start next transaction */
+    SPI1->DR = *buff++;
+    while ((SPI1->SR & 0x83) != 0x03);
+    SPI1->DR = *buff++;
+    while ((SPI1->SR & 0x83) != 0x03);
   } while (btx -= 2);
-  while ((SPI1->SR & 0x83) != 0x03);            /* Wait for end of the SPI transaction */
-  SPI1->DR;
-  
-  /* Put SPI into 8-bit mode */
-  SPI_Cmd(SPI1, DISABLE);
-  spi.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
-  spi.SPI_Mode = SPI_Mode_Master;
-  spi.SPI_DataSize = SPI_DataSize_8b;
-  spi.SPI_CPOL = SPI_CPOL_Low;
-  spi.SPI_CPHA = SPI_CPHA_1Edge;
-  
-  spi.SPI_NSS = SPI_NSS_Soft;
-  spi.SPI_BaudRatePrescaler = prescaler;
-  spi.SPI_FirstBit = SPI_FirstBit_MSB;
-  spi.SPI_CRCPolynomial = 7;
-  SPI_Init(SPI1, &spi);
-  SPI_Cmd(SPI1, ENABLE);
 }
 #endif
 

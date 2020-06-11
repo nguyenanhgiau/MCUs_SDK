@@ -41,6 +41,7 @@
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 /* Public functions ----------------------------------------------------------*/
+extern void disk_timerproc (void);
 
 #ifdef _COSMIC_
 /**
@@ -365,6 +366,8 @@ INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler,25)
     TIM4_ClearITPendingBit(TIM4_IT_Update);
   
     ISR_vTickTimer();
+    
+    disk_timerproc();
 }
 /**
   * @brief SPI1 Interrupt routine.
