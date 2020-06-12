@@ -30,6 +30,8 @@ C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Lxxx_IAR_Project\DataLogger\..\..\.
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Lxxx_IAR_Project\DataLogger\..\..\..\external\fatfs\inc
 -I
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Lxxx_IAR_Project\DataLogger\..\..\..\drivers\spi
+-I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc\c
@@ -53,6 +55,8 @@ C:\Users\Giau\Desktop\MCUs_SDK\external\led
 C:\Users\Giau\Desktop\MCUs_SDK\drivers\serial
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\external\fatfs\inc
+-I
+C:\Users\Giau\Desktop\MCUs_SDK\drivers\spi
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

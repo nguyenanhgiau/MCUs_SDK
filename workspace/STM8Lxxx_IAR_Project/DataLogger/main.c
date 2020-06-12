@@ -36,8 +36,7 @@
 #include "dbg.h"
 #include "port_mcu.h"
 
-#include "diskio.h"
-#include "ff.h"
+#include "port_fatfs.h"
 /* Private defines -----------------------------------------------------------*/
 /* Private variable ----------------------------------------------------------*/
 uint8 u8ButtonTest;
@@ -59,6 +58,10 @@ static uint8_t uart_drv_receive(void);
 
 static void led_initialize(void);
 static void led_set_state(void *pvParam);
+
+static void init_spi (void);
+static void spi_select(bool bSelect);
+static uint8 spi_xchg(uint8 u8Byte);
 
 void main(void)
 {
@@ -82,11 +85,9 @@ void main(void)
 
   APP_vInitialise();
   
-  fr = f_mount(&fatfs, "", 0);
-  
-  fr = f_open(&fil, "test.txt", FA_READ);
-  
   uint8_t buff[100];
+  fr = f_mount(&fatfs, "", 0);
+  fr = f_open(&fil, "test.txt", FA_READ);
   if ( fr == FR_OK || fr == FR_EXIST) {
     UINT        u8Read;
     fr = f_read(&fil, buff, 100, &u8Read);
@@ -184,6 +185,49 @@ static void led_set_state(void *pvParam)
     GPIO_WriteBit(GPIOB, GPIO_Pin_4, (BitAction)(*pbOn));
 }
 
+static
+void init_spi (void)
+{
+  /* sFLASH_SPI Periph clock enable */
+  CLK_PeripheralClockConfig(CLK_Peripheral_SPI1, ENABLE);
+
+  /* Set the MOSI,MISO and SCK at high level */
+  GPIO_ExternalPullUpConfig(GPIOB, GPIO_Pin_5 | \
+                            GPIO_Pin_7 | GPIO_Pin_6, ENABLE);
+
+  /* Configure FLASH_CS as Output push-pull, used as Flash Chip select */
+  GPIO_Init(GPIOD, GPIO_Pin_4, GPIO_Mode_Out_PP_High_Slow);
+
+  /* SPI configuration */
+  SPI_Init(SPI1, SPI_FirstBit_MSB, SPI_BaudRatePrescaler_4, SPI_Mode_Master,
+           SPI_CPOL_Low, SPI_CPHA_1Edge, SPI_Direction_2Lines_FullDuplex,
+           SPI_NSS_Soft, 0x07);
+
+  /* Enable SPI  */
+  SPI_Cmd(SPI1, ENABLE);
+}
+
+static
+void spi_select(bool bSelect)
+{
+  if (bSelect)
+  {
+    GPIO_SetBits(GPIOD, GPIO_Pin_4);
+  }
+  else
+  {
+    GPIO_ResetBits(GPIOD, GPIO_Pin_4);
+  }
+}
+
+static
+uint8 spi_xchg(uint8 u8Byte)
+{
+  SPI1->DR = u8Byte;
+  while ((SPI1->SR & 0x83) != 0x03);
+  return (SPI1->DR);
+}
+
 static void APP_vInitialise(void)
 {
     BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead);
@@ -194,6 +238,14 @@ static void APP_vInitialise(void)
         .pfSetState = &led_set_state
     };
     LED_eOpen(&u8LedTest, &sLed);
+    
+    SPI_tsSpi sSPI = {
+        .pfOpen = init_spi,
+        .pfSelect = spi_select,
+        .pfXchgByte = spi_xchg
+    };
+    
+    FATfs_eInit(&sSPI);
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

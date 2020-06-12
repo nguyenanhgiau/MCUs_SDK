@@ -267,6 +267,7 @@
                     <state>$PROJ_DIR$\..\..\..\external\led</state>
                     <state>$PROJ_DIR$\..\..\..\drivers\serial</state>
                     <state>$PROJ_DIR$\..\..\..\external\fatfs\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\drivers\spi</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1710,7 +1711,7 @@
                 <name>$PROJ_DIR$\..\..\..\external\fatfs\src\ffunicode.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\external\fatfs\src\mmc_stm8l151_spi.c</name>
+                <name>$PROJ_DIR$\..\..\..\external\fatfs\src\port_fatfs.c</name>
             </file>
         </group>
         <group>
