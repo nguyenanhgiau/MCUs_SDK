@@ -1683,6 +1683,12 @@
                 <name>$PROJ_DIR$\..\..\..\drivers\serial\serial.c</name>
             </file>
         </group>
+        <group>
+            <name>spi</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\drivers\spi\spi.c</name>
+            </file>
+        </group>
     </group>
     <group>
         <name>external</name>
