@@ -32,7 +32,7 @@
 #include <string.h>
 #include "Queue.h"
 
-// #ifdef SPI_TOTAL_NUMBER
+#ifdef SPI_TOTAL_NUMBER
 /****************************************************************************/
 /***        Macro Definitions                                             ***/
 /****************************************************************************/
@@ -40,11 +40,7 @@
 /****************************************************************************/
 /***        Type Definitions                                              ***/
 /****************************************************************************/
-typedef struct
-{
-    uint8           u8NumSPIs;
-    SPI_tsSpi       *psSPIs;
-}SPI_tsCommon;
+
 /****************************************************************************/
 /***        Local Function Prototypes                                     ***/
 /****************************************************************************/
@@ -60,20 +56,13 @@ typedef struct
 /****************************************************************************/
 /***        Local Variables                                               ***/
 /****************************************************************************/
-static SPI_tsCommon SPI_sCommon;
+static SPI_tsSpi    asSPIs[SPI_TOTAL_NUMBER];
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
-SPI_teStatus SPI_eInit(SPI_tsSpi *psSPIs, const uint8 u8NumSPIs)
+SPI_teStatus SPI_eInit(void)
 {
-    if (psSPIs == NULL || u8NumSPIs == 0)
-    {
-        return E_SPI_FAIL;
-    }
-
-    SPI_sCommon.u8NumSPIs = u8NumSPIs;
-    SPI_sCommon.psSPIs = psSPIs;
-    memset(psSPIs, 0, sizeof(SPI_tsSpi) * u8NumSPIs);
+    memset(asSPIs, 0, sizeof(SPI_tsSpi) * SPI_TOTAL_NUMBER);
     
     return E_SPI_OK;
 }
@@ -85,9 +74,9 @@ SPI_teStatus SPI_eOpen(uint8 *pu8SpiIndex, SPI_tsSpi *psSPI)
         int i;
         SPI_tsSpi *psSPIs;
 
-        for ( i = 0; i < SPI_sCommon.u8NumSPIs; i++)
+        for ( i = 0; i < SPI_TOTAL_NUMBER; i++)
         {
-            psSPIs = &SPI_sCommon.psSPIs[i];
+            psSPIs = &asSPIs[i];
 
             if (psSPIs->pfOpen == NULL)
             {
@@ -110,9 +99,9 @@ SPI_teStatus SPI_eOpen(uint8 *pu8SpiIndex, SPI_tsSpi *psSPI)
 SPI_teStatus SPI_eClose(uint8 u8SpiIndex)
 {
     SPI_tsSpi *psSPIs;
-    psSPIs = &SPI_sCommon.psSPIs[u8SpiIndex];
+    psSPIs = &asSPIs[u8SpiIndex];
 
-    if (u8SpiIndex > SPI_sCommon.u8NumSPIs || psSPIs->pfClose == NULL)
+    if (u8SpiIndex > SPI_TOTAL_NUMBER || psSPIs->pfClose == NULL)
     {
         return E_SPI_FAIL;
     }
@@ -128,9 +117,9 @@ SPI_teStatus SPI_eClose(uint8 u8SpiIndex)
 void SPI_vSelect(uint8 u8SpiIndex)
 {
     SPI_tsSpi *psSPIs;
-    psSPIs = &SPI_sCommon.psSPIs[u8SpiIndex];
+    psSPIs = &asSPIs[u8SpiIndex];
 
-    if (u8SpiIndex > SPI_sCommon.u8NumSPIs || psSPIs->pfSelect == NULL)
+    if (u8SpiIndex > SPI_TOTAL_NUMBER || psSPIs->pfSelect == NULL)
     {
         return;
     }
@@ -142,9 +131,9 @@ void SPI_vSelect(uint8 u8SpiIndex)
 void SPI_vDeselect(uint8 u8SpiIndex)
 {
     SPI_tsSpi *psSPIs;
-    psSPIs = &SPI_sCommon.psSPIs[u8SpiIndex];
+    psSPIs = &asSPIs[u8SpiIndex];
 
-    if (u8SpiIndex > SPI_sCommon.u8NumSPIs || psSPIs->pfSelect == NULL)
+    if (u8SpiIndex > SPI_TOTAL_NUMBER || psSPIs->pfSelect == NULL)
     {
         return;
     }
@@ -156,9 +145,9 @@ void SPI_vDeselect(uint8 u8SpiIndex)
 uint8 SPI_u8ExchangeByte(uint8 u8SpiIndex, uint8 u8Byte)
 {
     SPI_tsSpi *psSPIs;
-    psSPIs = &SPI_sCommon.psSPIs[u8SpiIndex];
+    psSPIs = &asSPIs[u8SpiIndex];
 
-    if (u8SpiIndex > SPI_sCommon.u8NumSPIs || psSPIs->pfXchgByte == NULL)
+    if (u8SpiIndex > SPI_TOTAL_NUMBER || psSPIs->pfXchgByte == NULL)
     {
         return 0xFF;
     }
@@ -169,7 +158,7 @@ uint8 SPI_u8ExchangeByte(uint8 u8SpiIndex, uint8 u8Byte)
 /***        Local Function                                                ***/
 /****************************************************************************/
 
-// #endif /*SPI_TOTAL_NUMBER*/
+#endif /*SPI_TOTAL_NUMBER*/
 /****************************************************************************/
 /***        END OF FILE                                                   ***/
 /****************************************************************************/

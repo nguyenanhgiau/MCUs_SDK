@@ -40,11 +40,6 @@
 /****************************************************************************/
 /***        Type Definitions                                              ***/
 /****************************************************************************/
-typedef struct
-{
-    uint8           u8NumSerials;
-    SERIAL_tsSerial *psSerials;
-}SERIAL_tsCommon;
 
 /****************************************************************************/
 /***        Local Function Prototypes                                     ***/
@@ -61,7 +56,7 @@ typedef struct
 /****************************************************************************/
 /***        Local Variables                                               ***/
 /****************************************************************************/
-static SERIAL_tsCommon SERIAL_sCommon;
+static SERIAL_tsSerial asSerial[SERIAL_TOTAL_NUMBER];
 
 tsQueue SERIAL_msgTx[SERIAL_TOTAL_NUMBER];
 tsQueue SERIAL_msgRx[SERIAL_TOTAL_NUMBER];
@@ -71,17 +66,9 @@ uint8 au8SerialBufRx[SERIAL_TOTAL_NUMBER][SERIAL_RX_QUEUE_SIZE];
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
-SERIAL_teStatus SERIAL_eInit(SERIAL_tsSerial *psSerials, const uint8 u8NumSerials)
+SERIAL_teStatus SERIAL_eInit(void)
 {
-    if (psSerials == NULL || u8NumSerials == NULL)
-    {
-        return E_SERIAL_FAIL;
-    }
-
-    SERIAL_sCommon.u8NumSerials = u8NumSerials;
-    SERIAL_sCommon.psSerials = psSerials;
-    memset(psSerials, 0, sizeof(SERIAL_tsCommon) * u8NumSerials);
-
+    memset(asSerial, 0, sizeof(SERIAL_tsSerial) * SERIAL_TOTAL_NUMBER);
     return E_SERIAL_OK;
 }
 
@@ -92,9 +79,9 @@ SERIAL_teStatus SERIAL_eOpen(uint8 *pu8SerialIndex, SERIAL_tsSerial *psSerial)
         int i;
         SERIAL_tsSerial *psSerials;
 
-        for ( i = 0; i < SERIAL_sCommon.u8NumSerials; i++)
+        for ( i = 0; i < SERIAL_TOTAL_NUMBER; i++)
         {
-            psSerials = &SERIAL_sCommon.psSerials[i];
+            psSerials = &asSerial[i];
 
             if (psSerials->pfOpen == NULL)
             {
@@ -121,9 +108,9 @@ SERIAL_teStatus SERIAL_eOpen(uint8 *pu8SerialIndex, SERIAL_tsSerial *psSerial)
 SERIAL_teStatus SERIAL_eClose(uint8 u8SerialIndex)
 {
     SERIAL_tsSerial *psSerials;
-    psSerials = &SERIAL_sCommon.psSerials[u8SerialIndex];
+    psSerials = &asSerial[u8SerialIndex];
 
-    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials || psSerials->pfClose == NULL)
+    if (u8SerialIndex > SERIAL_TOTAL_NUMBER || psSerials->pfClose == NULL)
     {
         return E_SERIAL_FAIL;
     }
@@ -139,9 +126,9 @@ SERIAL_teStatus SERIAL_eClose(uint8 u8SerialIndex)
 void SERIAL_vSend(uint8 u8SerialIndex, uint8 u8Byte)
 {
     SERIAL_tsSerial *psSerials;
-    psSerials = &SERIAL_sCommon.psSerials[u8SerialIndex];
+    psSerials = &asSerial[u8SerialIndex];
 
-    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials || psSerials->pfSend == NULL)
+    if (u8SerialIndex > SERIAL_TOTAL_NUMBER || psSerials->pfSend == NULL)
     {
         return;
     }
@@ -153,9 +140,9 @@ void SERIAL_vSend(uint8 u8SerialIndex, uint8 u8Byte)
 uint8 SERIAL_u8Receive(uint8 u8SerialIndex)
 {
     SERIAL_tsSerial *psSerials;
-    psSerials = &SERIAL_sCommon.psSerials[u8SerialIndex];
+    psSerials = &asSerial[u8SerialIndex];
 
-    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials || psSerials->pfReceive == NULL)
+    if (u8SerialIndex > SERIAL_TOTAL_NUMBER || psSerials->pfReceive == NULL)
     {
         return 0xFF;
     }
@@ -167,9 +154,9 @@ uint8 SERIAL_u8Receive(uint8 u8SerialIndex)
 void SERIAL_vStopSend(uint8 u8SerialIndex)
 {
     SERIAL_tsSerial *psSerials;
-    psSerials = &SERIAL_sCommon.psSerials[u8SerialIndex];
+    psSerials = &asSerial[u8SerialIndex];
 
-    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials || psSerials->pfStopSend == NULL)
+    if (u8SerialIndex > SERIAL_TOTAL_NUMBER || psSerials->pfStopSend == NULL)
     {
         return;
     }
@@ -181,9 +168,9 @@ void SERIAL_vStopSend(uint8 u8SerialIndex)
 void SERIAL_vStartReceive(uint8 u8SerialIndex)
 {
     SERIAL_tsSerial *psSerials;
-    psSerials = &SERIAL_sCommon.psSerials[u8SerialIndex];
+    psSerials = &asSerial[u8SerialIndex];
 
-    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials || psSerials->pfStartReceive == NULL)
+    if (u8SerialIndex > SERIAL_TOTAL_NUMBER || psSerials->pfStartReceive == NULL)
     {
         return;
     }
@@ -194,11 +181,11 @@ void SERIAL_vStartReceive(uint8 u8SerialIndex)
 
 SERIAL_teStatus SERIAL_eGet(uint8 u8SerialIndex, uint8 *pu8Byte)
 {
-    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials ||
+    if (u8SerialIndex > SERIAL_TOTAL_NUMBER ||
         !QUEUE_bReceive(&SERIAL_msgTx[u8SerialIndex], pu8Byte))
     {
         /* call function stop send */
-        SERIAL_sCommon.psSerials[u8SerialIndex].pfStopSend();
+        asSerial[u8SerialIndex].pfStopSend();
 
         return E_SERIAL_FAIL;
     }
@@ -208,7 +195,7 @@ SERIAL_teStatus SERIAL_eGet(uint8 u8SerialIndex, uint8 *pu8Byte)
 
 SERIAL_teStatus SERIAL_ePut(uint8 u8SerialIndex, uint8 u8Byte)
 {
-    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials ||
+    if (u8SerialIndex > SERIAL_TOTAL_NUMBER ||
         !QUEUE_bSend(&SERIAL_msgRx[u8SerialIndex], &u8Byte))
     {
         return E_SERIAL_FAIL;
@@ -219,7 +206,7 @@ SERIAL_teStatus SERIAL_ePut(uint8 u8SerialIndex, uint8 u8Byte)
 
 SERIAL_teStatus SERIAL_eWrite(uint8 u8SerialIndex, uint8 *pau8Byte)
 {
-    if (u8SerialIndex > SERIAL_sCommon.u8NumSerials)
+    if (u8SerialIndex > SERIAL_TOTAL_NUMBER)
     {
         return E_SERIAL_FAIL;
     }
@@ -234,7 +221,7 @@ SERIAL_teStatus SERIAL_eWrite(uint8 u8SerialIndex, uint8 *pau8Byte)
     }
 
     /* call function start send */
-    SERIAL_sCommon.psSerials[u8SerialIndex].pfStartSend();
+    asSerial[u8SerialIndex].pfStartSend();
     
     return E_SERIAL_OK;
 }

@@ -100,10 +100,6 @@ BUTTON_tsButton asButtons[BUTTON_TOTAL_NUMBER];
 LED_tsLed asLeds[LED_TOTAL_NUMBER];
 #endif
 
-#ifdef SERIAL_TOTAL_NUMBER
-SERIAL_tsSerial asSerial[SERIAL_TOTAL_NUMBER];
-#endif
-
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
@@ -208,7 +204,7 @@ void APP_vInitResources(void)
     #endif
 
     #ifdef SERIAL_TOTAL_NUMBER
-    SERIAL_eInit(asSerial, sizeof(asSerial) / sizeof(SERIAL_tsSerial));
+    SERIAL_eInit();
     #endif
 }
 

@@ -53,7 +53,7 @@ typedef enum
 }SPI_teStatus;
 /* Exported Structure Declarations -------------------------------------------*/
 /* Exported Functions Declarations -------------------------------------------*/
-SPI_teStatus SPI_eInit(SPI_tsSpi *psSPIs, const uint8 u8NumSPIs);
+SPI_teStatus SPI_eInit(void);
 SPI_teStatus SPI_eOpen(uint8 *pu8SpiIndex, SPI_tsSpi *psSPI);
 SPI_teStatus SPI_eClose(uint8 u8SpiIndex);
 void SPI_vSelect(uint8 u8SpiIndex);
