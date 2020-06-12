@@ -125,7 +125,7 @@ BUTTON_teStatus BUTTON_eClose(uint8 u8ButtonIndex)
 static void BUTTON_vScanTask(void *pvParam)
 {
 	/* restart timer scan button */
-	TIMER_eStart(u8TimerScanButtons, TIMER_TIME_MSEC(10));
+	TIMER_eStart(u8TimerScanButtons, BUTTON_TIME_SCAN);
 	
 	/* scan button */
         int i;
@@ -269,5 +269,32 @@ static void BUTTON_vScanTask(void *pvParam)
                 
         }
 }
+
+BUTTON_teStatus BUTTON_eStop(void)
+{
+        /* check queue result */
+        int i;
+        BUTTON_tsButton *psButtons;
+
+        for ( i = 0; i < BUTTON_sCommon.u8NumButtons; i++)
+        {
+                psButtons = &BUTTON_sCommon.psButtons[i];
+                if (psButtons->newState != E_BUTTON_STATE_RELEASE)
+                {
+                        return E_BUTTON_FAIL;
+                }
+        }
+        
+        /* stop timer scan button */
+        TIMER_eStop(u8TimerScanButtons);
+        return E_BUTTON_OK;
+}
+
+BUTTON_teStatus BUTTON_eRestart(void)
+{
+        TIMER_eStart(u8TimerScanButtons, BUTTON_TIME_SCAN);
+        return E_BUTTON_OK;
+}
+
 #endif /*BUTTON_TOTAL_NUMBER*/
 

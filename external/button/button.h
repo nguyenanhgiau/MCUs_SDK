@@ -119,6 +119,8 @@ BUTTON_teStatus BUTTON_eOpen(uint8 *pu8ButtonIndex,
                              BUTTON_tpfClose    pfClose,
                              BUTTON_tpfRead     pfRead);
 BUTTON_teStatus BUTTON_eClose(uint8 u8ButtonIndex);
+BUTTON_teStatus BUTTON_eStop(void);
+BUTTON_teStatus BUTTON_eRestart(void);
 
 /* External Variable Declarations --------------------------------------------*/
 #ifdef BUTTON_TOTAL_NUMBER
