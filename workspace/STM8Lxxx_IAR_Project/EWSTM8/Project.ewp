@@ -266,6 +266,7 @@
                     <state>$PROJ_DIR$\..\..\..\external\button</state>
                     <state>$PROJ_DIR$\..\..\..\external\led</state>
                     <state>$PROJ_DIR$\..\..\..\drivers\serial</state>
+                    <state>$PROJ_DIR$\..\..\..\external\fatfs\inc</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1683,6 +1684,21 @@
             <name>button</name>
             <file>
                 <name>$PROJ_DIR$\..\..\..\external\button\button.c</name>
+            </file>
+        </group>
+        <group>
+            <name>fatfs</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\fatfs\src\ff.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\fatfs\src\ffsystem.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\fatfs\src\ffunicode.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\external\fatfs\src\mmc_stm8l151_spi.c</name>
             </file>
         </group>
         <group>

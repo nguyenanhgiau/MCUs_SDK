@@ -28,6 +28,8 @@ C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Lxxx_IAR_Project\EWSTM8\..\..\..\ex
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Lxxx_IAR_Project\EWSTM8\..\..\..\drivers\serial
 -I
+C:\Users\Giau\Desktop\MCUs_SDK\workspace\STM8Lxxx_IAR_Project\EWSTM8\..\..\..\external\fatfs\inc
+-I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc\c
@@ -49,6 +51,8 @@ C:\Users\Giau\Desktop\MCUs_SDK\external\button
 C:\Users\Giau\Desktop\MCUs_SDK\external\led
 -I
 C:\Users\Giau\Desktop\MCUs_SDK\drivers\serial
+-I
+C:\Users\Giau\Desktop\MCUs_SDK\external\fatfs\inc
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

@@ -25,6 +25,10 @@ build Queue.pbi : index Queue.xcl
 build Timer.pbi : index Timer.xcl
 build dbg.pbi : index dbg.xcl
 build button.pbi : index button.xcl
+build ff.pbi : index ff.xcl
+build ffsystem.pbi : index ffsystem.xcl
+build ffunicode.pbi : index ffunicode.xcl
+build mmc_stm8l151_spi.pbi : index mmc_stm8l151_spi.xcl
 build led.pbi : index led.xcl
 build app_main.pbi : index app_main.xcl
 build main.pbi : index main.xcl
@@ -57,13 +61,13 @@ build stm8l15x_tim5.pbi : index stm8l15x_tim5.xcl
 build stm8l15x_usart.pbi : index stm8l15x_usart.xcl
 build stm8l15x_wfe.pbi : index stm8l15x_wfe.xcl
 build stm8l15x_wwdg.pbi : index stm8l15x_wwdg.xcl
-build Project_part0.pbi : link port_stm8l.pbi Queue.pbi Timer.pbi dbg.pbi button.pbi led.pbi
-build Project_part1.pbi : link app_main.pbi main.pbi stm8l15x_it.pbi stm8l15x_adc.pbi stm8l15x_aes.pbi stm8l15x_beep.pbi
-build Project_part2.pbi : link stm8l15x_clk.pbi stm8l15x_comp.pbi stm8l15x_dac.pbi stm8l15x_dma.pbi stm8l15x_exti.pbi stm8l15x_flash.pbi
-build Project_part3.pbi : link stm8l15x_gpio.pbi stm8l15x_i2c.pbi stm8l15x_irtim.pbi stm8l15x_itc.pbi stm8l15x_iwdg.pbi stm8l15x_lcd.pbi
-build Project_part4.pbi : link stm8l15x_pwr.pbi stm8l15x_rst.pbi stm8l15x_rtc.pbi stm8l15x_spi.pbi stm8l15x_syscfg.pbi stm8l15x_tim1.pbi
-build Project_part5.pbi : link stm8l15x_tim2.pbi stm8l15x_tim3.pbi stm8l15x_tim4.pbi stm8l15x_tim5.pbi stm8l15x_usart.pbi stm8l15x_wfe.pbi
-build Project_part6.pbi : link stm8l15x_wwdg.pbi
+build Project_part0.pbi : link port_stm8l.pbi Queue.pbi Timer.pbi dbg.pbi button.pbi ff.pbi
+build Project_part1.pbi : link ffsystem.pbi ffunicode.pbi mmc_stm8l151_spi.pbi led.pbi app_main.pbi main.pbi
+build Project_part2.pbi : link stm8l15x_it.pbi stm8l15x_adc.pbi stm8l15x_aes.pbi stm8l15x_beep.pbi stm8l15x_clk.pbi stm8l15x_comp.pbi
+build Project_part3.pbi : link stm8l15x_dac.pbi stm8l15x_dma.pbi stm8l15x_exti.pbi stm8l15x_flash.pbi stm8l15x_gpio.pbi stm8l15x_i2c.pbi
+build Project_part4.pbi : link stm8l15x_irtim.pbi stm8l15x_itc.pbi stm8l15x_iwdg.pbi stm8l15x_lcd.pbi stm8l15x_pwr.pbi stm8l15x_rst.pbi
+build Project_part5.pbi : link stm8l15x_rtc.pbi stm8l15x_spi.pbi stm8l15x_syscfg.pbi stm8l15x_tim1.pbi stm8l15x_tim2.pbi stm8l15x_tim3.pbi
+build Project_part6.pbi : link stm8l15x_tim4.pbi stm8l15x_tim5.pbi stm8l15x_usart.pbi stm8l15x_wfe.pbi stm8l15x_wwdg.pbi
 build Project.pbd : link Project_part0.pbi Project_part1.pbi Project_part2.pbi Project_part3.pbi Project_part4.pbi Project_part5.pbi Project_part6.pbi
 build Project.pbw : browsedata Project.pbd
 
