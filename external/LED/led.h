@@ -113,7 +113,7 @@ typedef struct
   LED_tpfSetState pfSetState;
 }LED_tsLed;
 /* Exported Functions Declarations -------------------------------------------*/
-LED_teStatus LED_eInit(LED_tsLed *psLeds, const uint8 u8NumLeds);
+LED_teStatus LED_eInit(void);
 LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
                         LED_tsLed     *psLed);
 LED_teStatus LED_eClose(uint8 u8LedIndex);

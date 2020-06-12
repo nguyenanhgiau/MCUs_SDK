@@ -40,11 +40,6 @@
 /****************************************************************************/
 /***        Type Definitions                                              ***/
 /****************************************************************************/
-typedef struct
-{
-    uint8       u8NumLeds;
-    LED_tsLed   *psLeds;
-}LED_tsCommon;
 
 /****************************************************************************/
 /***        Local Function Prototypes                                     ***/
@@ -67,7 +62,7 @@ static void LED_vEffectOutput(uint8 u8LedIndex);
 /****************************************************************************/
 /***        Local Variables                                               ***/
 /****************************************************************************/
-static LED_tsCommon LED_sCommon;
+static LED_tsLed asLeds[LED_TOTAL_NUMBER];
 
 #ifdef LED_SUPPORT_EFFECT
 static LED_tsEffect LED_asEffect[LED_TOTAL_NUMBER];
@@ -76,16 +71,9 @@ uint8 u8TimerTickLED;
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
-LED_teStatus LED_eInit(LED_tsLed *psLeds, const uint8 u8NumLeds)
+LED_teStatus LED_eInit(void)
 {
-    if (psLeds == NULL || u8NumLeds == 0)
-    {
-        return E_LED_FAIL;
-    }
-
-    LED_sCommon.u8NumLeds = u8NumLeds;
-    LED_sCommon.psLeds = psLeds;
-    memset(psLeds, 0, sizeof(LED_tsCommon) * u8NumLeds);
+    memset(asLeds, 0, sizeof(LED_tsLed) * LED_TOTAL_NUMBER);
 
     #ifdef LED_SUPPORT_EFFECT
     TIMER_eOpen(&u8TimerTickLED, LED_vIdEffectTick, NULL, TIMER_FLAG_PREVENT_SLEEP);
@@ -105,9 +93,9 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
         int i;
         LED_tsLed *psLeds;
 
-        for ( i = 0; i < LED_sCommon.u8NumLeds; i++)
+        for ( i = 0; i < LED_TOTAL_NUMBER; i++)
         {
-            psLeds = &LED_sCommon.psLeds[i];
+            psLeds = &asLeds[i];
 
             if (psLeds->pfOpen == NULL)
             {
@@ -145,9 +133,9 @@ LED_teStatus LED_eOpen(uint8          *pu8LedIndex,
 LED_teStatus LED_eClose(uint8 u8LedIndex)
 {
     LED_tsLed *psLeds;
-    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+    psLeds = &asLeds[u8LedIndex];
 
-    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfClose == NULL)
+    if (u8LedIndex > LED_TOTAL_NUMBER || psLeds->pfClose == NULL)
     {
         return E_LED_FAIL;
     }
@@ -163,9 +151,9 @@ LED_teStatus LED_eClose(uint8 u8LedIndex)
 LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState)
 {
     LED_tsLed *psLeds;
-    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+    psLeds = &asLeds[u8LedIndex];
 
-    if (u8LedIndex > LED_sCommon.u8NumLeds
+    if (u8LedIndex > LED_TOTAL_NUMBER
         || psLeds->pfSetState == NULL
     )
     {
@@ -188,9 +176,9 @@ LED_teStatus LED_eSetOnOff(uint8 u8LedIndex, bool bState)
 LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level)
 {
     LED_tsLed *psLeds;
-    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+    psLeds = &asLeds[u8LedIndex];
 
-    if (u8LedIndex > LED_sCommon.u8NumLeds)
+    if (u8LedIndex > LED_TOTAL_NUMBER)
     {
         return E_LED_FAIL;
     }
@@ -214,9 +202,9 @@ LED_teStatus LED_eSetLevel(uint8 u8LedIndex, uint8 u8Level)
 LED_teStatus LED_eSetColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u8Blue)
 {
     LED_tsLed *psLeds;
-    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+    psLeds = &asLeds[u8LedIndex];
 
-    if (u8LedIndex > LED_sCommon.u8NumLeds || psLeds->pfSetState == NULL)
+    if (u8LedIndex > LED_TOTAL_NUMBER || psLeds->pfSetState == NULL)
     {
         return E_LED_FAIL;
     }
@@ -246,7 +234,7 @@ LED_teStatus LED_eSetColor(uint8 u8LedIndex, uint8 u8Red, uint8 u8Green, uint8 u
 static void LED_vOutput(uint8 u8LedIndex)
 {
     LED_tsLed *psLeds;
-    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+    psLeds = &asLeds[u8LedIndex];
 
     #ifdef LED_SUPPORT_COLOR
     LED_tsColor sColor;
@@ -281,7 +269,7 @@ static void LED_vOutput(uint8 u8LedIndex)
 LED_teStatus LED_eStartEffect(uint8 u8LedIndex, LED_tsEffect *psEffect)
 {
     /* check valid */
-    if (u8LedIndex > LED_sCommon.u8NumLeds)
+    if (u8LedIndex > LED_TOTAL_NUMBER)
     {
         return E_LED_FAIL;
     }
@@ -310,7 +298,7 @@ static void LED_vIdEffectTick(void *pvParam)
     int i;
     LED_tsEffect    *psEffect;
 
-    for ( i = 0; i < LED_sCommon.u8NumLeds; i++)
+    for ( i = 0; i < LED_TOTAL_NUMBER; i++)
     {
         psEffect = &LED_asEffect[i];
 
@@ -499,7 +487,7 @@ static LED_teStatus LED_bCheckValidEffect(LED_tsEffect *psEffect)
 static void LED_vEffectOutput(uint8 u8LedIndex)
 {
     LED_tsLed *psLeds;
-    psLeds = &LED_sCommon.psLeds[u8LedIndex];
+    psLeds = &asLeds[u8LedIndex];
 
     LED_tsEffect *psEffect;
     psEffect = &LED_asEffect[u8LedIndex];
