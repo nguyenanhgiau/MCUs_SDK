@@ -45,8 +45,8 @@
 #define	MMC_CD		1	/* Card detect (yes:true, no:false, default:true) */
 #define	MMC_WP		0       /* Write protected (yes:true, no:false, default:false) */
 
-#define CS_HIGH()	GPIO_SetBits(GPIOB, GPIO_Pin_4)
-#define CS_LOW()	GPIO_ResetBits(GPIOB, GPIO_Pin_4)
+#define CS_HIGH()	GPIO_SetBits(GPIOD, GPIO_Pin_4)
+#define CS_LOW()	GPIO_ResetBits(GPIOD, GPIO_Pin_4)
 
 static volatile
 DSTATUS Stat = STA_NOINIT;	/* Physical drive status */
@@ -73,7 +73,7 @@ void init_spi (void)
                             GPIO_Pin_7 | GPIO_Pin_6, ENABLE);
 
   /* Configure FLASH_CS as Output push-pull, used as Flash Chip select */
-  GPIO_Init(GPIOB, GPIO_Pin_4, GPIO_Mode_Out_PP_High_Slow);
+  GPIO_Init(GPIOD, GPIO_Pin_4, GPIO_Mode_Out_PP_High_Slow);
 
   /* SPI configuration */
   SPI_Init(SPI1, SPI_FirstBit_MSB, SPI_BaudRatePrescaler_4, SPI_Mode_Master,

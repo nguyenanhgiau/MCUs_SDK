@@ -82,7 +82,7 @@ void main(void)
 
   APP_vInitResources();
 
-//  APP_vInitialise();
+  APP_vInitialise();
   
   fr = f_mount(&fatfs, "", 0);
   
