@@ -471,8 +471,7 @@ static LED_teStatus LED_bCheckValidEffect(LED_tsEffect *psEffect)
         break;
     
     case E_LED_EFFECT_FLASH:
-        if ((psEffect->u16TimeOn + psEffect->u16TimeOff >= psEffect->u16Period)
-            || ((psEffect->u16TimeOn + psEffect->u16TimeOff) * psEffect->u8Flash) >= psEffect->u16Period)
+        if (((psEffect->u16TimeOn + psEffect->u16TimeOff) * psEffect->u8Flash) > psEffect->u16Period)
         {
             return E_LED_FAIL;
         }
