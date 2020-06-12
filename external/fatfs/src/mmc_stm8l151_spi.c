@@ -48,9 +48,6 @@
 #define CS_HIGH()	GPIO_SetBits(GPIOB, GPIO_Pin_4)
 #define CS_LOW()	GPIO_ResetBits(GPIOB, GPIO_Pin_4)
 
-#define FCLK_SLOW()     spi_speed_slow()	/* Set SCLK = PCLK / 128 */
-#define FCLK_FAST()     spi_speed_fast()	/* Set SCLK = PCLK / 2 */
-
 static volatile
 DSTATUS Stat = STA_NOINIT;	/* Physical drive status */
 
@@ -63,32 +60,6 @@ BYTE CardType;			/* Card type flags */
 /*-----------------------------------------------------------------------*/
 /* SPI controls (Platform dependent)                                     */
 /*-----------------------------------------------------------------------*/
-
-static void spi_speed_slow(void)
-{
-  SPI_Cmd(SPI1, DISABLE);
-
-  /* SPI configuration */
-  SPI_Init(SPI1, SPI_FirstBit_MSB, SPI_BaudRatePrescaler_4, SPI_Mode_Master,
-           SPI_CPOL_Low, SPI_CPHA_1Edge, SPI_Direction_2Lines_FullDuplex,
-           SPI_NSS_Soft, 0x07);
-
-  /* Enable SPI  */
-  SPI_Cmd(SPI1, ENABLE);
-}
-
-static void spi_speed_fast(void)
-{
-  SPI_Cmd(SPI1, DISABLE);
-
-  /* SPI configuration */
-  SPI_Init(SPI1, SPI_FirstBit_MSB, SPI_BaudRatePrescaler_128, SPI_Mode_Master,
-           SPI_CPOL_Low, SPI_CPHA_1Edge, SPI_Direction_2Lines_FullDuplex,
-           SPI_NSS_Soft, 0x07);
-
-  /* Enable SPI  */
-  SPI_Cmd(SPI1, ENABLE);
-}
 
 /* Initialize MMC interface */
 static
@@ -330,7 +301,6 @@ DSTATUS disk_initialize (
   
   if (Stat & STA_NODISK) return Stat;	/* Is card existing in the soket? */
   
-  FCLK_SLOW();
   for (n = 10; n; n--) xchg_spi(0xFF);	/* Send 80 dummy clocks */
   
   ty = 0;
@@ -360,7 +330,6 @@ DSTATUS disk_initialize (
   deselect();
   
   if (ty) {			/* OK */
-    FCLK_FAST();			/* Set fast clock */
     Stat &= ~STA_NOINIT;	/* Clear STA_NOINIT flag */
   } else {			/* Failed */
     Stat = STA_NOINIT;
