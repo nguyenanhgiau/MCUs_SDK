@@ -92,18 +92,6 @@ extern uint8 u8LedTest;
 TIMER_tsTimer asTimers[APP_TOTAL_TIMER];
 #endif
 
-#ifdef BUTTON_TOTAL_NUMBER
-BUTTON_tsButton asButtons[BUTTON_TOTAL_NUMBER];
-#endif
-
-#ifdef LED_TOTAL_NUMBER
-LED_tsLed asLeds[LED_TOTAL_NUMBER];
-#endif
-
-#ifdef SERIAL_TOTAL_NUMBER
-SERIAL_tsSerial asSerial[SERIAL_TOTAL_NUMBER];
-#endif
-
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
@@ -200,15 +188,15 @@ void APP_vInitResources(void)
     #endif
 
     #ifdef BUTTON_TOTAL_NUMBER
-    BUTTON_eInit(asButtons, sizeof(asButtons) / sizeof(BUTTON_tsButton));
+    BUTTON_eInit();
     #endif
 
     #ifdef LED_TOTAL_NUMBER
-    LED_eInit(asLeds, sizeof(asLeds) / sizeof(LED_tsLed));
+    LED_eInit();
     #endif
 
     #ifdef SERIAL_TOTAL_NUMBER
-    SERIAL_eInit(asSerial, sizeof(asSerial) / sizeof(SERIAL_tsSerial));
+    SERIAL_eInit();
     #endif
 }
 

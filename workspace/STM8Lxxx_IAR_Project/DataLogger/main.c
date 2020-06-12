@@ -38,8 +38,6 @@
 
 #include "diskio.h"
 #include "ff.h"
-#include <time.h>
-#include <stdlib.h>
 /* Private defines -----------------------------------------------------------*/
 /* Private variable ----------------------------------------------------------*/
 uint8 u8ButtonTest;
