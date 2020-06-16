@@ -63,7 +63,7 @@ static uint8 u8FATfsIndex; /* SPI index */
 /* Initialize MMC interface */
 FATfs_teStatus FATfs_eInit(SPI_tsSpi *psSPI)
 {
-    return SPI_eOpen(&u8FATfsIndex, psSPI);
+    return (FATfs_teStatus)SPI_eOpen(&u8FATfsIndex, psSPI);
 }
 
 /* Receive multiple byte */
