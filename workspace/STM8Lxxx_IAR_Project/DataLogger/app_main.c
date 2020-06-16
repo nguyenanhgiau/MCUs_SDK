@@ -42,6 +42,7 @@
 #include "Queue.h"
 #include "Timer.h"
 #include "dbg.h"
+#include "watchdog.h"
 
 #ifdef BUTTON_TOTAL_NUMBER
 #include "Button.h"
@@ -116,11 +117,7 @@ void APP_vMainLoop(void)
         TIMER_vTask();
         
         /*TODO: add watchdog restart */
-        if ((WWDG_GetCounter() & 0x7F) < 97)
-        {
-          /* Refresh WWDG counter during allowed window so no MCU reset will occur */
-          WWDG_SetCounter(250);
-        }
+        WATCHDOG_vRestart();
         
         /*TODO: add main task */
         #ifdef BUTTON_TOTAL_NUMBER

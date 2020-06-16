@@ -35,6 +35,7 @@
 #include "app_main.h"
 #include "dbg.h"
 #include "port_mcu.h"
+#include "watchdog.h"
 
 #include "port_fatfs.h"
 /* Private defines -----------------------------------------------------------*/
@@ -65,7 +66,9 @@ static void init_spi (void);
 static void spi_select(bool bSelect);
 static uint8 spi_xchg(uint8 u8Byte);
 
-static void WWDG_Config(void);
+static void watchdog_start(void);
+static void watchdog_restart(void);
+static bool watchdog_get_reset(void);
 
 void main(void)
 {
@@ -82,20 +85,6 @@ void main(void)
   /* Initialize debugger module */
   DBG_vInit(uart_initialize, uart_drv_send, uart_drv_receive);
   DBG_vPrintf(TRUE, "*%s DEVICE RESET %s*\n", "***********", "***********");
-  
-  /* Check if the MCU has resumed from WWDG reset */
-  if (RST_GetFlagStatus(RST_FLAG_WWDGF) != RESET)
-  {
-    /* WWDGF flag set */
-    /* Toggle LED1 */
-    DBG_vPrintf(TRUE, "Device Reset because by Watchdog\n");
-    
-    /* Clear WWDGF Flag */
-    RST_ClearFlag(RST_FLAG_WWDGF);
-  }
-  
-  /* WWDG Configuration */
-  WWDG_Config();
 
   /* common initialize */
   APP_vSetUpHardware();
@@ -117,28 +106,6 @@ void main(void)
 
   /* Infinite loop */
   APP_vMainLoop();  
-}
-
-static void WWDG_Config(void) 
-{
-  /* WWDG configuration: WWDG is clocked by SYSCLK = 2MHz */
-  /* WWDG timeout is equal to 251,9 ms */
-  /* Watchdog Window = (COUNTER_INIT - 63) * 1 step
-                     = 41 * (12288 / 2Mhz)
-                     = 251,9 ms
-  */
-  /* Non Allowed Window = (COUNTER_INIT - WINDOW_VALUE) * 1 step
-                        = (104 - 97) * 1 step
-                        =  7 * 1 step 
-                        =  7 * (12288 / 2Mhz) 
-                        =  43.008 ms
-   */
-  /* So the non allowed window starts from 0.0 ms to 43.008 ms
-  and the allowed window starts from 43.008 ms to 251,9 ms
-  If refresh is done during non allowed window, a reset will occur.
-  If refresh is done during allowed window, no reset will occur.
-  If the WWDG down counter reaches 63, a reset will occur. */
-  WWDG_Init(250, WINDOW_VALUE);
 }
 
 #ifdef USE_FULL_ASSERT
@@ -269,8 +236,62 @@ uint8 spi_xchg(uint8 u8Byte)
   return (SPI1->DR);
 }
 
+static void watchdog_start(void)
+{
+  /* WWDG configuration: WWDG is clocked by SYSCLK = 2MHz */
+  /* WWDG timeout is equal to 251,9 ms */
+  /* Watchdog Window = (COUNTER_INIT - 63) * 1 step
+                     = 41 * (12288 / 2Mhz)
+                     = 251,9 ms
+  */
+  /* Non Allowed Window = (COUNTER_INIT - WINDOW_VALUE) * 1 step
+                        = (104 - 97) * 1 step
+                        =  7 * 1 step 
+                        =  7 * (12288 / 2Mhz) 
+                        =  43.008 ms
+   */
+  /* So the non allowed window starts from 0.0 ms to 43.008 ms
+  and the allowed window starts from 43.008 ms to 251,9 ms
+  If refresh is done during non allowed window, a reset will occur.
+  If refresh is done during allowed window, no reset will occur.
+  If the WWDG down counter reaches 63, a reset will occur. */
+  WWDG_Init(104, 97);
+}
+
+static void watchdog_restart(void)
+{
+  if ((WWDG_GetCounter() & 0x7F) < 97)
+  {
+    /* Refresh WWDG counter during allowed window so no MCU reset will occur */
+    WWDG_SetCounter(107);
+  }
+}
+
+static bool watchdog_get_reset(void)
+{
+  /* Check if the MCU has resumed from WWDG reset */
+  if (RST_GetFlagStatus(RST_FLAG_WWDGF) != RESET)
+  {
+    /* Clear WWDGF Flag */
+    RST_ClearFlag(RST_FLAG_WWDGF);
+    return TRUE;
+  }
+  else
+  {
+    return FALSE;
+  }
+  
+}
+
 static void APP_vInitialise(void)
 {
+    WATCHDOG_tsWDG sWDG = {
+        .u16Time = 104,
+        .pfStart = &watchdog_start,
+        .pfRestart = &watchdog_restart,
+        .pfResetEvent = &watchdog_get_reset};
+    WATCHDOG_vInit(&sWDG);
+
     BUTTON_eOpen(&u8ButtonTest, BUTTON_vOpen, NULL, BUTTON_bRead);
 
     LED_tsLed sLed = {
