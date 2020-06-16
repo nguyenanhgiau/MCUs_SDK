@@ -116,6 +116,11 @@ void APP_vMainLoop(void)
         TIMER_vTask();
         
         /*TODO: add watchdog restart */
+        if ((WWDG_GetCounter() & 0x7F) < 97)
+        {
+          /* Refresh WWDG counter during allowed window so no MCU reset will occur */
+          WWDG_SetCounter(250);
+        }
         
         /*TODO: add main task */
         #ifdef BUTTON_TOTAL_NUMBER

@@ -38,14 +38,16 @@
 
 #include "port_fatfs.h"
 /* Private defines -----------------------------------------------------------*/
+#define WINDOW_VALUE        97
+#define COUNTER_INIT       104
 /* Private variable ----------------------------------------------------------*/
 uint8 u8ButtonTest;
 uint8 u8SerialTest;
 uint8 u8LedTest;
 
-static DSTATUS        fr;    /* Result code */
-static FATFS          fatfs;          /* File system object */
-static FIL            fil;            /* File object */
+//static DSTATUS        fr;    /* Result code */
+//static FATFS          fatfs;          /* File system object */
+//static FIL            fil;            /* File object */
 /* Private function prototypes -----------------------------------------------*/
 static void     BUTTON_vOpen(void);
 static bool     BUTTON_bRead(void);
@@ -63,6 +65,8 @@ static void init_spi (void);
 static void spi_select(bool bSelect);
 static uint8 spi_xchg(uint8 u8Byte);
 
+static void WWDG_Config(void);
+
 void main(void)
 {
     /* configure private for unique mcu
@@ -72,11 +76,26 @@ void main(void)
   * - time base 
   * - watchdog timer
   * */
+  
   PORTABLE_vInit();
 
   /* Initialize debugger module */
   DBG_vInit(uart_initialize, uart_drv_send, uart_drv_receive);
   DBG_vPrintf(TRUE, "*%s DEVICE RESET %s*\n", "***********", "***********");
+  
+  /* Check if the MCU has resumed from WWDG reset */
+  if (RST_GetFlagStatus(RST_FLAG_WWDGF) != RESET)
+  {
+    /* WWDGF flag set */
+    /* Toggle LED1 */
+    DBG_vPrintf(TRUE, "Device Reset because by Watchdog\n");
+    
+    /* Clear WWDGF Flag */
+    RST_ClearFlag(RST_FLAG_WWDGF);
+  }
+  
+  /* WWDG Configuration */
+  WWDG_Config();
 
   /* common initialize */
   APP_vSetUpHardware();
@@ -85,19 +104,41 @@ void main(void)
 
   APP_vInitialise();
   
-  uint8_t buff[100];
-  fr = f_mount(&fatfs, "", 0);
-  fr = f_open(&fil, "test.txt", FA_READ);
-  if ( fr == FR_OK || fr == FR_EXIST) {
-    UINT        u8Read;
-    fr = f_read(&fil, buff, 100, &u8Read);
-      
-    /* Close the file */
-    f_close(&fil);
-  }
+//  uint8_t buff[100];
+//  fr = f_mount(&fatfs, "", 0);
+//  fr = f_open(&fil, "test.txt", FA_READ);
+//  if ( fr == FR_OK || fr == FR_EXIST) {
+//    UINT        u8Read;
+//    fr = f_read(&fil, buff, 100, &u8Read);
+//      
+//    /* Close the file */
+//    f_close(&fil);
+//  }
 
   /* Infinite loop */
   APP_vMainLoop();  
+}
+
+static void WWDG_Config(void) 
+{
+  /* WWDG configuration: WWDG is clocked by SYSCLK = 2MHz */
+  /* WWDG timeout is equal to 251,9 ms */
+  /* Watchdog Window = (COUNTER_INIT - 63) * 1 step
+                     = 41 * (12288 / 2Mhz)
+                     = 251,9 ms
+  */
+  /* Non Allowed Window = (COUNTER_INIT - WINDOW_VALUE) * 1 step
+                        = (104 - 97) * 1 step
+                        =  7 * 1 step 
+                        =  7 * (12288 / 2Mhz) 
+                        =  43.008 ms
+   */
+  /* So the non allowed window starts from 0.0 ms to 43.008 ms
+  and the allowed window starts from 43.008 ms to 251,9 ms
+  If refresh is done during non allowed window, a reset will occur.
+  If refresh is done during allowed window, no reset will occur.
+  If the WWDG down counter reaches 63, a reset will occur. */
+  WWDG_Init(250, WINDOW_VALUE);
 }
 
 #ifdef USE_FULL_ASSERT
