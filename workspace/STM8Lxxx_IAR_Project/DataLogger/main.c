@@ -286,7 +286,6 @@ static bool watchdog_get_reset(void)
 static void APP_vInitialise(void)
 {
     WATCHDOG_tsWDG sWDG = {
-        .u16Time = 104,
         .pfStart = &watchdog_start,
         .pfRestart = &watchdog_restart,
         .pfResetEvent = &watchdog_get_reset};
