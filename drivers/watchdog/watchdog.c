@@ -71,7 +71,7 @@ WATCHDOG_teStatus WATCHDOG_vInit(WATCHDOG_tsWDG *psWDG)
 
 void WATCHDOG_vStart(void)
 {
-    if (sWDG.pfStart || sWDG.u16Time != 0)
+    if (sWDG.pfStart)
     {
         sWDG.pfStart();
     }

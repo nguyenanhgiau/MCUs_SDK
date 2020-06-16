@@ -45,7 +45,6 @@ typedef bool (*WDG_ptfResetEvent)(void);
 
 typedef struct
 {
-    uint16          u16Time;
     WDG_ptfStart    pfStart;
     WDG_ptfStop     pfStop;
     WDG_ptfRestart  pfRestart;
